@@ -1,0 +1,35 @@
+{
+  "version": "1.10",
+  "date": "2026-11-15",
+  "sourceSha256": "52b827de295dacb7073dec4a3ae09d51180dc396cc22fceae582c69a60806899",
+  "counts": {
+    "weapons": 20,
+    "ordinaryWeapons": 17,
+    "bossWeapons": 3,
+    "items": 20,
+    "cores": 6,
+    "bosses": 3
+  },
+  "tests": {
+    "total": 135,
+    "passed": 135,
+    "failed": 0,
+    "log": "analysis/history/test-v110.log",
+    "runner": "同进程Node内置测试"
+  },
+  "browser": {
+    "verified": [
+      "随行蜂实际射击及协同资源累计",
+      "第5波先专武奖励再核心选择",
+      "奖励动作提示与核心共鸣卡",
+      "常驻改装购买、共享限次与刷新不重置",
+      "最终版专武共鸣及当前构筑强化预览"
+    ],
+    "knownIssue": "初始化仍有既存MutationObserver.observe参数错误，日志无来源文件；不能宣称控制台无错误"
+  },
+  "limits": [
+    "未完成完整同预算真人通关与控制价值评估",
+    "未完成30/50波长期性能验收",
+    "后三款专武及对应Boss仍未实装"
+  ]
+}

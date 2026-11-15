@@ -1,0 +1,579 @@
+{
+  "source": "D:\\Desktop\\webGame\\泰拉兄弟\\terrabrotato.html",
+  "sha256": "62fe6d378df5b258df2988ec4928cbdc3df686dee2e3fc181a322ec177e61426",
+  "assumptions": "中性角色基础暴击5%；无额外属性与羁绊（合成与6武器场景除外）；连续理想命中；多段输出仅为条件上限；不含帧量化、首击等待、飞行和落星延迟、过量伤害、索敌与移动。不是实测DPS或胜率。",
+  "weapons": [
+    {
+      "id": "copper_sword",
+      "name": "铜短剑",
+      "tier": 1,
+      "dmg": 14,
+      "cd": 0.48,
+      "range": 4.8,
+      "crit": 13,
+      "pierce": 2,
+      "bounces": 0,
+      "mainDps": 32.145833333333336,
+      "possibleExtraDps": 0,
+      "possibleTotalDps": 32.145833333333336,
+      "eye1400IdealSeconds": 43.551523007128964
+    },
+    {
+      "id": "grass_blade",
+      "name": "草剑",
+      "tier": 1,
+      "dmg": 20,
+      "cd": 0.72,
+      "range": 6,
+      "crit": 15,
+      "pierce": 99,
+      "bounces": 0,
+      "mainDps": 30.90277777777778,
+      "possibleExtraDps": 0,
+      "possibleTotalDps": 30.90277777777778,
+      "eye1400IdealSeconds": 45.30337078651685
+    },
+    {
+      "id": "nights_edge",
+      "name": "永夜刃",
+      "tier": 2,
+      "dmg": 43,
+      "cd": 0.61,
+      "range": 7.3999999999999995,
+      "crit": 21,
+      "pierce": 4,
+      "bounces": 1,
+      "mainDps": 81.50819672131148,
+      "possibleExtraDps": 73.91803278688525,
+      "possibleTotalDps": 155.42622950819674,
+      "eye1400IdealSeconds": 9.007488661533593
+    },
+    {
+      "id": "terra_blade",
+      "name": "泰拉刃",
+      "tier": 3,
+      "dmg": 106,
+      "cd": 0.41,
+      "range": 9.399999999999999,
+      "crit": 29,
+      "pierce": 7,
+      "bounces": 2,
+      "mainDps": 315.1219512195122,
+      "possibleExtraDps": 281.9268292682927,
+      "possibleTotalDps": 597.0487804878048,
+      "eye1400IdealSeconds": 2.344867028881899
+    },
+    {
+      "id": "zenith",
+      "name": "天顶剑",
+      "tier": 4,
+      "dmg": 234,
+      "cd": 0.31,
+      "range": 14.3,
+      "crit": 38,
+      "pierce": 102,
+      "bounces": 3,
+      "mainDps": 970.5806451612904,
+      "possibleExtraDps": 0,
+      "possibleTotalDps": 970.5806451612904,
+      "eye1400IdealSeconds": 1.4424355224674288
+    },
+    {
+      "id": "bow",
+      "name": "恶魔猎弓",
+      "tier": 1,
+      "dmg": 17,
+      "cd": 0.62,
+      "range": 12.8,
+      "crit": 17,
+      "pierce": 2,
+      "bounces": 0,
+      "mainDps": 30.983870967741936,
+      "possibleExtraDps": 0,
+      "possibleTotalDps": 30.983870967741936,
+      "eye1400IdealSeconds": 45.18479958355023
+    },
+    {
+      "id": "minishark",
+      "name": "迷你鲨",
+      "tier": 1,
+      "dmg": 7,
+      "cd": 0.2,
+      "range": 11.8,
+      "crit": 12,
+      "pierce": 1,
+      "bounces": 0,
+      "mainDps": 37.99999999999999,
+      "possibleExtraDps": 0,
+      "possibleTotalDps": 37.99999999999999,
+      "eye1400IdealSeconds": 36.842105263157904
+    },
+    {
+      "id": "megashark",
+      "name": "巨兽鲨",
+      "tier": 2,
+      "dmg": 20,
+      "cd": 0.14,
+      "range": 14.1,
+      "crit": 19,
+      "pierce": 3,
+      "bounces": 1,
+      "mainDps": 163.21428571428572,
+      "possibleExtraDps": 0,
+      "possibleTotalDps": 163.21428571428572,
+      "eye1400IdealSeconds": 8.577680525164114
+    },
+    {
+      "id": "light_disc",
+      "name": "光辉飞盘",
+      "tier": 1,
+      "dmg": 16,
+      "cd": 0.68,
+      "range": 11,
+      "crit": 17,
+      "pierce": 99,
+      "bounces": 0,
+      "mainDps": 26.52941176470588,
+      "possibleExtraDps": 0,
+      "possibleTotalDps": 26.52941176470588,
+      "eye1400IdealSeconds": 52.77161862527716
+    },
+    {
+      "id": "starfury",
+      "name": "星怒",
+      "tier": 1,
+      "dmg": 20,
+      "cd": 0.72,
+      "range": 11.5,
+      "crit": 19,
+      "pierce": 99,
+      "bounces": 0,
+      "mainDps": 31.736111111111114,
+      "possibleExtraDps": 31.736111111111114,
+      "possibleTotalDps": 63.47222222222223,
+      "eye1400IdealSeconds": 22.056892778993433
+    },
+    {
+      "id": "demon_scythe",
+      "name": "恶魔之镰",
+      "tier": 1,
+      "dmg": 18,
+      "cd": 0.68,
+      "range": 12.5,
+      "crit": 17,
+      "pierce": 6,
+      "bounces": 0,
+      "mainDps": 29.970588235294112,
+      "possibleExtraDps": 0,
+      "possibleTotalDps": 29.970588235294112,
+      "eye1400IdealSeconds": 46.71246319921492
+    },
+    {
+      "id": "water_bolt",
+      "name": "水矢魔典",
+      "tier": 1,
+      "dmg": 15,
+      "cd": 0.58,
+      "range": 13,
+      "crit": 15,
+      "pierce": 4,
+      "bounces": 3,
+      "mainDps": 28.70689655172414,
+      "possibleExtraDps": 0,
+      "possibleTotalDps": 28.70689655172414,
+      "eye1400IdealSeconds": 48.768768768768766
+    },
+    {
+      "id": "vampire_knives",
+      "name": "吸血鬼刀",
+      "tier": 2,
+      "dmg": 17,
+      "cd": 0.56,
+      "range": 12.1,
+      "crit": 19,
+      "pierce": 2,
+      "bounces": 1,
+      "mainDps": 34.76785714285714,
+      "possibleExtraDps": 69.53571428571428,
+      "possibleTotalDps": 104.30357142857142,
+      "eye1400IdealSeconds": 13.42235918507105
+    }
+  ],
+  "growth": [
+    {
+      "tier": 1,
+      "dmg": 20,
+      "cd": 0.72,
+      "range": 6,
+      "crit": 15,
+      "pierce": 99,
+      "bounces": 0,
+      "dps": 30.90277777777778
+    },
+    {
+      "tier": 2,
+      "dmg": 31,
+      "cd": 0.65,
+      "range": 6.6,
+      "crit": 17,
+      "pierce": 100,
+      "bounces": 1,
+      "dps": 53.7076923076923
+    },
+    {
+      "tier": 3,
+      "dmg": 47,
+      "cd": 0.58,
+      "range": 7.2,
+      "crit": 19,
+      "pierce": 101,
+      "bounces": 2,
+      "dps": 92.5
+    },
+    {
+      "tier": 4,
+      "dmg": 72,
+      "cd": 0.52,
+      "range": 7.8,
+      "crit": 21,
+      "pierce": 102,
+      "bounces": 3,
+      "dps": 160.26923076923077
+    }
+  ],
+  "combine": [
+    {
+      "id": "grass_blade",
+      "pairDps": 70.97222222222223,
+      "upgradedDps": 53.7076923076923,
+      "changePct": -24.32575643534549
+    },
+    {
+      "id": "minishark",
+      "pairDps": 87.22222222222223,
+      "upgradedDps": 67.33333333333334,
+      "changePct": -22.80254777070063
+    },
+    {
+      "id": "water_bolt",
+      "pairDps": 69.31034482758622,
+      "upgradedDps": 49.78846153846154,
+      "changePct": -28.165901262916204
+    }
+  ],
+  "zenithStats": [
+    {
+      "label": "无额外加成",
+      "dmg": 234,
+      "cd": 0.31,
+      "range": 14.3,
+      "crit": 38,
+      "pierce": 102,
+      "bounces": 3,
+      "dps": 970.5806451612904
+    },
+    {
+      "label": "近战+3",
+      "dmg": 243,
+      "cd": 0.31,
+      "range": 14.3,
+      "crit": 38,
+      "pierce": 102,
+      "bounces": 3,
+      "dps": 1006.9677419354838
+    },
+    {
+      "label": "全伤+6%",
+      "dmg": 248,
+      "cd": 0.31,
+      "range": 14.3,
+      "crit": 38,
+      "pierce": 102,
+      "bounces": 3,
+      "dps": 1028
+    },
+    {
+      "label": "攻速+8%",
+      "dmg": 234,
+      "cd": 0.28,
+      "range": 14.3,
+      "crit": 38,
+      "pierce": 102,
+      "bounces": 3,
+      "dps": 1074.5714285714284
+    },
+    {
+      "label": "暴击+5个百分点",
+      "dmg": 234,
+      "cd": 0.31,
+      "range": 14.3,
+      "crit": 43,
+      "pierce": 102,
+      "bounces": 3,
+      "dps": 998.9677419354839
+    }
+  ],
+  "waves": [
+    {
+      "wave": 1,
+      "baseHp": 18,
+      "meanHp": 18,
+      "spawnPerSecond": 0.5882352941176471,
+      "nominalHpPerSecond": 10.588235294117647,
+      "duration": 22,
+      "damage": 4,
+      "eyeHp": null
+    },
+    {
+      "wave": 5,
+      "baseHp": 36.72,
+      "meanHp": 41.8608,
+      "spawnPerSecond": 2.3076923076923075,
+      "nominalHpPerSecond": 96.60184615384614,
+      "duration": 38,
+      "damage": 7,
+      "eyeHp": null
+    },
+    {
+      "wave": 10,
+      "baseHp": 60.12,
+      "meanHp": 69.639,
+      "spawnPerSecond": 6.25,
+      "nominalHpPerSecond": 435.24375,
+      "duration": 55,
+      "damage": 11,
+      "eyeHp": 1400
+    },
+    {
+      "wave": 20,
+      "baseHp": 106.92,
+      "meanHp": 123.849,
+      "spawnPerSecond": 9.09090909090909,
+      "nominalHpPerSecond": 1125.8999999999999,
+      "duration": 55,
+      "damage": 18,
+      "eyeHp": 2800
+    },
+    {
+      "wave": 30,
+      "baseHp": 153.71999999999997,
+      "meanHp": 178.05899999999997,
+      "spawnPerSecond": 9.09090909090909,
+      "nominalHpPerSecond": 1618.7181818181814,
+      "duration": 55,
+      "damage": 25,
+      "eyeHp": 4200
+    }
+  ],
+  "sixSwords": {
+    "stats": {
+      "maxHp": 25,
+      "hpRegen": 0,
+      "lifeSteal": 0,
+      "dmgPct": 0,
+      "meleeDmg": 14,
+      "rangedDmg": 0,
+      "magicDmg": 0,
+      "attackSpeed": 20,
+      "critChance": 5,
+      "armor": 6,
+      "dodge": 0,
+      "speed": 0,
+      "luck": 0,
+      "harvesting": 0
+    },
+    "weapon": {
+      "dmg": 98,
+      "cd": 0.44,
+      "range": 7.8,
+      "crit": 21,
+      "pierce": 102,
+      "bounces": 3
+    }
+  },
+  "sixHighWeapons": {
+    "stats": {
+      "maxHp": 25,
+      "hpRegen": 0,
+      "lifeSteal": 0,
+      "dmgPct": 25,
+      "meleeDmg": 14,
+      "rangedDmg": 0,
+      "magicDmg": 0,
+      "attackSpeed": 20,
+      "critChance": 5,
+      "armor": 6,
+      "dodge": 24,
+      "speed": 28,
+      "luck": 0,
+      "harvesting": 0
+    },
+    "weapon": {
+      "dmg": 343,
+      "cd": 0.26,
+      "range": 14.3,
+      "crit": 38,
+      "pierce": 102,
+      "bounces": 3
+    },
+    "totalIdealDps": 10169.076923076924,
+    "eye1400IdealSeconds": 0.13767227945959848
+  },
+  "starters": [
+    {
+      "character": "guide",
+      "weapon": "bow",
+      "dmg": 17,
+      "cd": 0.62,
+      "range": 12.8,
+      "crit": 17,
+      "pierce": 2,
+      "bounces": 0
+    },
+    {
+      "character": "warrior",
+      "weapon": "grass_blade",
+      "dmg": 27,
+      "cd": 0.72,
+      "range": 6,
+      "crit": 15,
+      "pierce": 99,
+      "bounces": 0
+    },
+    {
+      "character": "ranger",
+      "weapon": "minishark",
+      "dmg": 10,
+      "cd": 0.17,
+      "range": 11.8,
+      "crit": 19,
+      "pierce": 1,
+      "bounces": 0
+    },
+    {
+      "character": "mage",
+      "weapon": "starfury",
+      "dmg": 30,
+      "cd": 0.72,
+      "range": 11.5,
+      "crit": 19,
+      "pierce": 99,
+      "bounces": 0
+    },
+    {
+      "character": "ninja",
+      "weapon": "light_disc",
+      "dmg": 18,
+      "cd": 0.68,
+      "range": 11,
+      "crit": 24,
+      "pierce": 99,
+      "bounces": 0
+    },
+    {
+      "character": "summoner",
+      "weapon": "water_bolt",
+      "dmg": 18,
+      "cd": 0.5,
+      "range": 13,
+      "crit": 15,
+      "pierce": 4,
+      "bounces": 3
+    }
+  ],
+  "synergyTransitions": [
+    {
+      "id": "grass_blade",
+      "steps": [
+        {
+          "count": 4,
+          "stats": {
+            "maxHp": 25,
+            "hpRegen": 0,
+            "lifeSteal": 6,
+            "dmgPct": 0,
+            "meleeDmg": 7,
+            "rangedDmg": 0,
+            "magicDmg": 0,
+            "attackSpeed": 0,
+            "critChance": 5,
+            "armor": 3,
+            "dodge": 0,
+            "speed": 0,
+            "luck": 0,
+            "harvesting": 0
+          }
+        },
+        {
+          "count": 6,
+          "stats": {
+            "maxHp": 25,
+            "hpRegen": 0,
+            "lifeSteal": 0,
+            "dmgPct": 0,
+            "meleeDmg": 14,
+            "rangedDmg": 0,
+            "magicDmg": 0,
+            "attackSpeed": 20,
+            "critChance": 5,
+            "armor": 6,
+            "dodge": 0,
+            "speed": 0,
+            "luck": 0,
+            "harvesting": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "light_disc",
+      "steps": [
+        {
+          "count": 4,
+          "stats": {
+            "maxHp": 25,
+            "hpRegen": 0,
+            "lifeSteal": 0,
+            "dmgPct": 0,
+            "meleeDmg": 0,
+            "rangedDmg": 0,
+            "magicDmg": 0,
+            "attackSpeed": 0,
+            "critChance": 17,
+            "armor": 0,
+            "dodge": 14,
+            "speed": 16,
+            "luck": 0,
+            "harvesting": 0
+          }
+        },
+        {
+          "count": 6,
+          "stats": {
+            "maxHp": 25,
+            "hpRegen": 0,
+            "lifeSteal": 0,
+            "dmgPct": 25,
+            "meleeDmg": 0,
+            "rangedDmg": 0,
+            "magicDmg": 0,
+            "attackSpeed": 0,
+            "critChance": 5,
+            "armor": 0,
+            "dodge": 24,
+            "speed": 28,
+            "luck": 0,
+            "harvesting": 0
+          }
+        }
+      ]
+    }
+  ],
+  "chestItemTiers": {
+    "1": 5,
+    "2": 6,
+    "3": 5,
+    "4": 1
+  },
+  "guideCrateProbability": 0.5285
+}

@@ -1,0 +1,1898 @@
+{
+  "sourceSha256": "68d3d886981281fddc142d54abf92e5dfda75e6e7a1f53feb16b33de43400771",
+  "method": "难度1，60Hz真实战斗与经济，固定output采购、升级与脚本走位；不加资源、不无敌，核心全部放弃。保留首件Boss专武，按现有分支购买强化。满槽后不主动优化普通武器替换，不能用作平衡通过或真人胜率结论。",
+  "results": [
+    {
+      "seed": 11,
+      "policy": "output",
+      "earned": 921,
+      "spent": 710,
+      "closingGold": 241,
+      "outcome": "defeat",
+      "rows": [
+        {
+          "wave": 1,
+          "state": "SHOP",
+          "openingGold": 30,
+          "combatGold": 36,
+          "shopOpening": 36,
+          "closingGold": 0,
+          "bank": 1,
+          "level": 1,
+          "hp": 21,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            }
+          ],
+          "items": 1,
+          "metrics": {
+            "wave": 1,
+            "seconds": 22.000000000000032,
+            "damage": 264,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 55,
+            "landedAttacks": 49,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 11,
+            "deathCause": null,
+            "coinsIssued": 7,
+            "coinIncome": 6,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 1,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 11.999999999999982,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.8909090909090909
+          }
+        },
+        {
+          "wave": 2,
+          "state": "SHOP",
+          "openingGold": 0,
+          "combatGold": 17,
+          "shopOpening": 17,
+          "closingGold": 17,
+          "bank": 0,
+          "level": 2,
+          "hp": 26,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            }
+          ],
+          "items": 2,
+          "metrics": {
+            "wave": 2,
+            "seconds": 26.01666666666647,
+            "damage": 832.28,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 120,
+            "landedAttacks": 108,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 26,
+            "deathCause": null,
+            "coinsIssued": 16,
+            "coinIncome": 17,
+            "harvestIncome": 0,
+            "bankSpent": 1,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 31.9902626521463,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9
+          }
+        },
+        {
+          "wave": 3,
+          "state": "SHOP",
+          "openingGold": 17,
+          "combatGold": 44,
+          "shopOpening": 44,
+          "closingGold": 22,
+          "bank": 0,
+          "level": 3,
+          "hp": 27,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            }
+          ],
+          "items": 2,
+          "metrics": {
+            "wave": 3,
+            "seconds": 30.016666666666243,
+            "damage": 1559.64,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 192,
+            "landedAttacks": 179,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 30,
+            "deathCause": null,
+            "coinsIssued": 27,
+            "coinIncome": 27,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 51.95913381454821,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9322916666666666
+          }
+        },
+        {
+          "wave": 4,
+          "state": "SHOP",
+          "openingGold": 22,
+          "combatGold": 76,
+          "shopOpening": 76,
+          "closingGold": 12,
+          "bank": 0,
+          "level": 4,
+          "hp": 21,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 1
+            }
+          ],
+          "items": 3,
+          "metrics": {
+            "wave": 4,
+            "seconds": 34.01666666666602,
+            "damage": 3981.4399999999987,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 311,
+            "landedAttacks": 285,
+            "lifeStealHealing": 0,
+            "damageTaken": 12,
+            "kills": 65,
+            "deathCause": null,
+            "coinsIssued": 54,
+            "coinIncome": 54,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 117.04380205781699,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9163987138263665
+          }
+        },
+        {
+          "wave": 5,
+          "state": "SHOP",
+          "openingGold": 12,
+          "combatGold": 100,
+          "shopOpening": 108,
+          "closingGold": 37,
+          "bank": 0,
+          "level": 5,
+          "hp": 28,
+          "weapons": [
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 2
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 1
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 5,
+          "metrics": {
+            "wave": 5,
+            "seconds": 38.01666666666579,
+            "damage": 7283.040000000006,
+            "bossDamage": 1500,
+            "bossSeconds": 26.549999999999773,
+            "bossKillSeconds": 26.549999999999773,
+            "attacks": 427,
+            "landedAttacks": 385,
+            "lifeStealHealing": 3,
+            "damageTaken": 7,
+            "kills": 81,
+            "deathCause": null,
+            "coinsIssued": 88,
+            "coinIncome": 88,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 191.57492327926806,
+            "bossEffectiveDps": 56.49717514124342,
+            "attackHitRate": 0.9016393442622951
+          }
+        },
+        {
+          "wave": 6,
+          "state": "SHOP",
+          "openingGold": 37,
+          "combatGold": 119,
+          "shopOpening": 119,
+          "closingGold": 32,
+          "bank": 0,
+          "level": 6,
+          "hp": 34,
+          "weapons": [
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 2
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 2
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 7,
+          "metrics": {
+            "wave": 6,
+            "seconds": 42.016666666665564,
+            "damage": 11017.100000000008,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 320,
+            "landedAttacks": 297,
+            "lifeStealHealing": 4,
+            "damageTaken": 48,
+            "kills": 116,
+            "deathCause": null,
+            "coinsIssued": 82,
+            "coinIncome": 82,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 262.20785402618714,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.928125
+          }
+        },
+        {
+          "wave": 7,
+          "state": "SHOP",
+          "openingGold": 32,
+          "combatGold": 128,
+          "shopOpening": 128,
+          "closingGold": 29,
+          "bank": 0,
+          "level": 7,
+          "hp": 33,
+          "weapons": [
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 2
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 3
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 8,
+          "metrics": {
+            "wave": 7,
+            "seconds": 46.01666666666534,
+            "damage": 14137.27999999998,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 380,
+            "landedAttacks": 348,
+            "lifeStealHealing": 13.1,
+            "damageTaken": 54,
+            "kills": 142,
+            "deathCause": null,
+            "coinsIssued": 96,
+            "coinIncome": 96,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 307.22086200652785,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9157894736842105
+          }
+        },
+        {
+          "wave": 8,
+          "state": "SHOP",
+          "openingGold": 29,
+          "combatGold": 139,
+          "shopOpening": 139,
+          "closingGold": 22,
+          "bank": 0,
+          "level": 7,
+          "hp": 42.15,
+          "weapons": [
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 2
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 3
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 10,
+          "metrics": {
+            "wave": 8,
+            "seconds": 50.01666666666511,
+            "damage": 23045.4,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 416,
+            "landedAttacks": 404,
+            "lifeStealHealing": 31.899999999999995,
+            "damageTaken": 80,
+            "kills": 215,
+            "deathCause": null,
+            "coinsIssued": 110,
+            "coinIncome": 110,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 460.7544151949494,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9711538461538461
+          }
+        },
+        {
+          "wave": 9,
+          "state": "SHOP",
+          "openingGold": 22,
+          "combatGold": 145,
+          "shopOpening": 145,
+          "closingGold": 57,
+          "bank": 1,
+          "level": 8,
+          "hp": 5.499999999999998,
+          "weapons": [
+            {
+              "id": "copper_sword",
+              "tier": 2
+            },
+            {
+              "id": "water_bolt",
+              "tier": 2
+            },
+            {
+              "id": "bow",
+              "tier": 2
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 3
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 12,
+          "metrics": {
+            "wave": 9,
+            "seconds": 54.01666666666488,
+            "damage": 31387.934400000082,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 458,
+            "landedAttacks": 446,
+            "lifeStealHealing": 39.50000000000001,
+            "damageTaken": 156,
+            "kills": 263,
+            "deathCause": null,
+            "coinsIssued": 124,
+            "coinIncome": 123,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 1,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 581.0786991669445,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9737991266375546
+          }
+        },
+        {
+          "wave": 10,
+          "state": "SHOP",
+          "openingGold": 57,
+          "combatGold": 196,
+          "shopOpening": 204,
+          "closingGold": 78,
+          "bank": 20,
+          "level": 8,
+          "hp": 52,
+          "weapons": [
+            {
+              "id": "water_bolt",
+              "tier": 2
+            },
+            {
+              "id": "bow",
+              "tier": 2
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 3
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            },
+            {
+              "id": "boss_prism",
+              "tier": 2
+            }
+          ],
+          "items": 14,
+          "metrics": {
+            "wave": 10,
+            "seconds": 92.58333333332936,
+            "damage": 45300.527199999895,
+            "bossDamage": 6000,
+            "bossSeconds": 92.5666666666627,
+            "bossKillSeconds": 92.5666666666627,
+            "attacks": 624,
+            "landedAttacks": 600,
+            "lifeStealHealing": 46.80000000000001,
+            "damageTaken": 160,
+            "kills": 311,
+            "deathCause": null,
+            "coinsIssued": 158,
+            "coinIncome": 139,
+            "harvestIncome": 0,
+            "bankSpent": 1,
+            "bankAdded": 20,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 489.29462322234207,
+            "bossEffectiveDps": 64.81814908174567,
+            "attackHitRate": 0.9615384615384616
+          }
+        },
+        {
+          "wave": 11,
+          "state": "GAMEOVER",
+          "openingGold": 78,
+          "combatGold": 241,
+          "shopOpening": 241,
+          "closingGold": 241,
+          "bank": 0,
+          "level": 9,
+          "hp": 0,
+          "weapons": [
+            {
+              "id": "water_bolt",
+              "tier": 2
+            },
+            {
+              "id": "bow",
+              "tier": 2
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 3
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            },
+            {
+              "id": "boss_prism",
+              "tier": 2
+            }
+          ],
+          "items": 14,
+          "metrics": {
+            "wave": 11,
+            "seconds": 30.29999999999956,
+            "damage": 23123.863999999983,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 255,
+            "landedAttacks": 246,
+            "lifeStealHealing": 24.25,
+            "damageTaken": 119.55000000000001,
+            "kills": 158,
+            "deathCause": "重甲守卫",
+            "coinsIssued": 152,
+            "coinIncome": 163,
+            "harvestIncome": 0,
+            "bankSpent": 20,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "defeat",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 763.1638283828488,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9647058823529412
+          }
+        }
+      ],
+      "actions": [
+        {
+          "wave": 1,
+          "kind": "weapon",
+          "id": "copper_sword",
+          "tier": 1,
+          "cost": 16
+        },
+        {
+          "wave": 1,
+          "kind": "weapon",
+          "id": "water_bolt",
+          "tier": 1,
+          "cost": 20
+        },
+        {
+          "wave": 3,
+          "kind": "weapon",
+          "id": "bow",
+          "tier": 1,
+          "cost": 22
+        },
+        {
+          "wave": 4,
+          "kind": "weapon",
+          "id": "light_disc",
+          "tier": 1,
+          "cost": 28
+        },
+        {
+          "wave": 4,
+          "kind": "weapon",
+          "id": "pulse_chain",
+          "tier": 1,
+          "cost": 36
+        },
+        {
+          "wave": 5,
+          "kind": "weapon",
+          "id": "bow",
+          "tier": 1,
+          "cost": 25
+        },
+        {
+          "wave": 5,
+          "kind": "item",
+          "id": "crit_lens",
+          "tier": 2,
+          "cost": 46
+        },
+        {
+          "wave": 6,
+          "kind": "weapon",
+          "id": "pulse_chain",
+          "tier": 1,
+          "cost": 41
+        },
+        {
+          "wave": 6,
+          "kind": "item",
+          "id": "obsidian",
+          "tier": 2,
+          "cost": 46
+        },
+        {
+          "wave": 7,
+          "kind": "weapon",
+          "id": "pulse_chain",
+          "tier": 2,
+          "cost": 64
+        },
+        {
+          "wave": 7,
+          "kind": "item",
+          "id": "range_ring",
+          "tier": 1,
+          "cost": 35
+        },
+        {
+          "wave": 8,
+          "kind": "item",
+          "id": "obsidian",
+          "tier": 2,
+          "cost": 51
+        },
+        {
+          "wave": 8,
+          "kind": "boss_upgrade",
+          "id": "boss_hammer",
+          "cost": 66
+        },
+        {
+          "wave": 9,
+          "kind": "weapon",
+          "id": "copper_sword",
+          "tier": 1,
+          "cost": 26
+        },
+        {
+          "wave": 9,
+          "kind": "weapon",
+          "id": "water_bolt",
+          "tier": 1,
+          "cost": 32
+        },
+        {
+          "wave": 9,
+          "kind": "item",
+          "id": "hermes",
+          "tier": 1,
+          "cost": 30
+        },
+        {
+          "wave": 10,
+          "kind": "item",
+          "id": "mana_flower",
+          "tier": 2,
+          "cost": 54
+        },
+        {
+          "wave": 10,
+          "kind": "boss_upgrade",
+          "id": "boss_prism",
+          "cost": 72
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "policy": "output",
+      "earned": 288,
+      "spent": 236,
+      "closingGold": 82,
+      "outcome": "defeat",
+      "rows": [
+        {
+          "wave": 1,
+          "state": "SHOP",
+          "openingGold": 30,
+          "combatGold": 35,
+          "shopOpening": 35,
+          "closingGold": 15,
+          "bank": 1,
+          "level": 1,
+          "hp": 21,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            }
+          ],
+          "items": 0,
+          "metrics": {
+            "wave": 1,
+            "seconds": 22.000000000000032,
+            "damage": 249,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 54,
+            "landedAttacks": 47,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 10,
+            "deathCause": null,
+            "coinsIssued": 6,
+            "coinIncome": 5,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 1,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 11.318181818181802,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.8703703703703703
+          }
+        },
+        {
+          "wave": 2,
+          "state": "SHOP",
+          "openingGold": 15,
+          "combatGold": 34,
+          "shopOpening": 34,
+          "closingGold": 14,
+          "bank": 0,
+          "level": 2,
+          "hp": 22,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            }
+          ],
+          "items": 0,
+          "metrics": {
+            "wave": 2,
+            "seconds": 26.01666666666647,
+            "damage": 888.0399999999997,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 141,
+            "landedAttacks": 128,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 28,
+            "deathCause": null,
+            "coinsIssued": 18,
+            "coinIncome": 19,
+            "harvestIncome": 0,
+            "bankSpent": 1,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 34.133504163997685,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9078014184397163
+          }
+        },
+        {
+          "wave": 3,
+          "state": "SHOP",
+          "openingGold": 14,
+          "combatGold": 46,
+          "shopOpening": 46,
+          "closingGold": 11,
+          "bank": 0,
+          "level": 3,
+          "hp": 27,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 2
+            }
+          ],
+          "items": 0,
+          "metrics": {
+            "wave": 3,
+            "seconds": 30.016666666666243,
+            "damage": 1791.1200000000003,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 203,
+            "landedAttacks": 180,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 35,
+            "deathCause": null,
+            "coinsIssued": 32,
+            "coinIncome": 32,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 59.67084952804083,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.8866995073891626
+          }
+        },
+        {
+          "wave": 4,
+          "state": "SHOP",
+          "openingGold": 11,
+          "combatGold": 65,
+          "shopOpening": 65,
+          "closingGold": 1,
+          "bank": 0,
+          "level": 4,
+          "hp": 28,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 2
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 1
+            }
+          ],
+          "items": 0,
+          "metrics": {
+            "wave": 4,
+            "seconds": 34.01666666666602,
+            "damage": 4088.1599999999976,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 295,
+            "landedAttacks": 270,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 64,
+            "deathCause": null,
+            "coinsIssued": 54,
+            "coinIncome": 54,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 120.18108770210902,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9152542372881356
+          }
+        },
+        {
+          "wave": 5,
+          "state": "SHOP",
+          "openingGold": 1,
+          "combatGold": 89,
+          "shopOpening": 97,
+          "closingGold": 0,
+          "bank": 0,
+          "level": 5,
+          "hp": 20.45,
+          "weapons": [
+            {
+              "id": "water_bolt",
+              "tier": 2
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 2
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 1
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 2,
+          "metrics": {
+            "wave": 5,
+            "seconds": 38.01666666666579,
+            "damage": 7166.12,
+            "bossDamage": 1500,
+            "bossSeconds": 30.41666666666622,
+            "bossKillSeconds": 30.41666666666622,
+            "attacks": 418,
+            "landedAttacks": 381,
+            "lifeStealHealing": 6.45,
+            "damageTaken": 21,
+            "kills": 73,
+            "deathCause": null,
+            "coinsIssued": 88,
+            "coinIncome": 88,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 188.49943007453305,
+            "bossEffectiveDps": 49.31506849315141,
+            "attackHitRate": 0.9114832535885168
+          }
+        },
+        {
+          "wave": 6,
+          "state": "GAMEOVER",
+          "openingGold": 0,
+          "combatGold": 82,
+          "shopOpening": 82,
+          "closingGold": 82,
+          "bank": 0,
+          "level": 6,
+          "hp": 0,
+          "weapons": [
+            {
+              "id": "water_bolt",
+              "tier": 2
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 2
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 1
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 2,
+          "metrics": {
+            "wave": 6,
+            "seconds": 30.61666666666621,
+            "damage": 7491.099999999999,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 242,
+            "landedAttacks": 222,
+            "lifeStealHealing": 4.5,
+            "damageTaken": 40.5,
+            "kills": 85,
+            "deathCause": "骷髅弓箭手·箭矢",
+            "coinsIssued": 82,
+            "coinIncome": 82,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "defeat",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 244.67392487752133,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9173553719008265
+          }
+        }
+      ],
+      "actions": [
+        {
+          "wave": 1,
+          "kind": "weapon",
+          "id": "water_bolt",
+          "tier": 1,
+          "cost": 20
+        },
+        {
+          "wave": 2,
+          "kind": "weapon",
+          "id": "bow",
+          "tier": 1,
+          "cost": 20
+        },
+        {
+          "wave": 3,
+          "kind": "weapon",
+          "id": "grass_blade",
+          "tier": 2,
+          "cost": 35
+        },
+        {
+          "wave": 4,
+          "kind": "weapon",
+          "id": "light_disc",
+          "tier": 1,
+          "cost": 28
+        },
+        {
+          "wave": 4,
+          "kind": "weapon",
+          "id": "pulse_chain",
+          "tier": 1,
+          "cost": 36
+        },
+        {
+          "wave": 5,
+          "kind": "weapon",
+          "id": "water_bolt",
+          "tier": 1,
+          "cost": 26
+        },
+        {
+          "wave": 5,
+          "kind": "item",
+          "id": "hermes",
+          "tier": 1,
+          "cost": 25
+        },
+        {
+          "wave": 5,
+          "kind": "item",
+          "id": "cthulhu_sh",
+          "tier": 2,
+          "cost": 46
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "policy": "output",
+      "earned": 589,
+      "spent": 416,
+      "closingGold": 203,
+      "outcome": "defeat",
+      "rows": [
+        {
+          "wave": 1,
+          "state": "SHOP",
+          "openingGold": 30,
+          "combatGold": 37,
+          "shopOpening": 37,
+          "closingGold": 1,
+          "bank": 0,
+          "level": 1,
+          "hp": 21,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            }
+          ],
+          "items": 0,
+          "metrics": {
+            "wave": 1,
+            "seconds": 22.000000000000032,
+            "damage": 264,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 49,
+            "landedAttacks": 48,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 11,
+            "deathCause": null,
+            "coinsIssued": 7,
+            "coinIncome": 7,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 11.999999999999982,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9795918367346939
+          }
+        },
+        {
+          "wave": 2,
+          "state": "SHOP",
+          "openingGold": 1,
+          "combatGold": 17,
+          "shopOpening": 17,
+          "closingGold": 17,
+          "bank": 2,
+          "level": 2,
+          "hp": 22,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            }
+          ],
+          "items": 0,
+          "metrics": {
+            "wave": 2,
+            "seconds": 26.01666666666647,
+            "damage": 878.0399999999997,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 125,
+            "landedAttacks": 107,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 28,
+            "deathCause": null,
+            "coinsIssued": 18,
+            "coinIncome": 16,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 2,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 33.749135169763214,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.856
+          }
+        },
+        {
+          "wave": 3,
+          "state": "SHOP",
+          "openingGold": 17,
+          "combatGold": 46,
+          "shopOpening": 46,
+          "closingGold": 1,
+          "bank": 0,
+          "level": 3,
+          "hp": 23,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            }
+          ],
+          "items": 1,
+          "metrics": {
+            "wave": 3,
+            "seconds": 30.016666666666243,
+            "damage": 1611.5999999999997,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 201,
+            "landedAttacks": 187,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 34,
+            "deathCause": null,
+            "coinsIssued": 27,
+            "coinIncome": 29,
+            "harvestIncome": 0,
+            "bankSpent": 2,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 53.69017212659708,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9303482587064676
+          }
+        },
+        {
+          "wave": 4,
+          "state": "SHOP",
+          "openingGold": 1,
+          "combatGold": 55,
+          "shopOpening": 55,
+          "closingGold": 2,
+          "bank": 0,
+          "level": 4,
+          "hp": 18.050000000000004,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            }
+          ],
+          "items": 3,
+          "metrics": {
+            "wave": 4,
+            "seconds": 34.01666666666602,
+            "damage": 3758.9199999999987,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 319,
+            "landedAttacks": 303,
+            "lifeStealHealing": 8.049999999999999,
+            "damageTaken": 29,
+            "kills": 63,
+            "deathCause": null,
+            "coinsIssued": 54,
+            "coinIncome": 54,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 110.50230279275071,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9498432601880877
+          }
+        },
+        {
+          "wave": 5,
+          "state": "SHOP",
+          "openingGold": 2,
+          "combatGold": 85,
+          "shopOpening": 85,
+          "closingGold": 50,
+          "bank": 5,
+          "level": 5,
+          "hp": 32,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 6,
+          "metrics": {
+            "wave": 5,
+            "seconds": 38.01666666666579,
+            "damage": 6991.400000000003,
+            "bossDamage": 1500,
+            "bossSeconds": 36.1166666666659,
+            "bossKillSeconds": 36.1166666666659,
+            "attacks": 412,
+            "landedAttacks": 379,
+            "lifeStealHealing": 7.999999999999998,
+            "damageTaken": 24,
+            "kills": 74,
+            "deathCause": null,
+            "coinsIssued": 88,
+            "coinIncome": 83,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 5,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 2,
+            "effectiveDps": 183.90355107409462,
+            "bossEffectiveDps": 41.532071988925665,
+            "attackHitRate": 0.9199029126213593
+          }
+        },
+        {
+          "wave": 6,
+          "state": "SHOP",
+          "openingGold": 50,
+          "combatGold": 137,
+          "shopOpening": 137,
+          "closingGold": 19,
+          "bank": 0,
+          "level": 6,
+          "hp": 37,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 2
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 7,
+          "metrics": {
+            "wave": 6,
+            "seconds": 42.016666666665564,
+            "damage": 10179.400000000001,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 532,
+            "landedAttacks": 504,
+            "lifeStealHealing": 13.549999999999997,
+            "damageTaken": 60,
+            "kills": 119,
+            "deathCause": null,
+            "coinsIssued": 82,
+            "coinIncome": 87,
+            "harvestIncome": 0,
+            "bankSpent": 5,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 242.27052756843162,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9473684210526315
+          }
+        },
+        {
+          "wave": 7,
+          "state": "SHOP",
+          "openingGold": 19,
+          "combatGold": 115,
+          "shopOpening": 115,
+          "closingGold": 64,
+          "bank": 0,
+          "level": 7,
+          "hp": 35.3,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 2
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 9,
+          "metrics": {
+            "wave": 7,
+            "seconds": 46.01666666666534,
+            "damage": 14756.239999999976,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 599,
+            "landedAttacks": 571,
+            "lifeStealHealing": 19.3,
+            "damageTaken": 93,
+            "kills": 146,
+            "deathCause": null,
+            "coinsIssued": 96,
+            "coinIncome": 96,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 320.67164070989645,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9532554257095158
+          }
+        },
+        {
+          "wave": 8,
+          "state": "SHOP",
+          "openingGold": 64,
+          "combatGold": 174,
+          "shopOpening": 174,
+          "closingGold": 96,
+          "bank": 0,
+          "level": 7,
+          "hp": 29.5,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 2
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 11,
+          "metrics": {
+            "wave": 8,
+            "seconds": 50.01666666666511,
+            "damage": 23256.019999999986,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 677,
+            "landedAttacks": 666,
+            "lifeStealHealing": 39,
+            "damageTaken": 165,
+            "kills": 218,
+            "deathCause": null,
+            "coinsIssued": 110,
+            "coinIncome": 110,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 464.96541152950437,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.983751846381093
+          }
+        },
+        {
+          "wave": 9,
+          "state": "GAMEOVER",
+          "openingGold": 96,
+          "combatGold": 203,
+          "shopOpening": 203,
+          "closingGold": 203,
+          "bank": 0,
+          "level": 8,
+          "hp": 0,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "copper_sword",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "water_bolt",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 2
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 11,
+          "metrics": {
+            "wave": 9,
+            "seconds": 28.433333333333,
+            "damage": 14302.86720000001,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 411,
+            "landedAttacks": 397,
+            "lifeStealHealing": 15.05,
+            "damageTaken": 102.05,
+            "kills": 121,
+            "deathCause": "骷髅弓箭手·箭矢",
+            "coinsIssued": 114,
+            "coinIncome": 107,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "defeat",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 503.0316717467823,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9659367396593674
+          }
+        }
+      ],
+      "actions": [
+        {
+          "wave": 1,
+          "kind": "weapon",
+          "id": "copper_sword",
+          "tier": 1,
+          "cost": 16
+        },
+        {
+          "wave": 1,
+          "kind": "weapon",
+          "id": "water_bolt",
+          "tier": 1,
+          "cost": 20
+        },
+        {
+          "wave": 3,
+          "kind": "weapon",
+          "id": "water_bolt",
+          "tier": 1,
+          "cost": 23
+        },
+        {
+          "wave": 3,
+          "kind": "item",
+          "id": "shackle",
+          "tier": 1,
+          "cost": 22
+        },
+        {
+          "wave": 4,
+          "kind": "weapon",
+          "id": "light_disc",
+          "tier": 1,
+          "cost": 28
+        },
+        {
+          "wave": 4,
+          "kind": "item",
+          "id": "regen_band",
+          "tier": 1,
+          "cost": 25
+        },
+        {
+          "wave": 5,
+          "kind": "item",
+          "id": "horseshoe",
+          "tier": 1,
+          "cost": 35
+        },
+        {
+          "wave": 6,
+          "kind": "weapon",
+          "id": "light_disc",
+          "tier": 1,
+          "cost": 31
+        },
+        {
+          "wave": 6,
+          "kind": "item",
+          "id": "regen_band",
+          "tier": 1,
+          "cost": 28
+        },
+        {
+          "wave": 6,
+          "kind": "boss_upgrade",
+          "id": "boss_hammer",
+          "cost": 59
+        },
+        {
+          "wave": 7,
+          "kind": "item",
+          "id": "crit_lens",
+          "tier": 2,
+          "cost": 51
+        },
+        {
+          "wave": 8,
+          "kind": "item",
+          "id": "hermes",
+          "tier": 1,
+          "cost": 29
+        },
+        {
+          "wave": 8,
+          "kind": "item",
+          "id": "mana_flower",
+          "tier": 2,
+          "cost": 49
+        }
+      ]
+    }
+  ]
+}

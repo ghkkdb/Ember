@@ -1,0 +1,43 @@
+{
+  "version": "1.11",
+  "date": "2026-11-15",
+  "sourceSha256": "003c10b65f5eeda043a4682be0867a81448910dff49eeec4bdf7458fcfa7fed1",
+  "counts": {
+    "weapons": 22,
+    "ordinaryWeapons": 19,
+    "bossWeapons": 3,
+    "items": 26,
+    "cores": 8,
+    "bosses": 3,
+    "enemies": 8
+  },
+  "tests": {
+    "total": 153,
+    "passed": 153,
+    "failed": 0,
+    "log": "analysis/test-v111.log",
+    "runner": "Node内置测试同进程执行"
+  },
+  "browser": {
+    "verified": [
+      "四类图鉴及22/26/3/8条目数量",
+      "道具名称搜索与配件适用说明",
+      "第10波难度3Boss生命9300及伤害独立",
+      "八类小怪的数值和真实行为说明",
+      "熵蚀喷口的持续附着",
+      "换构筑清除旧附着",
+      "滞爆伏雷匣实际爆炸22伤害"
+    ],
+    "manualSceneInvincible": true,
+    "knownIssue": "初始化仍有既存MutationObserver.observe参数错误，日志无来源文件"
+  },
+  "catalogues": [
+    "analysis/weapon-catalogue-v1.11.json",
+    "analysis/content-catalogue-v1.11.json"
+  ],
+  "limits": [
+    "未完成完整同预算真人通关与新核心收益评估",
+    "未完成30/50波长期性能和完整经济验收",
+    "剩余普通武器、道具、四款核心、后三位Boss和专武仍在后续阶段"
+  ]
+}

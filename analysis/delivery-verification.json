@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-15",
+  "version": "1.11",
+  "sourceSha256": "003c10b65f5eeda043a4682be0867a81448910dff49eeec4bdf7458fcfa7fed1",
+  "productUnchanged": true,
+  "tests": {
+    "total": 153,
+    "passed": 153,
+    "failed": 0,
+    "command": "node tests/run.cjs",
+    "log": "analysis/test-v111.log"
+  },
+  "cleanup": {
+    "deleted": 20,
+    "moved": 38,
+    "deletedBytes": 245859
+  },
+  "browserRetested": false,
+  "limits": [
+    "本次只复跑自动回归与文档检查，未追加浏览器验收",
+    "完整20波及30/50波经济和性能仍未验收"
+  ],
+  "counts": {
+    "weapons": 22,
+    "items": 26,
+    "cores": 8,
+    "stats": 16,
+    "classes": 6
+  },
+  "markdown": {
+    "files": 22,
+    "localLinksChecked": 66,
+    "brokenLinks": 0
+  }
+}
