@@ -1,0 +1,1257 @@
+{
+  "totalWeapons": 42,
+  "tier1Count": 31,
+  "tier1MeanDps": 15.96,
+  "tier1MedianDps": 15.64,
+  "tier1MinDps": 1.25,
+  "tier1MaxDps": 33.75,
+  "tier1StdDev": 6.5,
+  "weapons": [
+    {
+      "id": "etch_nozzle",
+      "name": "蚀刻喷口",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "corrosion",
+      "aoeType": "Cone DoT",
+      "maxTargets": 3,
+      "baseHit": 16,
+      "cd": 1.3,
+      "reach": 4.9,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 17.2,
+      "baseDps": 13.23,
+      "aoeDps": 26.46,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.7,
+      "dpsGainPer10Stat": 5.77,
+      "dpsGainPer20Aspd": 2.65,
+      "t4Dps": 44.69,
+      "t4Ratio": 3.38,
+      "cores": [
+        "entropy"
+      ]
+    },
+    {
+      "id": "mine_case",
+      "name": "伏雷匣",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "thrown"
+      ],
+      "behavior": "trap",
+      "aoeType": "Piercing Line",
+      "maxTargets": 5,
+      "baseHit": 24,
+      "cd": 1.8,
+      "reach": 5.6,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 25.8,
+      "baseDps": 14.33,
+      "aoeDps": 35.83,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.9,
+      "dpsGainPer10Stat": 5.39,
+      "dpsGainPer20Aspd": 2.87,
+      "t4Dps": 49,
+      "t4Ratio": 3.42,
+      "cores": [
+        "star"
+      ]
+    },
+    {
+      "id": "pulse_chain",
+      "name": "导电棱镜",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "chain",
+      "aoeType": "Chain Arc",
+      "maxTargets": 3,
+      "baseHit": 10,
+      "cd": 0.95,
+      "reach": 6.3,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 10.8,
+      "baseDps": 11.37,
+      "aoeDps": 21.6,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.6,
+      "dpsGainPer10Stat": 6.74,
+      "dpsGainPer20Aspd": 2.27,
+      "t4Dps": 38.53,
+      "t4Ratio": 3.39,
+      "cores": [
+        "chain"
+      ]
+    },
+    {
+      "id": "frost_lamp",
+      "name": "凝霜雾灯",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "field",
+      "aoeType": "Area Pulse",
+      "maxTargets": 5,
+      "baseHit": 12,
+      "cd": 1.4,
+      "reach": 5.95,
+      "critRate": 0,
+      "critMult": 1.75,
+      "expHit": 12,
+      "baseDps": 8.57,
+      "aoeDps": 34.29,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.5,
+      "dpsGainPer10Stat": 3.57,
+      "dpsGainPer20Aspd": 1.71,
+      "t4Dps": 29.29,
+      "t4Ratio": 3.42,
+      "cores": [
+        "star",
+        "frost"
+      ]
+    },
+    {
+      "id": "sentry",
+      "name": "磁轨哨机",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "thrown"
+      ],
+      "behavior": "turret",
+      "aoeType": "Sentry Construct",
+      "maxTargets": 2,
+      "baseHit": 7,
+      "cd": 6,
+      "reach": 7,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 7.5,
+      "baseDps": 1.25,
+      "aoeDps": 1.88,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.3,
+      "dpsGainPer10Stat": 0.55,
+      "dpsGainPer20Aspd": 0.25,
+      "t4Dps": 4.3,
+      "t4Ratio": 3.44,
+      "cores": [
+        "volley",
+        "hive"
+      ]
+    },
+    {
+      "id": "rail_charge",
+      "name": "蓄压轨枪",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "gun"
+      ],
+      "behavior": "charge",
+      "aoeType": "Piercing Line",
+      "maxTargets": 3,
+      "baseHit": 36,
+      "cd": 2,
+      "reach": 10.5,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 38.7,
+      "baseDps": 19.35,
+      "aoeDps": 38.7,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.9,
+      "dpsGainPer10Stat": 4.85,
+      "dpsGainPer20Aspd": 3.87,
+      "t4Dps": 65.6,
+      "t4Ratio": 3.39,
+      "cores": [
+        "charge"
+      ]
+    },
+    {
+      "id": "boss_hammer",
+      "name": "断响铰锤",
+      "minTier": 2,
+      "isBoss": true,
+      "synergies": [
+        "blade"
+      ],
+      "behavior": "charge_melee",
+      "aoeType": "Melee Cleave",
+      "maxTargets": 4,
+      "baseHit": 24,
+      "cd": 1.3,
+      "reach": 3.5,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 25.8,
+      "baseDps": 19.85,
+      "aoeDps": 59.54,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 1,
+      "dpsGainPer10Stat": 9.08,
+      "dpsGainPer20Aspd": 3.97,
+      "t4Dps": null,
+      "t4Ratio": null,
+      "cores": [
+        "heavy",
+        "star",
+        "charge"
+      ]
+    },
+    {
+      "id": "boss_hive",
+      "name": "簇砂蜂巢",
+      "minTier": 2,
+      "isBoss": true,
+      "synergies": [
+        "thrown"
+      ],
+      "behavior": "turret",
+      "aoeType": "Sentry Construct",
+      "maxTargets": 2,
+      "baseHit": 10,
+      "cd": 0.75,
+      "reach": 7,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 10.8,
+      "baseDps": 14.4,
+      "aoeDps": 21.6,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.6,
+      "dpsGainPer10Stat": 11.47,
+      "dpsGainPer20Aspd": 2.88,
+      "t4Dps": null,
+      "t4Ratio": null,
+      "cores": [
+        "hive",
+        "volley"
+      ]
+    },
+    {
+      "id": "boss_prism",
+      "name": "分束棱核",
+      "minTier": 2,
+      "isBoss": true,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "chain",
+      "aoeType": "Chain Arc",
+      "maxTargets": 3,
+      "baseHit": 14,
+      "cd": 0.85,
+      "reach": 7.7,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 15.1,
+      "baseDps": 17.76,
+      "aoeDps": 33.75,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.4,
+      "dpsGainPer10Stat": 3.76,
+      "dpsGainPer20Aspd": 3.55,
+      "t4Dps": null,
+      "t4Ratio": null,
+      "cores": [
+        "chain",
+        "volley"
+      ]
+    },
+    {
+      "id": "copper_sword",
+      "name": "折锋短刃",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "blade"
+      ],
+      "behavior": "thrust",
+      "aoeType": "Single",
+      "maxTargets": 1,
+      "baseHit": 14,
+      "cd": 0.6,
+      "reach": 3.36,
+      "critRate": 11,
+      "critMult": 1.75,
+      "expHit": 15.21,
+      "baseDps": 25.35,
+      "aoeDps": 25.35,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 0.75,
+      "dpsGainPer10Stat": 14.43,
+      "dpsGainPer20Aspd": 5.07,
+      "t4Dps": 86.6,
+      "t4Ratio": 3.42,
+      "cores": [
+        "heavy"
+      ]
+    },
+    {
+      "id": "grass_blade",
+      "name": "回潮弧刃",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "blade"
+      ],
+      "behavior": "sweep",
+      "aoeType": "Melee Cleave",
+      "maxTargets": 4,
+      "baseHit": 12,
+      "cd": 0.78,
+      "reach": 4.2,
+      "critRate": 13,
+      "critMult": 1.75,
+      "expHit": 13.17,
+      "baseDps": 16.88,
+      "aoeDps": 50.65,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 0.8,
+      "dpsGainPer10Stat": 11.26,
+      "dpsGainPer20Aspd": 3.38,
+      "t4Dps": 57.73,
+      "t4Ratio": 3.42,
+      "cores": [
+        "heavy"
+      ]
+    },
+    {
+      "id": "nights_edge",
+      "name": "裂光刃",
+      "minTier": 2,
+      "isBoss": false,
+      "synergies": [
+        "blade",
+        "arcane"
+      ],
+      "behavior": "sweep_beam",
+      "aoeType": "Melee Cleave",
+      "maxTargets": 4,
+      "baseHit": 28,
+      "cd": 0.68,
+      "reach": 4.76,
+      "critRate": 17,
+      "critMult": 1.75,
+      "expHit": 31.57,
+      "baseDps": 46.43,
+      "aoeDps": 139.28,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 1.3,
+      "dpsGainPer10Stat": 29.97,
+      "dpsGainPer20Aspd": 9.29,
+      "t4Dps": 104.4,
+      "t4Ratio": 2.25,
+      "cores": [
+        "heavy"
+      ]
+    },
+    {
+      "id": "terra_blade",
+      "name": "锋轨重刃",
+      "minTier": 3,
+      "isBoss": false,
+      "synergies": [
+        "blade"
+      ],
+      "behavior": "sweep_beam",
+      "aoeType": "Melee Cleave",
+      "maxTargets": 4,
+      "baseHit": 45,
+      "cd": 0.5,
+      "reach": 5.74,
+      "critRate": 23,
+      "critMult": 1.75,
+      "expHit": 52.82,
+      "baseDps": 105.64,
+      "aoeDps": 316.92,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 1.6,
+      "dpsGainPer10Stat": 68.12,
+      "dpsGainPer20Aspd": 21.13,
+      "t4Dps": 159.46,
+      "t4Ratio": 1.51,
+      "cores": [
+        "heavy"
+      ]
+    },
+    {
+      "id": "zenith",
+      "name": "回旋切割器",
+      "minTier": 4,
+      "isBoss": false,
+      "synergies": [
+        "blade",
+        "thrown"
+      ],
+      "behavior": "zenith",
+      "aoeType": "Return / Orbit",
+      "maxTargets": 3,
+      "baseHit": 65,
+      "cd": 0.42,
+      "reach": 8.75,
+      "critRate": 30,
+      "critMult": 1.75,
+      "expHit": 79.7,
+      "baseDps": 189.76,
+      "aoeDps": 379.52,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 1.8,
+      "dpsGainPer10Stat": 125.24,
+      "dpsGainPer20Aspd": 37.95,
+      "t4Dps": 189.76,
+      "t4Ratio": 1,
+      "cores": [
+        "chain",
+        "return"
+      ]
+    },
+    {
+      "id": "bow",
+      "name": "棘轮弩",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "gun"
+      ],
+      "behavior": "proj",
+      "aoeType": "Piercing Line",
+      "maxTargets": 3,
+      "baseHit": 18,
+      "cd": 0.9,
+      "reach": 8.96,
+      "critRate": 15,
+      "critMult": 1.75,
+      "expHit": 20.1,
+      "baseDps": 22.33,
+      "aoeDps": 44.67,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.8,
+      "dpsGainPer10Stat": 9.89,
+      "dpsGainPer20Aspd": 4.47,
+      "t4Dps": 75.44,
+      "t4Ratio": 3.38,
+      "cores": [
+        "volley",
+        "echo"
+      ]
+    },
+    {
+      "id": "minishark",
+      "name": "铆钉速射器",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "gun"
+      ],
+      "behavior": "rapid",
+      "aoeType": "Single",
+      "maxTargets": 1,
+      "baseHit": 4,
+      "cd": 0.24,
+      "reach": 8.26,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 4.3,
+      "baseDps": 17.92,
+      "aoeDps": 17.92,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.25,
+      "dpsGainPer10Stat": 13.33,
+      "dpsGainPer20Aspd": 3.58,
+      "t4Dps": 62.92,
+      "t4Ratio": 3.51,
+      "cores": [
+        "volley"
+      ]
+    },
+    {
+      "id": "megashark",
+      "name": "重栓发射器",
+      "minTier": 2,
+      "isBoss": false,
+      "synergies": [
+        "gun"
+      ],
+      "behavior": "rapid",
+      "aoeType": "Piercing Line",
+      "maxTargets": 2,
+      "baseHit": 7,
+      "cd": 0.2,
+      "reach": 9.45,
+      "critRate": 15,
+      "critMult": 1.75,
+      "expHit": 7.75,
+      "baseDps": 38.75,
+      "aoeDps": 58.13,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.35,
+      "dpsGainPer10Stat": 28,
+      "dpsGainPer20Aspd": 7.75,
+      "t4Dps": 89,
+      "t4Ratio": 2.3,
+      "cores": [
+        "volley"
+      ]
+    },
+    {
+      "id": "light_disc",
+      "name": "双相飞轮",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "thrown"
+      ],
+      "behavior": "boomerang",
+      "aoeType": "Return / Orbit",
+      "maxTargets": 3,
+      "baseHit": 10,
+      "cd": 0.8,
+      "reach": 7.7,
+      "critRate": 15,
+      "critMult": 1.75,
+      "expHit": 11.2,
+      "baseDps": 14,
+      "aoeDps": 28,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.55,
+      "dpsGainPer10Stat": 8.25,
+      "dpsGainPer20Aspd": 2.8,
+      "t4Dps": 47.37,
+      "t4Ratio": 3.38,
+      "cores": [
+        "chain",
+        "return"
+      ]
+    },
+    {
+      "id": "starfury",
+      "name": "坠辉引针",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "blade",
+        "arcane"
+      ],
+      "behavior": "starfall",
+      "aoeType": "Piercing Line",
+      "maxTargets": 99,
+      "baseHit": 14,
+      "cd": 1,
+      "reach": 8.05,
+      "critRate": 17,
+      "critMult": 1.75,
+      "expHit": 15.87,
+      "baseDps": 15.87,
+      "aoeDps": 39.68,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.75,
+      "dpsGainPer10Stat": 9.02,
+      "dpsGainPer20Aspd": 3.17,
+      "t4Dps": 54.12,
+      "t4Ratio": 3.41,
+      "cores": [
+        "star",
+        "echo"
+      ]
+    },
+    {
+      "id": "demon_scythe",
+      "name": "涡轮切片",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane",
+        "thrown"
+      ],
+      "behavior": "scythe",
+      "aoeType": "Piercing Line",
+      "maxTargets": 6,
+      "baseHit": 12,
+      "cd": 0.8,
+      "reach": 8.75,
+      "critRate": 15,
+      "critMult": 1.75,
+      "expHit": 13.35,
+      "baseDps": 16.69,
+      "aoeDps": 41.72,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.8,
+      "dpsGainPer10Stat": 11.13,
+      "dpsGainPer20Aspd": 3.34,
+      "t4Dps": 57.06,
+      "t4Ratio": 3.42,
+      "cores": [
+        "chain",
+        "return"
+      ]
+    },
+    {
+      "id": "water_bolt",
+      "name": "回声波盘",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "bounce",
+      "aoeType": "Piercing Line",
+      "maxTargets": 4,
+      "baseHit": 10,
+      "cd": 0.7,
+      "reach": 9.1,
+      "critRate": 13,
+      "critMult": 1.75,
+      "expHit": 11.04,
+      "baseDps": 15.77,
+      "aoeDps": 39.43,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.7,
+      "dpsGainPer10Stat": 10.93,
+      "dpsGainPer20Aspd": 3.15,
+      "t4Dps": 53.4,
+      "t4Ratio": 3.39,
+      "cores": [
+        "volley",
+        "echo"
+      ]
+    },
+    {
+      "id": "vampire_knives",
+      "name": "三棱针筒",
+      "minTier": 2,
+      "isBoss": false,
+      "synergies": [
+        "thrown",
+        "arcane"
+      ],
+      "behavior": "vampire",
+      "aoeType": "Single",
+      "maxTargets": 1,
+      "baseHit": 11,
+      "cd": 0.62,
+      "reach": 8.05,
+      "critRate": 15,
+      "critMult": 1.75,
+      "expHit": 12.2,
+      "baseDps": 19.68,
+      "aoeDps": 19.68,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 0.6,
+      "dpsGainPer10Stat": 14.35,
+      "dpsGainPer20Aspd": 3.94,
+      "t4Dps": 44.92,
+      "t4Ratio": 2.28,
+      "cores": [
+        "volley"
+      ]
+    },
+    {
+      "id": "boss_tank",
+      "name": "蚀潮喷管",
+      "minTier": 2,
+      "isBoss": true,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "corrosion",
+      "aoeType": "Cone DoT",
+      "maxTargets": 3,
+      "baseHit": 12,
+      "cd": 1,
+      "reach": 4.9,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 12.9,
+      "baseDps": 12.9,
+      "aoeDps": 25.8,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.9,
+      "dpsGainPer10Stat": 7.5,
+      "dpsGainPer20Aspd": 2.58,
+      "t4Dps": null,
+      "t4Ratio": null,
+      "cores": [
+        "entropy",
+        "frost",
+        "star"
+      ]
+    },
+    {
+      "id": "boss_clock",
+      "name": "时序闸枪",
+      "minTier": 2,
+      "isBoss": true,
+      "synergies": [
+        "gun"
+      ],
+      "behavior": "charge",
+      "aoeType": "Piercing Line",
+      "maxTargets": 3,
+      "baseHit": 24,
+      "cd": 1.2,
+      "reach": 7,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 25.8,
+      "baseDps": 21.5,
+      "aoeDps": 43,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.8,
+      "dpsGainPer10Stat": 7.17,
+      "dpsGainPer20Aspd": 4.3,
+      "t4Dps": null,
+      "t4Ratio": null,
+      "cores": [
+        "charge",
+        "dash",
+        "echo"
+      ]
+    },
+    {
+      "id": "boss_train",
+      "name": "偏轨轮毂",
+      "minTier": 2,
+      "isBoss": true,
+      "synergies": [
+        "blade"
+      ],
+      "behavior": "orbit",
+      "aoeType": "Return / Orbit",
+      "maxTargets": 3,
+      "baseHit": 10,
+      "cd": 1.5,
+      "reach": 3.5,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 10.8,
+      "baseDps": 7.2,
+      "aoeDps": 14.4,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 0.7,
+      "dpsGainPer10Stat": 3.53,
+      "dpsGainPer20Aspd": 1.44,
+      "t4Dps": null,
+      "t4Ratio": null,
+      "cores": [
+        "return",
+        "orbit",
+        "dash"
+      ]
+    },
+    {
+      "id": "bind_spear",
+      "name": "缚线刺枪",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "blade"
+      ],
+      "behavior": "thrust",
+      "aoeType": "Piercing Line",
+      "maxTargets": 2,
+      "baseHit": 15,
+      "cd": 0.9,
+      "reach": 3.85,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 16.1,
+      "baseDps": 17.89,
+      "aoeDps": 26.83,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 0.8,
+      "dpsGainPer10Stat": 9.56,
+      "dpsGainPer20Aspd": 3.58,
+      "t4Dps": 60.89,
+      "t4Ratio": 3.4,
+      "cores": [
+        "heavy"
+      ]
+    },
+    {
+      "id": "return_scythe",
+      "name": "折返镰",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "blade"
+      ],
+      "behavior": "scythe",
+      "aoeType": "Piercing Line",
+      "maxTargets": 2,
+      "baseHit": 16,
+      "cd": 1.1,
+      "reach": 4.9,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 17.2,
+      "baseDps": 15.64,
+      "aoeDps": 23.45,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 0.5,
+      "dpsGainPer10Stat": 4.91,
+      "dpsGainPer20Aspd": 3.13,
+      "t4Dps": 52.82,
+      "t4Ratio": 3.38,
+      "cores": [
+        "return"
+      ]
+    },
+    {
+      "id": "ratchet_crossbow",
+      "name": "棘轮连弩",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "gun"
+      ],
+      "behavior": "burst",
+      "aoeType": "Single",
+      "maxTargets": 1,
+      "baseHit": 15,
+      "cd": 1.1,
+      "reach": 6.3,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 16.1,
+      "baseDps": 14.64,
+      "aoeDps": 14.64,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.6,
+      "dpsGainPer10Stat": 5.91,
+      "dpsGainPer20Aspd": 2.93,
+      "t4Dps": 49.82,
+      "t4Ratio": 3.4,
+      "cores": [
+        "echo"
+      ]
+    },
+    {
+      "id": "heavy_bolt_rifle",
+      "name": "重栓发射器",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "gun"
+      ],
+      "behavior": "proj",
+      "aoeType": "Piercing Line",
+      "maxTargets": 2,
+      "baseHit": 10,
+      "cd": 0.32,
+      "reach": 7,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 10.8,
+      "baseDps": 33.75,
+      "aoeDps": 50.63,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.35,
+      "dpsGainPer10Stat": 13.44,
+      "dpsGainPer20Aspd": 6.75,
+      "t4Dps": 114.38,
+      "t4Ratio": 3.39,
+      "cores": [
+        "volley"
+      ]
+    },
+    {
+      "id": "shard_blaster",
+      "name": "碎片喷筒",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "gun"
+      ],
+      "behavior": "scatter",
+      "aoeType": "Spread Blast",
+      "maxTargets": 3,
+      "baseHit": 16,
+      "cd": 1.1,
+      "reach": 5.6,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 17.2,
+      "baseDps": 15.64,
+      "aoeDps": 28.15,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.6,
+      "dpsGainPer10Stat": 5.91,
+      "dpsGainPer20Aspd": 3.13,
+      "t4Dps": 52.82,
+      "t4Ratio": 3.38,
+      "cores": [
+        "echo"
+      ]
+    },
+    {
+      "id": "echo_disc",
+      "name": "回声波盘",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "bounce",
+      "aoeType": "Piercing Line",
+      "maxTargets": 2,
+      "baseHit": 12,
+      "cd": 0.8,
+      "reach": 5.95,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 12.9,
+      "baseDps": 16.13,
+      "aoeDps": 24.19,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.65,
+      "dpsGainPer10Stat": 9.37,
+      "dpsGainPer20Aspd": 3.22,
+      "t4Dps": 55.13,
+      "t4Ratio": 3.42,
+      "cores": [
+        "volley",
+        "echo"
+      ]
+    },
+    {
+      "id": "pulse_ring",
+      "name": "脉冲环仪",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "pulse_ring",
+      "aoeType": "Piercing Line",
+      "maxTargets": 99,
+      "baseHit": 14,
+      "cd": 1.2,
+      "reach": 4.9,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 15.1,
+      "baseDps": 12.58,
+      "aoeDps": 31.46,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.7,
+      "dpsGainPer10Stat": 6.25,
+      "dpsGainPer20Aspd": 2.52,
+      "t4Dps": 43,
+      "t4Ratio": 3.42,
+      "cores": [
+        "star"
+      ]
+    },
+    {
+      "id": "gravity_anchor",
+      "name": "引力锚",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "field",
+      "aoeType": "Area Pulse",
+      "maxTargets": 5,
+      "baseHit": 8,
+      "cd": 1.4,
+      "reach": 5.25,
+      "critRate": 0,
+      "critMult": 1.75,
+      "expHit": 8,
+      "baseDps": 5.71,
+      "aoeDps": 22.86,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.35,
+      "dpsGainPer10Stat": 2.86,
+      "dpsGainPer20Aspd": 1.14,
+      "t4Dps": 19.29,
+      "t4Ratio": 3.38,
+      "cores": [
+        "star",
+        "frost"
+      ]
+    },
+    {
+      "id": "scavenger_bee",
+      "name": "拾荒蜂巢",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "turret",
+      "aoeType": "Sentry Construct",
+      "maxTargets": 2,
+      "baseHit": 5,
+      "cd": 0.6,
+      "reach": 4.2,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 5.4,
+      "baseDps": 9,
+      "aoeDps": 13.5,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.25,
+      "dpsGainPer10Stat": 5.33,
+      "dpsGainPer20Aspd": 1.8,
+      "t4Dps": 30.5,
+      "t4Ratio": 3.39,
+      "cores": [
+        "volley",
+        "hive"
+      ]
+    },
+    {
+      "id": "tracking_gear",
+      "name": "追踪齿轮",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "gun"
+      ],
+      "behavior": "tracking",
+      "aoeType": "Single",
+      "maxTargets": 1,
+      "baseHit": 12,
+      "cd": 1,
+      "reach": 5.6,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 12.9,
+      "baseDps": 12.9,
+      "aoeDps": 12.9,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.6,
+      "dpsGainPer10Stat": 6.5,
+      "dpsGainPer20Aspd": 2.58,
+      "t4Dps": 44.1,
+      "t4Ratio": 3.42,
+      "cores": [
+        "hive"
+      ]
+    },
+    {
+      "id": "orbit_loom",
+      "name": "悬星织机",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "orbit",
+      "aoeType": "Return / Orbit",
+      "maxTargets": 3,
+      "baseHit": 18,
+      "cd": 0.8,
+      "reach": 3.15,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 19.4,
+      "baseDps": 24.25,
+      "aoeDps": 48.5,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.25,
+      "dpsGainPer10Stat": 4,
+      "dpsGainPer20Aspd": 4.85,
+      "t4Dps": 82,
+      "t4Ratio": 3.38,
+      "cores": [
+        "orbit"
+      ]
+    },
+    {
+      "id": "split_wheel",
+      "name": "双相飞轮",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "gun"
+      ],
+      "behavior": "boomerang",
+      "aoeType": "Return / Orbit",
+      "maxTargets": 3,
+      "baseHit": 16,
+      "cd": 1.1,
+      "reach": 5.6,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 17.2,
+      "baseDps": 15.64,
+      "aoeDps": 31.27,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 0.3,
+      "dpsGainPer10Stat": 2.91,
+      "dpsGainPer20Aspd": 3.13,
+      "t4Dps": 52.82,
+      "t4Ratio": 3.38,
+      "cores": [
+        "return"
+      ]
+    },
+    {
+      "id": "cinder_spear",
+      "name": "烬纹投枪",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "blade"
+      ],
+      "behavior": "corrosion",
+      "aoeType": "Cone DoT",
+      "maxTargets": 3,
+      "baseHit": 16,
+      "cd": 1.2,
+      "reach": 5.25,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 17.2,
+      "baseDps": 14.33,
+      "aoeDps": 28.67,
+      "scaleKey": "meleeDmg",
+      "scaleRatio": 0.3,
+      "dpsGainPer10Stat": 2.67,
+      "dpsGainPer20Aspd": 2.87,
+      "t4Dps": 48.42,
+      "t4Ratio": 3.38,
+      "cores": [
+        "entropy"
+      ]
+    },
+    {
+      "id": "prism_disc",
+      "name": "分光轮盘",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "boomerang",
+      "aoeType": "Return / Orbit",
+      "maxTargets": 3,
+      "baseHit": 16,
+      "cd": 1.3,
+      "reach": 5.6,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 17.2,
+      "baseDps": 13.23,
+      "aoeDps": 26.46,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.3,
+      "dpsGainPer10Stat": 2.46,
+      "dpsGainPer20Aspd": 2.65,
+      "t4Dps": 44.69,
+      "t4Ratio": 3.38,
+      "cores": [
+        "return"
+      ]
+    },
+    {
+      "id": "vortex_nozzle",
+      "name": "旋流喷管",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "gun"
+      ],
+      "behavior": "vortex",
+      "aoeType": "Cone DoT",
+      "maxTargets": 3,
+      "baseHit": 15,
+      "cd": 1,
+      "reach": 4.55,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 16.1,
+      "baseDps": 16.1,
+      "aoeDps": 32.2,
+      "scaleKey": "rangedDmg",
+      "scaleRatio": 0.45,
+      "dpsGainPer10Stat": 5.4,
+      "dpsGainPer20Aspd": 3.22,
+      "t4Dps": 54.8,
+      "t4Ratio": 3.4,
+      "cores": [
+        "dash"
+      ]
+    },
+    {
+      "id": "seal_needle",
+      "name": "封印刻针",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "mark",
+      "aoeType": "Single",
+      "maxTargets": 1,
+      "baseHit": 18,
+      "cd": 0.6,
+      "reach": 5.6,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 19.4,
+      "baseDps": 32.33,
+      "aoeDps": 32.33,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.6,
+      "dpsGainPer10Stat": 10.67,
+      "dpsGainPer20Aspd": 6.47,
+      "t4Dps": 109.33,
+      "t4Ratio": 3.38,
+      "cores": [
+        "chain",
+        "echo"
+      ]
+    },
+    {
+      "id": "trigger_wand",
+      "name": "触发短杖",
+      "minTier": 1,
+      "isBoss": false,
+      "synergies": [
+        "arcane"
+      ],
+      "behavior": "trigger_wand",
+      "aoeType": "Single",
+      "maxTargets": 1,
+      "baseHit": 9,
+      "cd": 0.8,
+      "reach": 5.95,
+      "critRate": 10,
+      "critMult": 1.75,
+      "expHit": 9.7,
+      "baseDps": 12.12,
+      "aoeDps": 12.12,
+      "scaleKey": "magicDmg",
+      "scaleRatio": 0.45,
+      "dpsGainPer10Stat": 6.75,
+      "dpsGainPer20Aspd": 2.42,
+      "t4Dps": 41.62,
+      "t4Ratio": 3.43,
+      "cores": [
+        "charge",
+        "dash"
+      ]
+    }
+  ]
+}

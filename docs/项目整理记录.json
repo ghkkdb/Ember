@@ -1,0 +1,470 @@
+{
+  "date": "2026-11-15",
+  "scope": "D:\\Desktop\\webGame\\泰拉兄弟",
+  "actions": [
+    {
+      "action": "delete",
+      "from": "docs/design-v2-archive.md",
+      "to": null,
+      "bytes": 21611,
+      "sha256": "85eed991dc3e91e432bd8fe529f0bd9d633b63a71936c3acfd2241ba4d18ded0",
+      "reason": "被原创方案取代，包含不兼容代码与失效完成声明"
+    },
+    {
+      "action": "delete",
+      "from": "tests/boss-preview.cjs",
+      "to": null,
+      "bytes": 2225,
+      "sha256": "7cdb3896b732580eaae74febc93eb6df95c859957ab5111ce02514dc1c3638e5",
+      "reason": "被现行测试台取代，仅支持旧Boss的验收服务"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/write-comparison.cjs",
+      "to": null,
+      "bytes": 5935,
+      "sha256": "e36c0b5edc58446c1b3e8ef928e365e89d6190bcf200de74eb42959974fe17a0",
+      "reason": "旧报告生成器或重复报告，固定旧版数据已保留归档"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/write-early-comparison.cjs",
+      "to": null,
+      "bytes": 6847,
+      "sha256": "74ddbccc3b42077a425e5b6b2e35a5d3b3a51ea149f6e8a2537277b1d5003044",
+      "reason": "旧报告生成器或重复报告，固定旧版数据已保留归档"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/combat-comparison.md",
+      "to": null,
+      "bytes": 5040,
+      "sha256": "dc441e65b8c52dc3035c2e06fc8adad82dd77e37893a935eddc17828f32d6137",
+      "reason": "旧报告生成器或重复报告，固定旧版数据已保留归档"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/combat-benchmark.json",
+      "to": null,
+      "bytes": 22318,
+      "sha256": "8ecc4ae1855854f8fa5364317ebd26d6e661927d6541b600e49e6ced9e5e18b8",
+      "reason": "与保留的1.7版本报告SHA-256相同的重复产物"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/early-game-benchmark.json",
+      "to": null,
+      "bytes": 100478,
+      "sha256": "e7249e284580c3e7fd17f2620983ce05123df4568d55376ad10e2f3b5ae888fd",
+      "reason": "与保留的1.7版本报告SHA-256相同的重复产物"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/audit-simulation-v18.log",
+      "to": null,
+      "bytes": 27473,
+      "sha256": "80ddf124cf1ebc1dc250063043c29432e0244f63187ccab87ee7f4b6b87713ed",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/builds-v18.log",
+      "to": null,
+      "bytes": 2217,
+      "sha256": "24a85752bbcbcaa2efa78dafbb1630bbe265931e68702d5008204c098c9418f4",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/builds-v19.log",
+      "to": null,
+      "bytes": 2216,
+      "sha256": "560e1b19d29c92920de8e3f09cfe7f5bce43740f76c7fbd05ae48df6971273f9",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/early-game-v19.log",
+      "to": null,
+      "bytes": 1772,
+      "sha256": "1a5c861929a3a6516bc8e74ec24555b3d1067e66889e7fa65587f2ba93732cb9",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/regression-v18.log",
+      "to": null,
+      "bytes": 9853,
+      "sha256": "149455349049c1da958da947d8431e9573871316148853e01db42ef91c007b5e",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/regression-v19.log",
+      "to": null,
+      "bytes": 9849,
+      "sha256": "afbd61e1d42dc9b09eb0d0b5e0d21a89e20ffbab42abe3073788626d003a7161",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/test-tool-v18.log",
+      "to": null,
+      "bytes": 2830,
+      "sha256": "07bccd850e29dbe44d80682dd2923ae047ec4376fce3ea572004d260c83d9624",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/test-tool-v19.log",
+      "to": null,
+      "bytes": 2830,
+      "sha256": "1163f10ae2ef5170ca7d7c3e096967cbe3c91a6ec361f49496331fb0290fda62",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/v111-first-check.log",
+      "to": null,
+      "bytes": 3811,
+      "sha256": "5677f592a67082d2ddabeb00e9d9b4dd18408b8a8d37b7584631f934902eb250",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/v18-v18.log",
+      "to": null,
+      "bytes": 5435,
+      "sha256": "46e30a1b969aea2711a832d48cdacb27e8eea6b14a2551a8d09ead5c59a23f95",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/v18-v19.log",
+      "to": null,
+      "bytes": 5437,
+      "sha256": "37638f8c9b6890e399f12bc4746390f53ad5839e1af7a47bb9be48d7fd45cc07",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/v19-first-check.log",
+      "to": null,
+      "bytes": 5432,
+      "sha256": "69d09fb863e1701f35354b68e4ac8fba5ef3afecccd5261c02c36d425d520444",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "delete",
+      "from": "analysis/v19-v19.log",
+      "to": null,
+      "bytes": 2250,
+      "sha256": "b67ef0267c0c682abd7757fc1378f14f6934d4829d133b2fdd9d7d4a21d7d778",
+      "reason": "旧版分项或首次检查日志；保留版本验证摘要和当前完整日志"
+    },
+    {
+      "action": "move",
+      "from": "analysis/balance-audit-v1.2.json",
+      "to": "analysis/history/balance-audit-v1.2.json",
+      "bytes": 12653,
+      "sha256": "724dafb470ae60f3edbdb821720dd7d6b54a74e326bc2961e206aa5098aee171",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/balance-audit-v1.3.json",
+      "to": "analysis/history/balance-audit-v1.3.json",
+      "bytes": 13151,
+      "sha256": "9cd217ae7f40f24bc04d7721b217f02d604dd913a0464cdafdaed24865519b2c",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/balance-audit-v1.4.json",
+      "to": "analysis/history/balance-audit-v1.4.json",
+      "bytes": 14971,
+      "sha256": "a2c85698858f6519b238316683aa1aad91702f65eda7ec6b1f5f5b8fc578045d",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/balance-audit-v1.5.json",
+      "to": "analysis/history/balance-audit-v1.5.json",
+      "bytes": 14971,
+      "sha256": "7dd42e222d40a89a2890e2daccf863a69fa39999a8708e030aa74158205d52c9",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/balance-audit-v1.6.json",
+      "to": "analysis/history/balance-audit-v1.6.json",
+      "bytes": 14713,
+      "sha256": "8fabf2a9850ecf888901a4d415ea6d76a2e4cceb12285691ece0861af4f2681a",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/balance-audit-v1.7.json",
+      "to": "analysis/history/balance-audit-v1.7.json",
+      "bytes": 15634,
+      "sha256": "21862abfc611dab549e0ebcec29ec722249dd80fd61a19c94303f989dc0e2394",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/balance-audit.json",
+      "to": "analysis/history/balance-audit.json",
+      "bytes": 27472,
+      "sha256": "88dd0f9899ac61f11be965e1d60bf641c64e7bec88c13eb30708ff4912ba0791",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/combat-benchmark-v1.5.json",
+      "to": "analysis/history/combat-benchmark-v1.5.json",
+      "bytes": 22265,
+      "sha256": "664407004eaf8a74e1dd9c73b6a71ded54b7c80f636f10e65b8a7cd16c9b721e",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/combat-benchmark-v1.6.json",
+      "to": "analysis/history/combat-benchmark-v1.6.json",
+      "bytes": 22356,
+      "sha256": "ce92577d30517633adcb1d3fe6c68ee595fe50ee79234d972c3beaf822bf94b6",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/combat-benchmark-v1.7.json",
+      "to": "analysis/history/combat-benchmark-v1.7.json",
+      "bytes": 22318,
+      "sha256": "8ecc4ae1855854f8fa5364317ebd26d6e661927d6541b600e49e6ced9e5e18b8",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/combat-benchmark-weapon-pass.json",
+      "to": "analysis/history/combat-benchmark-weapon-pass.json",
+      "bytes": 22280,
+      "sha256": "0879461baa8ad9657d002ce8ef43ca9d2745cabf5d68bd706c3c6c0e36e968a4",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/combat-comparison-v1.6.md",
+      "to": "analysis/history/combat-comparison-v1.6.md",
+      "bytes": 4825,
+      "sha256": "2571592727e912b4b6730fa65dae33c9c92f24273e0e8542271bd29b4d25bb9d",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/early-game-comparison.md",
+      "to": "analysis/history/early-game-comparison.md",
+      "bytes": 5348,
+      "sha256": "d43f14ba0569415855086fa05cdb8a474c105a668c9223c535d40380219f84a5",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/early-game-v1.6.json",
+      "to": "analysis/history/early-game-v1.6.json",
+      "bytes": 109637,
+      "sha256": "2ce0792f5f4e00526aa935c5d68f586f1f764ab8f384e5b3f95b109bc53f6be3",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/early-game-v1.7.json",
+      "to": "analysis/history/early-game-v1.7.json",
+      "bytes": 100478,
+      "sha256": "e7249e284580c3e7fd17f2620983ce05123df4568d55376ad10e2f3b5ae888fd",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/early-game-v1.8.json",
+      "to": "analysis/history/early-game-v1.8.json",
+      "bytes": 95914,
+      "sha256": "cefe1640acc3e9b2c091224b78f310548e8df907fa9bfab17306950330bbbed0",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/progression-v1.8.json",
+      "to": "analysis/history/progression-v1.8.json",
+      "bytes": 48283,
+      "sha256": "c4309f317e3561c11a5e27b50c9eaf135fcb618a1117f55c7eca37d89d729c90",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/test-v110.log",
+      "to": "analysis/history/test-v110.log",
+      "bytes": 27991,
+      "sha256": "0e8a67b456d997d5688c1f89ceaf8a1bc8fdf2e75b641d62409ac2791b41c59a",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/verification-v1.10.json",
+      "to": "analysis/history/verification-v1.10.json",
+      "bytes": 1038,
+      "sha256": "c6c673418baf54b6ac898b348a8b2096d9aa969594136f26da550626ce965cf3",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/verification-v1.8.json",
+      "to": "analysis/history/verification-v1.8.json",
+      "bytes": 729,
+      "sha256": "bb767ebc507666a62d3534bb9997077794317cca7bac7ad093eecc2f9a030453",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/verification-v1.9.json",
+      "to": "analysis/history/verification-v1.9.json",
+      "bytes": 907,
+      "sha256": "25627c7b126c914cb19b7c7da8eeacda01ef848e4f951bb5446f425d1bc1f035",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/weapon-catalogue-v1.10.json",
+      "to": "analysis/history/weapon-catalogue-v1.10.json",
+      "bytes": 47965,
+      "sha256": "2d1999d75efbcaefdf2ac8049375008d6b48896c986d8949c6a4fa5529ac2f22",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/weapon-catalogue-v1.9.json",
+      "to": "analysis/history/weapon-catalogue-v1.9.json",
+      "bytes": 44169,
+      "sha256": "14fa69ef542f294e1571daee2be7e33f676a24d5a86ad6bf596a608d4074d737",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/v18-实施记录.md",
+      "to": "docs/history/v18-实施记录.md",
+      "bytes": 9651,
+      "sha256": "f6b0f74827d611e833f7f10820afe135c3666c840cb7fb5242648f2c14882963",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/v19-实施记录.md",
+      "to": "docs/history/v19-实施记录.md",
+      "bytes": 5183,
+      "sha256": "2bafffc10c7c7800fab24e8d683d328a3adcf9118eed433ec740f26f007b8123",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/v110-实施记录.md",
+      "to": "docs/history/v110-实施记录.md",
+      "bytes": 7125,
+      "sha256": "53e37b7aac0f0d096a72757c345709a81a719564f32f116a6d37a36d20f6698b",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/balance-preview.png",
+      "to": "docs/media/balance-preview.png",
+      "bytes": 58009,
+      "sha256": "d3bb8b0415f3e5f7aaab8c66ab9440b0c9346fa13ae2f08026620762f3536367",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/boss-eye-warning.png",
+      "to": "docs/media/boss-eye-warning.png",
+      "bytes": 221992,
+      "sha256": "3f39cd562e379066483dbe78ae87ce94cf16fb1db3e9f73beb45879ec29179e4",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/boss-slime-warning.png",
+      "to": "docs/media/boss-slime-warning.png",
+      "bytes": 223051,
+      "sha256": "0ec6f3fff981bbddc21fe4a40fc511038d861c87c1dcf2516ecb150857a5e8f2",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/build-core-preview.png",
+      "to": "docs/media/build-core-preview.png",
+      "bytes": 91939,
+      "sha256": "091b4349b5f8d1b413c65e033487cbc3cdf3907870b9bd896f58217b731bb1b7",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/combat-preview.png",
+      "to": "docs/media/combat-preview.png",
+      "bytes": 209955,
+      "sha256": "e6fa729ec9de3092ce9777e47f14cfa919e89434f4c7838278aae5cc433a3d67",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/early-game-preview.png",
+      "to": "docs/media/early-game-preview.png",
+      "bytes": 219635,
+      "sha256": "aefa6aa4494db8a15a161929e1de2251697fa014ee74668514da95854419e131",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/economy-preview.png",
+      "to": "docs/media/economy-preview.png",
+      "bytes": 88962,
+      "sha256": "6cd2f0c7ca64538fcf3362cd8be222143cf2e44c13aac9576f2ac1f75b62f3ef",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/test-tool-preview.png",
+      "to": "docs/media/test-tool-preview.png",
+      "bytes": 154856,
+      "sha256": "c7abfde059204a3a29f78d2b7f5e691f506a469b67fcba38827b8eadc35290bc",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/v18-boss-reward.png",
+      "to": "docs/media/v18-boss-reward.png",
+      "bytes": 118363,
+      "sha256": "bb66b789271c410d52950225b613a3d1cfb156c22301c43a8cf5d46438b840ed",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/v18-boss-test.png",
+      "to": "docs/media/v18-boss-test.png",
+      "bytes": 257551,
+      "sha256": "d3d0a4984501eb34f531ecabf8e953b7efc25e0d3171c96e50328a8e0b1bc653",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "docs/v19-weapon-guide.png",
+      "to": "docs/media/v19-weapon-guide.png",
+      "bytes": 136433,
+      "sha256": "781cf7ac10c4440e8bfe5bd531ab2d9685cb768e4eb464f2172c4e7102872fb4",
+      "reason": "隔离历史报告或集中存放文档截图"
+    },
+    {
+      "action": "move",
+      "from": "analysis/v18-progression.cjs",
+      "to": "analysis/progression-benchmark.cjs",
+      "bytes": 1058,
+      "sha256": "0bb06cb41cc6735c5152e626a41b8e9723c3d4f3a33fcacb68ff17d1f3363fbe",
+      "reason": "将仍可运行的长流程脚本改为与版本无关的名称"
+    }
+  ]
+}

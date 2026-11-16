@@ -1,0 +1,46 @@
+{
+  "sourceSha256": "60c0df599911c396f8b0b6b8d95fadba2bd76b22aeb428420baa32a66636562b",
+  "total": 116,
+  "suites": [
+    {
+      "name": "regression",
+      "tests": 49,
+      "pass": 49,
+      "fail": 0
+    },
+    {
+      "name": "builds",
+      "tests": 10,
+      "pass": 10,
+      "fail": 0
+    },
+    {
+      "name": "test-tool",
+      "tests": 12,
+      "pass": 12,
+      "fail": 0
+    },
+    {
+      "name": "early-game",
+      "tests": 8,
+      "pass": 8,
+      "fail": 0
+    },
+    {
+      "name": "v18",
+      "tests": 27,
+      "pass": 27,
+      "fail": 0
+    },
+    {
+      "name": "v19",
+      "tests": 10,
+      "pass": 10,
+      "fail": 0
+    }
+  ],
+  "weaponFacts": 20,
+  "vfxCap": 96,
+  "browserProof": "docs/media/v19-weapon-guide.png",
+  "browserCaveat": "初始化捕获MutationObserver.observe参数错误，未提供来源；项目无该API，来源未定位，已记录于实施说明。"
+}

@@ -1,0 +1,45 @@
+{
+  "sourceSha256": "68d3d886981281fddc142d54abf92e5dfda75e6e7a1f53feb16b33de43400771",
+  "counts": {
+    "ordinary": 17,
+    "bossWeapons": 3,
+    "items": 20,
+    "cores": 6,
+    "bosses": 3,
+    "stats": 16
+  },
+  "suites": [
+    {
+      "name": "regression",
+      "tests": 49,
+      "pass": 49,
+      "fail": 0
+    },
+    {
+      "name": "builds",
+      "tests": 10,
+      "pass": 10,
+      "fail": 0
+    },
+    {
+      "name": "test-tool",
+      "tests": 12,
+      "pass": 12,
+      "fail": 0
+    },
+    {
+      "name": "early-game",
+      "tests": 8,
+      "pass": 8,
+      "fail": 0
+    },
+    {
+      "name": "v18",
+      "tests": 27,
+      "pass": 27,
+      "fail": 0
+    }
+  ],
+  "total": 106,
+  "launcherCRLF": true
+}

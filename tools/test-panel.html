@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>余烬回路 · 游戏测试台</title><link rel="stylesheet" href="/test-panel.css"></head>
+<body>
+<header><div><b>余烬回路 <span>游戏测试台</span></b><small id="source-title">正在加载产品脚本…</small></div><div class="header-actions"><a href="/" target="_blank" rel="noopener">普通游戏 ↗</a><button id="toggle-panel">收起面板</button></div></header>
+<main><section id="game-view"><iframe id="game" src="/test-game" title="游戏测试画面" allow="autoplay"></iframe><div id="game-label">测试环境 · 参数修改仅影响当前页面</div></section>
+<aside id="panel">
+<div class="readout"><span id="state-label">加载中</span><span id="sim-time">0.0秒</span><div id="live-summary">等待游戏初始化</div></div>
+<div class="transport"><button id="pause" class="primary">运行 / 冻结</button><button id="step">推进0.1秒</button><button id="step-second">推进1秒</button></div>
+<div id="message" role="status">先选择场景，点击“载入场景”。载入后默认冻结。</div>
+<nav aria-label="测试面板"><button data-tab="scene" class="selected">场景</button><button data-tab="build">构筑</button><button data-tab="stats">属性</button><button data-tab="reports">记录</button></nav>
+<div class="tab-content" data-page="scene">
+<h2>场景配置</h2><label>快捷配置<select id="preset"><option value="">自定义配置</option><option value="slime">第5波：守关者基础测试</option><option value="screenshot">第5波：旧截图六武器压力测试</option><option value="eye">第10波：守关者路线测试</option><option value="economy">第14波：幸运235经济测试</option><option value="swords">第10波：六剑羁绊测试</option></select></label><label>职业<select id="character"></select></label>
+<div class="row"><label>目标波次<input id="wave" type="number" min="1" max="200" value="5"></label><label>起始晶币<input id="gold" type="number" min="0" max="1000000" value="100"></label></div>
+<div class="row"><label>随机种子<input id="seed" type="number" min="0" max="4294967295" value="20261114"></label><label>运行速度<select id="speed"><option value=".25">0.25倍</option><option value=".5">0.5倍</option><option value="1" selected>1倍</option><option value="2">2倍</option><option value="4">4倍</option></select></label></div>
+<label class="check"><input type="checkbox" id="boss-only" checked>仅Boss：关闭自动刷怪与场景道具</label>
+<label class="check"><input type="checkbox" id="invincible">玩家无敌（报告中标记）</label>
+<button id="load" class="primary wide">载入场景 · 重置本局</button><p class="hint">波次、职业、种子和构筑在载入时生效。无敌与速度可即时切换。固定种子不等于完整录像回放。</p>
+<div class="row"><label>测试难度<select id="difficulty"><option value="1">难度1 · 生命×1</option><option value="2">难度2 · ×1.25</option><option value="3">难度3 · ×1.55</option><option value="4">难度4 · ×1.90</option><option value="5">难度5 · ×2.30</option></select></label><label>Boss覆盖<select id="boss-override"><option value="">随机袋</option><option value="forge">裂砧执刑者</option><option value="weaver">鸣砂织母</option><option value="prism">棱镜巡弋机</option></select></label></div><h2>Boss技能验证</h2><div class="row"><button id="warn">触发预警</button><button id="rage">设为半血阶段</button></div>
+<div class="row"><button id="heal">回满生命</button><button id="dash">立即冲刺</button></div>
+<div class="row"><label>玩家X<input id="player-x" type="number" value="0" step="1"></label><label>玩家Z<input id="player-z" type="number" value="0" step="1"></label><button id="move">传送</button></div>
+<h2>流程与实体</h2><div class="row"><button id="timer-zero">计时归零</button><button id="kill-boss">击败Boss</button></div>
+<div class="row"><button id="shop">打开测试商店</button><button id="crate">生成测试宝箱</button></div>
+<button id="core-reward" class="wide">打开测试核心选择</button>
+<label>手动生成怪物<select id="enemy"><option value="slime_green">绿史莱姆</option><option value="slime_blue">蓝史莱姆</option><option value="slime_purple">紫史莱姆</option><option value="demon_eye">恶魔眼</option><option value="goblin_bomber">哥布林</option><option value="skeleton_archer">骷髅弓箭手</option><option value="armored_guard">重甲守卫</option><option value="shaman_healer">治疗萨满</option></select></label><button id="spawn" class="wide">在玩家前方生成1只</button>
+</div>
+<div class="tab-content" data-page="build" hidden>
+<h2>构筑核心</h2><label>本局互斥核心<select id="core"><option value="">不选择核心</option></select></label><p id="core-desc" class="hint"></p>
+<h2>武器配置 <span id="weapon-count">1 / 6</span></h2><div id="weapons"></div><button id="add-weapon" class="wide">＋ 添加武器槽</button>
+<h2>饰品配置</h2><label class="check"><input type="checkbox" id="ignore-limits">忽略持有上限（仅用于压力测试）</label><div id="items"></div>
+<button id="apply-build" class="primary wide sticky">应用构筑 · 冻结战斗</button><p class="hint">应用会重建武器、重新计算饰品与羁绊，不会重复累加属性。普通商店和宝箱仍执行产品持有上限。</p>
+</div>
+<div class="tab-content" data-page="stats" hidden>
+<h2>额外基础属性</h2><p class="hint">填写相对职业初始值的增减量；饰品、羁绊另行计算。下方同时显示实际生效面板。</p><div id="attributes"></div><button id="apply-stats" class="primary wide sticky">应用属性与构筑 · 冻结战斗</button>
+<h2>品质概率抽样</h2><div class="row"><label>抽样波次<input id="sample-wave" type="number" value="15" min="1" max="200"></label><label>幸运<input id="sample-luck" type="number" value="235"></label></div><label>抽样数量<input id="sample-count" type="number" value="10000" min="100" max="100000"></label><button id="sample" class="wide">执行固定种子抽样</button><div id="sample-result"></div><p class="hint">抽样调用产品品质函数，不修改商店、不消耗当前战斗随机序列。概率按填写波次计算，不自动加1。</p>
+</div>
+<div class="tab-content" data-page="reports" hidden>
+<h2>配置与报告</h2><div class="row"><button id="export-config">导出场景配置</button><button id="export-report">导出测试报告</button></div><label class="file-label">导入场景配置<input id="import-config" type="file" accept=".json,application/json"></label><p class="hint">导入只填入面板，点击载入场景才会重置游戏。报告包含源码指纹、配置、实际构筑、测试开关、统计与日志；不上传网络。</p>
+<h2>当前战斗记录</h2><pre id="metrics">暂无战斗记录</pre><h2>操作与错误日志 <span id="error-count">0个错误</span></h2><button id="clear-log">清空日志</button><pre id="logs"></pre>
+</div>
+<footer>快捷测试：载入 → 触发预警 → 步进 → 横移／冲刺 → 查看记录</footer>
+</aside></main>
+<script src="/test-model.js"></script><script src="/test-panel.js"></script>
+</body></html>
