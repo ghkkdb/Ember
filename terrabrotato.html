@@ -119,6 +119,7 @@
             <!-- 右上：群落切换、视角切换、音效、武器槽与流派羁绊 -->
             <div class="flex flex-col items-end gap-1.5 pointer-events-auto">
                 <div class="flex flex-wrap items-center justify-end gap-1.5">
+                    <div id="hud-fps-badge" class="terra-panel px-2.5 py-1.5 text-[11px] font-mono font-bold text-slate-300" title="Three.js 实时渲染监控">FPS:60 DC:0</div>
                     <button id="btn-biome-mode" onclick="window.cycleBiome()" class="terra-panel px-2.5 py-1.5 text-xs font-bold text-amber-300 hover:border-white transition flex items-center gap-1" title="快捷键 B 切换巡行3D群落场景">
                         <span>🗺️</span> <span id="biome-mode-text">群落:绿荫边庭</span>
                     </button>
@@ -960,6 +961,9 @@
             tex.repeat.set(14, 14);
             tex.magFilter = THREE.NearestFilter;
             tex.minFilter = THREE.NearestFilter;
+            if (typeof this.renderer !== 'undefined' && this.renderer && this.renderer.capabilities) {
+                tex.anisotropy = Math.min(4, this.renderer.capabilities.getMaxAnisotropy());
+            }
 
             const tileUri = this.urls['tile_' + biomeKey];
             if (tileUri && typeof Image !== 'undefined') {
@@ -1621,13 +1625,16 @@
             if (this.dirLight.shadow) {
                 this.dirLight.shadow.mapSize.width = 2048;
                 this.dirLight.shadow.mapSize.height = 2048;
-                this.dirLight.shadow.camera.near = 10;
-                this.dirLight.shadow.camera.far = 90;
-                this.dirLight.shadow.camera.left = -28;
-                this.dirLight.shadow.camera.right = 28;
-                this.dirLight.shadow.camera.top = 28;
-                this.dirLight.shadow.camera.bottom = -28;
-                this.dirLight.shadow.bias = -0.0005;
+                this.dirLight.shadow.camera.near = 5;
+                this.dirLight.shadow.camera.far = 100;
+                this.dirLight.shadow.camera.left = -ARENA_HALF - 2;
+                this.dirLight.shadow.camera.right = ARENA_HALF + 2;
+                this.dirLight.shadow.camera.top = ARENA_HALF + 2;
+                this.dirLight.shadow.camera.bottom = -ARENA_HALF - 2;
+                this.dirLight.shadow.bias = -0.0004;
+                if (this.dirLight.shadow.normalBias !== undefined) {
+                    this.dirLight.shadow.normalBias = 0.02;
+                }
             }
             this.scene.add(this.dirLight);
 
@@ -1654,6 +1661,21 @@
 
             // 初始化后处理辉光管线 (UnrealBloomPass)
             this.initPostProcessing();
+
+            // 挂载 Three.js 调试遥测对象 (Three.js Debug Profiler / QA Release)
+            if (typeof window !== 'undefined') {
+                window.__THREE_GAME_DIAGNOSTICS__ = {
+                    renderer: this.renderer ? this.renderer.info : null,
+                    get state() {
+                        return {
+                            mode: typeof app !== 'undefined' && app ? app.state : 'MENU',
+                            wave: typeof app !== 'undefined' && app ? app.wave : 0,
+                            enemies: typeof app !== 'undefined' && app && app.enemies ? app.enemies.length : 0,
+                            fps: typeof app !== 'undefined' && app ? Math.round(app.fps || 60) : 60
+                        };
+                    }
+                };
+            }
 
             window.addEventListener('resize', () => {
                 this.updateCameraProjection();
@@ -1882,6 +1904,36 @@
                 c.scale.set(0.36, 0.14, 0.36);
                 c.position.set(mx, 0.26, mz);
                 this.arenaGroup.add(s, c);
+            }
+
+            // 6. 群落专属立体漂浮微粒系统 (Ambient Biome Motes)
+            const moteColors = {
+                forest: [0x4ade80, 0xa7f3d0, 0x86efac],
+                hallow: [0xf472b6, 0x38bdf8, 0xfde047],
+                corruption: [0xc084fc, 0xa855f7, 0x84cc16],
+                underworld: [0xf97316, 0xef4444, 0xfacc15]
+            };
+            const cols = moteColors[biomeKey] || moteColors.forest;
+            for (let i = 0; i < 24; i++) {
+                const col = cols[i % cols.length];
+                const moteMesh = new THREE.Mesh(this.art.unitBox, this.art.getMat(col, { emissive: col, emissiveIntensity: 1.5, opacity: 0.75 }));
+                const s = 0.08 + Math.random() * 0.08;
+                moteMesh.scale.set(s, s, s);
+                const mx = (Math.random() - 0.5) * (ARENA_HALF * 1.8);
+                const mz = (Math.random() - 0.5) * (ARENA_HALF * 1.8);
+                const my = 0.5 + Math.random() * 3.5;
+                moteMesh.position.set(mx, my, mz);
+                this.arenaGroup.add(moteMesh);
+                this.animatedScenery.push({
+                    mesh: moteMesh,
+                    type: 'mote',
+                    baseX: mx,
+                    baseZ: mz,
+                    baseY: my,
+                    speedY: 0.25 + Math.random() * 0.35,
+                    driftSpeed: 0.8 + Math.random() * 1.2,
+                    phase: Math.random() * Math.PI * 2
+                });
             }
         }
 
@@ -4014,6 +4066,12 @@
         }
 
         updateWave(dt) {
+            if (this.hitstopTimer > 0) {
+                this.hitstopTimer -= dt;
+                this.updateCameraFollow(dt);
+                this.updateHUD();
+                return;
+            }
             this.combatElapsed = (this.combatElapsed || 0) + dt;
             if (this.waveMetrics) {
                 this.waveMetrics.seconds += dt;
@@ -4058,21 +4116,34 @@
                     this.playerPos.x = Math.max(-ARENA_HALF + 1, Math.min(ARENA_HALF - 1, this.playerPos.x + mx * spd * dt));
                     this.playerPos.z = Math.max(-ARENA_HALF + 1, Math.min(ARENA_HALF - 1, this.playerPos.z + mz * spd * dt));
                 }
-                if (mx < -0.05) this.heroRig.rotation.y = -0.35;
-                else if (mx > 0.05) this.heroRig.rotation.y = 0.35;
-                else this.heroRig.rotation.y = 0;
+                const targetRot = mx < -0.05 ? -0.35 : (mx > 0.05 ? 0.35 : 0);
+                if (this.heroRig) this.heroRig.rotation.y += (targetRot - this.heroRig.rotation.y) * Math.min(1.0, dt * 14);
 
                 // 四肢跑步摆臂动画 (不晃动相机)
                 const walkAngle = Math.sin(this.animClock * 16) * 0.65;
-                this.legL.rotation.x = walkAngle;
-                this.legR.rotation.x = -walkAngle;
-                this.armL.rotation.x = -walkAngle * 0.7;
-                this.armR.rotation.x = walkAngle * 0.7;
+                if (this.legL) this.legL.rotation.x = walkAngle;
+                if (this.legR) this.legR.rotation.x = -walkAngle;
+                if (this.armL) this.armL.rotation.x = -walkAngle * 0.7;
+                if (this.armR) this.armR.rotation.x = walkAngle * 0.7;
+                if (this.torsoMesh) this.torsoMesh.position.y = 0.55 + Math.abs(Math.sin(this.animClock * 16)) * 0.04;
+
+                // 跑动时产生微弱地面尘烟粒子
+                this.footstepTimer = (this.footstepTimer || 0) - dt;
+                if (this.footstepTimer <= 0 && !isDashing && this.spawnBurstParticles) {
+                    this.footstepTimer = 0.18;
+                    this.spawnBurstParticles(this.playerPos.x - mx * 0.25, this.playerPos.z - mz * 0.25, 0x64748b, 1, 'dust');
+                }
             } else {
-                this.legL.rotation.x *= 0.85;
-                this.legR.rotation.x *= 0.85;
-                this.armL.rotation.x *= 0.85;
-                this.armR.rotation.x *= 0.85;
+                if (this.heroRig) this.heroRig.rotation.y += (0 - this.heroRig.rotation.y) * Math.min(1.0, dt * 10);
+                if (this.legL) this.legL.rotation.x *= 0.85;
+                if (this.legR) this.legR.rotation.x *= 0.85;
+                if (this.armL) this.armL.rotation.x *= 0.85;
+                if (this.armR) this.armR.rotation.x *= 0.85;
+
+                // 待机呼吸与轻微律动 (Idle breathing)
+                const breath = Math.sin(this.animClock * 3.2) * 0.03;
+                if (this.torsoMesh) this.torsoMesh.position.y = 0.55 + breath;
+                if (this.headGroup) this.headGroup.position.y = 1.25 + breath * 1.15;
             }
             this.playerGroup.position.copy(this.playerPos);
 
@@ -4141,11 +4212,21 @@
             this.updateHUD();
         }
 
+        triggerCameraShake(amount = 0.25) {
+            this.cameraShake = Math.min(0.65, (this.cameraShake || 0) + amount);
+        }
+
         updateCameraFollow(dt) {
             if (this.camMode === 'fixed') {
                 this.camera.position.set(0, 42, 10);
                 this.camera.lookAt(0, 0, 0);
                 return;
+            }
+            let shakeX = 0, shakeZ = 0;
+            if (this.cameraShake && this.cameraShake > 0.005) {
+                shakeX = (Math.random() - 0.5) * this.cameraShake;
+                shakeZ = (Math.random() - 0.5) * this.cameraShake;
+                this.cameraShake = Math.max(0, this.cameraShake - 4.5 * dt);
             }
             const deadzone = 3.0;
             const dx = this.playerPos.x - this.camFocus.x;
@@ -4157,11 +4238,11 @@
                 this.camFocus.z += (dz / dist) * ex * Math.min(1, 5.5 * dt);
             }
             if (this.camMode === 'ortho') {
-                this.camera.position.set(this.camFocus.x * 0.45, 38, this.camFocus.z * 0.45 + 12);
-                this.camera.lookAt(this.camFocus.x * 0.45, 0, this.camFocus.z * 0.45);
+                this.camera.position.set(this.camFocus.x * 0.45 + shakeX, 38, this.camFocus.z * 0.45 + 12 + shakeZ);
+                this.camera.lookAt(this.camFocus.x * 0.45 + shakeX, 0, this.camFocus.z * 0.45 + shakeZ);
             } else {
-                this.camera.position.set(this.camFocus.x * 0.5, 29, this.camFocus.z * 0.5 + 17);
-                this.camera.lookAt(this.camFocus.x * 0.5, 0, this.camFocus.z * 0.5);
+                this.camera.position.set(this.camFocus.x * 0.5 + shakeX, 29, this.camFocus.z * 0.5 + 17 + shakeZ);
+                this.camera.lookAt(this.camFocus.x * 0.5 + shakeX, 0, this.camFocus.z * 0.5 + shakeZ);
             }
         }
 
@@ -4305,6 +4386,9 @@
             const fromX = this.playerPos.x, fromZ = this.playerPos.z;
             this.playerPos.x = Math.max(-ARENA_HALF + 1, Math.min(ARENA_HALF - 1, fromX + this.dashDir.x * 28 * step));
             this.playerPos.z = Math.max(-ARENA_HALF + 1, Math.min(ARENA_HALF - 1, fromZ + this.dashDir.z * 28 * step));
+            if (this.particles && this.particles.length < 65) {
+                this.spawnBurstParticles(fromX, fromZ, 0x38bdf8, 1, 'spark');
+            }
             // 本帧扫过的整段路径参与碰撞，低帧率下也不会穿过敌人而漏判。
             for (const enemy of [...this.enemies, ...this.props]) {
                 if (this.dashCarry || enemy.hp <= 0 || this.dashHits.has(enemy)) continue;
@@ -4434,27 +4518,55 @@
 
         spawnSlash(x, z, ang, color, scale = 1.6) {
             const m = new THREE.Mesh(
-                new THREE.RingGeometry(0.45, scale, 18, 1, -Math.PI / 2.6, (Math.PI * 2) / 2.6),
-                new THREE.MeshBasicMaterial({ color, side: THREE.DoubleSide, transparent: true, opacity: 0.88 })
+                new THREE.RingGeometry(0.45, scale, 24, 1, -Math.PI / 2.6, (Math.PI * 2) / 2.6),
+                new THREE.MeshBasicMaterial({ color, side: THREE.DoubleSide, transparent: true, opacity: 0.88, depthWrite: false })
             );
+            const core = new THREE.Mesh(
+                new THREE.RingGeometry(Math.max(0.4, scale * 0.68), scale * 0.95, 24, 1, -Math.PI / 3.0, (Math.PI * 2) / 3.0),
+                new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide, transparent: true, opacity: 0.95, depthWrite: false })
+            );
+            core.position.y = 0.01;
+            m.add(core);
             m.rotation.x = -Math.PI / 2;
             m.rotation.z = -ang;
             m.position.set(x, 0.55, z);
             this.entitiesGroup.add(m);
-            this.slashes.push({ mesh: m, life: 0.17 });
+            this.slashes.push({ mesh: m, core, life: 0.17 });
+            if (this.particles && this.particles.length < 65) {
+                this.spawnBurstParticles(x + Math.cos(ang) * scale * 0.45, z + Math.sin(ang) * scale * 0.45, color, 2, 'spark');
+            }
         }
 
-        spawnBurstParticles(x, z, color, count = 6) {
+        spawnBurstParticles(x, z, color, count = 6, style = 'burst') {
             for (let i = 0; i < count; i++) {
                 if (this.particles.length > 70) break;
-                const m = new THREE.Mesh(this.art.unitBox, this.art.getMat(color));
-                const s = 0.16 + Math.random() * 0.14;
+                const isSpark = style === 'spark' || (style === 'burst' && i === 0);
+                const isSmoke = style === 'dissolve' || (style === 'burst' && i === count - 1);
+                const isDust = style === 'dust';
+                const pColor = isSpark ? (color === 0xffffff ? 0xfff3a6 : 0xffffff) : (isDust ? 0x64748b : color);
+                const matOpts = isSpark
+                    ? { emissive: pColor, emissiveIntensity: 2.8 }
+                    : (isSmoke || isDust)
+                        ? { opacity: isDust ? 0.45 : 0.72, metalness: 0.1, roughness: 0.8 }
+                        : { metalness: 0.65, roughness: 0.35 };
+                const m = new THREE.Mesh(this.art.unitBox, this.art.getMat(pColor, matOpts));
+                const s = isSpark ? (0.09 + Math.random() * 0.08) : isDust ? (0.08 + Math.random() * 0.06) : isSmoke ? (0.20 + Math.random() * 0.12) : (0.15 + Math.random() * 0.12);
                 m.scale.set(s, s, s);
-                m.position.set(x, 0.5, z);
+                m.position.set(x, isDust ? 0.08 : (0.45 + Math.random() * 0.2), z);
                 const a = Math.random() * Math.PI * 2;
-                const spd = 2.5 + Math.random() * 4.5;
+                const spd = isSpark ? (4.5 + Math.random() * 4.5) : isDust ? (0.4 + Math.random() * 0.6) : isSmoke ? (0.8 + Math.random() * 1.6) : (2.2 + Math.random() * 3.8);
+                const vy = isSpark ? (2.0 + Math.random() * 3.5) : isDust ? (0.3 + Math.random() * 0.5) : isSmoke ? (1.5 + Math.random() * 2.2) : (3.5 + Math.random() * 3.0);
                 this.entitiesGroup.add(m);
-                this.particles.push({ mesh: m, vx: Math.cos(a) * spd, vy: 3.5 + Math.random() * 3, vz: Math.sin(a) * spd, life: 0.42 });
+                this.particles.push({
+                    mesh: m,
+                    vx: Math.cos(a) * spd,
+                    vy,
+                    vz: Math.sin(a) * spd,
+                    life: isDust ? 0.18 : isSpark ? 0.22 : isSmoke ? 0.48 : 0.42,
+                    maxLife: isDust ? 0.18 : isSpark ? 0.22 : isSmoke ? 0.48 : 0.42,
+                    isSpark,
+                    isSmoke
+                });
             }
         }
 
@@ -4742,6 +4854,15 @@
                 pos.z += en.knockback.z * dt;
                 en.knockback.multiplyScalar(Math.max(0, 1 - 10 * dt));
 
+                if (en.hitSquash && en.hitSquash < 1.0) {
+                    en.hitSquash = Math.min(1.0, en.hitSquash + 6.0 * dt);
+                    const sy = en.hitSquash;
+                    const s = 1.0 + (1.0 - sy) * 0.45;
+                    en.group.scale.set(s, sy, s);
+                } else if (en.group.scale.y !== 1.0 && !en.isBoss) {
+                    en.group.scale.set(1.0, 1.0, 1.0);
+                }
+
                 const dx = this.playerPos.x - pos.x, dz = this.playerPos.z - pos.z;
                 const dist = Math.hypot(dx, dz) || 1;
                 const dirX = dx / dist, dirZ = dz / dist;
@@ -4863,8 +4984,15 @@
                 en.knockback.z += kz * (heavyHit ? 1.5 : 1);
             }
             sfx.playHit(isCrit);
+            en.hitSquash = isCrit ? 0.72 : 0.85;
+            if (isCrit || actualDamage >= 35) {
+                this.hitstopTimer = Math.max(this.hitstopTimer || 0, isCrit ? 0.036 : 0.022);
+            }
+            if (this.triggerCameraShake) {
+                this.triggerCameraShake(isCrit ? 0.14 : 0.04);
+            }
             if(native&&WEAPONS_DB[native.weaponId])this.weaponVfx('impact',en.group.position.x,en.group.position.z,0,0,native.finisher?0xfacc15:isCrit?0xffffff:WEAPONS_DB[native.weaponId].color,isCrit||native.finisher?.6:.34);
-            this.spawnBurstParticles(en.group.position.x, en.group.position.z, isCrit ? 0xfef08a : (en.color || 0xfacc15), isCrit ? 6 : 3);
+            this.spawnBurstParticles(en.group.position.x, en.group.position.z, isCrit ? 0xfef08a : (en.color || 0xfacc15), isCrit ? 7 : 4, isCrit ? 'spark' : 'burst');
             if (isCrit) this.triggerDynamicLight(en.group.position.x, 1.2, en.group.position.z, 0xfacc15, 3.8, 0.12);
             this.spawnFloatText(en.group.position.x, en.group.position.z, isCrit ? `${dmg}!` : `${dmg}`, isCrit ? '#facc15' : '#fb923c', isCrit);
 
@@ -4880,7 +5008,7 @@
             if (en.isBoss) this.updateBossBar();
 
             if (en.hp <= 0) {
-                this.spawnBurstParticles(en.group.position.x, en.group.position.z, en.color || 0xfacc15, 8);
+                this.spawnBurstParticles(en.group.position.x, en.group.position.z, en.color || 0xfacc15, 10, 'dissolve');
                 if (en.isProp) {
                     const idx = this.props.indexOf(en);
                     if (idx !== -1) this.props.splice(idx, 1);
@@ -4978,20 +5106,32 @@
             for (let i = this.slashes.length - 1; i >= 0; i--) {
                 const sl = this.slashes[i];
                 sl.life -= dt;
-                sl.mesh.material.opacity = Math.max(0, sl.life * 5);
+                const op = Math.max(0, sl.life * 5);
+                if (sl.mesh && sl.mesh.material) sl.mesh.material.opacity = op;
+                if (sl.core && sl.core.material) sl.core.material.opacity = op * 0.95;
                 if (sl.life <= 0) { this.disposeCombatMesh(sl.mesh); this.slashes.splice(i, 1); }
             }
             for (let i = this.particles.length - 1; i >= 0; i--) {
                 const pt = this.particles[i];
                 pt.life -= dt;
-                pt.vy -= 16 * dt; // 重力加速度
+                if (pt.isSmoke) {
+                    pt.vy += 1.8 * dt; // 余烬轻微升空浮游
+                    pt.vx *= Math.max(0, 1 - 2.5 * dt);
+                    pt.vz *= Math.max(0, 1 - 2.5 * dt);
+                } else if (pt.isSpark) {
+                    pt.vy -= 10 * dt; // 极速高能火花
+                    pt.vx *= Math.max(0, 1 - 1.8 * dt);
+                    pt.vz *= Math.max(0, 1 - 1.8 * dt);
+                } else {
+                    pt.vy -= 16 * dt; // 工业级体素碎块重力加速度
+                }
                 pt.mesh.position.x += pt.vx * dt;
                 pt.mesh.position.y += pt.vy * dt;
                 // 工业级体素火花地面弹性碰撞反弹与摩擦
                 if (pt.mesh.position.y <= 0.08) {
                     pt.mesh.position.y = 0.08;
                     if (pt.vy < -0.8) {
-                        pt.vy = -pt.vy * 0.42; // 反弹
+                        pt.vy = -pt.vy * (pt.isSpark ? 0.6 : 0.42); // 反弹
                         pt.vx *= 0.65;
                         pt.vz *= 0.65;
                     } else {
@@ -5001,8 +5141,11 @@
                     }
                 }
                 pt.mesh.position.z += pt.vz * dt;
-                pt.mesh.rotation.x += 10 * dt;
-                pt.mesh.rotation.y += 8 * dt;
+                pt.mesh.rotation.x += (pt.isSpark ? 16 : 10) * dt;
+                pt.mesh.rotation.y += (pt.isSpark ? 14 : 8) * dt;
+                if (pt.maxLife && pt.isSmoke && pt.mesh.material) {
+                    pt.mesh.material.opacity = Math.max(0, (pt.life / pt.maxLife) * 0.72);
+                }
                 if (pt.life <= 0) { this.entitiesGroup.remove(pt.mesh); this.particles.splice(i, 1); }
             }
         }
@@ -5049,6 +5192,7 @@
             this.hp -= dmg;
             this.invulnTimer = 0.55;
             this.hurtFlash = 0.25;
+            if (this.triggerCameraShake) this.triggerCameraShake(0.32);
             sfx.playHurt();
             this.spawnFloatText(this.playerPos.x, this.playerPos.z, `-${dmg}`, '#f43f5e', true);
 
@@ -5611,7 +5755,25 @@
                     } else if (sc.type === 'flame') {
                         const s = 0.92 + Math.sin(this.animClock * 9 + sc.phase) * 0.12;
                         sc.mesh.scale.set(s, s, s);
+                    } else if (sc.type === 'mote') {
+                        sc.mesh.position.y += sc.speedY * dt;
+                        sc.mesh.position.x = sc.baseX + Math.sin(this.animClock * sc.driftSpeed + sc.phase) * 0.6;
+                        sc.mesh.position.z = sc.baseZ + Math.cos(this.animClock * sc.driftSpeed + sc.phase) * 0.6;
+                        if (sc.mesh.position.y > 4.5) sc.mesh.position.y = 0.3;
                     }
+                }
+            }
+
+            this.frameCount = (this.frameCount || 0) + 1;
+            this.fpsTime = (this.fpsTime || 0) + dt;
+            if (this.fpsTime >= 0.5) {
+                this.fps = this.frameCount / this.fpsTime;
+                this.frameCount = 0;
+                this.fpsTime = 0;
+                const el = document.getElementById('hud-fps-badge');
+                if (el) {
+                    const dc = this.renderer && this.renderer.info ? this.renderer.info.render.calls : 0;
+                    el.textContent = `FPS:${Math.round(this.fps)} DC:${dc}`;
                 }
             }
 
