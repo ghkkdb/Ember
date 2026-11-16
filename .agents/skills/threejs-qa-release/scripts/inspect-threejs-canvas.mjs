@@ -325,14 +325,18 @@ function computePixelMetrics(png) {
 async function launchBrowser() {
   const { chromium } = await loadDependency('@playwright/test');
   try {
-    return await chromium.launch({ channel: 'chromium' });
+    return await chromium.launch({ channel: 'chrome' });
   } catch {
-    console.error(
-      'warning: channel:"chromium" is unavailable, falling back to the bundled headless shell.\n' +
-        '  Rendering will be software (SwiftShader) and any FPS/frame-time evidence is invalid.\n' +
-        '  Fix with: npx playwright install --no-shell chromium',
-    );
-    return chromium.launch();
+    try {
+      return await chromium.launch({ channel: 'chromium' });
+    } catch {
+      console.error(
+        'warning: channel:"chromium" is unavailable, falling back to the bundled headless shell.\n' +
+          '  Rendering will be software (SwiftShader) and any FPS/frame-time evidence is invalid.\n' +
+          '  Fix with: npx playwright install --no-shell chromium',
+      );
+      return chromium.launch();
+    }
   }
 }
 

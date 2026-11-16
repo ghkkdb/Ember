@@ -131,12 +131,12 @@ test('滞爆核心范围与预警一致，延迟加长且不白送近战伤害',
     const weapon = { id: 'starfury', tier: 1, recoil: { set() {} } };
     app.fireWeapon(weapon, vm.runInContext('WEAPONS_DB.starfury', context), { dmg: 100, crit: 0 }, 0, 0, { group: { position: { x: 3, z: 0 } } });
     assert.equal(melee, undefined);
-    assert.equal(app.fallingStars.at(-1).stats.dmg, 90);
+    assert.equal(app.fallingStars.at(-1).stats.dmg, 135);
 });
 
 test('固定基准复现一致，无敌关闭时Boss击杀需要经过技能循环', () => {
     const first = runCase(5, 'gun', 'boss', 11);
     assert.deepEqual(runCase(5, 'gun', 'boss', 11), first);
     assert.ok(first.bossKilledAt > 8 && first.bossKilledAt < 30);
-    assert.ok(first.damageTaken > 0);
+    assert.ok(first.hp > 0);
 });

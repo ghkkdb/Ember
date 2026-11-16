@@ -4247,7 +4247,7 @@
                 wpn.recoil.set(dirX * 0.7, 0, dirZ * 0.7);
 
                 const tx = target.group.position.x, tz = target.group.position.z;
-                this.spawnFallingStar(tx, tz, { ...st, dmg: Math.max(1, Math.round(st.dmg * (this.selectedCoreId==='star' ? .9 : 1))) });
+                this.spawnFallingStar(tx, tz, { ...st, dmg: Math.max(1, Math.round(st.dmg * (this.selectedCoreId==='star' ? 1.35 : 1))) });
             } else if (def.behavior === 'vampire') {
                 sfx.playShoot(1.2);
                 const split=this.selectedCoreId==='volley',budget=splitWeaponDamage(st.dmg,3);

@@ -1,0 +1,51 @@
+{
+  "url": "http://127.0.0.1:51092",
+  "mode": "desktop",
+  "state": null,
+  "requestedState": null,
+  "appliedState": null,
+  "runId": null,
+  "seed": null,
+  "screenshotPath": "artifacts\\canvas-inspection\\desktop.png",
+  "gpu": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Ti (0x00002803) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (NVIDIA)",
+    "softwareRendered": false
+  },
+  "result": {
+    "ok": true,
+    "reason": "nonblank",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720
+    },
+    "drawingBuffer": {
+      "width": 1280,
+      "height": 720
+    },
+    "alphaPixels": 4096,
+    "variance": 255,
+    "colorBuckets": 107,
+    "metrics": {
+      "colorBuckets": 170,
+      "colorEntropyBits": 3.17,
+      "edgeDensity": 0.214,
+      "luminance": {
+        "mean": 38.5,
+        "p5": 14,
+        "p95": 126.2,
+        "contrast": 112.2
+      },
+      "dominantColorShare": 0.367,
+      "nonBackgroundShare": 0.633
+    },
+    "renderBudget": null,
+    "diagnostics": null
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "consoleErrorCount": 0,
+  "pageErrorCount": 0
+}
