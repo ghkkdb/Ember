@@ -908,10 +908,10 @@
             const ctx = c.getContext('2d');
 
             const palettes = {
-                forest: { base: '#152e1b', alt: '#1e3f24', steel: '#334155', rivet: '#64748b', line: '#22c55e', grid: '#0a1a0f' },
-                hallow: { base: '#0f243d', alt: '#1e3a5f', steel: '#475569', rivet: '#94a3b8', line: '#38bdf8', grid: '#081422' },
-                corruption: { base: '#1e102d', alt: '#2e1944', steel: '#3b2054', rivet: '#7c3aed', line: '#c084fc', grid: '#100719' },
-                underworld: { base: '#2d1212', alt: '#3f1a1a', steel: '#4a1e1e', rivet: '#f97316', line: '#ef4444', grid: '#190808' }
+                forest: { base: '#152e1b', alt: '#1e3f24', steel: '#334155', rivet: '#86efac', rivetDark: '#14532d', line: '#22c55e', lineCore: '#ffffff', grid: '#0a1a0f', node: '#facc15' },
+                hallow: { base: '#0f243d', alt: '#1e3a5f', steel: '#475569', rivet: '#7dd3fc', rivetDark: '#0c4a6e', line: '#38bdf8', lineCore: '#ffffff', grid: '#081422', node: '#f472b6' },
+                corruption: { base: '#1e102d', alt: '#2e1944', steel: '#3b2054', rivet: '#c084fc', rivetDark: '#3b0764', line: '#a855f7', lineCore: '#ffffff', grid: '#100719', node: '#a3e635' },
+                underworld: { base: '#2d1212', alt: '#3f1a1a', steel: '#4a1e1e', rivet: '#f97316', rivetDark: '#7c2d12', line: '#ef4444', lineCore: '#ffffff', grid: '#190808', node: '#fde047' }
             };
             const p = palettes[biomeKey] || palettes.forest;
 
@@ -933,19 +933,34 @@
                     ctx.fillRect(x + 6, y + 24, 8, 3);
                     ctx.fillRect(x + 18, y + 24, 8, 3);
 
-                    // 面板四角加固工业铆钉 (Rivets)
-                    ctx.fillStyle = p.rivet;
-                    ctx.fillRect(x + 4, y + 4, 2, 2);
-                    ctx.fillRect(x + 26, y + 4, 2, 2);
-                    ctx.fillRect(x + 4, y + 26, 2, 2);
-                    ctx.fillRect(x + 26, y + 26, 2, 2);
+                    // 面板四角加固工业铆钉 (带像素高光与倒角暗部)
+                    for (const [rx, ry] of [[x + 4, y + 4], [x + 26, y + 4], [x + 4, y + 26], [x + 26, y + 26]]) {
+                        ctx.fillStyle = p.rivetDark;
+                        ctx.fillRect(rx, ry, 2, 2);
+                        ctx.fillStyle = p.rivet;
+                        ctx.fillRect(rx, ry, 1, 1);
+                    }
                 }
             }
 
-            // 贯穿地面的发光高能能量导轨槽 (Glowing Energy Circuit)
+            // 贯穿地面的发光高能能量导轨槽 (双缓冲光核：外层彩色光晕 + 内层纯白发光核)
             ctx.fillStyle = p.line;
+            ctx.fillRect(62, 0, 4, 128);
+            ctx.fillRect(0, 62, 128, 4);
+
+            ctx.fillStyle = p.lineCore;
             ctx.fillRect(63, 0, 2, 128);
             ctx.fillRect(0, 63, 128, 2);
+
+            // 能量交叉导轨接驳能量中继节点 (Conduit Junction Nodes)
+            for (const [nx, ny] of [[64, 64], [0, 64], [128, 64], [64, 0], [64, 128]]) {
+                ctx.fillStyle = p.line;
+                ctx.fillRect(nx - 4, ny - 4, 8, 8);
+                ctx.fillStyle = p.node;
+                ctx.fillRect(nx - 2, ny - 2, 4, 4);
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(nx - 1, ny - 1, 2, 2);
+            }
 
             // 外围重工业黑色装配接缝
             ctx.strokeStyle = p.grid;
@@ -1906,22 +1921,22 @@
                 this.arenaGroup.add(s, c);
             }
 
-            // 6. 群落专属立体漂浮微粒系统 (Ambient Biome Motes)
+            // 6. 群落专属立体漂浮微粒系统 (Ambient Biome Motes - 32粒立体动态光点)
             const moteColors = {
-                forest: [0x4ade80, 0xa7f3d0, 0x86efac],
-                hallow: [0xf472b6, 0x38bdf8, 0xfde047],
-                corruption: [0xc084fc, 0xa855f7, 0x84cc16],
-                underworld: [0xf97316, 0xef4444, 0xfacc15]
+                forest: [0x4ade80, 0xa7f3d0, 0x86efac, 0xfde047],
+                hallow: [0xf472b6, 0x38bdf8, 0xfde047, 0xffffff],
+                corruption: [0xc084fc, 0xa855f7, 0x84cc16, 0xd8b4fe],
+                underworld: [0xf97316, 0xef4444, 0xfacc15, 0xfff3a6]
             };
             const cols = moteColors[biomeKey] || moteColors.forest;
-            for (let i = 0; i < 24; i++) {
+            for (let i = 0; i < 32; i++) {
                 const col = cols[i % cols.length];
-                const moteMesh = new THREE.Mesh(this.art.unitBox, this.art.getMat(col, { emissive: col, emissiveIntensity: 1.5, opacity: 0.75 }));
-                const s = 0.08 + Math.random() * 0.08;
+                const moteMesh = new THREE.Mesh(this.art.unitBox, this.art.getMat(col, { emissive: col, emissiveIntensity: 1.8, opacity: 0.82 }));
+                const s = 0.08 + Math.random() * 0.09;
                 moteMesh.scale.set(s, s, s);
-                const mx = (Math.random() - 0.5) * (ARENA_HALF * 1.8);
-                const mz = (Math.random() - 0.5) * (ARENA_HALF * 1.8);
-                const my = 0.5 + Math.random() * 3.5;
+                const mx = (Math.random() - 0.5) * (ARENA_HALF * 1.85);
+                const mz = (Math.random() - 0.5) * (ARENA_HALF * 1.85);
+                const my = 0.4 + Math.random() * 3.8;
                 moteMesh.position.set(mx, my, mz);
                 this.arenaGroup.add(moteMesh);
                 this.animatedScenery.push({
@@ -1930,8 +1945,8 @@
                     baseX: mx,
                     baseZ: mz,
                     baseY: my,
-                    speedY: 0.25 + Math.random() * 0.35,
-                    driftSpeed: 0.8 + Math.random() * 1.2,
+                    speedY: 0.22 + Math.random() * 0.38,
+                    driftSpeed: 0.7 + Math.random() * 1.3,
                     phase: Math.random() * Math.PI * 2
                 });
             }
@@ -2920,6 +2935,18 @@
                 const a=Math.atan2(ez-z,ex-x);for(let i=-1;i<=1;i++){const m=add(new THREE.BoxGeometry(size*(i===0?.65:.28),.12,.10),x+Math.cos(a)*.3,.85,z+Math.sin(a)*.3);m.rotation.y=-a+i*.7;}duration=.09;
             }else if(kind==='trail'){
                 const m=add(new THREE.BoxGeometry(Math.max(.12,Math.hypot(ex-x,ez-z)),.06,size*.10),(x+ex)/2,.76,(z+ez)/2,.5);m.rotation.y=-Math.atan2(ez-z,ex-x);duration=.16;
+            }else if(kind==='fissure'){
+                const dx=ex-x,dz=ez-z,len=Math.hypot(dx,dz)||.01,ang=-Math.atan2(dz,dx);
+                const crust=add(new THREE.BoxGeometry(len,0.04,size*.35),(x+ex)/2,0.08,(z+ez)/2,0.85);crust.rotation.y=ang;
+                const coreMesh=new THREE.Mesh(new THREE.BoxGeometry(len*.95,0.06,size*.12),new THREE.MeshBasicMaterial({color:0xffffff,transparent:true,opacity:0.95,depthWrite:false}));
+                coreMesh.position.set((x+ex)/2,0.09,(z+ez)/2);coreMesh.rotation.y=ang;group.add(coreMesh);parts.push({mesh:coreMesh,opacity:0.95});
+                const spurs=Math.min(6,Math.max(2,Math.floor(len/2)));
+                for(let i=1;i<spurs;i++){
+                    const t=i/spurs,sx=x+dx*t,sz=z+dz*t,sign=(i%2===0?1:-1);
+                    const spur=add(new THREE.BoxGeometry(size*.3,0.03,0.08),sx+sign*Math.sin(ang)*size*.2,0.085,sz+sign*Math.cos(ang)*size*.2,0.7);
+                    spur.rotation.y=ang+sign*0.6;
+                }
+                duration=.34;
             }else{
                 const r=Math.max(.12,size),ring=add(new THREE.RingGeometry(r*.80,r,24),x,.17,z,.6);ring.rotation.x=-Math.PI/2;
                 if(kind==='impact')for(let i=0;i<4;i++){const a=i*Math.PI/2;add(new THREE.BoxGeometry(.13,.13,.13),x+Math.cos(a)*r,.7,z+Math.sin(a)*r,.85);}
@@ -2953,24 +2980,35 @@
             const def=BOSSES_DB[id],group=new THREE.Group();group.position.set(0,0,-13);
             const box=(x,y,z,w,h,d,color,opts={})=>{const mesh=new THREE.Mesh(this.art.unitBox,this.art.getMat(color,opts));mesh.position.set(x,y,z);mesh.scale.set(w,h,d);mesh.castShadow=true;mesh.receiveShadow=true;group.add(mesh);return mesh;};
             group.add(this.art.createShadow(2.2));
+            const parts={};
             if (id === 'forge') {
                 // B01 熔炉泰坦：高炉躯干、观察栅白炽熔岩、双排气烟囱、压铸重砧与重型机械钳
                 box(0, 1.4, 0, 2.6, 2.0, 2.2, 0x1e293b, { metalness: 0.8, roughness: 0.35 });
-                box(0, 1.35, 1.05, 1.6, 1.2, 0.25, 0xfde047, { emissive: 0xf97316, emissiveIntensity: 2.2 });
+                const door = box(0, 1.35, 1.05, 1.6, 1.2, 0.25, 0xfde047, { emissive: 0xf97316, emissiveIntensity: 2.2 });
+                parts.furnaceDoor = door;
                 for (const x of [-0.5, 0, 0.5]) box(x, 1.35, 1.18, 0.14, 1.25, 0.15, 0x0f172a, { metalness: 0.9 });
+                const chimneys = [];
                 for (const x of [-0.65, 0.65]) {
                     box(x, 2.7, -0.4, 0.65, 1.2, 0.65, 0x334155, { metalness: 0.7 });
-                    box(x, 3.35, -0.4, 0.78, 0.22, 0.78, 0xf59e0b, { emissive: 0xd97706, emissiveIntensity: 1.2 });
+                    const rim = box(x, 3.35, -0.4, 0.78, 0.22, 0.78, 0xf59e0b, { emissive: 0xd97706, emissiveIntensity: 1.2 });
+                    chimneys.push({ x, rim });
                 }
-                // 右臂压铸重砧
-                box(1.8, 1.8, 0.2, 0.9, 0.7, 0.9, 0x475569);
-                box(1.8, 1.1, 0.3, 0.55, 1.2, 0.55, 0x334155);
-                box(1.8, 0.45, 0.5, 1.4, 0.85, 1.4, def.color, { metalness: 0.85, roughness: 0.25 });
-                // 左臂重工冶金机械钳
-                box(-1.7, 1.8, 0, 0.8, 0.65, 0.8, 0x475569);
-                box(-1.7, 1.0, 0.2, 0.45, 1.1, 0.45, 0x334155);
-                box(-1.9, 0.35, 0.4, 0.25, 0.9, 0.7, 0x94a3b8);
-                box(-1.5, 0.35, 0.4, 0.25, 0.9, 0.7, 0x94a3b8);
+                parts.chimneys = chimneys;
+                // 右臂压铸重砧 (可动铰接组)
+                const anvilArm = new THREE.Group();
+                anvilArm.position.set(1.8, 1.8, 0.2);
+                const aSh = new THREE.Mesh(this.art.unitBox, this.art.getMat(0x475569)); aSh.scale.set(0.9, 0.7, 0.9);
+                const aEl = new THREE.Mesh(this.art.unitBox, this.art.getMat(0x334155)); aEl.position.set(0, -0.7, 0.1); aEl.scale.set(0.55, 1.2, 0.55);
+                const aHd = new THREE.Mesh(this.art.unitBox, this.art.getMat(def.color, { metalness: 0.85, roughness: 0.25 })); aHd.position.set(0, -1.35, 0.3); aHd.scale.set(1.4, 0.85, 1.4);
+                anvilArm.add(aSh, aEl, aHd); group.add(anvilArm); parts.anvilArm = anvilArm;
+                // 左臂重工冶金机械钳 (可动铰接组)
+                const clampArm = new THREE.Group();
+                clampArm.position.set(-1.7, 1.8, 0);
+                const cSh = new THREE.Mesh(this.art.unitBox, this.art.getMat(0x475569)); cSh.scale.set(0.8, 0.65, 0.8);
+                const cEl = new THREE.Mesh(this.art.unitBox, this.art.getMat(0x334155)); cEl.position.set(0, -0.8, 0.2); cEl.scale.set(0.45, 1.1, 0.45);
+                const cJ1 = new THREE.Mesh(this.art.unitBox, this.art.getMat(0x94a3b8)); cJ1.position.set(-0.2, -1.45, 0.4); cJ1.scale.set(0.25, 0.9, 0.7);
+                const cJ2 = new THREE.Mesh(this.art.unitBox, this.art.getMat(0x94a3b8)); cJ2.position.set(0.2, -1.45, 0.4); cJ2.scale.set(0.25, 0.9, 0.7);
+                clampArm.add(cSh, cEl, cJ1, cJ2); group.add(clampArm); parts.clampArm = clampArm;
                 // 履带与重装液压基座
                 for (const x of [-0.95, 0.95]) {
                     box(x, 0.4, 0.1, 0.85, 0.8, 1.8, 0x0f172a, { metalness: 0.75 });
@@ -2980,39 +3018,53 @@
                 // B02 织网构装：三足高精液压机甲、中央流线型主控核、下挂光纤编织喷口与激光探测塔
                 box(0, 2.1, 0, 2.0, 1.1, 2.0, def.color, { metalness: 0.7, roughness: 0.3 });
                 box(0, 2.45, 0, 1.2, 0.55, 1.2, 0x1e293b);
-                box(0, 2.85, 0, 0.75, 0.4, 0.75, 0xfef08a, { emissive: 0xfacc15, emissiveIntensity: 1.8 });
-                box(0, 1.4, 0, 0.85, 0.65, 0.85, 0x38bdf8, { emissive: 0x0284c7, emissiveIntensity: 1.6 });
+                const coreDome = box(0, 2.85, 0, 0.75, 0.4, 0.75, 0xfef08a, { emissive: 0xfacc15, emissiveIntensity: 1.8 });
+                const nozzle = box(0, 1.4, 0, 0.85, 0.65, 0.85, 0x38bdf8, { emissive: 0x0284c7, emissiveIntensity: 1.6 });
+                parts.core = coreDome; parts.nozzle = nozzle;
+                const legs = [];
                 for (let i = 0; i < 3; i++) {
                     const a = i * Math.PI * 2 / 3;
-                    box(Math.cos(a) * 1.4, 1.9, Math.sin(a) * 1.4, 0.5, 0.5, 0.5, 0xa16207, { metalness: 0.8 });
-                    box(Math.cos(a) * 2.0, 1.1, Math.sin(a) * 2.0, 0.38, 1.6, 0.38, 0x475569);
-                    box(Math.cos(a) * 2.35, 0.18, Math.sin(a) * 2.35, 0.7, 0.35, 0.7, 0xfef08a, { emissive: 0xd97706, emissiveIntensity: 0.8 });
+                    const lHip = box(Math.cos(a) * 1.4, 1.9, Math.sin(a) * 1.4, 0.5, 0.5, 0.5, 0xa16207, { metalness: 0.8 });
+                    const lShin = box(Math.cos(a) * 2.0, 1.1, Math.sin(a) * 2.0, 0.38, 1.6, 0.38, 0x475569);
+                    const lFoot = box(Math.cos(a) * 2.35, 0.18, Math.sin(a) * 2.35, 0.7, 0.35, 0.7, 0xfef08a, { emissive: 0xd97706, emissiveIntensity: 0.8 });
+                    legs.push({ hip: lHip, shin: lShin, foot: lFoot, angle: a });
                 }
+                parts.legs = legs;
                 group.rotation.y = 0.5;
             } else if (id === 'tank') {
                 // B04 潮蚀容器：铰接式双联履带底盘、高压透明化工厂酸液储罐、双化学喷枪与黄铜压力计
                 box(0, 1.1, 0, 2.4, 1.2, 2.4, 0x0f766e, { metalness: 0.7, roughness: 0.35 });
-                box(0, 2.15, 0, 1.7, 1.3, 1.7, 0x14b8a6, { opacity: 0.75, metalness: 0.1, roughness: 0.15 });
-                box(0, 2.15, 0, 1.2, 0.9, 1.2, 0x22d3ee, { emissive: 0x06b6d4, emissiveIntensity: 2.0 });
+                const vatShell = box(0, 2.15, 0, 1.7, 1.3, 1.7, 0x14b8a6, { opacity: 0.75, metalness: 0.1, roughness: 0.15 });
+                const vatCore = box(0, 2.15, 0, 1.2, 0.9, 1.2, 0x22d3ee, { emissive: 0x06b6d4, emissiveIntensity: 2.0 });
+                parts.vat = vatCore; parts.vatShell = vatShell;
                 for (const x of [-1.35, 1.35]) {
                     box(x, 0.55, 0, 0.65, 0.95, 2.8, 0x0f172a, { metalness: 0.85 });
                     for (const z of [-0.9, 0, 0.9]) box(x, 0.45, z, 0.72, 0.65, 0.65, 0x334155);
                 }
+                const nozzles = [];
                 for (const x of [-0.65, 0.65]) {
                     box(x, 1.4, 1.4, 0.38, 0.38, 1.1, 0x115e59, { metalness: 0.8 });
-                    box(x, 1.4, 1.95, 0.48, 0.48, 0.25, 0x67e8f9, { emissive: 0x22d3ee, emissiveIntensity: 1.8 });
+                    const tip = box(x, 1.4, 1.95, 0.48, 0.48, 0.25, 0x67e8f9, { emissive: 0x22d3ee, emissiveIntensity: 1.8 });
+                    nozzles.push(tip);
                 }
+                parts.nozzles = nozzles;
                 box(0, 1.6, -1.25, 1.2, 0.55, 0.3, 0xd97706, { metalness: 0.9 });
             } else if (id === 'clock') {
                 // B05 逆相钟匠：钟楼发条巨像、胸口转动咬合齿轮、发光罗马数字钟面、重摆长矛与擒纵盾
                 box(0, 1.8, 0, 1.6, 2.8, 1.4, 0x4a044e, { metalness: 0.75, roughness: 0.3 });
                 box(0, 1.5, 0.75, 1.2, 1.2, 0.25, 0xd97706, { metalness: 0.9, roughness: 0.2 });
-                box(0, 1.5, 0.85, 0.45, 0.45, 0.25, 0xfacc15, { emissive: 0xf59e0b, emissiveIntensity: 1.2 });
+                const gear = box(0, 1.5, 0.85, 0.45, 0.45, 0.25, 0xfacc15, { emissive: 0xf59e0b, emissiveIntensity: 1.2 });
+                parts.gear = gear;
                 box(0, 3.0, 0.2, 1.4, 1.4, 0.45, def.color, { metalness: 0.8 });
                 box(0, 3.0, 0.45, 1.1, 1.1, 0.15, 0xf472b6, { emissive: 0xe879f9, emissiveIntensity: 2.2 });
-                box(0, 3.0, 0.54, 0.12, 0.6, 0.12, 0x090d16);
-                box(1.2, 1.8, 0.3, 0.45, 2.6, 0.45, 0xd97706);
-                box(1.2, 0.3, 0.3, 0.95, 0.95, 0.35, 0xe879f9, { emissive: 0xf472b6, emissiveIntensity: 1.8 });
+                const secondHand = box(0, 3.0, 0.54, 0.12, 0.6, 0.12, 0x090d16);
+                parts.secondHand = secondHand;
+                // 重摆长矛 (可动铰接组)
+                const spearGroup = new THREE.Group();
+                spearGroup.position.set(1.2, 1.8, 0.3);
+                const spShaft = new THREE.Mesh(this.art.unitBox, this.art.getMat(0xd97706)); spShaft.scale.set(0.45, 2.6, 0.45);
+                const spTip = new THREE.Mesh(this.art.unitBox, this.art.getMat(0xe879f9, { emissive: 0xf472b6, emissiveIntensity: 1.8 })); spTip.position.set(0, -1.5, 0); spTip.scale.set(0.95, 0.95, 0.35);
+                spearGroup.add(spShaft, spTip); group.add(spearGroup); parts.spear = spearGroup;
                 box(-1.2, 1.8, 0.3, 0.35, 1.6, 1.1, 0x701a75, { metalness: 0.8 });
                 for (const x of [-0.65, 0.65]) box(x, 0.35, 0, 0.75, 0.7, 1.4, 0x1e293b);
             } else if (id === 'train') {
@@ -3021,33 +3073,46 @@
                 box(0, 2.2, -0.4, 2.2, 1.4, 1.8, def.color, { metalness: 0.8 });
                 box(0, 0.6, 1.9, 3.4, 1.0, 0.8, 0x0f172a, { metalness: 0.85 });
                 box(0, 0.65, 2.2, 2.8, 0.35, 0.35, 0xeab308, { emissive: 0xca8a04, emissiveIntensity: 1.2 });
+                const stacks = [];
                 for (const z of [-0.8, 0, 0.8]) {
                     box(0, 2.6, z, 0.65, 0.85, 0.65, 0x475569);
-                    box(0, 3.05, z, 0.78, 0.2, 0.78, 0xf59e0b, { emissive: 0xd97706, emissiveIntensity: 1.0 });
+                    const rim = box(0, 3.05, z, 0.78, 0.2, 0.78, 0xf59e0b, { emissive: 0xd97706, emissiveIntensity: 1.0 });
+                    stacks.push({ z, rim });
                 }
+                parts.stacks = stacks;
                 for (const x of [-1.7, 1.7]) {
                     for (const z of [-1.1, 0, 1.1]) box(x, 0.55, z, 0.28, 1.1, 1.1, 0x475569, { metalness: 0.9 });
                     box(x, 0.55, 0, 0.35, 0.22, 2.6, 0x94a3b8, { metalness: 0.95 });
                 }
+                const headlights = [];
                 for (const x of [-0.95, 0.95]) {
                     box(x, 1.7, 1.8, 0.55, 0.55, 0.55, 0x334155);
-                    box(x, 1.7, 2.05, 0.45, 0.45, 0.15, 0xfef08a, { emissive: 0xfacc15, emissiveIntensity: 2.8 });
+                    const bulb = box(x, 1.7, 2.05, 0.45, 0.45, 0.15, 0xfef08a, { emissive: 0xfacc15, emissiveIntensity: 2.8 });
+                    headlights.push(bulb);
                 }
+                parts.headlights = headlights;
             } else {
                 // B03 棱面核心：多面体悬浮几何要塞、3块重型合金浮游护盾板、核心聚能折射极光
                 box(0, 2.0, 0, 1.1, 1.1, 1.1, 0xddd6fe, { emissive: 0xa855f7, emissiveIntensity: 2.6, metalness: 0.2, roughness: 0.1 });
-                box(0, 2.0, 0, 0.6, 0.6, 0.6, 0xffffff, { emissive: 0xffffff, emissiveIntensity: 3.0 });
+                const crystal = box(0, 2.0, 0, 0.6, 0.6, 0.6, 0xffffff, { emissive: 0xffffff, emissiveIntensity: 3.0 });
+                parts.crystal = crystal;
                 box(0, 2.85, 0, 1.4, 0.25, 1.4, 0x475569, { metalness: 0.85 });
                 box(0, 1.15, 0, 1.4, 0.25, 1.4, 0x475569, { metalness: 0.85 });
+                const shields = [];
                 for (let i = 0; i < 3; i++) {
                     const a = i * Math.PI * 2 / 3;
-                    const m = box(Math.cos(a) * 1.85, 2.0, Math.sin(a) * 1.85, 0.45, 2.4, 1.1, def.color, { metalness: 0.8, roughness: 0.25 });
-                    m.rotation.y = -a;
-                    box(Math.cos(a) * 1.85, 2.0, Math.sin(a) * 1.85, 0.52, 1.4, 0.3, 0x38bdf8, { emissive: 0x0ea5e9, emissiveIntensity: 1.8 });
+                    const shGroup = new THREE.Group();
+                    shGroup.position.set(Math.cos(a) * 1.85, 2.0, Math.sin(a) * 1.85);
+                    shGroup.rotation.y = -a;
+                    const m1 = new THREE.Mesh(this.art.unitBox, this.art.getMat(def.color, { metalness: 0.8, roughness: 0.25 })); m1.scale.set(0.45, 2.4, 1.1);
+                    const m2 = new THREE.Mesh(this.art.unitBox, this.art.getMat(0x38bdf8, { emissive: 0x0ea5e9, emissiveIntensity: 1.8 })); m2.scale.set(0.52, 1.4, 0.3);
+                    shGroup.add(m1, m2); group.add(shGroup);
+                    shields.push({ group: shGroup, baseAngle: a });
                 }
+                parts.shields = shields;
             }
             const encounter=getBossEncounterStats(this.wave,this.difficulty||1),hp=encounter.hp;
-            const boss={bossId:id,type:id,isBoss:true,name:def.name,group,hp,maxHp:hp,speed:encounter.speed,dmg:encounter.contactBase,radius:1.8,color:def.color,behavior:id,phase2:false,goldValue:0,knockback:new THREE.Vector3(),ai:{phase:'chase',remaining:encounter.chase,duration:encounter.chase,skill:Math.floor(this.rewardRandom()*3),shapes:[]}};
+            const boss={bossId:id,type:id,isBoss:true,name:def.name,group,hp,maxHp:hp,speed:encounter.speed,dmg:encounter.contactBase,radius:1.8,color:def.color,behavior:id,phase2:false,goldValue:0,knockback:new THREE.Vector3(),parts,ai:{phase:'chase',remaining:encounter.chase,duration:encounter.chase,skill:Math.floor(this.rewardRandom()*3),shapes:[]}};
             this.entitiesGroup.add(group);this.enemies.push(boss);this.activeBoss=boss;
             document.getElementById('boss-bar-container').classList.remove('hidden');this.updateBossBar();
         }
@@ -3085,31 +3150,110 @@
                 else if(ai.skill===1)ai.ring={x:p.x,z:p.z,inner:3.6,outer:4};
                 else {add(p.x,p.z,p.x,p.z,2);ai.teleport={x:clamp(-p.x+4),z:clamp(-p.z-2)};}
             }
+            const bossColors = {
+                forge: { fill: 0xf97316, edge: 0xfef08a, ring: 0xf97316 },
+                weaver: { fill: 0x06b6d4, edge: 0x67e8f9, ring: 0x06b6d4 },
+                prism: { fill: 0xa855f7, edge: 0xf472b6, ring: 0xa855f7 },
+                tank: { fill: 0x0d9488, edge: 0xa3e635, ring: 0x14b8a6 },
+                clock: { fill: 0x7e22ce, edge: 0xfacc15, ring: 0xa855f7 },
+                train: { fill: 0xd97706, edge: 0xfef08a, ring: 0xf59e0b }
+            };
+            const theme = bossColors[enemy.bossId] || { fill: 0xef4444, edge: 0xfbbf24, ring: 0xef4444 };
             const warning=new THREE.Group();this.entitiesGroup.add(warning);
-            for(const shape of ai.shapes){const part=this.createBossWarning(shape.x,shape.z,shape.ex,shape.ez,shape.r);this.entitiesGroup.remove(part);warning.add(part);}
-            if(ai.ring){const ring=new THREE.Mesh(new THREE.RingGeometry(ai.ring.inner,ai.ring.outer,48),new THREE.MeshBasicMaterial({color:0xef4444,transparent:true,opacity:.6,side:THREE.DoubleSide}));ring.rotation.x=-Math.PI/2;ring.position.set(ai.ring.x,.1,ai.ring.z);warning.add(ring);}
+            for(const shape of ai.shapes){const part=this.createBossWarning(shape.x,shape.z,shape.ex,shape.ez,shape.r,theme);this.entitiesGroup.remove(part);warning.add(part);}
+            if(ai.ring){
+                const ring=new THREE.Mesh(new THREE.RingGeometry(ai.ring.inner,ai.ring.outer,48),new THREE.MeshBasicMaterial({color:theme.ring||0xef4444,transparent:true,opacity:.55,side:THREE.DoubleSide}));
+                ring.rotation.x=-Math.PI/2;ring.position.set(ai.ring.x,.1,ai.ring.z);
+                const innerEdge=new THREE.Mesh(new THREE.RingGeometry(ai.ring.inner,ai.ring.inner+0.12,48),new THREE.MeshBasicMaterial({color:theme.edge||0xfbbf24,transparent:true,opacity:.9,side:THREE.DoubleSide}));
+                innerEdge.rotation.x=-Math.PI/2;innerEdge.position.set(ai.ring.x,.105,ai.ring.z);
+                const outerEdge=new THREE.Mesh(new THREE.RingGeometry(ai.ring.outer-0.12,ai.ring.outer,48),new THREE.MeshBasicMaterial({color:theme.edge||0xfbbf24,transparent:true,opacity:.9,side:THREE.DoubleSide}));
+                outerEdge.rotation.x=-Math.PI/2;outerEdge.position.set(ai.ring.x,.105,ai.ring.z);
+                warning.add(ring,innerEdge,outerEdge);
+            }
             enemy.bossWarning=warning;this.updateBossBar();
         }
 
         executeOriginalBossSkill(enemy) {
-            const ai=enemy.ai;
+            const ai=enemy.ai,p=enemy.group.position;
             if(enemy.bossId==='weaver'&&ai.skill===1) {
-                for(const s of ai.shapes){if(this.enemies.filter(e=>e.rewardless&&e.hp>0).length>=ENCOUNTER_RULES.droneLimit)break;this.spawnEnemyNow('slime_green',s.x,s.z);const drone=this.enemies.at(-1);drone.rewardless=true;drone.hp=drone.maxHp=Math.max(10,enemy.maxHp*.012);drone.goldValue=0;drone.dmg=ENCOUNTER_RULES.droneDamage;drone.expiresAt=(this.combatElapsed||0)+ENCOUNTER_RULES.droneLife;}
+                for(const s of ai.shapes){
+                    if(this.enemies.filter(e=>e.rewardless&&e.hp>0).length>=ENCOUNTER_RULES.droneLimit)break;
+                    this.spawnEnemyNow('slime_green',s.x,s.z);
+                    const drone=this.enemies.at(-1);
+                    drone.rewardless=true;drone.hp=drone.maxHp=Math.max(10,enemy.maxHp*.012);drone.goldValue=0;drone.dmg=ENCOUNTER_RULES.droneDamage;drone.expiresAt=(this.combatElapsed||0)+ENCOUNTER_RULES.droneLife;
+                    drone.hitSquash=0.62;
+                    this.weaponVfx('pulse',s.x,s.z,0,0,0x06b6d4,1.8);
+                    this.spawnBurstParticles(s.x,s.z,0x67e8f9,6,'spark');
+                }
             } else if(enemy.bossId==='prism'&&ai.skill===1) {
-                const p=enemy.group.position;
-                for(let i=0;i<6;i++){if(i===1||i===2)continue;const a=i*Math.PI/3;const m=new THREE.Mesh(new THREE.SphereGeometry(.24,6,6),new THREE.MeshBasicMaterial({color:enemy.color}));m.position.set(p.x,.6,p.z);this.entitiesGroup.add(m);this.enemyProjectiles.push({mesh:m,vx:Math.cos(a)*5,vz:Math.sin(a)*5,dmg:ENCOUNTER_RULES.prismBolt,life:5,source:enemy.name+'·缺口光环'});}
+                for(let i=0;i<6;i++){
+                    if(i===1||i===2)continue;
+                    const a=i*Math.PI/3;
+                    const m=new THREE.Mesh(new THREE.SphereGeometry(.24,6,6),new THREE.MeshBasicMaterial({color:enemy.color}));
+                    m.position.set(p.x,.6,p.z);
+                    this.entitiesGroup.add(m);
+                    this.enemyProjectiles.push({mesh:m,vx:Math.cos(a)*5,vz:Math.sin(a)*5,dmg:ENCOUNTER_RULES.prismBolt,life:5,source:enemy.name+'·缺口光环'});
+                }
+                this.weaponVfx('pulse',p.x,p.z,0,0,0xa855f7,3.8);
+                this.spawnBurstParticles(p.x,p.z,0xf472b6,8,'spark');
             } else {
                 let hit=ai.shapes.some(s=>this.pointToSegmentDist(this.playerPos.x,this.playerPos.z,s.x,s.z,s.ex,s.ez)<=s.r+.35);
                 if(ai.ring){const d=Math.hypot(this.playerPos.x-ai.ring.x,this.playerPos.z-ai.ring.z);hit ||= d>=ai.ring.inner&&d<=ai.ring.outer;}
                 if(hit&&!ai.hitPlayer){ai.hitPlayer=true;this.damagePlayer(enemy.phase2?ENCOUNTER_RULES.rageDamage:ENCOUNTER_RULES.skillDamage,enemy.name+'·'+BOSSES_DB[enemy.bossId].skills[ai.skill]);}
-                if(ai.teleport){enemy.group.position.x=ai.teleport.x;enemy.group.position.z=ai.teleport.z;}
+                if(ai.teleport){
+                    this.weaponVfx('pulse',p.x,p.z,0,0,0x4a044e,2.4);
+                    this.spawnBurstParticles(p.x,p.z,0x7e22ce,8,'dissolve');
+                    enemy.group.position.x=ai.teleport.x;enemy.group.position.z=ai.teleport.z;
+                    this.weaponVfx('pulse',ai.teleport.x,ai.teleport.z,0,0,0xa855f7,2.8);
+                    this.spawnBurstParticles(ai.teleport.x,ai.teleport.z,0xffffff,10,'spark');
+                }
             }
-            this.spawnBurstParticles(enemy.group.position.x,enemy.group.position.z,enemy.color,10);
+            // 6大 Boss 专属 Pixelfx 标志性打击与受力回弹
+            if(enemy.bossId==='forge'){
+                enemy.hitSquash=0.68;
+                if(ai.skill===0&&ai.shapes[0]){const s=ai.shapes[0];this.weaponVfx('fissure',s.x,s.z,s.ex,s.ez,0xf97316,1.4);this.weaponVfx('impact',s.ex,s.ez,0,0,0xf97316,1.2);this.spawnBurstParticles(s.ex,s.ez,0xfde047,8,'spark');}
+                else if(ai.skill===1){this.weaponVfx('pulse',p.x,p.z,0,0,0xf97316,5.8);this.spawnBurstParticles(p.x,p.z,0xf97316,12,'spark');}
+                else for(const s of ai.shapes){this.weaponVfx('fissure',s.x,s.z,s.ex,s.ez,0xf97316,0.9);this.weaponVfx('muzzle',p.x,p.z,s.ex,s.ez,0xfde047,1.2);}
+            } else if(enemy.bossId==='weaver'){
+                enemy.hitSquash=0.76;
+                if(ai.skill===0)for(const s of ai.shapes){this.weaponVfx('arc',s.x,s.z,s.ex,s.ez,0x06b6d4,1.2);this.spawnBurstParticles(s.ex,s.ez,0x67e8f9,3,'spark');}
+                else if(ai.skill===2)for(const s of ai.shapes){this.weaponVfx('arc',s.x,s.z,s.ex,s.ez,0x38bdf8,1.4);this.weaponVfx('impact',s.ex,s.ez,0,0,0x67e8f9,1.2);}
+            } else if(enemy.bossId==='prism'){
+                enemy.hitSquash=0.82;
+                if(ai.skill===0&&ai.shapes.length>=2){const s0=ai.shapes[0],s1=ai.shapes[1];this.weaponVfx('arc',s0.x,s0.z,s0.ex,s0.ez,0xa855f7,1.3);this.weaponVfx('impact',s0.ex,s0.ez,0,0,0xffffff,1.1);this.weaponVfx('arc',s1.x,s1.z,s1.ex,s1.ez,0xf472b6,1.3);}
+            } else if(enemy.bossId==='tank'){
+                enemy.hitSquash=0.72;
+                if(ai.skill===0&&ai.shapes[0]){const s=ai.shapes[0];this.weaponVfx('fissure',s.x,s.z,s.ex,s.ez,0x14b8a6,2.0);this.weaponVfx('muzzle',p.x,p.z,s.ex,s.ez,0x22d3ee,1.8);this.spawnBurstParticles(s.ex,s.ez,0x14b8a6,8,'dissolve');}
+                else if(ai.skill===1)for(const s of ai.shapes){this.weaponVfx('pulse',s.x,s.z,0,0,0x0f766e,2.2);this.spawnBurstParticles(s.x,s.z,0x22d3ee,8,'dissolve');}
+                else for(const s of ai.shapes){this.weaponVfx('fissure',s.x,s.z,s.ex,s.ez,0x0f766e,1.2);this.spawnBurstParticles(s.x,s.z,0x14b8a6,4,'dissolve');}
+            } else if(enemy.bossId==='clock'){
+                enemy.hitSquash=0.74;
+                if(ai.skill===0&&ai.shapes.length>=2){const s0=ai.shapes[0],s1=ai.shapes[1];this.weaponVfx('pulse',s0.x,s0.z,0,0,0xe879f9,3.0);this.spawnBurstParticles(s0.x,s0.z,0xfacc15,12,'spark');this.weaponVfx('arc',s0.x,s0.z,s0.ex,s0.ez,0xe879f9,0.9);this.weaponVfx('arc',s1.x,s1.z,s1.ex,s1.ez,0xe879f9,0.9);}
+                else if(ai.skill===1&&ai.shapes[0]){const s=ai.shapes[0];this.weaponVfx('fissure',s.x,s.z,s.ex,s.ez,0xfacc15,1.2);this.weaponVfx('impact',s.ex,s.ez,0,0,0xe879f9,1.4);this.spawnBurstParticles(s.ex,s.ez,0xfacc15,6,'spark');}
+                else if(ai.skill===2&&ai.shapes[0]){const s=ai.shapes[0];this.weaponVfx('pulse',p.x,p.z,0,0,0x701a75,1.8);this.weaponVfx('trail',p.x,p.z,s.ex,s.ez,0xe879f9,1.4);}
+            } else if(enemy.bossId==='train'){
+                enemy.hitSquash=0.70;
+                if(ai.skill===0&&ai.shapes[0]){const s=ai.shapes[0];this.weaponVfx('fissure',s.x,s.z,s.ex,s.ez,0xf59e0b,1.5);this.weaponVfx('impact',s.ex,s.ez,0,0,0xfef08a,1.8);this.spawnBurstParticles(s.x,s.z,0x64748b,6,'dust');this.spawnBurstParticles(s.ex,s.ez,0x64748b,6,'dust');}
+                else if(ai.skill===1)for(const s of ai.shapes){this.weaponVfx('fissure',s.x,s.z,s.ex,s.ez,0xeab308,1.6);this.spawnBurstParticles(s.x,s.z,0x64748b,4,'dust');}
+                else if(ai.skill===2&&ai.shapes[0]){const s=ai.shapes[0];this.weaponVfx('fissure',s.x,s.z,s.ex,s.ez,0xf59e0b,1.7);this.spawnBurstParticles(s.x,s.z,0xf59e0b,8,'spark');}
+            }
+            this.spawnBurstParticles(p.x,p.z,enemy.color,10);
         }
 
         updateOriginalBoss(enemy,dt) {
             if(this.state!=='WAVE'||enemy.hp<=0)return;
-            if(enemy.hp<=enemy.maxHp*.5)enemy.phase2=true;
+            if(enemy.hp<=enemy.maxHp*.5&&!enemy.phase2){
+                enemy.phase2=true;
+                this.spawnBurstParticles(enemy.group.position.x,enemy.group.position.z,enemy.color,16,'spark');
+                this.weaponVfx('pulse',enemy.group.position.x,enemy.group.position.z,0,0,enemy.color,4.0);
+                this.spawnFloatText(enemy.group.position.x,enemy.group.position.z,'OVERLOAD!','#ef4444',true);
+            }
+            // 动作回弹与体素挤压复原
+            if(enemy.hitSquash&&enemy.hitSquash<1.0){
+                enemy.hitSquash=Math.min(1.0,enemy.hitSquash+5.0*dt);
+                const sy=enemy.hitSquash,sxz=1.0+(1.0-sy)*0.4;
+                enemy.group.scale.set(sxz,sy,sxz);
+            }
             const ai=enemy.ai;
             let remaining=dt;
             while(remaining>1e-9&&this.state==='WAVE'&&enemy.hp>0) {
@@ -3118,6 +3262,30 @@
                     const p=enemy.group.position,dx=this.playerPos.x-p.x,dz=this.playerPos.z-p.z,d=Math.hypot(dx,dz)||1;
                     const slow=(enemy.slowUntil||0)>(this.combatElapsed||0)?Math.max(.85,enemy.slowRatio||1):1;
                     p.x+=dx/d*enemy.speed*step*slow;p.z+=dz/d*enemy.speed*step*slow;
+                    enemy.group.rotation.y=Math.atan2(dx,dz);
+                } else if(ai.phase==='warn'){
+                    const p=enemy.group.position,dx=this.playerPos.x-p.x,dz=this.playerPos.z-p.z;
+                    enemy.group.rotation.y=Math.atan2(dx,dz);
+                    const windup=1-Math.max(0,ai.remaining/ai.duration);
+                    if(enemy.bossId==='forge'&&enemy.parts?.anvilArm){
+                        enemy.parts.anvilArm.rotation.x=-Math.sin(windup*Math.PI*0.5)*1.3;
+                    } else if(enemy.bossId==='weaver'&&enemy.parts?.core){
+                        enemy.parts.core.rotation.y+=step*12;
+                    } else if(enemy.bossId==='prism'&&enemy.parts?.shields){
+                        for(const sh of enemy.parts.shields)sh.group.rotation.y+=step*6;
+                    } else if(enemy.bossId==='clock'&&enemy.parts?.spear){
+                        enemy.parts.spear.position.z=0.3-windup*0.6;
+                        if(enemy.parts.secondHand)enemy.parts.secondHand.rotation.z-=step*15;
+                    } else if(enemy.bossId==='tank'&&enemy.parts?.vat){
+                        const s=1.0+Math.sin(windup*20)*0.08;
+                        enemy.parts.vat.scale.set(1.2*s,0.9*s,1.2*s);
+                    }
+                } else if(ai.phase==='recover'){
+                    if(enemy.bossId==='forge'&&enemy.parts?.anvilArm){
+                        enemy.parts.anvilArm.rotation.x*=0.82;
+                    } else if(enemy.bossId==='clock'&&enemy.parts?.spear){
+                        enemy.parts.spear.position.z+=(0.3-enemy.parts.spear.position.z)*0.18;
+                    }
                 }
                 ai.remaining-=step;remaining-=step;
                 if(ai.remaining<=1e-9){
@@ -4697,24 +4865,30 @@
             enemy.bossWarning = null;
         }
 
-        createBossWarning(x, z, endX, endZ, radius) {
+        createBossWarning(x, z, endX, endZ, radius, theme = { fill: 0xef4444, edge: 0xfbbf24 }) {
             const group = new THREE.Group();
             const addDisc = (cx, cz) => {
-                const fill = new THREE.Mesh(new THREE.CircleGeometry(radius, 48), new THREE.MeshBasicMaterial({ color: 0xef4444, transparent: true, opacity: 0.23, depthWrite: false, side: THREE.DoubleSide }));
+                const fill = new THREE.Mesh(new THREE.CircleGeometry(radius, 48), new THREE.MeshBasicMaterial({ color: theme.fill, transparent: true, opacity: 0.22, depthWrite: false, side: THREE.DoubleSide }));
                 fill.rotation.x = -Math.PI / 2;
                 fill.position.set(cx, 0.07, cz);
-                const edge = new THREE.Mesh(new THREE.RingGeometry(radius - 0.1, radius, 48), new THREE.MeshBasicMaterial({ color: 0xfbbf24, transparent: true, opacity: 0.95, depthWrite: false, side: THREE.DoubleSide }));
+                const edge = new THREE.Mesh(new THREE.RingGeometry(radius - 0.1, radius, 48), new THREE.MeshBasicMaterial({ color: theme.edge, transparent: true, opacity: 0.92, depthWrite: false, side: THREE.DoubleSide }));
                 edge.rotation.x = -Math.PI / 2;
                 edge.position.set(cx, 0.08, cz);
-                group.add(fill, edge);
+                const coreDot = new THREE.Mesh(new THREE.CircleGeometry(Math.min(0.24, radius * 0.35), 16), new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.70, depthWrite: false, side: THREE.DoubleSide }));
+                coreDot.rotation.x = -Math.PI / 2;
+                coreDot.position.set(cx, 0.085, cz);
+                group.add(fill, edge, coreDot);
             };
             addDisc(x, z);
             const length = Math.hypot(endX - x, endZ - z);
             if (length > 0.01) {
-                const lane = new THREE.Mesh(new THREE.BoxGeometry(length, 0.025, radius * 2), new THREE.MeshBasicMaterial({ color: 0xef4444, transparent: true, opacity: 0.28, depthWrite: false }));
+                const lane = new THREE.Mesh(new THREE.BoxGeometry(length, 0.025, radius * 2), new THREE.MeshBasicMaterial({ color: theme.fill, transparent: true, opacity: 0.26, depthWrite: false }));
                 lane.position.set((x + endX) / 2, 0.075, (z + endZ) / 2);
                 lane.rotation.y = -Math.atan2(endZ - z, endX - x);
-                group.add(lane);
+                const spine = new THREE.Mesh(new THREE.BoxGeometry(length, 0.03, Math.min(0.12, radius * 0.2)), new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.65, depthWrite: false }));
+                spine.position.set((x + endX) / 2, 0.08, (z + endZ) / 2);
+                spine.rotation.y = lane.rotation.y;
+                group.add(lane, spine);
                 addDisc(endX, endZ);
             }
             this.entitiesGroup.add(group);
@@ -4984,12 +5158,15 @@
                 en.knockback.z += kz * (heavyHit ? 1.5 : 1);
             }
             sfx.playHit(isCrit);
-            en.hitSquash = isCrit ? 0.72 : 0.85;
-            if (isCrit || actualDamage >= 35) {
-                this.hitstopTimer = Math.max(this.hitstopTimer || 0, isCrit ? 0.036 : 0.022);
+            const isFinisher = !!native?.finisher;
+            const isHeavy = (this.selectedCoreId === 'heavy' && options.attack && CORE_RELICS.heavy.behaviors.includes(WEAPONS_DB[options.attack.weaponId]?.behavior)) || en.isBoss;
+            en.hitSquash = isCrit ? 0.70 : isHeavy ? 0.76 : 0.84;
+            const hitstopDuration = isCrit ? (isHeavy ? 0.046 : 0.036) : (isHeavy || actualDamage >= 35) ? 0.024 : (isFinisher ? 0.040 : 0);
+            if (hitstopDuration > 0) {
+                this.hitstopTimer = Math.max(this.hitstopTimer || 0, hitstopDuration);
             }
             if (this.triggerCameraShake) {
-                this.triggerCameraShake(isCrit ? 0.14 : 0.04);
+                this.triggerCameraShake(isCrit ? (isHeavy ? 0.16 : 0.12) : (isHeavy ? 0.06 : 0.04));
             }
             if(native&&WEAPONS_DB[native.weaponId])this.weaponVfx('impact',en.group.position.x,en.group.position.z,0,0,native.finisher?0xfacc15:isCrit?0xffffff:WEAPONS_DB[native.weaponId].color,isCrit||native.finisher?.6:.34);
             this.spawnBurstParticles(en.group.position.x, en.group.position.z, isCrit ? 0xfef08a : (en.color || 0xfacc15), isCrit ? 7 : 4, isCrit ? 'spark' : 'burst');

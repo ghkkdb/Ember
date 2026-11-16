@@ -1,2 +1,4 @@
 node_modules/
 .system_generated/
+*.pre-mow-patch.bak
+*.temp.cjs
