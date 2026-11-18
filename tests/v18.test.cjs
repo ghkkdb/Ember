@@ -40,7 +40,7 @@ test('默认闪避60%，独立上限修正不直接提供闪避，概率与上�
 test('近战距离所有正加成仍封顶，远程与拾取随范围继续增长且不受幸运影响',()=>{
     const {app,context}=scene();app.addWeapon('copper_sword');const base=app.getWeaponCombatStats(app.weapons[0]).range;
     app.stats.rangePct=10000;const melee=app.getWeaponCombatStats(app.weapons[0]).range;
-    assert.ok(melee<=6&&melee<=base*1.75);const ranged=app.getWeaponCombatStats({id:'minishark',tier:1}).range;assert.ok(ranged>100);
+    assert.ok(melee<=8.4&&melee<=base*1.75);const ranged=app.getWeaponCombatStats({id:'minishark',tier:1}).range;assert.ok(ranged>100);
     app.stats.rangePct=0;app.stats.luck=10000;assert.equal(vm.runInContext('getPickupRange({rangePct:0,luck:10000})',context),3);
     assert.equal(vm.runInContext('getPickupRange({rangePct:100})',context),6);
 });
@@ -63,7 +63,7 @@ test('升级只自动生命+1且每级保留一次选择，封顶候选被过滤
 
 test('难度生命只乘一次，三个Boss按出场波次而非种类决定血量',()=>{
     const {app}=scene();app.difficulty=3;app.startWave(10);
-    for(const id of ['forge','weaver','prism']){app.clearEntities();app.spawnBoss(id);assert.equal(app.activeBoss.maxHp,9300);}
+    for(const id of ['forge','weaver','prism']){app.clearEntities();app.spawnBoss(id);assert.equal(app.activeBoss.maxHp,12090);}
     app.clearEntities();app.spawnEnemyNow('slime_green',0,0);assert.equal(app.enemies[0].maxHp,24*(1+9*.35)*1.55);
     app.difficulty=1;app.startWave(5);assert.equal(app.activeBoss.maxHp,1500);
 });
@@ -134,7 +134,7 @@ test('随机货架不再投放专武强化，刷新不重置常驻改装次数',
 
 test('连锁去重、衍生不暴击，导弧最多4跳',()=>{
     const {app}=scene();app.clearEntities();app.addWeapon('pulse_chain');app.selectedCoreId='chain';app.recalcStats();
-    const enemies=[0,1,2,3,4].map(i=>target(app,1000,i,0));const w=app.weapons[0],st=app.getWeaponCombatStats(w);st.crit=100;
+    const enemies=[0,1,2,3,4].map(i=>target(app,1000,i*1.4,0));const w=app.weapons[0],st=app.getWeaponCombatStats(w);st.crit=100;
     app.fireWeapon(w,{behavior:'chain',color:0xffffff},st,0,0,enemies[0]);
     assert.equal(enemies.filter(e=>e.hp<1000).length,4);assert.ok(enemies[1].hp>enemies[0].hp);
 });
@@ -143,7 +143,7 @@ test('冷雾四跳且不暴击，减速与清场回收有效',()=>{
     const {app}=scene();app.clearEntities();app.addWeapon('frost_lamp');const en=target(app),w=app.weapons[0];
     const def={behavior:'field',color:0xffffff};const st={...app.getWeaponCombatStats(w),crit:100};app.fireWeapon(w,def,st,0,0,en);
     for(let i=0;i<10;i++)app.updateAdvancedEffects(.2);
-    assert.equal(1000-en.hp,4*Math.round(st.dmg/4));assert.equal(app.advancedEffects.length,0);assert.equal(en.slowRatio,.8);
+    assert.equal(1000-en.hp,st.dmg);assert.equal(app.advancedEffects.length,0);assert.equal(en.slowRatio,.8);
     app.fireWeapon(w,def,st,0,0,en);app.clearEntities();assert.equal(app.advancedEffects.length,0);
 });
 
@@ -163,16 +163,16 @@ test('蓄压延迟前不命中，释放只执行一次',()=>{
 test('分束专武交叉棱面共享主束、连锁与末跳预算',()=>{
     const {app,context}=scene();app.clearEntities();app.addWeapon('boss_prism',2);app.selectedCoreId='volley';
     const def=vm.runInContext('WEAPONS_DB.boss_prism',context),w=app.weapons[0],st=app.getWeaponCombatStats(w);st.crit=0;
-    const enemies=[0,1,2,3].map(i=>target(app,1000,i,0));app.fireWeapon(w,def,st,0,0,enemies[0]);app.updateAdvancedEffects(.61);
-    assert.equal(1000-enemies[0].hp,16);assert.equal(1000-enemies[1].hp,7);assert.equal(1000-enemies[2].hp,0);
-    assert.equal(app.totalDmg,23);assert.equal(app.coreFits('volley','boss_prism'),true);
+    const enemies=[0,1,2,3].map(i=>target(app,1000,i*1.4,0));app.fireWeapon(w,def,st,0,0,enemies[0]);app.updateAdvancedEffects(.61);
+    assert.equal(1000-enemies[0].hp,20);assert.equal(1000-enemies[1].hp,8);assert.equal(1000-enemies[2].hp,0);
+    assert.equal(app.totalDmg,28);assert.equal(app.coreFits('volley','boss_prism'),true);
 });
 
 test('混合武器的远程段不受近战距离上限及重锤近战增伤影响',()=>{
     const {app,context}=scene();app.clearEntities();app.addWeapon('terra_blade',4);app.stats.rangePct=1000;
     const def=vm.runInContext('WEAPONS_DB.terra_blade',context),w=app.weapons[0];
     const normal=app.getWeaponCombatStats(w);app.selectedCoreId='heavy';const heavy=app.getWeaponCombatStats(w);
-    assert.ok(heavy.range<=6);assert.ok(heavy.projectileRange>heavy.range*2);
+    assert.ok(heavy.range<=8.4);assert.ok(heavy.projectileRange>heavy.range*2);
     app.fireWeapon(w,def,heavy,0,0,target(app,1000,0,-8));
     const p=app.projectiles[0];assert.equal(p.distanceBudget,heavy.projectileRange);
     assert.ok(Math.abs(p.dmg-Math.round(normal.dmg*vm.runInContext('BALANCE.beamRatio',context)))<=1);
@@ -189,7 +189,7 @@ test('角色及装备闪避上限接口可累加，异常配置不能进入游�
 
 test('专武广域分支增加连锁覆盖，卸装不会留下额外跳距',()=>{
     const {app,context}=scene();app.clearEntities();app.addWeapon('boss_prism',2);const w=app.weapons[0];w.rank=3;w.branch='area';
-    const a=target(app,1000,0,-3),b=target(app,1000,3.8,-3),def=vm.runInContext('WEAPONS_DB.boss_prism',context);
+    const a=target(app,1000,0,-3),b=target(app,1000,5.32,-3),def=vm.runInContext('WEAPONS_DB.boss_prism',context);
     app.fireWeapon(w,def,app.getWeaponCombatStats(w),0,0,a);assert.ok(b.hp<1000);
     a.hp=b.hp=1000;w.branch='single';app.fireWeapon(w,def,app.getWeaponCombatStats(w),0,0,a);assert.equal(b.hp,1000);
 });

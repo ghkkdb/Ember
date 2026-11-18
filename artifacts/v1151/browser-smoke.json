@@ -1,0 +1,257 @@
+{
+  "sourceSha256": "f5740b20351ea1ed744599ff0901afb3b65d8daabb00f6ad01381d5addfe011d",
+  "errors": [],
+  "checks": {
+    "desktop": {
+      "hud": {
+        "hudBottom": 133.5,
+        "viewportHeight": 900,
+        "scrollWidth": 1440,
+        "width": 1440,
+        "dash": {
+          "left": 1258.390625,
+          "right": 1360,
+          "bottom": 48.25,
+          "height": 32
+        },
+        "weapons": 6
+      },
+      "cameraHeight": {
+        "height": 48,
+        "saved": 48
+      },
+      "burst": {
+        "createdMs": 5.199999999254942,
+        "killMs": 4.900000000372529,
+        "kills": 50,
+        "damage": 500,
+        "particles": 24,
+        "vfx": 6,
+        "queued": 47,
+        "deathEffects": 3,
+        "shake": 0,
+        "floatCount": 3,
+        "pixelRatio": 1,
+        "rows": [
+          {
+            "slot": 1,
+            "damage": 250
+          },
+          {
+            "slot": 2,
+            "damage": 250
+          },
+          {
+            "slot": 3,
+            "damage": 0
+          },
+          {
+            "slot": 4,
+            "damage": 0
+          },
+          {
+            "slot": 5,
+            "damage": 0
+          },
+          {
+            "slot": 6,
+            "damage": 0
+          }
+        ],
+        "lights": 0
+      },
+      "affinity": [
+        "当前适配 1/6 把：凝霜雾灯",
+        "当前暂无适配武器",
+        "当前适配 5/6 把：回潮弧刃、铆钉速射器、伏雷匣、悬星织机",
+        "通用辅助 · 生存、机动或经济收益"
+      ],
+      "lock": {
+        "refreshRetained": true,
+        "restoreRetained": true,
+        "unlockVisible": true
+      },
+      "slotDamage": [
+        "本轮伤害：250",
+        "本轮伤害：250",
+        "本轮伤害：0",
+        "本轮伤害：0",
+        "本轮伤害：0",
+        "本轮伤害：0"
+      ],
+      "shop": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "actions": [
+          {
+            "height": 36,
+            "left": 102,
+            "right": 198.0625
+          },
+          {
+            "height": 40,
+            "left": 206.0625,
+            "right": 366.625
+          },
+          {
+            "height": 40,
+            "left": 374.625,
+            "right": 499.046875
+          },
+          {
+            "height": 40,
+            "left": 507.046875,
+            "right": 644.453125
+          }
+        ],
+        "rows": 6
+      },
+      "restore": {
+        "state": "SHOP",
+        "rows": 6,
+        "before": 6,
+        "cameraHeight": 48
+      },
+      "victory": {
+        "state": "GAMEOVER",
+        "rows": 6,
+        "damage": 5
+      },
+      "defeat": {
+        "state": "GAMEOVER",
+        "damage": 9,
+        "rows": 6
+      }
+    },
+    "mobile": {
+      "hud": {
+        "hudBottom": 209.5,
+        "viewportHeight": 800,
+        "scrollWidth": 360,
+        "width": 360,
+        "dash": {
+          "left": 258,
+          "right": 342,
+          "bottom": 776,
+          "height": 64
+        },
+        "weapons": 6
+      },
+      "cameraHeight": {
+        "height": 48,
+        "saved": 48
+      },
+      "landscape": {
+        "bottom": 160,
+        "overflow": false
+      },
+      "touch": {
+        "dashCooldown": 3,
+        "stopped": true
+      },
+      "burst": {
+        "createdMs": 3.099999999627471,
+        "killMs": 3.300000000745058,
+        "kills": 50,
+        "damage": 499.9999999999999,
+        "particles": 12,
+        "vfx": 4,
+        "queued": 48,
+        "deathEffects": 2,
+        "shake": 0,
+        "floatCount": 2,
+        "pixelRatio": 1.25,
+        "rows": [
+          {
+            "slot": 1,
+            "damage": 250
+          },
+          {
+            "slot": 2,
+            "damage": 250
+          },
+          {
+            "slot": 3,
+            "damage": 0
+          },
+          {
+            "slot": 4,
+            "damage": 0
+          },
+          {
+            "slot": 5,
+            "damage": 0
+          },
+          {
+            "slot": 6,
+            "damage": 0
+          }
+        ],
+        "lights": 0
+      },
+      "affinity": [
+        "当前适配 1/6 把：凝霜雾灯",
+        "当前暂无适配武器",
+        "当前适配 5/6 把：回潮弧刃、铆钉速射器、伏雷匣、悬星织机",
+        "通用辅助 · 生存、机动或经济收益"
+      ],
+      "lock": {
+        "refreshRetained": true,
+        "restoreRetained": true,
+        "unlockVisible": true
+      },
+      "slotDamage": [
+        "本轮伤害：250",
+        "本轮伤害：250",
+        "本轮伤害：0",
+        "本轮伤害：0",
+        "本轮伤害：0",
+        "本轮伤害：0"
+      ],
+      "shop": {
+        "width": 360,
+        "scrollWidth": 360,
+        "actions": [
+          {
+            "height": 44,
+            "left": 22,
+            "right": 176
+          },
+          {
+            "height": 44,
+            "left": 184,
+            "right": 338
+          },
+          {
+            "height": 44,
+            "left": 22,
+            "right": 176
+          },
+          {
+            "height": 44,
+            "left": 184,
+            "right": 338
+          }
+        ],
+        "rows": 6
+      },
+      "restore": {
+        "state": "SHOP",
+        "rows": 6,
+        "before": 6,
+        "cameraHeight": 48
+      },
+      "victory": {
+        "state": "GAMEOVER",
+        "rows": 6,
+        "damage": 5
+      },
+      "defeat": {
+        "state": "GAMEOVER",
+        "damage": 9,
+        "rows": 6
+      }
+    }
+  },
+  "passed": true
+}

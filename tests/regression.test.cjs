@@ -242,7 +242,7 @@ test('Boss死亡、玩家死亡及清场均释放预警，决战中仍推进技�
     app.entitiesGroup = { remove() {}, children: [] };
     app.spawnPickup = () => {};
     app.hitTarget(boss, 9999, 0, 0, 0);
-    assert.equal(disposed, 1);
+    assert.equal(disposed, 2, '预警与Boss模型均应释放');
     assert.equal(boss.bossWarning, null);
     const next = prepareBoss(app);
     app.waveTimer = 0;
@@ -328,7 +328,7 @@ test('六件羁绊保留四件奖励，平坦伤害与暴击升级按新曲线�
     }
     const stats = { ...app.baseStats, meleeDmg: 3 };
     const weapon = app.getWeaponCombatStats({ id: 'zenith', tier: 4 }, stats);
-    assert.equal(weapon.dmg, 78);
+    assert.equal(weapon.dmg, 103);
     assert.ok(Math.abs(weapon.cd - .42) < 1e-12);
     assert.equal(evaluate('STAT_META.find(s => s.key === "critChance").upVal'), 8);
 });
@@ -378,7 +378,8 @@ test('合成预览计算整个构筑且不改变现有装备与属性', () => {
     const base = JSON.stringify(app.baseStats);
     const preview = app.getCombinePreview(0);
     assert.ok(preview.before > 0 && preview.after > 0);
-    assert.ok(preview.changes.length > 0);
+    assert.equal(preview.changes,'','I阶合成II阶应保留原羁绊');
+    assert.ok(preview.after>=preview.before*.8,'合成保留至少80%的理论输出并释放槽位');
     assert.equal(JSON.stringify(app.weapons), original);
     assert.equal(JSON.stringify(app.baseStats), base);
     assert.equal(app.getCombinePreview(8), null);
@@ -588,7 +589,7 @@ test('冲刺采用当前输入或上次方向，冷却和暂停状态不能重�
     prepareCombat(app);
     assert.equal(app.tryDash(), true);
     assert.equal(app.dashDir.x, 1);
-    assert.equal(app.dashCooldown, 3.5);
+    assert.equal(app.dashCooldown, 3);
     assert.equal(app.tryDash(), false);
     app.updateDash(0.45);
     assert.ok(Math.abs(app.playerPos.x - 12.6) < 0.00001);
@@ -761,7 +762,7 @@ test('提前击杀 Boss 后仍需完成波次计时，死亡不能胜利', () =>
     assert.equal(app.canEndWave(), false);
 });
 
-test('普通波次只结算一次，保留未拾取晶币和宝箱并发放收获', () => {
+test('普通波次只结算一次，未拾取晶币直接入账并给经验、宝箱保留奖励', () => {
     const { app } = loadGame();
     let displayedGold;
     app.updateHUD = function () { displayedGold = this.gold; };
@@ -769,12 +770,12 @@ test('普通波次只结算一次，保留未拾取晶币和宝箱并发放收�
     app.endWave();
     app.endWave();
     assert.equal(app.state, 'SHOP');
-    assert.equal(app.gold, 42);
-    assert.equal(app.baggedGold, 4);
+    assert.equal(app.gold, 46);
+    assert.equal(app.baggedGold, 0);
     assert.equal(app.pendingCrates, 1);
-    assert.equal(app.awardedXP || 0, 0);
+    assert.equal(app.awardedXP || 0, 4);
     assert.ok(Math.abs(app.baseStats.harvesting - 12.6) < 1e-8);
-    assert.equal(displayedGold, 42, '结算后的 HUD 应同步显示最新金币');
+    assert.equal(displayedGold, 46, '结算后的 HUD 应同步显示最新金币');
 });
 
 test('第20波通关先结算奖励，继续无尽优先开箱，不能重复继续', () => {
@@ -786,8 +787,8 @@ test('第20波通关先结算奖励，继续无尽优先开箱，不能重复继
     app.endWave();
     assert.equal(app.state, 'GAMEOVER');
     assert.equal(app.victory, true);
-    assert.equal(app.gold, 42);
-    assert.equal(app.baggedGold, 3);
+    assert.equal(app.gold, 45);
+    assert.equal(app.baggedGold, 0);
     assert.equal(app.pendingCrates, 1);
     app.advancePostWave = evaluate('TerraBrotatoApp.prototype.advancePostWave');
     app.openCratePhase = function () { this.state = 'CRATE'; this.crateOpenCount = (this.crateOpenCount || 0) + 1; };

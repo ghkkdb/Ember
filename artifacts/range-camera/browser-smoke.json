@@ -1,0 +1,58 @@
+{
+  "sourceSha256": "f24227416f790b23fdd41185fdfa06bca28ac000597b24d69fb95ee4c118ae4e",
+  "errors": [],
+  "checks": {
+    "cameraDefault": {
+      "mode": "tilt",
+      "height": 40,
+      "depth": 23.5,
+      "settings": "tilt"
+    },
+    "combat": {
+      "state": "WAVE",
+      "wave": 1,
+      "weaponCount": 1,
+      "frames": 4,
+      "drawCalls": 1,
+      "hp": 35
+    },
+    "cameraFollow": {
+      "height": 40,
+      "depth": 23.5,
+      "span": 38.58889672817461,
+      "previousSpan": 27.961162636792157
+    },
+    "mobile": {
+      "height": 40,
+      "aspect": 0.46208530805687204,
+      "fov": 36
+    },
+    "patterns": {
+      "projectiles": 9,
+      "orbit": true,
+      "finiteHp": true
+    },
+    "loot": {
+      "state": "CRATE",
+      "gold": 20,
+      "bag": 0,
+      "level": 2,
+      "crates": 1,
+      "levels": 1,
+      "pickups": 0
+    },
+    "restore": {
+      "state": "SHOP",
+      "gold": 20,
+      "before": 20,
+      "fuseTriggered": true,
+      "weaponsMounted": true
+    },
+    "savedPreference": "ortho",
+    "legacyDefault": {
+      "mode": "tilt",
+      "height": 40
+    }
+  },
+  "passed": true
+}

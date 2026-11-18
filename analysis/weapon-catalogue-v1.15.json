@@ -1,0 +1,3380 @@
+{
+  "sourceSha256": "1e2153752b68f3e55c8a01d502b644314b5e063791c4e967ff13fb890c40f175",
+  "basis": "中性16属性，仅角色基础暴击5%；无羁绊、无道具、无强化。最低品质，0范围和0攻速；周期为稳态释放间隔，不包含首次等待、弹道飞行或走位。",
+  "records": [
+    {
+      "weaponId": "etch_nozzle",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "etch_nozzle",
+        "name": "蚀刻喷口",
+        "tier": 1,
+        "action": "短锥喷蚀＋同源附着",
+        "visual": "绿黄喷口扇线、随敌移动的蚀环与四次腐蚀闪",
+        "rules": "直伤与持续总伤各占整次预算一半，余数归直接段；最多3目标。附着4跳、2秒，同一武器实例刷新并替换剩余预算；每敌最多4个来源、全场最多120条。附着不暴击/吸血/递归。",
+        "base": 20,
+        "damage": "10＋附着总伤10",
+        "cadence": 1.3,
+        "reach": 6.859999999999999,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.7000",
+        "extra": "2.00秒/4跳：3/3/2/2；同源刷新不叠层，仅直接段可暴击",
+        "cores": [
+          "entropy"
+        ],
+        "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "10＋附着总伤10"
+        },
+        {
+          "tier": 2,
+          "damage": "18＋附着总伤18"
+        },
+        {
+          "tier": 3,
+          "damage": "32＋附着总伤32"
+        },
+        {
+          "tier": 4,
+          "damage": "56＋附着总伤56"
+        }
+      ],
+      "variants": [
+        {
+          "core": "entropy",
+          "name": "蚀刻喷口",
+          "id": "etch_nozzle",
+          "tier": 1,
+          "action": "短锥喷蚀＋同源附着",
+          "visual": "绿黄喷口扇线、随敌移动的蚀环与四次腐蚀闪",
+          "rules": "直伤与持续总伤各占整次预算一半，余数归直接段；最多3目标。附着4跳、2秒，同一武器实例刷新并替换剩余预算；每敌最多4个来源、全场最多120条。附着不暴击/吸血/递归。",
+          "base": 20,
+          "damage": "8＋附着总伤13",
+          "cadence": 1.3,
+          "reach": 6.859999999999999,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.7000",
+          "extra": "2.50秒/4跳：4/3/3/3；同源刷新不叠层，仅直接段可暴击",
+          "cores": [
+            "entropy"
+          ],
+          "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "mine_case",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "mine_case",
+        "name": "伏雷匣",
+        "tier": 1,
+        "action": "布防感应＋延迟爆炸",
+        "visual": "青色体素匣、布防环、点亮的引信与扩散爆环",
+        "rules": "每武器实例最多2枚；0.3秒布防、总寿命6秒，感应半径1.68，爆炸半径2.8，最多命中5目标各一次。达到上限时最旧陷阱失效，不免费引爆；出售和清场回收。",
+        "base": 30,
+        "damage": "30",
+        "cadence": 1.8,
+        "reach": 7.84,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.9000",
+        "extra": "布防0.30秒；总寿命6秒，感应1.68、爆炸2.80；每实例最多2枚，每爆最多5目标",
+        "cores": [
+          "star"
+        ],
+        "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "30"
+        },
+        {
+          "tier": 2,
+          "damage": "54"
+        },
+        {
+          "tier": 3,
+          "damage": "96"
+        },
+        {
+          "tier": 4,
+          "damage": "168"
+        }
+      ],
+      "variants": [
+        {
+          "core": "star",
+          "name": "伏雷匣",
+          "id": "mine_case",
+          "tier": 1,
+          "action": "布防感应＋延迟爆炸",
+          "visual": "青色体素匣、布防环、点亮的引信与扩散爆环",
+          "rules": "每武器实例最多2枚；0.3秒布防、总寿命6秒，感应半径1.68，爆炸半径2.8，最多命中5目标各一次。达到上限时最旧陷阱失效，不免费引爆；出售和清场回收。",
+          "base": 30,
+          "damage": "27",
+          "cadence": 1.8,
+          "reach": 7.84,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.9000",
+          "extra": "布防0.50秒；总寿命6秒，感应1.68、爆炸3.78；每实例最多2枚，每爆最多5目标",
+          "cores": [
+            "star"
+          ],
+          "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "pulse_chain",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "pulse_chain",
+        "name": "导电棱镜",
+        "tier": 1,
+        "action": "折线电弧连锁",
+        "visual": "发射端至目标的锯齿电弧、逐跳连接和落点电火花",
+        "rules": "主击100%，后续60%/30%，跳距4.2；不同目标去重，仅主击可暴击。",
+        "base": 12.5,
+        "damage": "13 → 8 → 4",
+        "cadence": 0.95,
+        "reach": 8.82,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.6000",
+        "extra": "跳距4.20；仅主击可暴击",
+        "cores": [
+          "chain"
+        ],
+        "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "13 → 8 → 4"
+        },
+        {
+          "tier": 2,
+          "damage": "23 → 14 → 7"
+        },
+        {
+          "tier": 3,
+          "damage": "40 → 24 → 12"
+        },
+        {
+          "tier": 4,
+          "damage": "70 → 42 → 21"
+        }
+      ],
+      "variants": [
+        {
+          "core": "chain",
+          "name": "导电棱镜",
+          "id": "pulse_chain",
+          "tier": 1,
+          "action": "折线电弧连锁",
+          "visual": "发射端至目标的锯齿电弧、逐跳连接和落点电火花",
+          "rules": "主击100%，后续60%/30%，跳距4.2；不同目标去重，仅主击可暴击。",
+          "base": 12.5,
+          "damage": "11 → 7 → 3 → 3",
+          "cadence": 0.95,
+          "reach": 8.82,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.6000",
+          "extra": "跳距4.20；仅主击可暴击",
+          "cores": [
+            "chain"
+          ],
+          "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "frost_lamp",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "frost_lamp",
+        "name": "凝霜雾灯",
+        "tier": 1,
+        "action": "冷雾领域脉冲",
+        "visual": "冰蓝落点边框、四次脉冲环与低矮冰晶",
+        "rules": "默认每0.3秒一跳，共4跳，每跳最多3目标；四跳共享整次整数预算，余数依次分配，不暴击/吸血。配件延长存续但不新增跳数，Boss减速最多15%。",
+        "base": 15,
+        "damage": "4 + 4 + 4 + 3（4跳）",
+        "cadence": 1.4,
+        "reach": 8.33,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 0,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.5000",
+        "extra": "半径2.24；首跳0.30秒，后续间隔0.30秒；普通怪减速20%，Boss最多15%",
+        "cores": [
+          "star",
+          "frost"
+        ],
+        "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "4 + 4 + 4 + 3（4跳）"
+        },
+        {
+          "tier": 2,
+          "damage": "7 + 7 + 7 + 6（4跳）"
+        },
+        {
+          "tier": 3,
+          "damage": "12 + 12 + 12 + 12（4跳）"
+        },
+        {
+          "tier": 4,
+          "damage": "21 + 21 + 21 + 21（4跳）"
+        }
+      ],
+      "variants": [
+        {
+          "core": "star",
+          "name": "凝霜雾灯",
+          "id": "frost_lamp",
+          "tier": 1,
+          "action": "冷雾领域脉冲",
+          "visual": "冰蓝落点边框、四次脉冲环与低矮冰晶",
+          "rules": "默认每0.3秒一跳，共4跳，每跳最多3目标；四跳共享整次整数预算，余数依次分配，不暴击/吸血。配件延长存续但不新增跳数，Boss减速最多15%。",
+          "base": 15,
+          "damage": "4 + 4 + 3 + 3（4跳）",
+          "cadence": 1.4,
+          "reach": 8.33,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 0,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.5000",
+          "extra": "半径3.02；首跳0.50秒，后续间隔0.30秒；普通怪减速20%，Boss最多15%",
+          "cores": [
+            "star",
+            "frost"
+          ],
+          "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+        },
+        {
+          "core": "frost",
+          "name": "凝霜雾灯",
+          "id": "frost_lamp",
+          "tier": 1,
+          "action": "冷雾领域脉冲",
+          "visual": "冰蓝落点边框、四次脉冲环与低矮冰晶",
+          "rules": "默认每0.3秒一跳，共4跳，每跳最多3目标；四跳共享整次整数预算，余数依次分配，不暴击/吸血。配件延长存续但不新增跳数，Boss减速最多15%。",
+          "base": 15,
+          "damage": "4 + 3 + 3 + 3（4跳）",
+          "cadence": 1.4,
+          "reach": 8.33,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 0,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.5000",
+          "extra": "半径2.24；首跳0.30秒，后续间隔0.30秒；普通怪减速20%，Boss最多15%；三层碎裂8，每敌0.4秒一层、碎裂冷却2秒",
+          "cores": [
+            "star",
+            "frost"
+          ],
+          "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "sentry",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "sentry",
+        "name": "磁轨哨机",
+        "tier": 1,
+        "action": "部署哨机＋锁敌束射",
+        "visual": "部署环、炮管转向、绿色枪口与目标连接束",
+        "rules": "部署周期固定6秒，持续4秒，射击基础间隔0.55秒；攻速只缩射击间隔。全局最多6台。",
+        "base": 8.75,
+        "damage": "9 × 1束/每台",
+        "cadence": 6,
+        "reach": 9.8,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.3000",
+        "extra": "1台，持续4秒；射击间隔0.550秒；哨位射程9.80",
+        "cores": [
+          "volley",
+          "hive"
+        ],
+        "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "9 × 1束/每台"
+        },
+        {
+          "tier": 2,
+          "damage": "16 × 1束/每台"
+        },
+        {
+          "tier": 3,
+          "damage": "28 × 1束/每台"
+        },
+        {
+          "tier": 4,
+          "damage": "49 × 1束/每台"
+        }
+      ],
+      "variants": [
+        {
+          "core": "volley",
+          "name": "磁轨哨机",
+          "id": "sentry",
+          "tier": 1,
+          "action": "部署哨机＋锁敌束射",
+          "visual": "部署环、炮管转向、绿色枪口与目标连接束",
+          "rules": "部署周期固定6秒，持续4秒，射击基础间隔0.55秒；攻速只缩射击间隔。全局最多6台。",
+          "base": 8.75,
+          "damage": "6 × 2束/每台",
+          "cadence": 6,
+          "reach": 9.8,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.3000",
+          "extra": "1台，持续4秒；射击间隔0.632秒；哨位射程9.80",
+          "cores": [
+            "volley",
+            "hive"
+          ],
+          "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+        },
+        {
+          "core": "hive",
+          "name": "磁轨哨机",
+          "id": "sentry",
+          "tier": 1,
+          "action": "部署哨机＋锁敌束射",
+          "visual": "部署环、炮管转向、绿色枪口与目标连接束",
+          "rules": "部署周期固定6秒，持续4秒，射击基础间隔0.55秒；攻速只缩射击间隔。全局最多6台。",
+          "base": 8.75,
+          "damage": "5 × 1束/每台",
+          "cadence": 6,
+          "reach": 9.8,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.3000",
+          "extra": "2台，持续4秒；射击间隔0.550秒；哨位射程8.33",
+          "cores": [
+            "volley",
+            "hive"
+          ],
+          "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "rail_charge",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "rail_charge",
+        "name": "蓄压轨枪",
+        "tier": 1,
+        "action": "锁线蓄能贯穿",
+        "visual": "持续锁线、收束能量格、释放白金束流",
+        "rules": "蓄力基础1.4秒，释放沿锁点方向贯穿3目标，后续每次×0.85并取整；周期基础2秒。",
+        "base": 45,
+        "damage": "45",
+        "cadence": 2,
+        "reach": 14.7,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.9000",
+        "extra": "蓄力1.400秒；贯穿后续伤害×0.85",
+        "cores": [
+          "charge"
+        ],
+        "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "45"
+        },
+        {
+          "tier": 2,
+          "damage": "81"
+        },
+        {
+          "tier": 3,
+          "damage": "144"
+        },
+        {
+          "tier": 4,
+          "damage": "252"
+        }
+      ],
+      "variants": [
+        {
+          "core": "charge",
+          "name": "蓄压轨枪",
+          "id": "rail_charge",
+          "tier": 1,
+          "action": "锁线蓄能贯穿",
+          "visual": "持续锁线、收束能量格、释放白金束流",
+          "rules": "蓄力基础1.4秒，释放沿锁点方向贯穿3目标，后续每次×0.85并取整；周期基础2秒。",
+          "base": 45,
+          "damage": "70",
+          "cadence": 2.6,
+          "reach": 14.7,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.9000",
+          "extra": "蓄力1.820秒；贯穿后续伤害×0.85",
+          "cores": [
+            "charge"
+          ],
+          "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "boss_hammer",
+      "exclusiveBossId": "forge",
+      "baseline": {
+        "id": "boss_hammer",
+        "name": "断响铰锤",
+        "tier": 2,
+        "action": "冲击蓄势＋断响重震",
+        "visual": "三段冲击格、厚白锤缘、橙色断层和落地环",
+        "rules": "每次有效主击充能20/60，第三击震波替换为强震；蓄力0.65秒，普通震波延迟0.55秒。只有主击可暴击/吸血，裂缝共享一次震波预算。",
+        "base": 24,
+        "damage": "29＋震波9（第三击替换为27）",
+        "cadence": 1.3,
+        "reach": 4.9,
+        "meleeReach": 4.165,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×1.6000（整次预算只加一次，再分段）",
+        "extra": "蓄力0.650秒；震波延迟0.55秒；半径3.14，释放原点8.4单位内裁剪；未共鸣，独有机制生效；强化0/3 · 首次改装选择路线",
+        "cores": [
+          "heavy",
+          "star",
+          "charge"
+        ],
+        "unlock": "击败裂砧执刑者；保留后常驻改装，每次新商店最多一次"
+      },
+      "tiers": [
+        {
+          "tier": "专属",
+          "damage": "29＋震波9（第三击替换为27）"
+        }
+      ],
+      "variants": [
+        {
+          "core": "heavy",
+          "name": "断响铰锤",
+          "id": "boss_hammer",
+          "tier": 2,
+          "action": "冲击蓄势＋断响重震 · 砧心崩击",
+          "visual": "三段冲击格、厚白锤缘、橙色断层和落地环",
+          "rules": "每次有效主击充能20/60，第三击震波替换为强震；蓄力0.65秒，普通震波延迟0.55秒。只有主击可暴击/吸血，裂缝共享一次震波预算。",
+          "base": 24,
+          "damage": "42＋震波9（第三击替换为27）",
+          "cadence": 1.56,
+          "reach": 4.9,
+          "meleeReach": 4.165,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×1.6000（整次预算只加一次，再分段）",
+          "extra": "蓄力0.650秒；落锤并入近身冲击；半径3.14，释放原点8.4单位内裁剪；核心共鸣：砧心崩击（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "heavy",
+            "star",
+            "charge"
+          ],
+          "unlock": "击败裂砧执刑者；保留后常驻改装，每次新商店最多一次"
+        },
+        {
+          "core": "star",
+          "name": "断响铰锤",
+          "id": "boss_hammer",
+          "tier": 2,
+          "action": "冲击蓄势＋断响重震 · 十字断层",
+          "visual": "三段冲击格、厚白锤缘、橙色断层和落地环",
+          "rules": "每次有效主击充能20/60，第三击震波替换为强震；蓄力0.65秒，普通震波延迟0.55秒。只有主击可暴击/吸血，裂缝共享一次震波预算。",
+          "base": 24,
+          "damage": "29＋震波8（第三击替换为24）",
+          "cadence": 1.3,
+          "reach": 4.9,
+          "meleeReach": 4.165,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×1.6000（整次预算只加一次，再分段）",
+          "extra": "蓄力0.650秒；震波延迟0.75秒；半径4.23，释放原点8.4单位内裁剪；核心共鸣：十字断层（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "heavy",
+            "star",
+            "charge"
+          ],
+          "unlock": "击败裂砧执刑者；保留后常驻改装，每次新商店最多一次"
+        },
+        {
+          "core": "charge",
+          "name": "断响铰锤",
+          "id": "boss_hammer",
+          "tier": 2,
+          "action": "冲击蓄势＋断响重震 · 携压突进",
+          "visual": "三段冲击格、厚白锤缘、橙色断层和落地环",
+          "rules": "每次有效主击充能20/60，第三击震波替换为强震；蓄力0.65秒，普通震波延迟0.55秒。只有主击可暴击/吸血，裂缝共享一次震波预算。",
+          "base": 24,
+          "damage": "45＋震波15（第三击替换为45）",
+          "cadence": 1.6900000000000002,
+          "reach": 4.9,
+          "meleeReach": 4.165,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×1.6000（整次预算只加一次，再分段）",
+          "extra": "蓄力0.845秒；震波延迟0.55秒；半径3.14，释放原点8.4单位内裁剪；两格冲击就绪时，第三锤蓄力可随冲刺移到终点，替换本次默认冲刺伤害；核心共鸣：携压突进（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "heavy",
+            "star",
+            "charge"
+          ],
+          "unlock": "击败裂砧执刑者；保留后常驻改装，每次新商店最多一次"
+        }
+      ]
+    },
+    {
+      "weaponId": "boss_hive",
+      "exclusiveBossId": "weaver",
+      "baseline": {
+        "id": "boss_hive",
+        "name": "簇砂蜂巢",
+        "tier": 2,
+        "action": "随行双针＋协同齐射",
+        "visual": "体素砂蜂、振动双翼、五格蜂灯与六路齐射针迹",
+        "rules": "持续跟随，双针共享总伤；每组至少一针有效命中充能20/100，满值追加四针。有限移动/转向与真实分叉判定；协同不暴击、不吸血。双蜂共享射击组、资源与总预算。",
+        "base": 10,
+        "damage": "6＋6；满协同追加12",
+        "cadence": 0.75,
+        "reach": 9.8,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.9600（整次预算只加一次，再分段）",
+        "extra": "1只随行蜂共享预算；每组有效命中充能20/100；追加不暴击/吸血，跟随速度11，转向8弧度/秒；未共鸣，独有机制生效；强化0/3 · 首次改装选择路线",
+        "cores": [
+          "hive",
+          "volley"
+        ],
+        "unlock": "击败鸣砂织母；保留后常驻改装，每次新商店最多一次"
+      },
+      "tiers": [
+        {
+          "tier": "专属",
+          "damage": "6＋6；满协同追加12"
+        }
+      ],
+      "variants": [
+        {
+          "core": "hive",
+          "name": "簇砂蜂巢",
+          "id": "boss_hive",
+          "tier": 2,
+          "action": "随行双针＋协同齐射 · 双蜂牵线",
+          "visual": "体素砂蜂、振动双翼、五格蜂灯与六路齐射针迹",
+          "rules": "持续跟随，双针共享总伤；每组至少一针有效命中充能20/100，满值追加四针。有限移动/转向与真实分叉判定；协同不暴击、不吸血。双蜂共享射击组、资源与总预算。",
+          "base": 10,
+          "damage": "7＋7；满协同追加14",
+          "cadence": 0.75,
+          "reach": 8.33,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.9600（整次预算只加一次，再分段）",
+          "extra": "2只随行蜂共享预算；每组有效命中充能20/100；追加不暴击/吸血，跟随速度11，转向8弧度/秒；核心共鸣：双蜂牵线（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "hive",
+            "volley"
+          ],
+          "unlock": "击败鸣砂织母；保留后常驻改装，每次新商店最多一次"
+        },
+        {
+          "core": "volley",
+          "name": "簇砂蜂巢",
+          "id": "boss_hive",
+          "tier": 2,
+          "action": "随行双针＋协同齐射 · 绽针散网",
+          "visual": "体素砂蜂、振动双翼、五格蜂灯与六路齐射针迹",
+          "rules": "持续跟随，双针共享总伤；每组至少一针有效命中充能20/100，满值追加四针。有限移动/转向与真实分叉判定；协同不暴击、不吸血。双蜂共享射击组、资源与总预算。",
+          "base": 10,
+          "damage": "4＋4＋3＋3；满协同追加14",
+          "cadence": 0.8624999999999999,
+          "reach": 9.8,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.9600（整次预算只加一次，再分段）",
+          "extra": "1只随行蜂共享预算；每组有效命中充能20/100；追加不暴击/吸血，跟随速度11，转向8弧度/秒；核心共鸣：绽针散网（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "hive",
+            "volley"
+          ],
+          "unlock": "击败鸣砂织母；保留后常驻改装，每次新商店最多一次"
+        }
+      ]
+    },
+    {
+      "weaponId": "boss_prism",
+      "exclusiveBossId": "prism",
+      "baseline": {
+        "id": "boss_prism",
+        "name": "分束棱核",
+        "tier": 2,
+        "action": "折射连锁＋空路回收",
+        "visual": "紫白主束、棱片回收、闭环电网或交叉棱面",
+        "rules": "主束与连锁共享总预算；未用连锁按折射率回收一次，主目标已死则作废。仅主束暴击/吸血；回收、闭环和棱面不递归、不重复命中原生受击者。",
+        "base": 14,
+        "damage": "17 → 8 → 5",
+        "cadence": 0.85,
+        "reach": 10.78,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.6400 + 魔法伤害×0.6400（整次预算只加一次，再分段）",
+        "extra": "跳距4.2；空路折射率60%；单体主束17＋回收8；未共鸣，独有机制生效；强化0/3 · 首次改装选择路线",
+        "cores": [
+          "chain",
+          "volley"
+        ],
+        "unlock": "击败棱镜巡弋机；保留后常驻改装，每次新商店最多一次"
+      },
+      "tiers": [
+        {
+          "tier": "专属",
+          "damage": "17 → 8 → 5"
+        }
+      ],
+      "variants": [
+        {
+          "core": "chain",
+          "name": "分束棱核",
+          "id": "boss_prism",
+          "tier": 2,
+          "action": "折射连锁＋空路回收 · 闭环电网",
+          "visual": "紫白主束、棱片回收、闭环电网或交叉棱面",
+          "rules": "主束与连锁共享总预算；未用连锁按折射率回收一次，主目标已死则作废。仅主束暴击/吸血；回收、闭环和棱面不递归、不重复命中原生受击者。",
+          "base": 14,
+          "damage": "14 → 7 → 5＋闭环4",
+          "cadence": 0.85,
+          "reach": 10.78,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.6400 + 魔法伤害×0.6400（整次预算只加一次，再分段）",
+          "extra": "跳距4.2；空路折射率60%；单体主束14＋回收10；核心共鸣：闭环电网（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "chain",
+            "volley"
+          ],
+          "unlock": "击败棱镜巡弋机；保留后常驻改装，每次新商店最多一次"
+        },
+        {
+          "core": "volley",
+          "name": "分束棱核",
+          "id": "boss_prism",
+          "tier": 2,
+          "action": "折射连锁＋空路回收 · 交叉棱面",
+          "visual": "紫白主束、棱片回收、闭环电网或交叉棱面",
+          "rules": "主束与连锁共享总预算；未用连锁按折射率回收一次，主目标已死则作废。仅主束暴击/吸血；回收、闭环和棱面不递归、不重复命中原生受击者。",
+          "base": 14,
+          "damage": "17 → 8＋棱面5",
+          "cadence": 0.9774999999999999,
+          "reach": 10.78,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.6400 + 魔法伤害×0.6400（整次预算只加一次，再分段）",
+          "extra": "跳距4.2；空路折射率60%；单体主束17＋回收8；主束平分双束、棱面最多0.6秒，只回收一次；核心共鸣：交叉棱面（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "chain",
+            "volley"
+          ],
+          "unlock": "击败棱镜巡弋机；保留后常驻改装，每次新商店最多一次"
+        }
+      ]
+    },
+    {
+      "weaponId": "copper_sword",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "copper_sword",
+        "name": "折锋短刃",
+        "tier": 1,
+        "action": "伸缩单体突刺",
+        "visual": "橙色刺线、刃尖白闪，第三刺金色命中环",
+        "rules": "单刺最多1目标；同目标1.5秒内连续第三刺伤害×1.25。",
+        "base": 20.125,
+        "damage": "20",
+        "cadence": 0.6,
+        "reach": 4.704,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 11,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×0.7500",
+        "extra": "",
+        "cores": [
+          "heavy"
+        ],
+        "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "20"
+        },
+        {
+          "tier": 2,
+          "damage": "36"
+        },
+        {
+          "tier": 3,
+          "damage": "64"
+        },
+        {
+          "tier": 4,
+          "damage": "113"
+        }
+      ],
+      "variants": [
+        {
+          "core": "heavy",
+          "name": "折锋短刃",
+          "id": "copper_sword",
+          "tier": 1,
+          "action": "伸缩单体突刺",
+          "visual": "橙色刺线、刃尖白闪，第三刺金色命中环",
+          "rules": "单刺最多1目标；同目标1.5秒内连续第三刺伤害×1.25。",
+          "base": 20.125,
+          "damage": "29",
+          "cadence": 0.72,
+          "reach": 4.704,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 11,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×0.7500",
+          "extra": "",
+          "cores": [
+            "heavy"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "grass_blade",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "grass_blade",
+        "name": "回潮弧刃",
+        "tier": 1,
+        "action": "扇形连续扫切",
+        "visual": "青绿扫弧、白色刃缘、命中碎屑",
+        "rules": "0.18秒扫过约155°，同次挥扫每目标只命中一次；判定距离为索敌距离×0.85。",
+        "base": 17.25,
+        "damage": "17",
+        "cadence": 0.78,
+        "reach": 5.88,
+        "meleeReach": 4.998,
+        "projectileReach": null,
+        "crit": 13,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×0.8000",
+        "extra": "",
+        "cores": [
+          "heavy"
+        ],
+        "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "17"
+        },
+        {
+          "tier": 2,
+          "damage": "31"
+        },
+        {
+          "tier": 3,
+          "damage": "55"
+        },
+        {
+          "tier": 4,
+          "damage": "97"
+        }
+      ],
+      "variants": [
+        {
+          "core": "heavy",
+          "name": "回潮弧刃",
+          "id": "grass_blade",
+          "tier": 1,
+          "action": "扇形连续扫切",
+          "visual": "青绿扫弧、白色刃缘、命中碎屑",
+          "rules": "0.18秒扫过约155°，同次挥扫每目标只命中一次；判定距离为索敌距离×0.85。",
+          "base": 17.25,
+          "damage": "25",
+          "cadence": 0.9359999999999999,
+          "reach": 5.88,
+          "meleeReach": 4.998,
+          "projectileReach": null,
+          "crit": 13,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×0.8000",
+          "extra": "",
+          "cores": [
+            "heavy"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "nights_edge",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "nights_edge",
+        "name": "裂光刃",
+        "tier": 2,
+        "action": "近身扫切＋穿透刃波",
+        "visual": "紫色刃弧与长条刃波，沿途拖尾",
+        "rules": "挥扫与刃波是两段；刃波为主伤45%，可命中3目标，远程段不吃重锤近战增伤。",
+        "base": 40.25,
+        "damage": "40＋刃波18",
+        "cadence": 0.68,
+        "reach": 6.664,
+        "meleeReach": 5.6644,
+        "projectileReach": 6.664,
+        "crit": 17,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×2.0800 + 魔法伤害×0.8000",
+        "extra": "",
+        "cores": [
+          "heavy"
+        ],
+        "unlock": "第3波品质池起，最低2阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 2,
+          "damage": "40＋刃波18"
+        },
+        {
+          "tier": 3,
+          "damage": "72＋刃波32"
+        },
+        {
+          "tier": 4,
+          "damage": "125＋刃波56"
+        }
+      ],
+      "variants": [
+        {
+          "core": "heavy",
+          "name": "裂光刃",
+          "id": "nights_edge",
+          "tier": 2,
+          "action": "近身扫切＋穿透刃波",
+          "visual": "紫色刃弧与长条刃波，沿途拖尾",
+          "rules": "挥扫与刃波是两段；刃波为主伤45%，可命中3目标，远程段不吃重锤近战增伤。",
+          "base": 40.25,
+          "damage": "58＋刃波18",
+          "cadence": 0.8160000000000001,
+          "reach": 6.664,
+          "meleeReach": 5.6644,
+          "projectileReach": 6.664,
+          "crit": 17,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×2.0800 + 魔法伤害×0.8000",
+          "extra": "",
+          "cores": [
+            "heavy"
+          ],
+          "unlock": "第3波品质池起，最低2阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "terra_blade",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "terra_blade",
+        "name": "锋轨重刃",
+        "tier": 3,
+        "action": "重型扫切＋高速刃波",
+        "visual": "碧绿双层扫弧与锋轨拖尾",
+        "rules": "挥扫与刃波分开结算；刃波为主伤45%，最多5目标，远程段不受近战距离上限。",
+        "base": 64.6875,
+        "damage": "65＋刃波29",
+        "cadence": 0.5,
+        "reach": 8.036,
+        "meleeReach": 6.8306,
+        "projectileReach": 8.036,
+        "crit": 23,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×4.0000 + 魔法伤害×2.0000",
+        "extra": "",
+        "cores": [
+          "heavy"
+        ],
+        "unlock": "第8波品质池起，最低3阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 3,
+          "damage": "65＋刃波29"
+        },
+        {
+          "tier": 4,
+          "damage": "113＋刃波51"
+        }
+      ],
+      "variants": [
+        {
+          "core": "heavy",
+          "name": "锋轨重刃",
+          "id": "terra_blade",
+          "tier": 3,
+          "action": "重型扫切＋高速刃波",
+          "visual": "碧绿双层扫弧与锋轨拖尾",
+          "rules": "挥扫与刃波分开结算；刃波为主伤45%，最多5目标，远程段不受近战距离上限。",
+          "base": 64.6875,
+          "damage": "94＋刃波29",
+          "cadence": 0.6,
+          "reach": 8.036,
+          "meleeReach": 6.8306,
+          "projectileReach": 8.036,
+          "crit": 23,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×4.0000 + 魔法伤害×2.0000",
+          "extra": "",
+          "cores": [
+            "heavy"
+          ],
+          "unlock": "第8波品质池起，最低3阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "zenith",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "zenith",
+        "name": "回旋切割器",
+        "tier": 4,
+        "action": "往返回旋切割",
+        "visual": "蓝白多齿切割盘、去返轨迹",
+        "rules": "达到射程后返回玩家；每目标去程、返程各最多命中一次。导弧分支每次释放仅分弧一次。",
+        "base": 81.25,
+        "damage": "81去程＋81返程",
+        "cadence": 0.42,
+        "reach": 12.25,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 30,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×7.2000 + 远程伤害×3.2000 + 魔法伤害×3.2000",
+        "extra": "每目标每程各命中一次；返程速度19.00",
+        "cores": [
+          "chain",
+          "return"
+        ],
+        "unlock": "第14波品质池起，最低4阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 4,
+          "damage": "81去程＋81返程"
+        }
+      ],
+      "variants": [
+        {
+          "core": "chain",
+          "name": "回旋切割器",
+          "id": "zenith",
+          "tier": 4,
+          "action": "往返回旋切割",
+          "visual": "蓝白多齿切割盘、去返轨迹",
+          "rules": "达到射程后返回玩家；每目标去程、返程各最多命中一次。导弧分支每次释放仅分弧一次。",
+          "base": 81.25,
+          "damage": "69去程＋69返程",
+          "cadence": 0.42,
+          "reach": 12.25,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 30,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×7.2000 + 远程伤害×3.2000 + 魔法伤害×3.2000",
+          "extra": "每目标每程各命中一次；返程速度19.00；首次有效命中额外分弧21伤害（跳距4.2，每次释放1次，不暴击/吸血/递归）",
+          "cores": [
+            "chain",
+            "return"
+          ],
+          "unlock": "第14波品质池起，最低4阶（商店按下一波）"
+        },
+        {
+          "core": "return",
+          "name": "回旋切割器",
+          "id": "zenith",
+          "tier": 4,
+          "action": "往返回旋切割",
+          "visual": "蓝白多齿切割盘、去返轨迹",
+          "rules": "达到射程后返回玩家；每目标去程、返程各最多命中一次。导弧分支每次释放仅分弧一次。",
+          "base": 81.25,
+          "damage": "65去程＋105返程",
+          "cadence": 0.42,
+          "reach": 12.25,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 30,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×7.2000 + 远程伤害×3.2000 + 魔法伤害×3.2000",
+          "extra": "每目标每程各命中一次；返程速度19.00；成功回收使剩余冷却×0.9",
+          "cores": [
+            "chain",
+            "return"
+          ],
+          "unlock": "第14波品质池起，最低4阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "bow",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "bow",
+        "name": "棘轮弩",
+        "tier": 1,
+        "action": "直线穿透弩箭",
+        "visual": "金色箭杆、白色箭头与短尾光",
+        "rules": "每箭最多3目标，伤害不随穿透衰减。",
+        "base": 22.5,
+        "damage": "23",
+        "cadence": 0.9,
+        "reach": 12.544,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 15,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.8000",
+        "extra": "",
+        "cores": [
+          "volley",
+          "echo"
+        ],
+        "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "23"
+        },
+        {
+          "tier": 2,
+          "damage": "41"
+        },
+        {
+          "tier": 3,
+          "damage": "72"
+        },
+        {
+          "tier": 4,
+          "damage": "126"
+        }
+      ],
+      "variants": [
+        {
+          "core": "volley",
+          "name": "棘轮弩",
+          "id": "bow",
+          "tier": 1,
+          "action": "直线穿透弩箭",
+          "visual": "金色箭杆、白色箭头与短尾光",
+          "rules": "每箭最多3目标，伤害不随穿透衰减。",
+          "base": 22.5,
+          "damage": "16 × 2发",
+          "cadence": 1.035,
+          "reach": 12.544,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 15,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.8000",
+          "extra": "",
+          "cores": [
+            "volley",
+            "echo"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        },
+        {
+          "core": "echo",
+          "name": "棘轮弩",
+          "id": "bow",
+          "tier": 1,
+          "action": "直线穿透弩箭",
+          "visual": "金色箭杆、白色箭头与短尾光",
+          "rules": "每箭最多3目标，伤害不随穿透衰减。",
+          "base": 22.5,
+          "damage": "22",
+          "cadence": 0.9,
+          "reach": 12.544,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 15,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.8000",
+          "extra": "",
+          "cores": [
+            "volley",
+            "echo"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "minishark",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "minishark",
+        "name": "铆钉速射器",
+        "tier": 1,
+        "action": "连续铆钉射击",
+        "visual": "蓝白枪口闪、细长铆钉与金属命中闪",
+        "rules": "累计6次主弹命中后，下一次射击伤害×0.8、最多穿透2目标；分流同次释放只累计一次。",
+        "base": 5,
+        "damage": "5",
+        "cadence": 0.24,
+        "reach": 11.564,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.2500",
+        "extra": "",
+        "cores": [
+          "volley"
+        ],
+        "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "5"
+        },
+        {
+          "tier": 2,
+          "damage": "9"
+        },
+        {
+          "tier": 3,
+          "damage": "16"
+        },
+        {
+          "tier": 4,
+          "damage": "28"
+        }
+      ],
+      "variants": [
+        {
+          "core": "volley",
+          "name": "铆钉速射器",
+          "id": "minishark",
+          "tier": 1,
+          "action": "连续铆钉射击",
+          "visual": "蓝白枪口闪、细长铆钉与金属命中闪",
+          "rules": "累计6次主弹命中后，下一次射击伤害×0.8、最多穿透2目标；分流同次释放只累计一次。",
+          "base": 5,
+          "damage": "4 × 2发",
+          "cadence": 0.27599999999999997,
+          "reach": 11.564,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.2500",
+          "extra": "",
+          "cores": [
+            "volley"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "megashark",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "megashark",
+        "name": "重栓连射器",
+        "tier": 2,
+        "action": "重栓高速连射",
+        "visual": "粗蓝栓弹、双侧枪口火光",
+        "rules": "每枚重栓最多命中2目标；与速射器相比更偏单发和穿透。",
+        "base": 8.75,
+        "damage": "9",
+        "cadence": 0.2,
+        "reach": 13.23,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 15,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.5600",
+        "extra": "",
+        "cores": [
+          "volley"
+        ],
+        "unlock": "第6波品质池起，最低2阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 2,
+          "damage": "9"
+        },
+        {
+          "tier": 3,
+          "damage": "16"
+        },
+        {
+          "tier": 4,
+          "damage": "27"
+        }
+      ],
+      "variants": [
+        {
+          "core": "volley",
+          "name": "重栓连射器",
+          "id": "megashark",
+          "tier": 2,
+          "action": "重栓高速连射",
+          "visual": "粗蓝栓弹、双侧枪口火光",
+          "rules": "每枚重栓最多命中2目标；与速射器相比更偏单发和穿透。",
+          "base": 8.75,
+          "damage": "6 × 2发",
+          "cadence": 0.22999999999999998,
+          "reach": 13.23,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 15,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.5600",
+          "extra": "",
+          "cores": [
+            "volley"
+          ],
+          "unlock": "第6波品质池起，最低2阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "light_disc",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "light_disc",
+        "name": "双相飞轮",
+        "tier": 1,
+        "action": "回收式飞轮投掷",
+        "visual": "金色齿环旋转、往返短拖尾",
+        "rules": "去程达到射程后折返；同目标去返各最多1次，99为单程目标数预算，不是无限射程。",
+        "base": 12.5,
+        "damage": "13去程＋13返程",
+        "cadence": 0.8,
+        "reach": 10.78,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 15,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.5500 + 近战伤害×0.3000",
+        "extra": "每目标每程各命中一次；返程速度19.00",
+        "cores": [
+          "chain",
+          "return"
+        ],
+        "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "13去程＋13返程"
+        },
+        {
+          "tier": 2,
+          "damage": "23去程＋23返程"
+        },
+        {
+          "tier": 3,
+          "damage": "40去程＋40返程"
+        },
+        {
+          "tier": 4,
+          "damage": "70去程＋70返程"
+        }
+      ],
+      "variants": [
+        {
+          "core": "chain",
+          "name": "双相飞轮",
+          "id": "light_disc",
+          "tier": 1,
+          "action": "回收式飞轮投掷",
+          "visual": "金色齿环旋转、往返短拖尾",
+          "rules": "去程达到射程后折返；同目标去返各最多1次，99为单程目标数预算，不是无限射程。",
+          "base": 12.5,
+          "damage": "11去程＋11返程",
+          "cadence": 0.8,
+          "reach": 10.78,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 15,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.5500 + 近战伤害×0.3000",
+          "extra": "每目标每程各命中一次；返程速度19.00；首次有效命中额外分弧3伤害（跳距4.2，每次释放1次，不暴击/吸血/递归）",
+          "cores": [
+            "chain",
+            "return"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        },
+        {
+          "core": "return",
+          "name": "双相飞轮",
+          "id": "light_disc",
+          "tier": 1,
+          "action": "回收式飞轮投掷",
+          "visual": "金色齿环旋转、往返短拖尾",
+          "rules": "去程达到射程后折返；同目标去返各最多1次，99为单程目标数预算，不是无限射程。",
+          "base": 12.5,
+          "damage": "10去程＋17返程",
+          "cadence": 0.8,
+          "reach": 10.78,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 15,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.5500 + 近战伤害×0.3000",
+          "extra": "每目标每程各命中一次；返程速度19.00；成功回收使剩余冷却×0.9",
+          "cores": [
+            "chain",
+            "return"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "starfury",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "starfury",
+        "name": "坠辉引针",
+        "tier": 1,
+        "action": "锁点延迟引针",
+        "visual": "青色落点十字、金色预热圈、升起光柱与扩散环",
+        "rules": "锁定后0.55秒触发，基础半径3.136；只在落点造成一次伤害，不附送近战段。",
+        "base": 17.5,
+        "damage": "18",
+        "cadence": 1,
+        "reach": 11.27,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 17,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.7500 + 近战伤害×0.4000",
+        "extra": "锁点延迟0.55秒；半径3.136",
+        "cores": [
+          "star",
+          "echo"
+        ],
+        "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "18"
+        },
+        {
+          "tier": 2,
+          "damage": "32"
+        },
+        {
+          "tier": 3,
+          "damage": "56"
+        },
+        {
+          "tier": 4,
+          "damage": "98"
+        }
+      ],
+      "variants": [
+        {
+          "core": "star",
+          "name": "坠辉引针",
+          "id": "starfury",
+          "tier": 1,
+          "action": "锁点延迟引针",
+          "visual": "青色落点十字、金色预热圈、升起光柱与扩散环",
+          "rules": "锁定后0.55秒触发，基础半径3.136；只在落点造成一次伤害，不附送近战段。",
+          "base": 17.5,
+          "damage": "24",
+          "cadence": 1,
+          "reach": 11.27,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 17,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.7500 + 近战伤害×0.4000",
+          "extra": "锁点延迟0.75秒；半径4.234",
+          "cores": [
+            "star",
+            "echo"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        },
+        {
+          "core": "echo",
+          "name": "坠辉引针",
+          "id": "starfury",
+          "tier": 1,
+          "action": "锁点延迟引针",
+          "visual": "青色落点十字、金色预热圈、升起光柱与扩散环",
+          "rules": "锁定后0.55秒触发，基础半径3.136；只在落点造成一次伤害，不附送近战段。",
+          "base": 17.5,
+          "damage": "17",
+          "cadence": 1,
+          "reach": 11.27,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 17,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.7500 + 近战伤害×0.4000",
+          "extra": "锁点延迟0.55秒；半径3.136",
+          "cores": [
+            "star",
+            "echo"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "demon_scythe",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "demon_scythe",
+        "name": "涡轮切片",
+        "tier": 1,
+        "action": "加速穿透切片",
+        "visual": "紫色多齿圆片、加速长拖尾",
+        "rules": "初速4，每次更新速度×(1+3.2×dt)，最多命中6目标；距离预算限制总航程。",
+        "base": 15,
+        "damage": "15",
+        "cadence": 0.8,
+        "reach": 12.25,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 15,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.8000",
+        "extra": "",
+        "cores": [
+          "chain",
+          "return"
+        ],
+        "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "15"
+        },
+        {
+          "tier": 2,
+          "damage": "27"
+        },
+        {
+          "tier": 3,
+          "damage": "48"
+        },
+        {
+          "tier": 4,
+          "damage": "84"
+        }
+      ],
+      "variants": [
+        {
+          "core": "chain",
+          "name": "涡轮切片",
+          "id": "demon_scythe",
+          "tier": 1,
+          "action": "加速穿透切片",
+          "visual": "紫色多齿圆片、加速长拖尾",
+          "rules": "初速4，每次更新速度×(1+3.2×dt)，最多命中6目标；距离预算限制总航程。",
+          "base": 15,
+          "damage": "13",
+          "cadence": 0.8,
+          "reach": 12.25,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 15,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.8000",
+          "extra": "；首次有效命中额外分弧4伤害（跳距4.2，每次释放1次，不暴击/吸血/递归）",
+          "cores": [
+            "chain",
+            "return"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        },
+        {
+          "core": "return",
+          "name": "涡轮切片",
+          "id": "demon_scythe",
+          "tier": 1,
+          "action": "加速穿透切片",
+          "visual": "紫色多齿圆片、加速长拖尾",
+          "rules": "初速4，每次更新速度×(1+3.2×dt)，最多命中6目标；距离预算限制总航程。",
+          "base": 15,
+          "damage": "15",
+          "cadence": 0.8,
+          "reach": 12.25,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 15,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.8000",
+          "extra": "",
+          "cores": [
+            "chain",
+            "return"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "water_bolt",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "water_bolt",
+        "name": "回声波盘",
+        "tier": 1,
+        "action": "边界反弹波盘",
+        "visual": "青色波盘、同心波纹、反弹闪圈",
+        "rules": "最多4次目标命中、3次边界反弹；反弹不重置总射程或命中预算。",
+        "base": 12.5,
+        "damage": "13",
+        "cadence": 0.7,
+        "reach": 12.74,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 13,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.7000",
+        "extra": "",
+        "cores": [
+          "volley",
+          "echo"
+        ],
+        "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "13"
+        },
+        {
+          "tier": 2,
+          "damage": "23"
+        },
+        {
+          "tier": 3,
+          "damage": "40"
+        },
+        {
+          "tier": 4,
+          "damage": "70"
+        }
+      ],
+      "variants": [
+        {
+          "core": "volley",
+          "name": "回声波盘",
+          "id": "water_bolt",
+          "tier": 1,
+          "action": "边界反弹波盘",
+          "visual": "青色波盘、同心波纹、反弹闪圈",
+          "rules": "最多4次目标命中、3次边界反弹；反弹不重置总射程或命中预算。",
+          "base": 12.5,
+          "damage": "9 × 2发",
+          "cadence": 0.8049999999999999,
+          "reach": 12.74,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 13,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.7000",
+          "extra": "",
+          "cores": [
+            "volley",
+            "echo"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        },
+        {
+          "core": "echo",
+          "name": "回声波盘",
+          "id": "water_bolt",
+          "tier": 1,
+          "action": "边界反弹波盘",
+          "visual": "青色波盘、同心波纹、反弹闪圈",
+          "rules": "最多4次目标命中、3次边界反弹；反弹不重置总射程或命中预算。",
+          "base": 12.5,
+          "damage": "12",
+          "cadence": 0.7,
+          "reach": 12.74,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 13,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.7000",
+          "extra": "",
+          "cores": [
+            "volley",
+            "echo"
+          ],
+          "unlock": "第1波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "vampire_knives",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "vampire_knives",
+        "name": "三棱针筒",
+        "tier": 2,
+        "action": "三棱针扇射",
+        "visual": "3枚红色长针、三路细尾光",
+        "rules": "每次3针，每针分摊总主伤，余数依次分配，三针总和不超预算，各命中1目标；没有专属免费吸血。分流变为6针。",
+        "base": 13.75,
+        "damage": "5 + 5 + 4（三针合计）",
+        "cadence": 0.62,
+        "reach": 11.27,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 15,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×0.9600 + 魔法伤害×0.9600",
+        "extra": "",
+        "cores": [
+          "volley"
+        ],
+        "unlock": "第3波品质池起，最低2阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 2,
+          "damage": "5 + 5 + 4（三针合计）"
+        },
+        {
+          "tier": 3,
+          "damage": "8 + 8 + 8（三针合计）"
+        },
+        {
+          "tier": 4,
+          "damage": "15 + 14 + 14（三针合计）"
+        }
+      ],
+      "variants": [
+        {
+          "core": "volley",
+          "name": "三棱针筒",
+          "id": "vampire_knives",
+          "tier": 2,
+          "action": "三棱针扇射",
+          "visual": "3枚红色长针、三路细尾光",
+          "rules": "每次3针，每针分摊总主伤，余数依次分配，三针总和不超预算，各命中1目标；没有专属免费吸血。分流变为6针。",
+          "base": 13.75,
+          "damage": "4 + 3 + 3（两组三针）",
+          "cadence": 0.713,
+          "reach": 11.27,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 15,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×0.9600 + 魔法伤害×0.9600",
+          "extra": "",
+          "cores": [
+            "volley"
+          ],
+          "unlock": "第3波品质池起，最低2阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "boss_tank",
+      "exclusiveBossId": "tank",
+      "baseline": {
+        "id": "boss_tank",
+        "name": "蚀潮喷管",
+        "tier": 2,
+        "action": "短锥直喷＋持续腐蚀",
+        "visual": "高压青色液柱与毒雾滞留",
+        "rules": "释放积累蚀压；满蓄时喷发高浓腐潮洼地。",
+        "base": 22,
+        "damage": "14＋腐蚀12（持续2秒）",
+        "cadence": 1,
+        "reach": 6.859999999999999,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×1.4400（整次预算只加一次，再分段）",
+        "extra": "短锥直伤＋持续腐蚀；未共鸣；未共鸣，独有机制生效；强化0/3 · 首次改装选择路线",
+        "cores": [
+          "entropy",
+          "frost",
+          "star"
+        ],
+        "unlock": "击败潮蚀容器；保留后常驻改装，每次新商店最多一次"
+      },
+      "tiers": [
+        {
+          "tier": "专属",
+          "damage": "14＋腐蚀12（持续2秒）"
+        }
+      ],
+      "variants": [
+        {
+          "core": "entropy",
+          "name": "蚀潮喷管",
+          "id": "boss_tank",
+          "tier": 2,
+          "action": "短锥直喷＋持续腐蚀 · 残蚀迁移",
+          "visual": "高压青色液柱与毒雾滞留",
+          "rules": "释放积累蚀压；满蓄时喷发高浓腐潮洼地。",
+          "base": 22,
+          "damage": "14＋腐蚀16（持续2秒）",
+          "cadence": 1,
+          "reach": 6.859999999999999,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×1.4400（整次预算只加一次，再分段）",
+          "extra": "短锥直伤＋持续腐蚀；核心共鸣：残蚀迁移；核心共鸣：残蚀迁移（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "entropy",
+            "frost",
+            "star"
+          ],
+          "unlock": "击败潮蚀容器；保留后常驻改装，每次新商店最多一次"
+        },
+        {
+          "core": "frost",
+          "name": "蚀潮喷管",
+          "id": "boss_tank",
+          "tier": 2,
+          "action": "短锥直喷＋持续腐蚀 · 霜爆封冻",
+          "visual": "高压青色液柱与毒雾滞留",
+          "rules": "释放积累蚀压；满蓄时喷发高浓腐潮洼地。",
+          "base": 22,
+          "damage": "14＋腐蚀12（持续2秒）",
+          "cadence": 1,
+          "reach": 6.859999999999999,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×1.4400（整次预算只加一次，再分段）",
+          "extra": "短锥直伤＋持续腐蚀；核心共鸣：霜爆封冻；核心共鸣：霜爆封冻（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "entropy",
+            "frost",
+            "star"
+          ],
+          "unlock": "击败潮蚀容器；保留后常驻改装，每次新商店最多一次"
+        },
+        {
+          "core": "star",
+          "name": "蚀潮喷管",
+          "id": "boss_tank",
+          "tier": 2,
+          "action": "短锥直喷＋持续腐蚀 · 腐潮洼地",
+          "visual": "高压青色液柱与毒雾滞留",
+          "rules": "释放积累蚀压；满蓄时喷发高浓腐潮洼地。",
+          "base": 22,
+          "damage": "14＋腐蚀12（持续2秒）",
+          "cadence": 1,
+          "reach": 6.859999999999999,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×1.4400（整次预算只加一次，再分段）",
+          "extra": "短锥直伤＋持续腐蚀；核心共鸣：腐潮洼地；核心共鸣：腐潮洼地（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "entropy",
+            "frost",
+            "star"
+          ],
+          "unlock": "击败潮蚀容器；保留后常驻改装，每次新商店最多一次"
+        }
+      ]
+    },
+    {
+      "weaponId": "boss_clock",
+      "exclusiveBossId": "clock",
+      "baseline": {
+        "id": "boss_clock",
+        "name": "时序闸枪",
+        "tier": 2,
+        "action": "蓄压时序光束＋延迟落点重写",
+        "visual": "紫色聚焦主束与粉色时空刻痕",
+        "rules": "冲刺重写延迟束落点；适配蓄压与疾行。",
+        "base": 32,
+        "damage": "主束29＋延迟束9",
+        "cadence": 1.2,
+        "reach": 9.8,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×1.2800（整次预算只加一次，再分段）",
+        "extra": "自动蓄压主束；未共鸣；未共鸣，独有机制生效；强化0/3 · 首次改装选择路线",
+        "cores": [
+          "charge",
+          "dash",
+          "echo"
+        ],
+        "unlock": "击败逆相钟匠；保留后常驻改装，每次新商店最多一次"
+      },
+      "tiers": [
+        {
+          "tier": "专属",
+          "damage": "主束29＋延迟束9"
+        }
+      ],
+      "variants": [
+        {
+          "core": "charge",
+          "name": "时序闸枪",
+          "id": "boss_clock",
+          "tier": 2,
+          "action": "蓄压时序光束＋延迟落点重写 · 充能极化",
+          "visual": "紫色聚焦主束与粉色时空刻痕",
+          "rules": "冲刺重写延迟束落点；适配蓄压与疾行。",
+          "base": 32,
+          "damage": "主束45＋延迟束14",
+          "cadence": 1.2,
+          "reach": 9.8,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×1.2800（整次预算只加一次，再分段）",
+          "extra": "自动蓄压主束；核心共鸣：充能极化；核心共鸣：充能极化（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "charge",
+            "dash",
+            "echo"
+          ],
+          "unlock": "击败逆相钟匠；保留后常驻改装，每次新商店最多一次"
+        },
+        {
+          "core": "dash",
+          "name": "时序闸枪",
+          "id": "boss_clock",
+          "tier": 2,
+          "action": "蓄压时序光束＋延迟落点重写 · 时滞残影",
+          "visual": "紫色聚焦主束与粉色时空刻痕",
+          "rules": "冲刺重写延迟束落点；适配蓄压与疾行。",
+          "base": 32,
+          "damage": "主束29＋延迟束9",
+          "cadence": 1.2,
+          "reach": 9.8,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×1.2800（整次预算只加一次，再分段）",
+          "extra": "自动蓄压主束；核心共鸣：时滞残影；核心共鸣：时滞残影（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "charge",
+            "dash",
+            "echo"
+          ],
+          "unlock": "击败逆相钟匠；保留后常驻改装，每次新商店最多一次"
+        },
+        {
+          "core": "echo",
+          "name": "时序闸枪",
+          "id": "boss_clock",
+          "tier": 2,
+          "action": "蓄压时序光束＋延迟落点重写 · 重叠刻痕",
+          "visual": "紫色聚焦主束与粉色时空刻痕",
+          "rules": "冲刺重写延迟束落点；适配蓄压与疾行。",
+          "base": 32,
+          "damage": "主束29＋延迟束9",
+          "cadence": 1.2,
+          "reach": 9.8,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×1.2800（整次预算只加一次，再分段）",
+          "extra": "自动蓄压主束；核心共鸣：重叠刻痕；核心共鸣：重叠刻痕（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "charge",
+            "dash",
+            "echo"
+          ],
+          "unlock": "击败逆相钟匠；保留后常驻改装，每次新商店最多一次"
+        }
+      ]
+    },
+    {
+      "weaponId": "boss_train",
+      "exclusiveBossId": "train",
+      "baseline": {
+        "id": "boss_train",
+        "name": "偏轨轮毂",
+        "tier": 2,
+        "action": "双环轨轮毂接触＋返程回收",
+        "visual": "钢灰色磁轨环绕齿轮与高速拖尾",
+        "rules": "双轮毂接触共享0.45秒受击间隔；返程产生回收爆发。",
+        "base": 20,
+        "damage": "双轮毂接触12＋返程回收12",
+        "cadence": 1.5,
+        "reach": 4.9,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×1.1200 + 远程伤害×0.4800（整次预算只加一次，再分段）",
+        "extra": "双轮毂环绕接触；未共鸣；未共鸣，独有机制生效；强化0/3 · 首次改装选择路线",
+        "cores": [
+          "return",
+          "orbit",
+          "dash"
+        ],
+        "unlock": "击败灰穹列车；保留后常驻改装，每次新商店最多一次"
+      },
+      "tiers": [
+        {
+          "tier": "专属",
+          "damage": "双轮毂接触12＋返程回收12"
+        }
+      ],
+      "variants": [
+        {
+          "core": "return",
+          "name": "偏轨轮毂",
+          "id": "boss_train",
+          "tier": 2,
+          "action": "双环轨轮毂接触＋返程回收 · 磁轨反冲",
+          "visual": "钢灰色磁轨环绕齿轮与高速拖尾",
+          "rules": "双轮毂接触共享0.45秒受击间隔；返程产生回收爆发。",
+          "base": 20,
+          "damage": "双轮毂接触12＋返程回收16",
+          "cadence": 1.5,
+          "reach": 4.9,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×1.1200 + 远程伤害×0.4800（整次预算只加一次，再分段）",
+          "extra": "双轮毂环绕接触；核心共鸣：磁轨反冲；核心共鸣：磁轨反冲（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "return",
+            "orbit",
+            "dash"
+          ],
+          "unlock": "击败灰穹列车；保留后常驻改装，每次新商店最多一次"
+        },
+        {
+          "core": "orbit",
+          "name": "偏轨轮毂",
+          "id": "boss_train",
+          "tier": 2,
+          "action": "双环轨轮毂接触＋返程回收 · 相位加速",
+          "visual": "钢灰色磁轨环绕齿轮与高速拖尾",
+          "rules": "双轮毂接触共享0.45秒受击间隔；返程产生回收爆发。",
+          "base": 20,
+          "damage": "双轮毂接触12＋返程回收12",
+          "cadence": 1.5,
+          "reach": 4.9,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×1.1200 + 远程伤害×0.4800（整次预算只加一次，再分段）",
+          "extra": "双轮毂环绕接触；核心共鸣：相位加速；核心共鸣：相位加速（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "return",
+            "orbit",
+            "dash"
+          ],
+          "unlock": "击败灰穹列车；保留后常驻改装，每次新商店最多一次"
+        },
+        {
+          "core": "dash",
+          "name": "偏轨轮毂",
+          "id": "boss_train",
+          "tier": 2,
+          "action": "双环轨轮毂接触＋返程回收 · 轨道滑行",
+          "visual": "钢灰色磁轨环绕齿轮与高速拖尾",
+          "rules": "双轮毂接触共享0.45秒受击间隔；返程产生回收爆发。",
+          "base": 20,
+          "damage": "双轮毂接触12＋返程回收12",
+          "cadence": 1.5,
+          "reach": 4.9,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×1.1200 + 远程伤害×0.4800（整次预算只加一次，再分段）",
+          "extra": "双轮毂环绕接触；核心共鸣：轨道滑行；核心共鸣：轨道滑行（替换通用核心效果）；强化0/3 · 首次改装选择路线",
+          "cores": [
+            "return",
+            "orbit",
+            "dash"
+          ],
+          "unlock": "击败灰穹列车；保留后常驻改装，每次新商店最多一次"
+        }
+      ]
+    },
+    {
+      "weaponId": "bind_spear",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "bind_spear",
+        "name": "缚线刺枪",
+        "tier": 1,
+        "action": "直线刺穿两目标",
+        "visual": "橙黄色长枪突刺与收招光芒",
+        "rules": "穿透第二目标伤害70%；击退偏弱，适配重锤。",
+        "base": 21.5625,
+        "damage": "22",
+        "cadence": 0.9,
+        "reach": 5.39,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×0.8000",
+        "extra": "",
+        "cores": [
+          "heavy"
+        ],
+        "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "22"
+        },
+        {
+          "tier": 2,
+          "damage": "39"
+        },
+        {
+          "tier": 3,
+          "damage": "69"
+        },
+        {
+          "tier": 4,
+          "damage": "121"
+        }
+      ],
+      "variants": [
+        {
+          "core": "heavy",
+          "name": "缚线刺枪",
+          "id": "bind_spear",
+          "tier": 1,
+          "action": "直线刺穿两目标",
+          "visual": "橙黄色长枪突刺与收招光芒",
+          "rules": "穿透第二目标伤害70%；击退偏弱，适配重锤。",
+          "base": 21.5625,
+          "damage": "31",
+          "cadence": 1.08,
+          "reach": 5.39,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×0.8000",
+          "extra": "",
+          "cores": [
+            "heavy"
+          ],
+          "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "return_scythe",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "return_scythe",
+        "name": "折返镰",
+        "tier": 1,
+        "action": "弧线掷出返程双割",
+        "visual": "翠绿色飞旋双刃镰与弧形气流",
+        "rules": "去程10＋返程6；同一目标每程只判定一次。",
+        "base": 20,
+        "damage": "13去程＋7返程",
+        "cadence": 1.1,
+        "reach": 6.859999999999999,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×0.5000 + 远程伤害×0.3000",
+        "extra": "每目标每程各命中一次；返程速度19.00",
+        "cores": [
+          "return"
+        ],
+        "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "13去程＋7返程"
+        },
+        {
+          "tier": 2,
+          "damage": "23去程＋13返程"
+        },
+        {
+          "tier": 3,
+          "damage": "40去程＋24返程"
+        },
+        {
+          "tier": 4,
+          "damage": "70去程＋42返程"
+        }
+      ],
+      "variants": [
+        {
+          "core": "return",
+          "name": "折返镰",
+          "id": "return_scythe",
+          "tier": 1,
+          "action": "弧线掷出返程双割",
+          "visual": "翠绿色飞旋双刃镰与弧形气流",
+          "rules": "去程10＋返程6；同一目标每程只判定一次。",
+          "base": 20,
+          "damage": "10去程＋9返程",
+          "cadence": 1.1,
+          "reach": 6.859999999999999,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×0.5000 + 远程伤害×0.3000",
+          "extra": "每目标每程各命中一次；返程速度19.00；成功回收使剩余冷却×0.9",
+          "cores": [
+            "return"
+          ],
+          "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "ratchet_crossbow",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "ratchet_crossbow",
+        "name": "棘轮连弩",
+        "tier": 1,
+        "action": "三发点射连击",
+        "visual": "绿色微型箭矢连射与齿轮卡榫",
+        "rules": "一次释放打出3发点射，分发重新寻敌。",
+        "base": 18.75,
+        "damage": "7 + 6 + 6",
+        "cadence": 1.1,
+        "reach": 8.82,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.6000",
+        "extra": "三发间隔0.12秒，后续重新寻敌；整次释放共享预算",
+        "cores": [
+          "echo"
+        ],
+        "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "7 + 6 + 6"
+        },
+        {
+          "tier": 2,
+          "damage": "12 + 11 + 11"
+        },
+        {
+          "tier": 3,
+          "damage": "20 + 20 + 20"
+        },
+        {
+          "tier": 4,
+          "damage": "35 + 35 + 35"
+        }
+      ],
+      "variants": [
+        {
+          "core": "echo",
+          "name": "棘轮连弩",
+          "id": "ratchet_crossbow",
+          "tier": 1,
+          "action": "三发点射连击",
+          "visual": "绿色微型箭矢连射与齿轮卡榫",
+          "rules": "一次释放打出3发点射，分发重新寻敌。",
+          "base": 18.75,
+          "damage": "6 + 6 + 6",
+          "cadence": 1.1,
+          "reach": 8.82,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.6000",
+          "extra": "三发间隔0.12秒，后续重新寻敌；整次释放共享预算",
+          "cores": [
+            "echo"
+          ],
+          "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "heavy_bolt_rifle",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "heavy_bolt_rifle",
+        "name": "重栓穿甲枪",
+        "tier": 1,
+        "action": "重栓穿甲直射",
+        "visual": "灰蓝色高压重弹与枪口火花",
+        "rules": "穿透2目标，第二目标衰减40%。",
+        "base": 12.5,
+        "damage": "13",
+        "cadence": 0.32,
+        "reach": 9.8,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.3500",
+        "extra": "",
+        "cores": [
+          "volley"
+        ],
+        "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "13"
+        },
+        {
+          "tier": 2,
+          "damage": "23"
+        },
+        {
+          "tier": 3,
+          "damage": "40"
+        },
+        {
+          "tier": 4,
+          "damage": "70"
+        }
+      ],
+      "variants": [
+        {
+          "core": "volley",
+          "name": "重栓穿甲枪",
+          "id": "heavy_bolt_rifle",
+          "tier": 1,
+          "action": "重栓穿甲直射",
+          "visual": "灰蓝色高压重弹与枪口火花",
+          "rules": "穿透2目标，第二目标衰减40%。",
+          "base": 12.5,
+          "damage": "9 × 2发",
+          "cadence": 0.368,
+          "reach": 9.8,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.3500",
+          "extra": "",
+          "cores": [
+            "volley"
+          ],
+          "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "shard_blaster",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "shard_blaster",
+        "name": "碎片喷筒",
+        "tier": 1,
+        "action": "四弹近身散射",
+        "visual": "橙红爆裂弹片与扇形烟尘",
+        "rules": "四发扇面散开；近距离集束输出。",
+        "base": 20,
+        "damage": "5 + 5 + 5 + 5",
+        "cadence": 1.1,
+        "reach": 7.84,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.6000",
+        "extra": "四弹扇面散射；近距离可集中命中",
+        "cores": [
+          "echo"
+        ],
+        "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "5 + 5 + 5 + 5"
+        },
+        {
+          "tier": 2,
+          "damage": "9 + 9 + 9 + 9"
+        },
+        {
+          "tier": 3,
+          "damage": "16 + 16 + 16 + 16"
+        },
+        {
+          "tier": 4,
+          "damage": "28 + 28 + 28 + 28"
+        }
+      ],
+      "variants": [
+        {
+          "core": "echo",
+          "name": "碎片喷筒",
+          "id": "shard_blaster",
+          "tier": 1,
+          "action": "四弹近身散射",
+          "visual": "橙红爆裂弹片与扇形烟尘",
+          "rules": "四发扇面散开；近距离集束输出。",
+          "base": 20,
+          "damage": "5 + 5 + 5 + 4",
+          "cadence": 1.1,
+          "reach": 7.84,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.6000",
+          "extra": "四弹扇面散射；近距离可集中命中",
+          "cores": [
+            "echo"
+          ],
+          "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "echo_disc",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "echo_disc",
+        "name": "回声波盘",
+        "tier": 1,
+        "action": "高频声波弹跳",
+        "visual": "天蓝环形音浪与墙面反弹",
+        "rules": "最多弹射2次，不重复击中已命中目标。",
+        "base": 15,
+        "damage": "15",
+        "cadence": 0.8,
+        "reach": 8.33,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.6500",
+        "extra": "",
+        "cores": [
+          "volley",
+          "echo"
+        ],
+        "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "15"
+        },
+        {
+          "tier": 2,
+          "damage": "27"
+        },
+        {
+          "tier": 3,
+          "damage": "48"
+        },
+        {
+          "tier": 4,
+          "damage": "84"
+        }
+      ],
+      "variants": [
+        {
+          "core": "volley",
+          "name": "回声波盘",
+          "id": "echo_disc",
+          "tier": 1,
+          "action": "高频声波弹跳",
+          "visual": "天蓝环形音浪与墙面反弹",
+          "rules": "最多弹射2次，不重复击中已命中目标。",
+          "base": 15,
+          "damage": "11 × 2发",
+          "cadence": 0.9199999999999999,
+          "reach": 8.33,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.6500",
+          "extra": "",
+          "cores": [
+            "volley",
+            "echo"
+          ],
+          "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+        },
+        {
+          "core": "echo",
+          "name": "回声波盘",
+          "id": "echo_disc",
+          "tier": 1,
+          "action": "高频声波弹跳",
+          "visual": "天蓝环形音浪与墙面反弹",
+          "rules": "最多弹射2次，不重复击中已命中目标。",
+          "base": 15,
+          "damage": "14",
+          "cadence": 0.8,
+          "reach": 8.33,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.6500",
+          "extra": "",
+          "cores": [
+            "volley",
+            "echo"
+          ],
+          "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "pulse_ring",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "pulse_ring",
+        "name": "脉冲环仪",
+        "tier": 1,
+        "action": "向外扩散冲击环",
+        "visual": "浅紫扩散光环与地面积压",
+        "rules": "向外扩散圆环；贴身有内圈盲区。",
+        "base": 17.5,
+        "damage": "18",
+        "cadence": 1.2,
+        "reach": 6.859999999999999,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.7000",
+        "extra": "",
+        "cores": [
+          "star"
+        ],
+        "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "18"
+        },
+        {
+          "tier": 2,
+          "damage": "32"
+        },
+        {
+          "tier": 3,
+          "damage": "56"
+        },
+        {
+          "tier": 4,
+          "damage": "98"
+        }
+      ],
+      "variants": [
+        {
+          "core": "star",
+          "name": "脉冲环仪",
+          "id": "pulse_ring",
+          "tier": 1,
+          "action": "向外扩散冲击环",
+          "visual": "浅紫扩散光环与地面积压",
+          "rules": "向外扩散圆环；贴身有内圈盲区。",
+          "base": 17.5,
+          "damage": "18",
+          "cadence": 1.2,
+          "reach": 6.859999999999999,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.7000",
+          "extra": "",
+          "cores": [
+            "star"
+          ],
+          "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "gravity_anchor",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "gravity_anchor",
+        "name": "引力锚",
+        "tier": 1,
+        "action": "引力牵引力场",
+        "visual": "靛青色重力吸附圈与脉冲牵引",
+        "rules": "缓慢拉动普通怪，2跳共8点伤害。",
+        "base": 10,
+        "damage": "3 + 3 + 2 + 2（4跳）",
+        "cadence": 1.4,
+        "reach": 7.35,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 0,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.3500",
+        "extra": "半径2.24；首跳0.30秒，后续间隔0.30秒；普通怪减速20%，Boss最多15%",
+        "cores": [
+          "star",
+          "frost"
+        ],
+        "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "3 + 3 + 2 + 2（4跳）"
+        },
+        {
+          "tier": 2,
+          "damage": "5 + 5 + 4 + 4（4跳）"
+        },
+        {
+          "tier": 3,
+          "damage": "8 + 8 + 8 + 8（4跳）"
+        },
+        {
+          "tier": 4,
+          "damage": "14 + 14 + 14 + 14（4跳）"
+        }
+      ],
+      "variants": [
+        {
+          "core": "star",
+          "name": "引力锚",
+          "id": "gravity_anchor",
+          "tier": 1,
+          "action": "引力牵引力场",
+          "visual": "靛青色重力吸附圈与脉冲牵引",
+          "rules": "缓慢拉动普通怪，2跳共8点伤害。",
+          "base": 10,
+          "damage": "3 + 2 + 2 + 2（4跳）",
+          "cadence": 1.4,
+          "reach": 7.35,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 0,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.3500",
+          "extra": "半径3.02；首跳0.50秒，后续间隔0.30秒；普通怪减速20%，Boss最多15%",
+          "cores": [
+            "star",
+            "frost"
+          ],
+          "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+        },
+        {
+          "core": "frost",
+          "name": "引力锚",
+          "id": "gravity_anchor",
+          "tier": 1,
+          "action": "引力牵引力场",
+          "visual": "靛青色重力吸附圈与脉冲牵引",
+          "rules": "缓慢拉动普通怪，2跳共8点伤害。",
+          "base": 10,
+          "damage": "3 + 2 + 2 + 2（4跳）",
+          "cadence": 1.4,
+          "reach": 7.35,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 0,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.3500",
+          "extra": "半径2.24；首跳0.30秒，后续间隔0.30秒；普通怪减速20%，Boss最多15%；三层碎裂5，每敌0.4秒一层、碎裂冷却2秒",
+          "cores": [
+            "star",
+            "frost"
+          ],
+          "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "scavenger_bee",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "scavenger_bee",
+        "name": "拾荒蜂巢",
+        "tier": 1,
+        "action": "随行机械蜂协同点射",
+        "visual": "金黄微型无人机身侧巡航",
+        "rules": "跟随玩家移动，单发5点持续输出。",
+        "base": 6.25,
+        "damage": "6 × 1束/每台",
+        "cadence": 6,
+        "reach": 5.88,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.2500",
+        "extra": "1台，持续4秒；射击间隔0.550秒；哨位射程5.88",
+        "cores": [
+          "volley",
+          "hive"
+        ],
+        "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "6 × 1束/每台"
+        },
+        {
+          "tier": 2,
+          "damage": "11 × 1束/每台"
+        },
+        {
+          "tier": 3,
+          "damage": "20 × 1束/每台"
+        },
+        {
+          "tier": 4,
+          "damage": "35 × 1束/每台"
+        }
+      ],
+      "variants": [
+        {
+          "core": "volley",
+          "name": "拾荒蜂巢",
+          "id": "scavenger_bee",
+          "tier": 1,
+          "action": "随行机械蜂协同点射",
+          "visual": "金黄微型无人机身侧巡航",
+          "rules": "跟随玩家移动，单发5点持续输出。",
+          "base": 6.25,
+          "damage": "4 × 2束/每台",
+          "cadence": 6,
+          "reach": 5.88,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.2500",
+          "extra": "1台，持续4秒；射击间隔0.632秒；哨位射程5.88",
+          "cores": [
+            "volley",
+            "hive"
+          ],
+          "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+        },
+        {
+          "core": "hive",
+          "name": "拾荒蜂巢",
+          "id": "scavenger_bee",
+          "tier": 1,
+          "action": "随行机械蜂协同点射",
+          "visual": "金黄微型无人机身侧巡航",
+          "rules": "跟随玩家移动，单发5点持续输出。",
+          "base": 6.25,
+          "damage": "4 × 1束/每台",
+          "cadence": 6,
+          "reach": 5.88,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.2500",
+          "extra": "2台，持续4秒；射击间隔0.550秒；哨位射程5.00",
+          "cores": [
+            "volley",
+            "hive"
+          ],
+          "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "tracking_gear",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "tracking_gear",
+        "name": "追踪齿轮",
+        "tier": 1,
+        "action": "自寻敌机械齿轮",
+        "visual": "钢灰悬浮齿轮自导飞行与碎裂火星",
+        "rules": "缓速追踪最近敌人，命中破碎造成12点伤害。",
+        "base": 15,
+        "damage": "15",
+        "cadence": 1,
+        "reach": 7.84,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.6000",
+        "extra": "",
+        "cores": [
+          "hive"
+        ],
+        "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "15"
+        },
+        {
+          "tier": 2,
+          "damage": "27"
+        },
+        {
+          "tier": 3,
+          "damage": "48"
+        },
+        {
+          "tier": 4,
+          "damage": "84"
+        }
+      ],
+      "variants": [
+        {
+          "core": "hive",
+          "name": "追踪齿轮",
+          "id": "tracking_gear",
+          "tier": 1,
+          "action": "自寻敌机械齿轮",
+          "visual": "钢灰悬浮齿轮自导飞行与碎裂火星",
+          "rules": "缓速追踪最近敌人，命中破碎造成12点伤害。",
+          "base": 15,
+          "damage": "15",
+          "cadence": 1,
+          "reach": 7.84,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.6000",
+          "extra": "",
+          "cores": [
+            "hive"
+          ],
+          "unlock": "第3波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "orbit_loom",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "orbit_loom",
+        "name": "悬星织机",
+        "tier": 1,
+        "action": "三星轨道环绕接触",
+        "visual": "淡紫三点星光轨道矩阵",
+        "rules": "3个小型轨道件环绕，共享0.45秒受击间隔。",
+        "base": 22.5,
+        "damage": "8",
+        "cadence": 0.45,
+        "reach": 4.41,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.2500",
+        "extra": "三星轨道共享每目标0.45秒接触冷却；装备离手即清理",
+        "cores": [
+          "orbit"
+        ],
+        "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "8"
+        },
+        {
+          "tier": 2,
+          "damage": "14"
+        },
+        {
+          "tier": 3,
+          "damage": "24"
+        },
+        {
+          "tier": 4,
+          "damage": "42"
+        }
+      ],
+      "variants": [
+        {
+          "core": "orbit",
+          "name": "悬星织机",
+          "id": "orbit_loom",
+          "tier": 1,
+          "action": "三星轨道环绕接触",
+          "visual": "淡紫三点星光轨道矩阵",
+          "rules": "3个小型轨道件环绕，共享0.45秒受击间隔。",
+          "base": 22.5,
+          "damage": "6",
+          "cadence": 0.45,
+          "reach": 4.41,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.2500",
+          "extra": "三星轨道共享每目标0.45秒接触冷却；装备离手即清理",
+          "cores": [
+            "orbit"
+          ],
+          "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "split_wheel",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "split_wheel",
+        "name": "双相飞轮",
+        "tier": 1,
+        "action": "双相去返飞轮",
+        "visual": "青蓝飞轮去程直线返程折向收回",
+        "rules": "去程8＋返程8；成功回收加速下次释放。",
+        "base": 20,
+        "damage": "10去程＋10返程",
+        "cadence": 1.1,
+        "reach": 7.84,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×0.3000 + 远程伤害×0.3000",
+        "extra": "每目标每程各命中一次；返程速度19.00",
+        "cores": [
+          "return"
+        ],
+        "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "10去程＋10返程"
+        },
+        {
+          "tier": 2,
+          "damage": "18去程＋18返程"
+        },
+        {
+          "tier": 3,
+          "damage": "32去程＋32返程"
+        },
+        {
+          "tier": 4,
+          "damage": "56去程＋56返程"
+        }
+      ],
+      "variants": [
+        {
+          "core": "return",
+          "name": "双相飞轮",
+          "id": "split_wheel",
+          "tier": 1,
+          "action": "双相去返飞轮",
+          "visual": "青蓝飞轮去程直线返程折向收回",
+          "rules": "去程8＋返程8；成功回收加速下次释放。",
+          "base": 20,
+          "damage": "8去程＋13返程",
+          "cadence": 1.1,
+          "reach": 7.84,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×0.3000 + 远程伤害×0.3000",
+          "extra": "每目标每程各命中一次；返程速度19.00；成功回收使剩余冷却×0.9",
+          "cores": [
+            "return"
+          ],
+          "unlock": "第2波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "cinder_spear",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "cinder_spear",
+        "name": "烬纹投枪",
+        "tier": 1,
+        "action": "烬纹投掷钉刺",
+        "visual": "赤红标枪钉入首目标并引燃余烬",
+        "rules": "直伤8＋持续8点灼痕，适配熵蚀。",
+        "base": 20,
+        "damage": "10＋附着总伤10",
+        "cadence": 1.2,
+        "reach": 7.35,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "近战伤害×0.3000 + 魔法伤害×0.3000",
+        "extra": "2.00秒/4跳：3/3/2/2；同源刷新不叠层，仅直接段可暴击",
+        "cores": [
+          "entropy"
+        ],
+        "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "10＋附着总伤10"
+        },
+        {
+          "tier": 2,
+          "damage": "18＋附着总伤18"
+        },
+        {
+          "tier": 3,
+          "damage": "32＋附着总伤32"
+        },
+        {
+          "tier": 4,
+          "damage": "56＋附着总伤56"
+        }
+      ],
+      "variants": [
+        {
+          "core": "entropy",
+          "name": "烬纹投枪",
+          "id": "cinder_spear",
+          "tier": 1,
+          "action": "烬纹投掷钉刺",
+          "visual": "赤红标枪钉入首目标并引燃余烬",
+          "rules": "直伤8＋持续8点灼痕，适配熵蚀。",
+          "base": 20,
+          "damage": "8＋附着总伤13",
+          "cadence": 1.2,
+          "reach": 7.35,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "近战伤害×0.3000 + 魔法伤害×0.3000",
+          "extra": "2.50秒/4跳：4/3/3/3；同源刷新不叠层，仅直接段可暴击",
+          "cores": [
+            "entropy"
+          ],
+          "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "prism_disc",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "prism_disc",
+        "name": "分光轮盘",
+        "tier": 1,
+        "action": "分光去返留痕",
+        "visual": "翡翠飞轮与回收扇形余光",
+        "rules": "回收在原落点留下扇形残光6点。",
+        "base": 20,
+        "damage": "13去程＋残光7",
+        "cadence": 1.3,
+        "reach": 7.84,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.3000 + 魔法伤害×0.3000",
+        "extra": "每目标每程各命中一次；返程速度19.00",
+        "cores": [
+          "return"
+        ],
+        "unlock": "第8波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "13去程＋残光7"
+        },
+        {
+          "tier": 2,
+          "damage": "23去程＋残光13"
+        },
+        {
+          "tier": 3,
+          "damage": "40去程＋残光24"
+        },
+        {
+          "tier": 4,
+          "damage": "70去程＋残光42"
+        }
+      ],
+      "variants": [
+        {
+          "core": "return",
+          "name": "分光轮盘",
+          "id": "prism_disc",
+          "tier": 1,
+          "action": "分光去返留痕",
+          "visual": "翡翠飞轮与回收扇形余光",
+          "rules": "回收在原落点留下扇形残光6点。",
+          "base": 20,
+          "damage": "13去程＋残光7",
+          "cadence": 1.3,
+          "reach": 7.84,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.3000 + 魔法伤害×0.3000",
+          "extra": "每目标每程各命中一次；返程速度19.00；成功回收使剩余冷却×0.9",
+          "cores": [
+            "return"
+          ],
+          "unlock": "第8波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "vortex_nozzle",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "vortex_nozzle",
+        "name": "旋流喷管",
+        "tier": 1,
+        "action": "行进旋流扇射",
+        "visual": "海蓝流体扇形喷射与推进气浪",
+        "rules": "行进时沿移动方向扇形喷射3段。",
+        "base": 18.75,
+        "damage": "19",
+        "cadence": 1,
+        "reach": 6.37,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "远程伤害×0.4500 + 魔法伤害×0.2000",
+        "extra": "",
+        "cores": [
+          "dash"
+        ],
+        "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "19"
+        },
+        {
+          "tier": 2,
+          "damage": "34"
+        },
+        {
+          "tier": 3,
+          "damage": "60"
+        },
+        {
+          "tier": 4,
+          "damage": "105"
+        }
+      ],
+      "variants": [
+        {
+          "core": "dash",
+          "name": "旋流喷管",
+          "id": "vortex_nozzle",
+          "tier": 1,
+          "action": "行进旋流扇射",
+          "visual": "海蓝流体扇形喷射与推进气浪",
+          "rules": "行进时沿移动方向扇形喷射3段。",
+          "base": 18.75,
+          "damage": "19",
+          "cadence": 1,
+          "reach": 6.37,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "远程伤害×0.4500 + 魔法伤害×0.2000",
+          "extra": "",
+          "cores": [
+            "dash"
+          ],
+          "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "seal_needle",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "seal_needle",
+        "name": "封印刻针",
+        "tier": 1,
+        "action": "三次主击阈值引爆",
+        "visual": "暗紫刻针三击印记与脉冲引爆",
+        "rules": "对同目标主击3次引爆印记12点伤害。",
+        "base": 22.5,
+        "damage": "8＋三击引爆15",
+        "cadence": 0.6,
+        "reach": 7.84,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.6000",
+        "extra": "引爆覆盖半径2.52，不暴击、吸血或递归",
+        "cores": [
+          "chain",
+          "echo"
+        ],
+        "unlock": "第8波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "8＋三击引爆15"
+        },
+        {
+          "tier": 2,
+          "damage": "14＋三击引爆27"
+        },
+        {
+          "tier": 3,
+          "damage": "24＋三击引爆48"
+        },
+        {
+          "tier": 4,
+          "damage": "42＋三击引爆84"
+        }
+      ],
+      "variants": [
+        {
+          "core": "chain",
+          "name": "封印刻针",
+          "id": "seal_needle",
+          "tier": 1,
+          "action": "三次主击阈值引爆",
+          "visual": "暗紫刻针三击印记与脉冲引爆",
+          "rules": "对同目标主击3次引爆印记12点伤害。",
+          "base": 22.5,
+          "damage": "7＋三击引爆13",
+          "cadence": 0.6,
+          "reach": 7.84,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.6000",
+          "extra": "引爆覆盖半径2.52，不暴击、吸血或递归",
+          "cores": [
+            "chain",
+            "echo"
+          ],
+          "unlock": "第8波品质池起，最低1阶（商店按下一波）"
+        },
+        {
+          "core": "echo",
+          "name": "封印刻针",
+          "id": "seal_needle",
+          "tier": 1,
+          "action": "三次主击阈值引爆",
+          "visual": "暗紫刻针三击印记与脉冲引爆",
+          "rules": "对同目标主击3次引爆印记12点伤害。",
+          "base": 22.5,
+          "damage": "7＋三击引爆15",
+          "cadence": 0.6,
+          "reach": 7.84,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.6000",
+          "extra": "引爆覆盖半径2.52，不暴击、吸血或递归",
+          "cores": [
+            "chain",
+            "echo"
+          ],
+          "unlock": "第8波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    },
+    {
+      "weaponId": "trigger_wand",
+      "exclusiveBossId": null,
+      "baseline": {
+        "id": "trigger_wand",
+        "name": "触发短杖",
+        "tier": 1,
+        "action": "法杖引针＋冲刺震波",
+        "visual": "洋红魔能飞弹与冲刺落地冲击波",
+        "rules": "冲刺后下一次主击附带60%震波。",
+        "base": 11.25,
+        "damage": "11",
+        "cadence": 0.8,
+        "reach": 8.33,
+        "meleeReach": null,
+        "projectileReach": null,
+        "crit": 10,
+        "critMultiplier": 1.75,
+        "scale": "魔法伤害×0.4500",
+        "extra": "",
+        "cores": [
+          "dash"
+        ],
+        "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "damage": "11"
+        },
+        {
+          "tier": 2,
+          "damage": "20"
+        },
+        {
+          "tier": 3,
+          "damage": "36"
+        },
+        {
+          "tier": 4,
+          "damage": "63"
+        }
+      ],
+      "variants": [
+        {
+          "core": "dash",
+          "name": "触发短杖",
+          "id": "trigger_wand",
+          "tier": 1,
+          "action": "法杖引针＋冲刺震波",
+          "visual": "洋红魔能飞弹与冲刺落地冲击波",
+          "rules": "冲刺后下一次主击附带60%震波。",
+          "base": 11.25,
+          "damage": "11",
+          "cadence": 0.8,
+          "reach": 8.33,
+          "meleeReach": null,
+          "projectileReach": null,
+          "crit": 10,
+          "critMultiplier": 1.75,
+          "scale": "魔法伤害×0.4500",
+          "extra": "",
+          "cores": [
+            "dash"
+          ],
+          "unlock": "第6波品质池起，最低1阶（商店按下一波）"
+        }
+      ]
+    }
+  ]
+}

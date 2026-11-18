@@ -1,0 +1,269 @@
+{
+  "sourceSha256": "6a173b626edc45f8b527afa058b7d92da64fa2b8b789ca0164a9b79698e48e53",
+  "errors": [],
+  "checks": {
+    "desktop": {
+      "hud": {
+        "hudBottom": 133.5,
+        "viewportHeight": 900,
+        "scrollWidth": 1440,
+        "width": 1440,
+        "dash": {
+          "left": 1258.390625,
+          "right": 1360,
+          "bottom": 48.25,
+          "height": 32
+        },
+        "weapons": 6
+      },
+      "burst": {
+        "createdMs": 5.199999999254942,
+        "killMs": 2.600000001490116,
+        "kills": 50,
+        "damage": 500,
+        "particles": 24,
+        "vfx": 3,
+        "queued": 50,
+        "shake": 0,
+        "floatCount": 3,
+        "pixelRatio": 1,
+        "rows": [
+          {
+            "slot": 1,
+            "damage": 250
+          },
+          {
+            "slot": 2,
+            "damage": 250
+          },
+          {
+            "slot": 3,
+            "damage": 0
+          },
+          {
+            "slot": 4,
+            "damage": 0
+          },
+          {
+            "slot": 5,
+            "damage": 0
+          },
+          {
+            "slot": 6,
+            "damage": 0
+          }
+        ],
+        "lights": 0
+      },
+      "report": {
+        "rows": 6,
+        "recorded": [
+          {
+            "slot": 1,
+            "damage": 250
+          },
+          {
+            "slot": 2,
+            "damage": 250
+          },
+          {
+            "slot": 3,
+            "damage": 0
+          },
+          {
+            "slot": 4,
+            "damage": 0
+          },
+          {
+            "slot": 5,
+            "damage": 0
+          },
+          {
+            "slot": 6,
+            "damage": 0
+          }
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      },
+      "shop": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "actions": [
+          {
+            "height": 36,
+            "left": 102,
+            "right": 198.0625
+          },
+          {
+            "height": 40,
+            "left": 206.0625,
+            "right": 366.625
+          },
+          {
+            "height": 40,
+            "left": 374.625,
+            "right": 499.046875
+          },
+          {
+            "height": 40,
+            "left": 507.046875,
+            "right": 644.453125
+          }
+        ],
+        "rows": 6
+      },
+      "restore": {
+        "state": "SHOP",
+        "rows": 6,
+        "before": 6
+      },
+      "victory": {
+        "state": "GAMEOVER",
+        "rows": 6,
+        "damage": 5
+      },
+      "defeat": {
+        "state": "GAMEOVER",
+        "damage": 9,
+        "rows": 6
+      }
+    },
+    "mobile": {
+      "hud": {
+        "hudBottom": 189,
+        "viewportHeight": 800,
+        "scrollWidth": 360,
+        "width": 360,
+        "dash": {
+          "left": 258,
+          "right": 342,
+          "bottom": 776,
+          "height": 64
+        },
+        "weapons": 6
+      },
+      "landscape": {
+        "bottom": 160,
+        "overflow": false
+      },
+      "touch": {
+        "dashCooldown": 3,
+        "stopped": true
+      },
+      "burst": {
+        "createdMs": 4.600000001490116,
+        "killMs": 3.599999999627471,
+        "kills": 50,
+        "damage": 500,
+        "particles": 12,
+        "vfx": 2,
+        "queued": 50,
+        "shake": 0,
+        "floatCount": 2,
+        "pixelRatio": 1.25,
+        "rows": [
+          {
+            "slot": 1,
+            "damage": 250
+          },
+          {
+            "slot": 2,
+            "damage": 250
+          },
+          {
+            "slot": 3,
+            "damage": 0
+          },
+          {
+            "slot": 4,
+            "damage": 0
+          },
+          {
+            "slot": 5,
+            "damage": 0
+          },
+          {
+            "slot": 6,
+            "damage": 0
+          }
+        ],
+        "lights": 0
+      },
+      "report": {
+        "rows": 6,
+        "recorded": [
+          {
+            "slot": 1,
+            "damage": 250
+          },
+          {
+            "slot": 2,
+            "damage": 250
+          },
+          {
+            "slot": 3,
+            "damage": 0
+          },
+          {
+            "slot": 4,
+            "damage": 0
+          },
+          {
+            "slot": 5,
+            "damage": 0
+          },
+          {
+            "slot": 6,
+            "damage": 0
+          }
+        ],
+        "scrollWidth": 360,
+        "width": 360
+      },
+      "shop": {
+        "width": 360,
+        "scrollWidth": 360,
+        "actions": [
+          {
+            "height": 44,
+            "left": 22,
+            "right": 176
+          },
+          {
+            "height": 44,
+            "left": 184,
+            "right": 338
+          },
+          {
+            "height": 44,
+            "left": 22,
+            "right": 176
+          },
+          {
+            "height": 44,
+            "left": 184,
+            "right": 338
+          }
+        ],
+        "rows": 6
+      },
+      "restore": {
+        "state": "SHOP",
+        "rows": 6,
+        "before": 6
+      },
+      "victory": {
+        "state": "GAMEOVER",
+        "rows": 6,
+        "damage": 5
+      },
+      "defeat": {
+        "state": "GAMEOVER",
+        "damage": 9,
+        "rows": 6
+      }
+    }
+  },
+  "passed": true
+}

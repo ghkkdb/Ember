@@ -23,30 +23,30 @@ function beeShot(e,en){
     hive.aim=Math.atan2(en.group.position.z-p.z,en.group.position.x-p.x);hive.next=0;app.updateAdvancedEffects(.001);
 }
 
-test('铰锤第三次有效主击仅替换一次震波，三轮总伤112；多目标不多充能',()=>{
+test('铰锤第三次有效主击仅替换一次震波，三轮总伤132；多目标不多充能',()=>{
     const e=scene('boss_hammer'),en=target(e.app),other=target(e.app,.3,-2.5);
-    hammer(e,en);assert.equal(100000-en.hp,32);assert.equal(e.w.resource,20);
+    hammer(e,en);assert.equal(100000-en.hp,38);assert.equal(e.w.resource,20);
     hammer(e,en);assert.equal(e.w.resource,40);hammer(e,en);
-    assert.equal(100000-en.hp,112);assert.equal(100000-other.hp,112);assert.equal(e.w.resource,0);
+    assert.equal(100000-en.hp,132);assert.equal(100000-other.hp,132);assert.equal(e.w.resource,0);
 });
 
 test('铰锤衍生不暴击、不吸血；击杀计入充能且重锤不重复击杀',()=>{
     const e=scene('boss_hammer','heavy'),{app,w}=e,en=target(app,0,-1.5,1000);app.stats.critChance=100;app.stats.lifeSteal=100;
     vm.runInContext('Math.random=()=>0',e.context);let heals=0;app.applyLifeSteal=()=>heals++;
-    hammer(e,en);assert.equal(1000-en.hp,Math.round(30*1.75)+8);assert.equal(heals,1);
+    hammer(e,en);assert.equal(1000-en.hp,Math.round(42*1.75)+9);assert.equal(heals,1);
     const weak=target(app,0,-1.5,1);hammer(e,weak);assert.equal(app.totalKills,1);assert.equal(w.resource,40);
 });
 
-test('铰锤裂缝共享强震预算，波形不能越过本次释放原点6单位',()=>{
+test('铰锤裂缝共享强震预算，波形不能越过本次释放原点8.4单位',()=>{
     const e=scene('boss_hammer','star',3,'area'),{app,w}=e,en=target(app,0,-1);w.resource=40;
-    hammer(e,en);assert.ok(100000-en.hp<=24+22);assert.equal(en.slowRatio,.8);
-    const far=target(app,0,-7);app.resolveBossImpact({profile:app.getBossProfile(w,app.getWeaponCombatStats(w)),strong:true,x:0,z:-5,ox:0,oz:0,angle:-Math.PI/2,attack:{}});
+    hammer(e,en);assert.ok(100000-en.hp<=29+24);assert.equal(en.slowRatio,.8);
+    const far=target(app,0,-9);app.resolveBossImpact({profile:app.getBossProfile(w,app.getWeaponCombatStats(w)),strong:true,x:0,z:-7,ox:0,oz:0,angle:-Math.PI/2,attack:{}});
     assert.equal(far.hp,100000);
 });
 
 test('重锤聚砧的冲击随有效主击结算，较远落锤不丢失震波预算',()=>{
     const e=scene('boss_hammer','heavy',3,'single'),en=target(e.app,0,-3);e.w.resource=40;
-    hammer(e,en);assert.equal(100000-en.hp,30+36);
+    hammer(e,en);assert.equal(100000-en.hp,42+41);
 });
 
 test('携压冲刺替换默认冲刺伤害，蓄力不提前在半路释放',()=>{
@@ -57,8 +57,8 @@ test('携压冲刺替换默认冲刺伤害，蓄力不提前在半路释放',()=
     assert.equal(w.resource,0);assert.ok(app.totalDmg>0);assert.ok(app.totalDmg<=app.getWeaponCombatStats(w).dmg+app.getBossProfile(w,app.getWeaponCombatStats(w)).strong);
 });
 
-test('蜂巢五组命中齐射共享追加10，聚猎3级四组追加14',()=>{
-    for(const [rank,branch,count,total] of [[0,null,5,60],[3,'single',4,54]]){
+test('蜂巢五组命中齐射共享追加12，聚猎3级四组追加17',()=>{
+    for(const [rank,branch,count,total] of [[0,null,5,72],[3,'single',4,65]]){
         const e=scene('boss_hive',null,rank,branch),en=target(e.app);for(let i=0;i<count;i++)beeShot(e,en);
         assert.equal(100000-en.hp,total);assert.equal(e.w.resource,0);assert.equal(e.app.advancedEffects.filter(n=>n.kind==='boss_bees').length,1);
     }
@@ -68,7 +68,7 @@ test('双蜂、分流不复制充能与预算，协同不能触发吸血或递�
     for(const core of [null,'hive','volley']){
         const e=scene('boss_hive',core,2,'area'),en=target(e.app);en.radius=3;e.w.resource=80;
         e.app.stats.lifeSteal=100;vm.runInContext('Math.random=()=>0',e.context);let heals=0;e.app.applyLifeSteal=()=>heals++;
-        beeShot(e,en);assert.equal(e.w.resource,0);assert.equal(100000-en.hp,core?24:20);assert.equal(heals,core==='volley'?4:2);
+        beeShot(e,en);assert.equal(e.w.resource,0);assert.equal(100000-en.hp,core?28:24);assert.equal(heals,core==='volley'?4:2);
         const hive=e.app.advancedEffects.find(n=>n.kind==='boss_bees');assert.equal(hive.mesh.children.length,2);
     }
 });
@@ -90,20 +90,20 @@ test('播簇3级砂网仅减速、限频；跟随蜂和普通哨机共享6单位
     assert.ok(units.reduce((n,v)=>n+(v.kind==='boss_bees'?v.mesh.children.length:1),0)<=6);
 });
 
-test('棱核单Boss空路21→23→24→25，完整三目标总预算25',()=>{
-    for(const [rank,total] of [[0,21],[1,23],[2,24],[3,25]]){
+test('棱核单Boss空路25→27→28→30，完整三目标总预算30',()=>{
+    for(const [rank,total] of [[0,25],[1,27],[2,28],[3,30]]){
         const e=scene('boss_prism',null,rank,rank?'single':null),en=target(e.app);
         e.app.fireWeapon(e.w,e.def,e.app.getWeaponCombatStats(e.w),0,0,en);assert.equal(100000-en.hp,total);
     }
     const e=scene('boss_prism');const enemies=[0,1,2].map(i=>target(e.app,i,-2));e.app.fireWeapon(e.w,e.def,e.app.getWeaponCombatStats(e.w),0,0,enemies[0]);
-    assert.deepEqual(enemies.map(n=>100000-n.hp),[14,7,4]);
+    assert.deepEqual(enemies.map(n=>100000-n.hp),[17,8,5]);
 });
 
 test('棱核回收不暴击、不吸血、不复活死目标；分流两束只回收一次',()=>{
     const e=scene('boss_prism','volley'),{app,w}=e,en=target(app);app.stats.lifeSteal=100;app.stats.critChance=100;
     vm.runInContext('Math.random=()=>0',e.context);let heals=0;app.applyLifeSteal=()=>heals++;
     app.fireWeapon(w,e.def,app.getWeaponCombatStats(w),0,0,en);app.updateAdvancedEffects(.6);
-    assert.equal(100000-en.hp,Math.round(7*1.75)*2+7);assert.equal(heals,2);assert.equal(app.advancedEffects.length,0);
+    assert.equal(100000-en.hp,Math.round(9*1.75)+Math.round(8*1.75)+8);assert.equal(heals,2);assert.equal(app.advancedEffects.length,0);
     app.clearEntities();const weak=target(app,0,-2.5,1);app.fireWeapon(w,e.def,app.getWeaponCombatStats(w),0,0,weak);app.updateAdvancedEffects(.6);assert.equal(app.totalKills,1);
 });
 
@@ -113,7 +113,7 @@ test('闭环仅分摊预算给新目标，单体退化时回收，禁止通用�
     // 稳定指定原生路径；内部目标只在闭环阶段成为合法新目标。
     const original=app.bossTargets.bind(app);let calls=0;app.bossTargets=(...args)=>{calls++;return original(...args).filter(n=>n!==inside);};
     app.fireWeapon(w,e.def,app.getWeaponCombatStats(w),0,0,nodes[0]);
-    assert.equal(app.totalDmg,25);assert.equal(100000-inside.hp,3);assert.deepEqual(nodes.map(n=>100000-n.hp),[12,6,4]);
+    assert.equal(app.totalDmg,30);assert.equal(100000-inside.hp,4);assert.deepEqual(nodes.map(n=>100000-n.hp),[14,7,5]);
     assert.equal(calls,2);
 });
 
@@ -158,7 +158,7 @@ test('常驻改装校验费用、实例和旧等级，多专武共享次数，�
 
 test('专武详情与改装显示实际路线、共鸣和新机制，基准图鉴不继承本局核心',()=>{
     const e=scene('boss_hammer','star',3,'single'),{app,w}=e;
-    assert.match(app.weaponDetailHtml(w),/十字断层/);assert.match(app.weaponDetailHtml(w),/第三击替换为32/);
+    assert.match(app.weaponDetailHtml(w),/十字断层/);assert.match(app.weaponDetailHtml(w),/第三击替换为37/);
     assert.doesNotMatch(app.weaponDetailHtml(w,true),/核心共鸣：十字断层/);
     assert.equal(app.coreFits('chain','boss_hive'),false);assert.equal(app.coreFits('hive','boss_hive'),true);
 });

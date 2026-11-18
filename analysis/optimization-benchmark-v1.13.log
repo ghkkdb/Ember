@@ -1,0 +1,247 @@
+{
+  "merges": [
+    {
+      "id": "grass_blade",
+      "before": 283.66153846153844,
+      "after": 271.89230769230767,
+      "changePct": -4.149040026033191
+    },
+    {
+      "id": "minishark",
+      "before": 297.5,
+      "after": 291.6666666666667,
+      "changePct": -1.9607843137254832
+    },
+    {
+      "id": "water_bolt",
+      "before": 282.7714285714286,
+      "after": 268.42857142857144,
+      "changePct": -5.072244114378099
+    }
+  ],
+  "before": [
+    {
+      "wave": 5,
+      "builds": [
+        {
+          "build": "blade",
+          "kills": 1,
+          "killSeconds": [
+            null,
+            67.9,
+            null
+          ],
+          "hp": [
+            38,
+            37,
+            38
+          ]
+        },
+        {
+          "build": "gun",
+          "kills": 3,
+          "killSeconds": [
+            27.5,
+            27.9,
+            27.82
+          ],
+          "hp": [
+            35,
+            35,
+            35
+          ]
+        },
+        {
+          "build": "star",
+          "kills": 3,
+          "killSeconds": [
+            22.27,
+            21.47,
+            19.55
+          ],
+          "hp": [
+            37,
+            35,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "wave": 10,
+      "builds": [
+        {
+          "build": "blade",
+          "kills": 0,
+          "killSeconds": [
+            null,
+            null,
+            null
+          ],
+          "hp": [
+            65,
+            65,
+            65
+          ]
+        },
+        {
+          "build": "gun",
+          "kills": 3,
+          "killSeconds": [
+            37.5,
+            37.72,
+            37.42
+          ],
+          "hp": [
+            58,
+            59,
+            58
+          ]
+        },
+        {
+          "build": "star",
+          "kills": 3,
+          "killSeconds": [
+            27.48,
+            26.47,
+            28.32
+          ],
+          "hp": [
+            65,
+            65,
+            65
+          ]
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "wave": 5,
+      "builds": [
+        {
+          "build": "blade",
+          "kills": 3,
+          "killSeconds": [
+            47.22,
+            46.5,
+            47.22
+          ],
+          "hp": [
+            45,
+            45,
+            45
+          ]
+        },
+        {
+          "build": "gun",
+          "kills": 3,
+          "killSeconds": [
+            10.5,
+            9.93,
+            9.93
+          ],
+          "hp": [
+            45,
+            45,
+            45
+          ]
+        },
+        {
+          "build": "star",
+          "kills": 3,
+          "killSeconds": [
+            11.47,
+            10.9,
+            10.9
+          ],
+          "hp": [
+            45,
+            45,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "wave": 10,
+      "builds": [
+        {
+          "build": "blade",
+          "kills": 3,
+          "killSeconds": [
+            57.28,
+            57.28,
+            57.28
+          ],
+          "hp": [
+            57,
+            57,
+            58
+          ]
+        },
+        {
+          "build": "gun",
+          "kills": 3,
+          "killSeconds": [
+            12.12,
+            12.42,
+            12.27
+          ],
+          "hp": [
+            65,
+            65,
+            65
+          ]
+        },
+        {
+          "build": "star",
+          "kills": 3,
+          "killSeconds": [
+            11.45,
+            11.13,
+            10.83
+          ],
+          "hp": [
+            65,
+            65,
+            65
+          ]
+        }
+      ]
+    }
+  ],
+  "progression": [
+    {
+      "seed": 11,
+      "wave": 4,
+      "outcome": "defeat",
+      "gold": 33,
+      "bossTimes": []
+    },
+    {
+      "seed": 29,
+      "wave": 7,
+      "outcome": "defeat",
+      "gold": 129,
+      "bossTimes": [
+        {
+          "wave": 5,
+          "seconds": 41.21666666666561
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "wave": 6,
+      "outcome": "defeat",
+      "gold": 118,
+      "bossTimes": [
+        {
+          "wave": 5,
+          "seconds": 34.183333333332676
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5155 @@
+{
+  "version": "1.13",
+  "sourceSha256": "f24227416f790b23fdd41185fdfa06bca28ac000597b24d69fb95ee4c118ae4e",
+  "basis": "产品配置与实际图鉴方法；默认第5波、难度1。敌方伤害均为防御前原始值。商店价格为波次基价，不保证当波投放。",
+  "items": [
+    {
+      "id": "insulator",
+      "name": "绝缘栅",
+      "desc": "连锁武器跳距+15%，主目标预算-5%；不增加跳数，包含分束棱核。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 2,
+      "price": 46,
+      "owned": 0,
+      "stats": "",
+      "targets": [
+        "导电棱镜",
+        "分束棱核"
+      ],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 40
+        },
+        {
+          "wave": 5,
+          "price": 46
+        },
+        {
+          "wave": 10,
+          "price": 59
+        },
+        {
+          "wave": 20,
+          "price": 85
+        }
+      ]
+    },
+    {
+      "id": "long_burn",
+      "name": "长燃芯",
+      "desc": "附着总伤+10%、持续时间+15%，对应直接段伤害-5%；同源仍不叠层。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 2,
+      "price": 46,
+      "owned": 0,
+      "stats": "",
+      "targets": [
+        "蚀刻喷口",
+        "蚀潮喷管",
+        "烬纹投枪"
+      ],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 40
+        },
+        {
+          "wave": 5,
+          "price": 46
+        },
+        {
+          "wave": 10,
+          "price": 59
+        },
+        {
+          "wave": 20,
+          "price": 85
+        }
+      ]
+    },
+    {
+      "id": "cold_sleeve",
+      "name": "寒凝套",
+      "desc": "霜雾存续+0.2秒，不新增跳数；减速+5个百分点，普通怪总减速最多50%、Boss最多15%。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 2,
+      "price": 46,
+      "owned": 0,
+      "stats": "",
+      "targets": [
+        "凝霜雾灯",
+        "引力锚"
+      ],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 40
+        },
+        {
+          "wave": 5,
+          "price": 46
+        },
+        {
+          "wave": 10,
+          "price": 59
+        },
+        {
+          "wave": 20,
+          "price": 85
+        }
+      ]
+    },
+    {
+      "id": "blast_fuse",
+      "name": "滞爆引线",
+      "desc": "引针、陷阱与铰锤震波半径+12%，触发延迟+0.10秒；不扩大索敌距离。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 2,
+      "price": 42,
+      "owned": 0,
+      "stats": "",
+      "targets": [
+        "伏雷匣",
+        "断响铰锤",
+        "坠辉引针"
+      ],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 37
+        },
+        {
+          "wave": 5,
+          "price": 42
+        },
+        {
+          "wave": 10,
+          "price": 54
+        },
+        {
+          "wave": 20,
+          "price": 78
+        }
+      ]
+    },
+    {
+      "id": "target_antenna",
+      "name": "识别天线",
+      "desc": "构装优先已受伤精英/Boss，射程+10%，构装伤害-5%；包含随行砂蜂。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 1,
+      "price": 46,
+      "owned": 0,
+      "stats": "",
+      "targets": [
+        "磁轨哨机",
+        "簇砂蜂巢",
+        "拾荒蜂巢"
+      ],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 40
+        },
+        {
+          "wave": 5,
+          "price": 46
+        },
+        {
+          "wave": 10,
+          "price": 59
+        },
+        {
+          "wave": 20,
+          "price": 85
+        }
+      ]
+    },
+    {
+      "id": "voltage_frame",
+      "name": "稳压框",
+      "desc": "蓄力时间-0.15秒、蓄力武器伤害-5%；装备时蓄力最低0.35秒，含铰锤震波。",
+      "tier": 3,
+      "unlock": 8,
+      "limit": 2,
+      "price": 56,
+      "owned": 0,
+      "stats": "",
+      "targets": [
+        "蓄压轨枪",
+        "断响铰锤",
+        "时序闸枪"
+      ],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 50
+        },
+        {
+          "wave": 5,
+          "price": 56
+        },
+        {
+          "wave": 10,
+          "price": 72
+        },
+        {
+          "wave": 20,
+          "price": 104
+        }
+      ]
+    },
+    {
+      "id": "crit_converter",
+      "name": "盈锋转换器",
+      "desc": "原始暴击超过100%的部分按2:1转为本武器暴击效果，保留必暴击。",
+      "tier": 3,
+      "unlock": 10,
+      "limit": 1,
+      "price": 84,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 74
+        },
+        {
+          "wave": 5,
+          "price": 84
+        },
+        {
+          "wave": 10,
+          "price": 108
+        },
+        {
+          "wave": 20,
+          "price": 156
+        }
+      ]
+    },
+    {
+      "id": "range_ring",
+      "name": "回收磁环",
+      "desc": "范围+10%，全伤害-3%；近战仍受距离上限。",
+      "tier": 1,
+      "unlock": 1,
+      "limit": 2,
+      "price": 31,
+      "owned": 0,
+      "stats": "📏 范围% +10；💥 全伤害% -3",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 28
+        },
+        {
+          "wave": 5,
+          "price": 31
+        },
+        {
+          "wave": 10,
+          "price": 41
+        },
+        {
+          "wave": 20,
+          "price": 59
+        }
+      ]
+    },
+    {
+      "id": "crit_lens",
+      "name": "增幅镜片",
+      "desc": "暴击效果+12%，攻速-3%。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 2,
+      "price": 46,
+      "owned": 0,
+      "stats": "💥 暴击效果% +12；⚡ 攻击速度% -3",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 40
+        },
+        {
+          "wave": 5,
+          "price": 46
+        },
+        {
+          "wave": 10,
+          "price": 59
+        },
+        {
+          "wave": 20,
+          "price": 85
+        }
+      ]
+    },
+    {
+      "id": "hermes",
+      "name": "步频鞋",
+      "desc": "移速+12%，闪避+5% [解锁3D飞靴外观]",
+      "tier": 1,
+      "unlock": 1,
+      "limit": 4,
+      "price": 25,
+      "owned": 0,
+      "stats": "👟 移动速度% +12；💨 闪避率% +5",
+      "targets": [],
+      "cosmetic": "boots",
+      "prices": [
+        {
+          "wave": 3,
+          "price": 22
+        },
+        {
+          "wave": 5,
+          "price": 25
+        },
+        {
+          "wave": 10,
+          "price": 32
+        },
+        {
+          "wave": 20,
+          "price": 46
+        }
+      ]
+    },
+    {
+      "id": "regen_band",
+      "name": "缓释药囊",
+      "desc": "生命再生+4，最大生命+4",
+      "tier": 1,
+      "unlock": 1,
+      "limit": 4,
+      "price": 26,
+      "owned": 0,
+      "stats": "💖 生命再生 +4；❤️ 最大生命 +4",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 23
+        },
+        {
+          "wave": 5,
+          "price": 26
+        },
+        {
+          "wave": 10,
+          "price": 34
+        },
+        {
+          "wave": 20,
+          "price": 49
+        }
+      ]
+    },
+    {
+      "id": "shackle",
+      "name": "层叠护片",
+      "desc": "护甲+3，最大生命+3 [解锁3D护盾外观]",
+      "tier": 1,
+      "unlock": 1,
+      "limit": 4,
+      "price": 25,
+      "owned": 0,
+      "stats": "🛡️ 护甲值 +3；❤️ 最大生命 +3",
+      "targets": [],
+      "cosmetic": "shield",
+      "prices": [
+        {
+          "wave": 3,
+          "price": 22
+        },
+        {
+          "wave": 5,
+          "price": 25
+        },
+        {
+          "wave": 10,
+          "price": 32
+        },
+        {
+          "wave": 20,
+          "price": 46
+        }
+      ]
+    },
+    {
+      "id": "shark_tooth",
+      "name": "棘齿垫片",
+      "desc": "近战+3，远程+2，魔法+2",
+      "tier": 1,
+      "unlock": 1,
+      "limit": 4,
+      "price": 30,
+      "owned": 0,
+      "stats": "⚔️ 近战伤害 +3；🏹 远程伤害 +2；🔮 魔法伤害 +2",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 26
+        },
+        {
+          "wave": 5,
+          "price": 30
+        },
+        {
+          "wave": 10,
+          "price": 38
+        },
+        {
+          "wave": 20,
+          "price": 55
+        }
+      ]
+    },
+    {
+      "id": "horseshoe",
+      "name": "偏心骰",
+      "desc": "幸运+8，全伤害-3%；最多2件",
+      "tier": 1,
+      "unlock": 1,
+      "limit": 2,
+      "price": 35,
+      "owned": 0,
+      "stats": "🍀 幸运值 +8；💥 全伤害% -3",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 31
+        },
+        {
+          "wave": 5,
+          "price": 35
+        },
+        {
+          "wave": 10,
+          "price": 45
+        },
+        {
+          "wave": 20,
+          "price": 65
+        }
+      ]
+    },
+    {
+      "id": "claws",
+      "name": "轻质握把",
+      "desc": "攻速+18%，近战+3",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 3,
+      "price": 42,
+      "owned": 0,
+      "stats": "⚡ 攻击速度% +18；⚔️ 近战伤害 +3",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 37
+        },
+        {
+          "wave": 5,
+          "price": 42
+        },
+        {
+          "wave": 10,
+          "price": 54
+        },
+        {
+          "wave": 20,
+          "price": 78
+        }
+      ]
+    },
+    {
+      "id": "obsidian",
+      "name": "保温衬层",
+      "desc": "护甲+5，最大生命+8 [解锁3D护盾外观]",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 3,
+      "price": 44,
+      "owned": 0,
+      "stats": "🛡️ 护甲值 +5；❤️ 最大生命 +8",
+      "targets": [],
+      "cosmetic": "shield",
+      "prices": [
+        {
+          "wave": 3,
+          "price": 39
+        },
+        {
+          "wave": 5,
+          "price": 44
+        },
+        {
+          "wave": 10,
+          "price": 56
+        },
+        {
+          "wave": 20,
+          "price": 81
+        }
+      ]
+    },
+    {
+      "id": "mana_flower",
+      "name": "导流线圈",
+      "desc": "魔法伤害+5，攻速+10%",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 3,
+      "price": 42,
+      "owned": 0,
+      "stats": "🔮 魔法伤害 +5；⚡ 攻击速度% +10",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 37
+        },
+        {
+          "wave": 5,
+          "price": 42
+        },
+        {
+          "wave": 10,
+          "price": 54
+        },
+        {
+          "wave": 20,
+          "price": 78
+        }
+      ]
+    },
+    {
+      "id": "ranger_emb",
+      "name": "准星垫圈",
+      "desc": "远程伤害+4，暴击率+8%",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 3,
+      "price": 44,
+      "owned": 0,
+      "stats": "🏹 远程伤害 +4；🎯 暴击率% +8",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 39
+        },
+        {
+          "wave": 5,
+          "price": 44
+        },
+        {
+          "wave": 10,
+          "price": 56
+        },
+        {
+          "wave": 20,
+          "price": 81
+        }
+      ]
+    },
+    {
+      "id": "vamp_ring",
+      "name": "吸附绷带",
+      "desc": "吸血触发率+10%，全伤害+8%",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 3,
+      "price": 47,
+      "owned": 0,
+      "stats": "🦇 吸血触发率% +10；💥 全伤害% +8",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 42
+        },
+        {
+          "wave": 5,
+          "price": 47
+        },
+        {
+          "wave": 10,
+          "price": 61
+        },
+        {
+          "wave": 20,
+          "price": 88
+        }
+      ]
+    },
+    {
+      "id": "cthulhu_sh",
+      "name": "软壳关节",
+      "desc": "护甲+3，闪避+10%，移速+8% [3D护盾外观]",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 3,
+      "price": 46,
+      "owned": 0,
+      "stats": "🛡️ 护甲值 +3；💨 闪避率% +10；👟 移动速度% +8",
+      "targets": [],
+      "cosmetic": "shield",
+      "prices": [
+        {
+          "wave": 3,
+          "price": 40
+        },
+        {
+          "wave": 5,
+          "price": 46
+        },
+        {
+          "wave": 10,
+          "price": 59
+        },
+        {
+          "wave": 20,
+          "price": 85
+        }
+      ]
+    },
+    {
+      "id": "frost_boots",
+      "name": "滑移轴",
+      "desc": "移速+18%，暴击率+8%，攻速+10% [3D飞靴外观]",
+      "tier": 3,
+      "unlock": 8,
+      "limit": 2,
+      "price": 61,
+      "owned": 0,
+      "stats": "👟 移动速度% +18；🎯 暴击率% +8；⚡ 攻击速度% +10",
+      "targets": [],
+      "cosmetic": "boots",
+      "prices": [
+        {
+          "wave": 3,
+          "price": 54
+        },
+        {
+          "wave": 5,
+          "price": 61
+        },
+        {
+          "wave": 10,
+          "price": 79
+        },
+        {
+          "wave": 20,
+          "price": 114
+        }
+      ]
+    },
+    {
+      "id": "greedy_ring",
+      "name": "残页账本",
+      "desc": "收获+12，护甲-2；最多2件",
+      "tier": 3,
+      "unlock": 8,
+      "limit": 2,
+      "price": 79,
+      "owned": 0,
+      "stats": "🌾 收获值 +12；🛡️ 护甲值 -2",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 70
+        },
+        {
+          "wave": 5,
+          "price": 79
+        },
+        {
+          "wave": 10,
+          "price": 101
+        },
+        {
+          "wave": 20,
+          "price": 146
+        }
+      ]
+    },
+    {
+      "id": "destroyer",
+      "name": "震荡装药",
+      "desc": "全伤害+18%，暴击率+12%",
+      "tier": 3,
+      "unlock": 8,
+      "limit": 2,
+      "price": 70,
+      "owned": 0,
+      "stats": "💥 全伤害% +18；🎯 暴击率% +12",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 62
+        },
+        {
+          "wave": 5,
+          "price": 70
+        },
+        {
+          "wave": 10,
+          "price": 90
+        },
+        {
+          "wave": 20,
+          "price": 130
+        }
+      ]
+    },
+    {
+      "id": "ankh_shield",
+      "name": "应急密封",
+      "desc": "护甲+7，最大生命+15，再生+4 [3D圣盾外观]",
+      "tier": 3,
+      "unlock": 8,
+      "limit": 2,
+      "price": 68,
+      "owned": 0,
+      "stats": "🛡️ 护甲值 +7；❤️ 最大生命 +15；💖 生命再生 +4",
+      "targets": [],
+      "cosmetic": "shield",
+      "prices": [
+        {
+          "wave": 3,
+          "price": 60
+        },
+        {
+          "wave": 5,
+          "price": 68
+        },
+        {
+          "wave": 10,
+          "price": 88
+        },
+        {
+          "wave": 20,
+          "price": 127
+        }
+      ]
+    },
+    {
+      "id": "wings_solar",
+      "name": "风向尾片",
+      "desc": "移速+22%，闪避+15%，全伤害+12% [解锁3D振翅双翼!]",
+      "tier": 3,
+      "unlock": 8,
+      "limit": 2,
+      "price": 74,
+      "owned": 0,
+      "stats": "👟 移动速度% +22；💨 闪避率% +15；💥 全伤害% +12",
+      "targets": [],
+      "cosmetic": "wings",
+      "prices": [
+        {
+          "wave": 3,
+          "price": 65
+        },
+        {
+          "wave": 5,
+          "price": 74
+        },
+        {
+          "wave": 10,
+          "price": 95
+        },
+        {
+          "wave": 20,
+          "price": 137
+        }
+      ]
+    },
+    {
+      "id": "celestial",
+      "name": "溢流蓄罐",
+      "desc": "全伤害+20%，攻速+18%，再生+6，护甲+4，吸血触发率+8%；唯一 [3D神圣光翼]",
+      "tier": 4,
+      "unlock": 14,
+      "limit": 1,
+      "price": 131,
+      "owned": 0,
+      "stats": "💥 全伤害% +20；⚡ 攻击速度% +18；💖 生命再生 +6；🛡️ 护甲值 +4；🦇 吸血触发率% +8",
+      "targets": [],
+      "cosmetic": "wings",
+      "prices": [
+        {
+          "wave": 3,
+          "price": 116
+        },
+        {
+          "wave": 5,
+          "price": 131
+        },
+        {
+          "wave": 10,
+          "price": 169
+        },
+        {
+          "wave": 20,
+          "price": 244
+        }
+      ]
+    },
+    {
+      "id": "blade_mount",
+      "name": "硬质刀座",
+      "desc": "主近战击退+20%，近战伤害-1。",
+      "tier": 1,
+      "unlock": 1,
+      "limit": 2,
+      "price": 26,
+      "owned": 0,
+      "stats": "⚔️ 近战伤害 -1",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 23
+        },
+        {
+          "wave": 5,
+          "price": 26
+        },
+        {
+          "wave": 10,
+          "price": 34
+        },
+        {
+          "wave": 20,
+          "price": 49
+        }
+      ]
+    },
+    {
+      "id": "narrow_ring",
+      "name": "窄口束环",
+      "desc": "范围+8%，近战仍受最终上限限制。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 2,
+      "price": 42,
+      "owned": 0,
+      "stats": "📏 范围% +8",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 37
+        },
+        {
+          "wave": 5,
+          "price": 42
+        },
+        {
+          "wave": 10,
+          "price": 54
+        },
+        {
+          "wave": 20,
+          "price": 78
+        }
+      ]
+    },
+    {
+      "id": "thermal_film",
+      "name": "余热护膜",
+      "desc": "受到接触伤害后生成推开波（3秒CD），护甲+1。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 1,
+      "price": 46,
+      "owned": 0,
+      "stats": "🛡️ 护甲值 +1",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 40
+        },
+        {
+          "wave": 5,
+          "price": 46
+        },
+        {
+          "wave": 10,
+          "price": 59
+        },
+        {
+          "wave": 20,
+          "price": 85
+        }
+      ]
+    },
+    {
+      "id": "rest_prism",
+      "name": "静息棱片",
+      "desc": "静止2秒后回复最大生命3%，每波最多3次。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 1,
+      "price": 44,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 39
+        },
+        {
+          "wave": 5,
+          "price": 44
+        },
+        {
+          "wave": 10,
+          "price": 56
+        },
+        {
+          "wave": 20,
+          "price": 81
+        }
+      ]
+    },
+    {
+      "id": "credit_voucher",
+      "name": "赊账凭证",
+      "desc": "每次进店首笔普通商品最多减免8晶币，下波结算扣回50%。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 1,
+      "price": 28,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 25
+        },
+        {
+          "wave": 5,
+          "price": 28
+        },
+        {
+          "wave": 10,
+          "price": 36
+        },
+        {
+          "wave": 20,
+          "price": 52
+        }
+      ]
+    },
+    {
+      "id": "wax_clip",
+      "name": "封蜡券夹",
+      "desc": "每波首次普通商店刷新费用-2，最低1。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 1,
+      "price": 42,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 37
+        },
+        {
+          "wave": 5,
+          "price": 42
+        },
+        {
+          "wave": 10,
+          "price": 54
+        },
+        {
+          "wave": 20,
+          "price": 78
+        }
+      ]
+    },
+    {
+      "id": "salvage_license",
+      "name": "旧货执照",
+      "desc": "普通武器出售比例+5%，最高50%。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 1,
+      "price": 49,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 43
+        },
+        {
+          "wave": 5,
+          "price": 49
+        },
+        {
+          "wave": 10,
+          "price": 63
+        },
+        {
+          "wave": 20,
+          "price": 91
+        }
+      ]
+    },
+    {
+      "id": "throttle_valve",
+      "name": "节流阀",
+      "desc": "普通怪每波晶币发行上限+3，移速-4%。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 1,
+      "price": 53,
+      "owned": 0,
+      "stats": "👟 移动速度% -4",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 47
+        },
+        {
+          "wave": 5,
+          "price": 53
+        },
+        {
+          "wave": 10,
+          "price": 68
+        },
+        {
+          "wave": 20,
+          "price": 98
+        }
+      ]
+    },
+    {
+      "id": "shelf_index",
+      "name": "货架索引",
+      "desc": "每波首次刷新尽量保证1把主核心适配普通武器。",
+      "tier": 3,
+      "unlock": 8,
+      "limit": 1,
+      "price": 59,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 53
+        },
+        {
+          "wave": 5,
+          "price": 59
+        },
+        {
+          "wave": 10,
+          "price": 77
+        },
+        {
+          "wave": 20,
+          "price": 111
+        }
+      ]
+    },
+    {
+      "id": "traction_joint",
+      "name": "牵引接头",
+      "desc": "返程速度+15%，去程伤害-5%。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 2,
+      "price": 42,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 37
+        },
+        {
+          "wave": 5,
+          "price": 42
+        },
+        {
+          "wave": 10,
+          "price": 54
+        },
+        {
+          "wave": 20,
+          "price": 78
+        }
+      ]
+    },
+    {
+      "id": "bearing_cap",
+      "name": "轴承盖",
+      "desc": "轨道角速度+12%，轨道半径-8%。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 2,
+      "price": 42,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 37
+        },
+        {
+          "wave": 5,
+          "price": 42
+        },
+        {
+          "wave": 10,
+          "price": 54
+        },
+        {
+          "wave": 20,
+          "price": 78
+        }
+      ]
+    },
+    {
+      "id": "slide_axle",
+      "name": "滑移轴",
+      "desc": "冲刺冷却缩短0.30秒。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 2,
+      "price": 46,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 40
+        },
+        {
+          "wave": 5,
+          "price": 46
+        },
+        {
+          "wave": 10,
+          "price": 59
+        },
+        {
+          "wave": 20,
+          "price": 85
+        }
+      ]
+    },
+    {
+      "id": "tread_sole",
+      "name": "防滑鞋底",
+      "desc": "受到的接触伤害降低15%，移速-4%。",
+      "tier": 1,
+      "unlock": 1,
+      "limit": 1,
+      "price": 31,
+      "owned": 0,
+      "stats": "👟 移动速度% -4",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 28
+        },
+        {
+          "wave": 5,
+          "price": 31
+        },
+        {
+          "wave": 10,
+          "price": 41
+        },
+        {
+          "wave": 20,
+          "price": 59
+        }
+      ]
+    },
+    {
+      "id": "needle_box",
+      "name": "缝合针盒",
+      "desc": "红心回复量+20%，暴击率-3%。",
+      "tier": 2,
+      "unlock": 3,
+      "limit": 2,
+      "price": 42,
+      "owned": 0,
+      "stats": "🎯 暴击率% -3",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 37
+        },
+        {
+          "wave": 5,
+          "price": 42
+        },
+        {
+          "wave": 10,
+          "price": 54
+        },
+        {
+          "wave": 20,
+          "price": 78
+        }
+      ]
+    },
+    {
+      "id": "relay_pickup",
+      "name": "拾取继电器",
+      "desc": "每拾取20点晶币，获得最大生命3%护盾（最多6%）。",
+      "tier": 3,
+      "unlock": 8,
+      "limit": 1,
+      "price": 59,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 53
+        },
+        {
+          "wave": 5,
+          "price": 59
+        },
+        {
+          "wave": 10,
+          "price": 77
+        },
+        {
+          "wave": 20,
+          "price": 111
+        }
+      ]
+    },
+    {
+      "id": "battery_cell",
+      "name": "折叠电池",
+      "desc": "冲刺可储存2次，冷却时间+30%。",
+      "tier": 3,
+      "unlock": 8,
+      "limit": 1,
+      "price": 67,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 59
+        },
+        {
+          "wave": 5,
+          "price": 67
+        },
+        {
+          "wave": 10,
+          "price": 86
+        },
+        {
+          "wave": 20,
+          "price": 124
+        }
+      ]
+    },
+    {
+      "id": "brake_buckle",
+      "name": "急停卡扣",
+      "desc": "冲刺后0.5秒内受击伤害-15%（3秒CD）。",
+      "tier": 3,
+      "unlock": 8,
+      "limit": 1,
+      "price": 59,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 53
+        },
+        {
+          "wave": 5,
+          "price": 59
+        },
+        {
+          "wave": 10,
+          "price": 77
+        },
+        {
+          "wave": 20,
+          "price": 111
+        }
+      ]
+    },
+    {
+      "id": "crit_glass",
+      "name": "临界玻片",
+      "desc": "生命<=40%时全伤+12%，护甲-2。",
+      "tier": 3,
+      "unlock": 12,
+      "limit": 1,
+      "price": 67,
+      "owned": 0,
+      "stats": "🛡️ 护甲值 -2",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 59
+        },
+        {
+          "wave": 5,
+          "price": 67
+        },
+        {
+          "wave": 10,
+          "price": 86
+        },
+        {
+          "wave": 20,
+          "price": 124
+        }
+      ]
+    },
+    {
+      "id": "phase_rectifier",
+      "name": "倒相整流器",
+      "desc": "生命>=80%时全伤+10%，吸血-4%。",
+      "tier": 3,
+      "unlock": 12,
+      "limit": 1,
+      "price": 67,
+      "owned": 0,
+      "stats": "🦇 吸血触发率% -4",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 59
+        },
+        {
+          "wave": 5,
+          "price": 67
+        },
+        {
+          "wave": 10,
+          "price": 86
+        },
+        {
+          "wave": 20,
+          "price": 124
+        }
+      ]
+    },
+    {
+      "id": "fuse_breaker",
+      "name": "断电保险",
+      "desc": "本局首次致命伤免疫并保留1点生命，触发后彻底损毁。",
+      "tier": 4,
+      "unlock": 14,
+      "limit": 1,
+      "price": 105,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 93
+        },
+        {
+          "wave": 5,
+          "price": 105
+        },
+        {
+          "wave": 10,
+          "price": 135
+        },
+        {
+          "wave": 20,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "id": "parasite_valve",
+      "name": "寄生阀",
+      "desc": "持续伤害击杀普通怪获得1护盾（上限8%）。",
+      "tier": 3,
+      "unlock": 12,
+      "limit": 1,
+      "price": 70,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 62
+        },
+        {
+          "wave": 5,
+          "price": 70
+        },
+        {
+          "wave": 10,
+          "price": 90
+        },
+        {
+          "wave": 20,
+          "price": 130
+        }
+      ]
+    },
+    {
+      "id": "silent_mount",
+      "name": "静默齿座",
+      "desc": "构装攻击间隔-12%，玩家非构装直接伤害-10%。",
+      "tier": 3,
+      "unlock": 12,
+      "limit": 1,
+      "price": 70,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 62
+        },
+        {
+          "wave": 5,
+          "price": 70
+        },
+        {
+          "wave": 10,
+          "price": 90
+        },
+        {
+          "wave": 20,
+          "price": 130
+        }
+      ]
+    },
+    {
+      "id": "void_box",
+      "name": "空腔弹盒",
+      "desc": "合格单弹主武器额外1枚侧弹，总伤害重新分配为原来的110%。",
+      "tier": 4,
+      "unlock": 14,
+      "limit": 1,
+      "price": 95,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 84
+        },
+        {
+          "wave": 5,
+          "price": 95
+        },
+        {
+          "wave": 10,
+          "price": 122
+        },
+        {
+          "wave": 20,
+          "price": 176
+        }
+      ]
+    },
+    {
+      "id": "end_counter",
+      "name": "终点计数器",
+      "desc": "Boss硬直阶段全伤害+15%，其他时间全伤害-5%。",
+      "tier": 3,
+      "unlock": 12,
+      "limit": 1,
+      "price": 74,
+      "owned": 0,
+      "stats": "",
+      "targets": [],
+      "cosmetic": null,
+      "prices": [
+        {
+          "wave": 3,
+          "price": 65
+        },
+        {
+          "wave": 5,
+          "price": 74
+        },
+        {
+          "wave": 10,
+          "price": 95
+        },
+        {
+          "wave": 20,
+          "price": 137
+        }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "id": "forge",
+      "name": "裂砧执刑者",
+      "hp": 1500,
+      "warning": 1,
+      "recovery": 1.3,
+      "chase": 2.8,
+      "rageChase": 2.2,
+      "speed": 3.2,
+      "contactBase": 8,
+      "contactRatio": 0.5,
+      "skillDamage": 14,
+      "rageDamage": 16,
+      "prismBolt": 8,
+      "droneDamage": 4,
+      "droneLife": 8,
+      "droneLimit": 4,
+      "encounterWave": 5,
+      "contactDamage": 4,
+      "weapon": "boss_hammer",
+      "skills": [
+        {
+          "name": "断层劈落",
+          "desc": "朝玩家方向劈出固定直线；预警后横移。",
+          "damage": 14,
+          "rageDamage": 16
+        },
+        {
+          "name": "环缝震荡",
+          "desc": "攻击距Boss中心1.6～6的环带；进入内圈或退出外圈。",
+          "damage": 14,
+          "rageDamage": 16
+        },
+        {
+          "name": "拖锤扫场",
+          "desc": "锁定三道扇形锤线；从锤线之间穿行。",
+          "damage": 14,
+          "rageDamage": 16
+        }
+      ],
+      "health": [
+        {
+          "wave": 5,
+          "values": [
+            1500,
+            1875,
+            2325,
+            2850,
+            3450
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            6000,
+            7500,
+            9300,
+            11400,
+            13800
+          ]
+        },
+        {
+          "wave": 15,
+          "values": [
+            10500,
+            13125,
+            16275,
+            19950,
+            24150
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            15000,
+            18750,
+            23250,
+            28500,
+            34500
+          ]
+        },
+        {
+          "wave": 30,
+          "values": [
+            22326,
+            27908,
+            34605,
+            42419,
+            51350
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            49460,
+            61824,
+            76662,
+            93973,
+            113757
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weaver",
+      "name": "鸣砂织母",
+      "hp": 1500,
+      "warning": 1,
+      "recovery": 1.3,
+      "chase": 2.8,
+      "rageChase": 2.2,
+      "speed": 3.2,
+      "contactBase": 8,
+      "contactRatio": 0.5,
+      "skillDamage": 14,
+      "rageDamage": 16,
+      "prismBolt": 8,
+      "droneDamage": 4,
+      "droneLife": 8,
+      "droneLimit": 4,
+      "encounterWave": 5,
+      "contactDamage": 4,
+      "weapon": "boss_hive",
+      "skills": [
+        {
+          "name": "砂线织网",
+          "desc": "三条砂线横穿场地，半血后四条；站进线间空隙。",
+          "damage": 14,
+          "rageDamage": 16
+        },
+        {
+          "name": "孵化鸣簇",
+          "desc": "召唤最多四只无奖励幼体；及时清理，八秒后消失。",
+          "damage": null,
+          "rageDamage": 16
+        },
+        {
+          "name": "收束脉冲",
+          "desc": "锁定玩家附近三个落点，离开黄红圈后输出。",
+          "damage": 14,
+          "rageDamage": 16
+        }
+      ],
+      "health": [
+        {
+          "wave": 5,
+          "values": [
+            1500,
+            1875,
+            2325,
+            2850,
+            3450
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            6000,
+            7500,
+            9300,
+            11400,
+            13800
+          ]
+        },
+        {
+          "wave": 15,
+          "values": [
+            10500,
+            13125,
+            16275,
+            19950,
+            24150
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            15000,
+            18750,
+            23250,
+            28500,
+            34500
+          ]
+        },
+        {
+          "wave": 30,
+          "values": [
+            22326,
+            27908,
+            34605,
+            42419,
+            51350
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            49460,
+            61824,
+            76662,
+            93973,
+            113757
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prism",
+      "name": "棱镜巡弋机",
+      "hp": 1500,
+      "warning": 1,
+      "recovery": 1.3,
+      "chase": 2.8,
+      "rageChase": 2.2,
+      "speed": 3.2,
+      "contactBase": 8,
+      "contactRatio": 0.5,
+      "skillDamage": 14,
+      "rageDamage": 16,
+      "prismBolt": 8,
+      "droneDamage": 4,
+      "droneLife": 8,
+      "droneLimit": 4,
+      "encounterWave": 5,
+      "contactDamage": 4,
+      "weapon": "boss_prism",
+      "skills": [
+        {
+          "name": "折线光束",
+          "desc": "两段折线光束；同时观察前段和折转段。",
+          "damage": 14,
+          "rageDamage": 16
+        },
+        {
+          "name": "缺口光环",
+          "desc": "发射四枚光弹，六方向中保留相邻两方向缺口；进入缺口躲避。",
+          "damage": 8,
+          "rageDamage": 8
+        },
+        {
+          "name": "棱板换位",
+          "desc": "原位置范围攻击后换位；远离原落点，追踪新的位置。",
+          "damage": 14,
+          "rageDamage": 16
+        }
+      ],
+      "health": [
+        {
+          "wave": 5,
+          "values": [
+            1500,
+            1875,
+            2325,
+            2850,
+            3450
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            6000,
+            7500,
+            9300,
+            11400,
+            13800
+          ]
+        },
+        {
+          "wave": 15,
+          "values": [
+            10500,
+            13125,
+            16275,
+            19950,
+            24150
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            15000,
+            18750,
+            23250,
+            28500,
+            34500
+          ]
+        },
+        {
+          "wave": 30,
+          "values": [
+            22326,
+            27908,
+            34605,
+            42419,
+            51350
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            49460,
+            61824,
+            76662,
+            93973,
+            113757
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tank",
+      "name": "潮蚀容器",
+      "hp": 1500,
+      "warning": 1,
+      "recovery": 1.3,
+      "chase": 2.8,
+      "rageChase": 2.2,
+      "speed": 3.2,
+      "contactBase": 8,
+      "contactRatio": 0.5,
+      "skillDamage": 14,
+      "rageDamage": 16,
+      "prismBolt": 8,
+      "droneDamage": 4,
+      "droneLife": 8,
+      "droneLimit": 4,
+      "encounterWave": 5,
+      "contactDamage": 4,
+      "weapon": "boss_tank",
+      "skills": [
+        {
+          "name": "泄压喷流",
+          "desc": "70度扇形预警0.95秒后喷射；伤害12，同次喷流最多伤害一次。",
+          "damage": 14,
+          "rageDamage": 16
+        },
+        {
+          "name": "腐潮洼地",
+          "desc": "两个区域预警1.00秒，存在2.5秒，最多覆盖场地20%；每秒6点环境伤害。",
+          "damage": 14,
+          "rageDamage": 16
+        },
+        {
+          "name": "阀门回冲",
+          "desc": "三条短走廊预警0.90秒，依次间隔0.4秒释放；单条命中10点。",
+          "damage": 14,
+          "rageDamage": 16
+        }
+      ],
+      "health": [
+        {
+          "wave": 5,
+          "values": [
+            1500,
+            1875,
+            2325,
+            2850,
+            3450
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            6000,
+            7500,
+            9300,
+            11400,
+            13800
+          ]
+        },
+        {
+          "wave": 15,
+          "values": [
+            10500,
+            13125,
+            16275,
+            19950,
+            24150
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            15000,
+            18750,
+            23250,
+            28500,
+            34500
+          ]
+        },
+        {
+          "wave": 30,
+          "values": [
+            22326,
+            27908,
+            34605,
+            42419,
+            51350
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            49460,
+            61824,
+            76662,
+            93973,
+            113757
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clock",
+      "name": "逆相钟匠",
+      "hp": 1500,
+      "warning": 1,
+      "recovery": 1.3,
+      "chase": 2.8,
+      "rageChase": 2.2,
+      "speed": 3.2,
+      "contactBase": 8,
+      "contactRatio": 0.5,
+      "skillDamage": 14,
+      "rageDamage": 16,
+      "prismBolt": 8,
+      "droneDamage": 4,
+      "droneLife": 8,
+      "droneLimit": 4,
+      "encounterWave": 5,
+      "contactDamage": 4,
+      "weapon": "boss_clock",
+      "skills": [
+        {
+          "name": "延迟刻痕",
+          "desc": "记录玩家当前位置，1.10秒后引爆十字刻痕；伤害12。",
+          "damage": 14,
+          "rageDamage": 16
+        },
+        {
+          "name": "摆锤穿梭",
+          "desc": "路线预警0.85秒，沿直线高速穿梭；命中14点胶囊伤害。",
+          "damage": 14,
+          "rageDamage": 16
+        },
+        {
+          "name": "旧影复写",
+          "desc": "显示上一次技能轨迹0.95秒，以80%伤害重放一次历史攻击。",
+          "damage": 14,
+          "rageDamage": 16
+        }
+      ],
+      "health": [
+        {
+          "wave": 5,
+          "values": [
+            1500,
+            1875,
+            2325,
+            2850,
+            3450
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            6000,
+            7500,
+            9300,
+            11400,
+            13800
+          ]
+        },
+        {
+          "wave": 15,
+          "values": [
+            10500,
+            13125,
+            16275,
+            19950,
+            24150
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            15000,
+            18750,
+            23250,
+            28500,
+            34500
+          ]
+        },
+        {
+          "wave": 30,
+          "values": [
+            22326,
+            27908,
+            34605,
+            42419,
+            51350
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            49460,
+            61824,
+            76662,
+            93973,
+            113757
+          ]
+        }
+      ]
+    },
+    {
+      "id": "train",
+      "name": "灰穹列车",
+      "hp": 1500,
+      "warning": 1,
+      "recovery": 1.3,
+      "chase": 2.8,
+      "rageChase": 2.2,
+      "speed": 3.2,
+      "contactBase": 8,
+      "contactRatio": 0.5,
+      "skillDamage": 14,
+      "rageDamage": 16,
+      "prismBolt": 8,
+      "droneDamage": 4,
+      "droneLife": 8,
+      "droneLimit": 4,
+      "encounterWave": 5,
+      "contactDamage": 4,
+      "weapon": "boss_train",
+      "skills": [
+        {
+          "name": "划轨穿行",
+          "desc": "弧形轨道预警1.10秒，车组穿行0.80秒；命中14，所有车节共享伤害。",
+          "damage": 14,
+          "rageDamage": 16
+        },
+        {
+          "name": "卸载磁箱",
+          "desc": "两个落点预警1.00秒，磁箱作为短命障碍存在2秒；落地10点伤害。",
+          "damage": 14,
+          "rageDamage": 16
+        },
+        {
+          "name": "回环归站",
+          "desc": "返程轨道预警0.95秒，返程后停靠1.60秒；命中12点。",
+          "damage": 14,
+          "rageDamage": 16
+        }
+      ],
+      "health": [
+        {
+          "wave": 5,
+          "values": [
+            1500,
+            1875,
+            2325,
+            2850,
+            3450
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            6000,
+            7500,
+            9300,
+            11400,
+            13800
+          ]
+        },
+        {
+          "wave": 15,
+          "values": [
+            10500,
+            13125,
+            16275,
+            19950,
+            24150
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            15000,
+            18750,
+            23250,
+            28500,
+            34500
+          ]
+        },
+        {
+          "wave": 30,
+          "values": [
+            22326,
+            27908,
+            34605,
+            42419,
+            51350
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            49460,
+            61824,
+            76662,
+            93973,
+            113757
+          ]
+        }
+      ]
+    }
+  ],
+  "enemies": [
+    {
+      "id": "slime_green",
+      "name": "绿史莱姆",
+      "hpScale": 1,
+      "speed": 3.2,
+      "radius": 0.72,
+      "behavior": "hop",
+      "color": 2278750,
+      "gold": 1,
+      "unlockWave": 1,
+      "tactic": "跳跃贴近；保持移动，避免被围住。",
+      "hp": 57.599999999999994,
+      "dmg": 7,
+      "scenarios": [
+        {
+          "wave": 1,
+          "values": [
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 24,
+              "dmg": 4
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 30,
+              "dmg": 4
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 37.2,
+              "dmg": 4
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 45.599999999999994,
+              "dmg": 4
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 55.199999999999996,
+              "dmg": 4
+            }
+          ]
+        },
+        {
+          "wave": 5,
+          "values": [
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 57.599999999999994,
+              "dmg": 7
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 72,
+              "dmg": 7
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 89.27999999999999,
+              "dmg": 7
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 109.43999999999998,
+              "dmg": 7
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 132.48,
+              "dmg": 7
+            }
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 99.60000000000001,
+              "dmg": 11
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 124.50000000000001,
+              "dmg": 11
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 154.38000000000002,
+              "dmg": 11
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 189.24,
+              "dmg": 11
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 229.08,
+              "dmg": 11
+            }
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 183.6,
+              "dmg": 18
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 229.5,
+              "dmg": 18
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 284.58,
+              "dmg": 18
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 348.84,
+              "dmg": 18
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 422.28,
+              "dmg": 18
+            }
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 859.7971616661508,
+              "dmg": 39
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 1074.7464520826886,
+              "dmg": 39
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 1332.6856005825337,
+              "dmg": 39
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 1633.6146071656865,
+              "dmg": 39
+            },
+            {
+              "name": "绿史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 2278750,
+              "gold": 1,
+              "unlockWave": 1,
+              "tactic": "跳跃贴近；保持移动，避免被围住。",
+              "hp": 1977.5334718321467,
+              "dmg": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slime_blue",
+      "name": "蓝史莱姆",
+      "hpScale": 1,
+      "speed": 3.2,
+      "radius": 0.72,
+      "behavior": "hop",
+      "color": 3718648,
+      "gold": 1,
+      "unlockWave": 2,
+      "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+      "hp": 57.599999999999994,
+      "dmg": 7,
+      "scenarios": [
+        {
+          "wave": 1,
+          "values": [
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 24,
+              "dmg": 4
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 30,
+              "dmg": 4
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 37.2,
+              "dmg": 4
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 45.599999999999994,
+              "dmg": 4
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 55.199999999999996,
+              "dmg": 4
+            }
+          ]
+        },
+        {
+          "wave": 5,
+          "values": [
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 57.599999999999994,
+              "dmg": 7
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 72,
+              "dmg": 7
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 89.27999999999999,
+              "dmg": 7
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 109.43999999999998,
+              "dmg": 7
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 132.48,
+              "dmg": 7
+            }
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 99.60000000000001,
+              "dmg": 11
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 124.50000000000001,
+              "dmg": 11
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 154.38000000000002,
+              "dmg": 11
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 189.24,
+              "dmg": 11
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 229.08,
+              "dmg": 11
+            }
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 183.6,
+              "dmg": 18
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 229.5,
+              "dmg": 18
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 284.58,
+              "dmg": 18
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 348.84,
+              "dmg": 18
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 422.28,
+              "dmg": 18
+            }
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 859.7971616661508,
+              "dmg": 39
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 1074.7464520826886,
+              "dmg": 39
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 1332.6856005825337,
+              "dmg": 39
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 1633.6146071656865,
+              "dmg": 39
+            },
+            {
+              "name": "蓝史莱姆",
+              "hpScale": 1,
+              "speed": 3.2,
+              "radius": 0.72,
+              "behavior": "hop",
+              "color": 3718648,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "与绿色同数值的颜色变体，不额外施加冰冻。",
+              "hp": 1977.5334718321467,
+              "dmg": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slime_purple",
+      "name": "紫史莱姆",
+      "hpScale": 1.7,
+      "speed": 3.2,
+      "radius": 0.88,
+      "behavior": "hop",
+      "color": 11032055,
+      "gold": 2,
+      "unlockWave": 4,
+      "tactic": "生命较高、体型较大；预留穿行空间。",
+      "hp": 97.91999999999999,
+      "dmg": 7,
+      "scenarios": [
+        {
+          "wave": 1,
+          "values": [
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 40.8,
+              "dmg": 4
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 51,
+              "dmg": 4
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 63.239999999999995,
+              "dmg": 4
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 77.52,
+              "dmg": 4
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 93.83999999999999,
+              "dmg": 4
+            }
+          ]
+        },
+        {
+          "wave": 5,
+          "values": [
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 97.91999999999999,
+              "dmg": 7
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 122.39999999999998,
+              "dmg": 7
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 151.77599999999998,
+              "dmg": 7
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 186.04799999999997,
+              "dmg": 7
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 225.21599999999995,
+              "dmg": 7
+            }
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 169.32000000000002,
+              "dmg": 11
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 211.65000000000003,
+              "dmg": 11
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 262.446,
+              "dmg": 11
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 321.708,
+              "dmg": 11
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 389.43600000000004,
+              "dmg": 11
+            }
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 312.12,
+              "dmg": 18
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 390.15,
+              "dmg": 18
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 483.786,
+              "dmg": 18
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 593.028,
+              "dmg": 18
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 717.876,
+              "dmg": 18
+            }
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 1461.6551748324562,
+              "dmg": 39
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 1827.0689685405703,
+              "dmg": 39
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 2265.565520990307,
+              "dmg": 39
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 2777.1448321816665,
+              "dmg": 39
+            },
+            {
+              "name": "紫史莱姆",
+              "hpScale": 1.7,
+              "speed": 3.2,
+              "radius": 0.88,
+              "behavior": "hop",
+              "color": 11032055,
+              "gold": 2,
+              "unlockWave": 4,
+              "tactic": "生命较高、体型较大；预留穿行空间。",
+              "hp": 3361.806902114649,
+              "dmg": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demon_eye",
+      "name": "恶魔眼",
+      "hpScale": 0.9,
+      "speed": 4.6,
+      "radius": 0.72,
+      "behavior": "chase",
+      "color": 16007006,
+      "gold": 1,
+      "unlockWave": 2,
+      "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+      "hp": 51.839999999999996,
+      "dmg": 7,
+      "scenarios": [
+        {
+          "wave": 1,
+          "values": [
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 21.6,
+              "dmg": 4
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 27,
+              "dmg": 4
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 33.480000000000004,
+              "dmg": 4
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 41.04,
+              "dmg": 4
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 49.68,
+              "dmg": 4
+            }
+          ]
+        },
+        {
+          "wave": 5,
+          "values": [
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 51.839999999999996,
+              "dmg": 7
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 64.8,
+              "dmg": 7
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 80.35199999999999,
+              "dmg": 7
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 98.496,
+              "dmg": 7
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 119.23199999999999,
+              "dmg": 7
+            }
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 89.64000000000001,
+              "dmg": 11
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 112.05000000000001,
+              "dmg": 11
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 138.94200000000004,
+              "dmg": 11
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 170.31600000000003,
+              "dmg": 11
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 206.17200000000003,
+              "dmg": 11
+            }
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 165.24,
+              "dmg": 18
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 206.55,
+              "dmg": 18
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 256.122,
+              "dmg": 18
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 313.956,
+              "dmg": 18
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 380.05199999999996,
+              "dmg": 18
+            }
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 773.8174454995357,
+              "dmg": 39
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 967.2718068744197,
+              "dmg": 39
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 1199.4170405242803,
+              "dmg": 39
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 1470.2531464491176,
+              "dmg": 39
+            },
+            {
+              "name": "恶魔眼",
+              "hpScale": 0.9,
+              "speed": 4.6,
+              "radius": 0.72,
+              "behavior": "chase",
+              "color": 16007006,
+              "gold": 1,
+              "unlockWave": 2,
+              "tactic": "高速追近，生命略低；用击退或减速拉开距离。",
+              "hp": 1779.780124648932,
+              "dmg": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "goblin_bomber",
+      "name": "哥布林",
+      "hpScale": 1.1,
+      "speed": 4.8,
+      "radius": 0.72,
+      "damageAdd": 3,
+      "behavior": "chase",
+      "color": 15680580,
+      "gold": 2,
+      "unlockWave": 3,
+      "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+      "hp": 63.36,
+      "dmg": 10,
+      "scenarios": [
+        {
+          "wave": 1,
+          "values": [
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 26.400000000000002,
+              "dmg": 7
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 33,
+              "dmg": 7
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 40.92,
+              "dmg": 7
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 50.160000000000004,
+              "dmg": 7
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 60.72,
+              "dmg": 7
+            }
+          ]
+        },
+        {
+          "wave": 5,
+          "values": [
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 63.36,
+              "dmg": 10
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 79.2,
+              "dmg": 10
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 98.208,
+              "dmg": 10
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 120.384,
+              "dmg": 10
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 145.72799999999998,
+              "dmg": 10
+            }
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 109.56000000000002,
+              "dmg": 14
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 136.95000000000002,
+              "dmg": 14
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 169.81800000000004,
+              "dmg": 14
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 208.16400000000002,
+              "dmg": 14
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 251.98800000000003,
+              "dmg": 14
+            }
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 201.96,
+              "dmg": 21
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 252.45000000000002,
+              "dmg": 21
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 313.038,
+              "dmg": 21
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 383.724,
+              "dmg": 21
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 464.508,
+              "dmg": 21
+            }
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 945.776877832766,
+              "dmg": 42
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 1182.2210972909575,
+              "dmg": 42
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 1465.9541606407874,
+              "dmg": 42
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 1796.9760678822554,
+              "dmg": 42
+            },
+            {
+              "name": "哥布林",
+              "hpScale": 1.1,
+              "speed": 4.8,
+              "radius": 0.72,
+              "damageAdd": 3,
+              "behavior": "chase",
+              "color": 15680580,
+              "gold": 2,
+              "unlockWave": 3,
+              "tactic": "当前为高速接触型；手持炸弹是外观，没有独立投弹技能。",
+              "hp": 2175.2868190153617,
+              "dmg": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skeleton_archer",
+      "name": "骷髅弓箭手",
+      "hpScale": 1.25,
+      "speed": 2.4,
+      "radius": 0.72,
+      "behavior": "archer",
+      "color": 14870768,
+      "gold": 2,
+      "unlockWave": 6,
+      "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+      "hp": 72,
+      "dmg": 7,
+      "scenarios": [
+        {
+          "wave": 1,
+          "values": [
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 30,
+              "dmg": 4
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 37.5,
+              "dmg": 4
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 46.5,
+              "dmg": 4
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 57,
+              "dmg": 4
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 69,
+              "dmg": 4
+            }
+          ]
+        },
+        {
+          "wave": 5,
+          "values": [
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 72,
+              "dmg": 7
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 90,
+              "dmg": 7
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 111.60000000000001,
+              "dmg": 7
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 136.79999999999998,
+              "dmg": 7
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 165.6,
+              "dmg": 7
+            }
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 124.50000000000001,
+              "dmg": 11
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 155.62500000000003,
+              "dmg": 11
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 192.97500000000002,
+              "dmg": 11
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 236.55,
+              "dmg": 11
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 286.35,
+              "dmg": 11
+            }
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 229.5,
+              "dmg": 18
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 286.875,
+              "dmg": 18
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 355.725,
+              "dmg": 18
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 436.04999999999995,
+              "dmg": 18
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 527.8499999999999,
+              "dmg": 18
+            }
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 1074.7464520826886,
+              "dmg": 39
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 1343.4330651033608,
+              "dmg": 39
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 1665.8570007281673,
+              "dmg": 39
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 2042.0182589571082,
+              "dmg": 39
+            },
+            {
+              "name": "骷髅弓箭手",
+              "hpScale": 1.25,
+              "speed": 2.4,
+              "radius": 0.72,
+              "behavior": "archer",
+              "color": 14870768,
+              "gold": 2,
+              "unlockWave": 6,
+              "tactic": "0.65秒红线瞄准后射箭，箭速11.5；横向移动离开锁定线。",
+              "hp": 2471.9168397901835,
+              "dmg": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armored_guard",
+      "name": "重甲守卫",
+      "hpScale": 4,
+      "speed": 2.6,
+      "radius": 1.05,
+      "behavior": "chase",
+      "color": 6333946,
+      "gold": 3,
+      "unlockWave": 3,
+      "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+      "hp": 230.39999999999998,
+      "dmg": 7,
+      "scenarios": [
+        {
+          "wave": 1,
+          "values": [
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 96,
+              "dmg": 4
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 120,
+              "dmg": 4
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 148.8,
+              "dmg": 4
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 182.39999999999998,
+              "dmg": 4
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 220.79999999999998,
+              "dmg": 4
+            }
+          ]
+        },
+        {
+          "wave": 5,
+          "values": [
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 230.39999999999998,
+              "dmg": 7
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 288,
+              "dmg": 7
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 357.11999999999995,
+              "dmg": 7
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 437.75999999999993,
+              "dmg": 7
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 529.92,
+              "dmg": 7
+            }
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 398.40000000000003,
+              "dmg": 11
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 498.00000000000006,
+              "dmg": 11
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 617.5200000000001,
+              "dmg": 11
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 756.96,
+              "dmg": 11
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 916.32,
+              "dmg": 11
+            }
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 734.4,
+              "dmg": 18
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 918,
+              "dmg": 18
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 1138.32,
+              "dmg": 18
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 1395.36,
+              "dmg": 18
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 1689.12,
+              "dmg": 18
+            }
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 3439.1886466646033,
+              "dmg": 39
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 4298.9858083307545,
+              "dmg": 39
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 5330.742402330135,
+              "dmg": 39
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 6534.458428662746,
+              "dmg": 39
+            },
+            {
+              "name": "重甲守卫",
+              "hpScale": 4,
+              "speed": 2.6,
+              "radius": 1.05,
+              "behavior": "chase",
+              "color": 6333946,
+              "gold": 3,
+              "unlockWave": 3,
+              "tactic": "高血量近身压迫，未额外附带隐藏减伤；第3～5波最多1只，第6波起最多2只（含预警中的单位）。",
+              "hp": 7910.133887328587,
+              "dmg": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shaman_healer",
+      "name": "治疗萨满",
+      "hpScale": 1.6,
+      "speed": 2.8,
+      "radius": 0.7,
+      "behavior": "healer",
+      "color": 3462041,
+      "gold": 2,
+      "unlockWave": 9,
+      "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+      "hp": 92.16,
+      "dmg": 7,
+      "scenarios": [
+        {
+          "wave": 1,
+          "values": [
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 38.400000000000006,
+              "dmg": 4
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 48.00000000000001,
+              "dmg": 4
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 59.52000000000001,
+              "dmg": 4
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 72.96000000000001,
+              "dmg": 4
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 88.32000000000001,
+              "dmg": 4
+            }
+          ]
+        },
+        {
+          "wave": 5,
+          "values": [
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 92.16,
+              "dmg": 7
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 115.19999999999999,
+              "dmg": 7
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 142.84799999999998,
+              "dmg": 7
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 175.10399999999998,
+              "dmg": 7
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 211.968,
+              "dmg": 7
+            }
+          ]
+        },
+        {
+          "wave": 10,
+          "values": [
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 159.36,
+              "dmg": 11
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 199.20000000000002,
+              "dmg": 11
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 247.00800000000004,
+              "dmg": 11
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 302.784,
+              "dmg": 11
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 366.528,
+              "dmg": 11
+            }
+          ]
+        },
+        {
+          "wave": 20,
+          "values": [
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 293.76,
+              "dmg": 18
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 367.2,
+              "dmg": 18
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 455.328,
+              "dmg": 18
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 558.144,
+              "dmg": 18
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 675.6479999999999,
+              "dmg": 18
+            }
+          ]
+        },
+        {
+          "wave": 50,
+          "values": [
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 1375.6754586658415,
+              "dmg": 39
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 1719.5943233323019,
+              "dmg": 39
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 2132.296960932054,
+              "dmg": 39
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 2613.7833714650983,
+              "dmg": 39
+            },
+            {
+              "name": "治疗萨满",
+              "hpScale": 1.6,
+              "speed": 2.8,
+              "radius": 0.7,
+              "behavior": "healer",
+              "color": 3462041,
+              "gold": 2,
+              "unlockWave": 9,
+              "tactic": "与玩家保持6～10距离；治疗有0.8秒预警，半径6内友军每次回复8%生命，冷却3秒；场上最多1只，不治疗Boss。",
+              "hp": 3164.0535549314354,
+              "dmg": 39
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

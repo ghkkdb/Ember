@@ -157,16 +157,14 @@ test('多维伤害账本准确记录原生伤害、衍生伤害、DOT与Boss伤�
     assert.equal(stats.hits, 3);
 });
 
-test('滑移轴冲刺冷却真实缩短且不破坏下限', () => {
+test('滑移轴通过实际冲刺入口缩短冷却且不破坏下限', () => {
     const { app } = scene();
     app.ownedItems = [
         { id: 'slide_axle', tier: 2, limit: 2, stats: {} },
         { id: 'slide_axle', tier: 2, limit: 2, stats: {} }
     ];
-    // 基础 2.0s，每件减 0.3s -> 1.4s
-    const slideCount = app.ownedItems.filter(i => i.id === 'slide_axle').length;
-    const cd = Math.max(0.6, 2.0 - slideCount * 0.3);
-    assert.equal(cd, 1.4);
+    assert.equal(app.tryDash(),true);
+    assert.equal(app.dashCooldown,2.4);
 });
 
 test('无尽模式第25波起普通怪生命额外按1.12指数缩放', () => {

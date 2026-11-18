@@ -72,8 +72,9 @@ function run(seed, policyName, maxWave = 5) {
         if (app.state === 'WAVE') { rows.push({ wave, state: 'TIMEOUT' }); break; }
         const combatGold = app.gold;
         let guard = 0;
-        while (['CRATE', 'LEVELUP', 'CORE', 'BOSS_REWARD'].includes(app.state) && guard++ < 100) {
-            if (app.state === 'CRATE') app.resolveCrate(true);
+        while (['WAVE_REPORT', 'CRATE', 'LEVELUP', 'CORE', 'BOSS_REWARD'].includes(app.state) && guard++ < 100) {
+            if (app.state === 'WAVE_REPORT') app.closeWaveReport();
+            else if (app.state === 'CRATE') app.resolveCrate(true);
             else if (app.state === 'BOSS_REWARD') {
                 const held=app.weapons.find(w=>w.id===app.pendingBossReward.weaponId);
                 app.pickBossReward(held?'single':app.weapons.length<6?6:0);

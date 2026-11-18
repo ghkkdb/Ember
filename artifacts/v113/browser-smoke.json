@@ -1,0 +1,36 @@
+{
+  "sourceSha256": "3a0940159652d857536899e453f9ee1d82f38b4758f6c54a7a584e3456a7c359",
+  "errors": [],
+  "checks": {
+    "combat": {
+      "state": "WAVE",
+      "wave": 1,
+      "weaponCount": 1,
+      "frames": 0,
+      "drawCalls": 1,
+      "hp": 35
+    },
+    "patterns": {
+      "projectiles": 9,
+      "orbit": true,
+      "finiteHp": true
+    },
+    "loot": {
+      "state": "CRATE",
+      "gold": 20,
+      "bag": 0,
+      "level": 2,
+      "crates": 1,
+      "levels": 1,
+      "pickups": 0
+    },
+    "restore": {
+      "state": "SHOP",
+      "gold": 20,
+      "before": 20,
+      "fuseTriggered": true,
+      "weaponsMounted": true
+    }
+  },
+  "passed": true
+}

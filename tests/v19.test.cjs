@@ -22,7 +22,7 @@ test('22把武器均有机制说明、表现方案、有限数值和真实核心
 test('基准图鉴不继承本局核心或修改当前构筑，详情可按当前品质重算',()=>{
     const {app}=scene();app.selectedCoreId='heavy';app.stats.meleeDmg=12;
     const base=app.weaponDetailHtml({id:'grass_blade',tier:1},true),live=app.weaponDetailHtml({id:'grass_blade',tier:1});
-    assert.match(base,/当前伤害：12；周期 0.780秒/);assert.notEqual(base,live);assert.equal(app.selectedCoreId,'heavy');assert.equal(app.stats.meleeDmg,12);
+    assert.match(base,/伤害：<b>17<\/b>/);assert.notEqual(base,live);assert.equal(app.selectedCoreId,'heavy');assert.equal(app.stats.meleeDmg,12);
     const beam=app.getWeaponFacts({id:'terra_blade',tier:3},app.stats);assert.ok(beam.projectileReach);assert.ok(beam.meleeReach<beam.reach);
     assert.equal(app.getWeaponFacts({id:'frost_lamp',tier:1},app.stats,true).crit,0);
 });
@@ -36,7 +36,7 @@ test('三针及双针整数分配守恒，小伤害也不白送最低1点',()=>{
 
 test('针筒三针共享总预算，分流六针只增加两份折损后的预算',()=>{
     const {app,context}=scene();app.addWeapon('vampire_knives',2);const w=app.weapons[0],def=vm.runInContext('WEAPONS_DB.vampire_knives',context),en=enemy(app);
-    app.fireWeapon(w,def,app.getWeaponCombatStats(w),0,0,en);assert.equal(app.projectiles.length,3);assert.equal(app.projectiles.reduce((sum,p)=>sum+p.dmg,0),11);
+    app.fireWeapon(w,def,app.getWeaponCombatStats(w),0,0,en);assert.equal(app.projectiles.length,3);assert.equal(app.projectiles.reduce((sum,p)=>sum+p.dmg,0),17);
     app.projectiles=[];app.selectedCoreId='volley';const st=app.getWeaponCombatStats(w);app.fireWeapon(w,def,st,0,0,en);
     assert.equal(app.projectiles.length,6);assert.equal(app.projectiles.reduce((sum,p)=>sum+p.dmg,0),st.dmg*2);assert.equal(st.cd,.62*1.15);
 });
@@ -45,10 +45,10 @@ test('随行砂蜂双针共享主伤，分流只使用一份120%总预算',()=>{
     const {app,context}=scene();app.addWeapon('boss_hive',2);const en=enemy(app),w=app.weapons[0],def=vm.runInContext('WEAPONS_DB.boss_hive',context);
     vm.runInContext('Math.random=()=>.99',context);app.fireWeapon(w,def,app.getWeaponCombatStats(w),0,0,en);
     for(let i=0;i<20;i++)app.updateAdvancedEffects(.02);
-    assert.equal(10000-en.hp,10);assert.equal(w.resource,20);assert.equal(app.advancedEffects[0].kind,'boss_bees');
+    assert.equal(10000-en.hp,12);assert.equal(w.resource,20);assert.equal(app.advancedEffects[0].kind,'boss_bees');
     app.clearAdvancedEffects();en.hp=10000;app.selectedCoreId='volley';const st=app.getWeaponCombatStats(w);en.radius=2;
     app.fireWeapon(w,def,st,0,0,en);for(let i=0;i<20;i++)app.updateAdvancedEffects(.02);
-    assert.equal(10000-en.hp,12);assert.equal(w.resource,20);assert.equal(st.cd,.75*1.15);
+    assert.equal(10000-en.hp,14);assert.equal(w.resource,20);assert.equal(st.cd,.75*1.15);
 });
 
 test('导弧飞轮首次有效命中只分弧一次，不暴击、不吸血、不再连锁',()=>{
@@ -62,7 +62,7 @@ test('导弧飞轮首次有效命中只分弧一次，不暴击、不吸血、�
 test('独立特效不消耗战斗随机数、不产生伤害或弹丸，容量和生命周期受限',()=>{
     const one=scene(29),two=scene(29);const {app}=one;const en=enemy(app);
     for(let i=0;i<140;i++)app.weaponVfx(i%2?'arc':'pulse',0,0,4,-3,0xffffff,1);
-    assert.equal(app.weaponVfxList.length,96);assert.equal(en.hp,10000);assert.equal(app.projectiles.length,0);
+    assert.equal(app.weaponVfxList.length,18);assert.equal(en.hp,10000);assert.equal(app.projectiles.length,0);
     assert.equal(vm.runInContext('Math.random()',one.context),vm.runInContext('Math.random()',two.context));
     app.updateWeaponVfx(1);assert.equal(app.weaponVfxList.length,0);
 });

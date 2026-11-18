@@ -13,7 +13,9 @@ test('升阶只提升伤害成长，不再同时增加攻速、暴击、射程�
     }
     for (const id of ['nights_edge', 'terra_blade', 'zenith']) {
         const definition = vm.runInContext(`WEAPONS_DB.${id}`, context);
-        assert.equal(app.getWeaponCombatStats({ id, tier: definition.minTier }).dmg, definition.baseDmg);
+        const base=vm.runInContext(`getWeaponBaseDamage(WEAPONS_DB.${id},${definition.minTier})`,context);
+        assert.equal(app.getWeaponCombatStats({ id, tier: definition.minTier }).dmg, Math.round(base));
+        assert.ok(base>definition.baseDmg);
         assert.equal(vm.runInContext(`getWeaponValue(WEAPONS_DB.${id},WEAPONS_DB.${id}.minTier)`, context), definition.basePrice);
     }
 });
@@ -88,8 +90,8 @@ test('放弃核心不产生加成，未选择核心击败Boss后可再次获得�
     app.openCorePhase(); app.pickCore('none');
     assert.equal(app.selectedCoreId, null); assert.equal(app.pendingCoreChoice, false);
     app.startWave(10);
-    assert.equal(app.activeBoss.maxHp, 6000);
-    app.hitTarget(app.activeBoss, 6000, 0, 0, 0);
+    assert.equal(app.activeBoss.maxHp, 7800);
+    app.hitTarget(app.activeBoss, 7800, 0, 0, 0);
     assert.equal(app.pendingCoreChoice, true);
 });
 
@@ -124,7 +126,7 @@ test('滞爆核心范围与预警一致，延迟加长且不白送近战伤害',
     const { app, context } = setup(5); app.startWave(1);
     app.selectedCoreId = 'star';
     app.spawnFallingStar(0, 0, { dmg: 20, crit: 0 });
-    assert.ok(Math.abs(app.fallingStars[0].radius - 3.024) < 1e-9);
+    assert.ok(Math.abs(app.fallingStars[0].radius - 4.2336) < 1e-9);
     assert.equal(app.fallingStars[0].duration, .75);
     let melee;
     app.startMeleeAttack = (kind, x, z, angle, stats) => { melee = stats; };

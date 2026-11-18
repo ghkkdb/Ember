@@ -1,1 +1,3 @@
 *.cmd text eol=crlf
+# 产品源码统一换行，保证跨平台导出的源码指纹一致。
+terrabrotato.html text eol=lf

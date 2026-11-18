@@ -1,0 +1,3688 @@
+{
+  "sourceSha256": "a6e310900e9c8683e0617c82a6b7bd326889fdf2339615798338ac0c224ebc7a",
+  "date": "2026-11-18",
+  "rules": {
+    "merge": [
+      {
+        "id": "grass_blade",
+        "name": "回潮弧刃",
+        "before": 39.56410256410256,
+        "after": 25.41025641025641,
+        "changePct": -35.77446532728451,
+        "six": 232.70769230769233,
+        "five": 138.3076923076923,
+        "fullChangePct": -40.565912997487786
+      },
+      {
+        "id": "minishark",
+        "name": "铆钉速射器",
+        "before": 40.79166666666668,
+        "after": 27.083333333333336,
+        "changePct": -33.60572012257407,
+        "six": 262.5,
+        "five": 160.735,
+        "fullChangePct": -38.76761904761904
+      },
+      {
+        "id": "water_bolt",
+        "name": "回声波盘",
+        "before": 37.62857142857143,
+        "after": 23.47142857142857,
+        "changePct": -37.62338648443433,
+        "six": 253.71428571428572,
+        "five": 146.04285714285714,
+        "fullChangePct": -42.43806306306307
+      },
+      {
+        "id": "copper_sword",
+        "name": "折锋短刃",
+        "before": 57.733333333333334,
+        "after": 37.93333333333334,
+        "changePct": -34.29561200923787,
+        "six": 325.08,
+        "five": 187.45,
+        "fullChangePct": -42.33727082564292
+      }
+    ],
+    "core": [
+      {
+        "core": "heavy",
+        "id": "grass_blade",
+        "before": {
+          "dmg": 12,
+          "cd": 0.78,
+          "projectileDmg": 12,
+          "projectileRange": 4.199999999999999,
+          "areaScale": 1,
+          "range": 4.199999999999999,
+          "crit": 13,
+          "rawCrit": 13,
+          "conversion": 0,
+          "critMultiplier": 1.75,
+          "pierce": 99,
+          "bounces": 0,
+          "jumpScale": 1,
+          "chargeReduction": 0
+        },
+        "after": {
+          "dmg": 15,
+          "cd": 0.9359999999999999,
+          "projectileDmg": 15,
+          "projectileRange": 4.199999999999999,
+          "areaScale": 1,
+          "range": 4.199999999999999,
+          "crit": 13,
+          "rawCrit": 13,
+          "conversion": 0,
+          "critMultiplier": 1.75,
+          "pierce": 99,
+          "bounces": 0,
+          "jumpScale": 1,
+          "chargeReduction": 0
+        },
+        "beforeDps": 16.884615384615383,
+        "afterDps": 17.553418803418804
+      },
+      {
+        "core": "volley",
+        "id": "minishark",
+        "before": {
+          "dmg": 4,
+          "cd": 0.24,
+          "projectileDmg": 4,
+          "projectileRange": 8.26,
+          "areaScale": 1,
+          "range": 8.26,
+          "crit": 10,
+          "rawCrit": 10,
+          "conversion": 0,
+          "critMultiplier": 1.75,
+          "pierce": 1,
+          "bounces": 0,
+          "jumpScale": 1,
+          "chargeReduction": 0
+        },
+        "after": {
+          "dmg": 2,
+          "cd": 0.27599999999999997,
+          "projectileDmg": 2,
+          "projectileRange": 8.26,
+          "areaScale": 1,
+          "range": 8.26,
+          "crit": 10,
+          "rawCrit": 10,
+          "conversion": 0,
+          "critMultiplier": 1.75,
+          "pierce": 1,
+          "bounces": 0,
+          "jumpScale": 1,
+          "chargeReduction": 0
+        },
+        "beforeDps": 17.916666666666668,
+        "afterDps": 15.94202898550725
+      },
+      {
+        "core": "charge",
+        "id": "rail_charge",
+        "before": {
+          "dmg": 36,
+          "cd": 2,
+          "projectileDmg": 36,
+          "projectileRange": 10.5,
+          "areaScale": 1,
+          "range": 10.5,
+          "crit": 10,
+          "rawCrit": 10,
+          "conversion": 0,
+          "critMultiplier": 1.75,
+          "pierce": 3,
+          "bounces": 0,
+          "jumpScale": 1,
+          "chargeReduction": 0
+        },
+        "after": {
+          "dmg": 36,
+          "cd": 2,
+          "projectileDmg": 36,
+          "projectileRange": 10.5,
+          "areaScale": 1,
+          "range": 10.5,
+          "crit": 10,
+          "rawCrit": 10,
+          "conversion": 0,
+          "critMultiplier": 1.75,
+          "pierce": 3,
+          "bounces": 0,
+          "jumpScale": 1,
+          "chargeReduction": 0
+        },
+        "beforeDps": 19.35,
+        "afterDps": 20.09423076923077
+      },
+      {
+        "core": "echo",
+        "id": "ratchet_crossbow",
+        "before": {
+          "dmg": 15,
+          "cd": 1.1,
+          "projectileDmg": 15,
+          "projectileRange": 6.3,
+          "areaScale": 1,
+          "range": 6.3,
+          "crit": 10,
+          "rawCrit": 10,
+          "conversion": 0,
+          "critMultiplier": 1.75,
+          "pierce": 1,
+          "bounces": 0,
+          "jumpScale": 1,
+          "chargeReduction": 0
+        },
+        "after": {
+          "dmg": 15,
+          "cd": 1.1,
+          "projectileDmg": 15,
+          "projectileRange": 6.3,
+          "areaScale": 1,
+          "range": 6.3,
+          "crit": 10,
+          "rawCrit": 10,
+          "conversion": 0,
+          "critMultiplier": 1.75,
+          "pierce": 1,
+          "bounces": 0,
+          "jumpScale": 1,
+          "chargeReduction": 0
+        },
+        "beforeDps": 14.636363636363637,
+        "afterDps": 14.636363636363637
+      },
+      {
+        "core": "return",
+        "id": "return_scythe",
+        "before": {
+          "dmg": 16,
+          "cd": 1.1,
+          "projectileDmg": 16,
+          "projectileRange": 4.8999999999999995,
+          "areaScale": 1,
+          "range": 4.8999999999999995,
+          "crit": 10,
+          "rawCrit": 10,
+          "conversion": 0,
+          "critMultiplier": 1.75,
+          "pierce": 2,
+          "bounces": 0,
+          "jumpScale": 1,
+          "chargeReduction": 0
+        },
+        "after": {
+          "dmg": 16,
+          "cd": 1.1,
+          "projectileDmg": 16,
+          "projectileRange": 4.8999999999999995,
+          "areaScale": 1,
+          "range": 4.8999999999999995,
+          "crit": 10,
+          "rawCrit": 10,
+          "conversion": 0,
+          "critMultiplier": 1.75,
+          "pierce": 2,
+          "bounces": 0,
+          "jumpScale": 1,
+          "chargeReduction": 0
+        },
+        "beforeDps": 15.636363636363635,
+        "afterDps": 15.636363636363635
+      }
+    ],
+    "items": [
+      {
+        "id": "insulator",
+        "name": "绝缘栅",
+        "desc": "连锁武器跳距+15%，主目标预算-5%；不增加跳数，包含分束棱核。",
+        "stats": {},
+        "tier": 2,
+        "price": 26,
+        "limit": 2
+      },
+      {
+        "id": "long_burn",
+        "name": "长燃芯",
+        "desc": "附着总伤+10%、持续时间+15%，对应直接段伤害-5%；同源仍不叠层。",
+        "stats": {},
+        "tier": 2,
+        "price": 26,
+        "limit": 2
+      },
+      {
+        "id": "cold_sleeve",
+        "name": "寒凝套",
+        "desc": "霜雾存续+0.2秒，不新增跳数；减速+5个百分点，普通怪总减速最多50%、Boss最多15%。",
+        "stats": {},
+        "tier": 2,
+        "price": 26,
+        "limit": 2
+      },
+      {
+        "id": "blast_fuse",
+        "name": "滞爆引线",
+        "desc": "引针、陷阱与铰锤震波半径+12%，触发延迟+0.10秒；不扩大索敌距离。",
+        "stats": {},
+        "tier": 2,
+        "price": 24,
+        "limit": 2
+      },
+      {
+        "id": "target_antenna",
+        "name": "识别天线",
+        "desc": "构装优先已受伤精英/Boss，射程+10%，构装伤害-5%；包含随行砂蜂。",
+        "stats": {},
+        "tier": 2,
+        "price": 26,
+        "limit": 1
+      },
+      {
+        "id": "voltage_frame",
+        "name": "稳压框",
+        "desc": "蓄力时间-0.15秒、蓄力武器伤害-5%；装备时蓄力最低0.35秒，含铰锤震波。",
+        "stats": {},
+        "tier": 3,
+        "price": 32,
+        "limit": 2
+      },
+      {
+        "id": "crit_converter",
+        "name": "盈锋转换器",
+        "desc": "原始暴击超过100%的部分按2:1转为本武器暴击效果，保留必暴击。",
+        "stats": {},
+        "tier": 3,
+        "price": 48,
+        "limit": 1
+      },
+      {
+        "id": "range_ring",
+        "name": "回收磁环",
+        "desc": "范围+10%，全伤害-3%；近战仍受距离上限。",
+        "stats": {
+          "rangePct": 10,
+          "dmgPct": -3
+        },
+        "tier": 1,
+        "price": 18,
+        "limit": 2
+      },
+      {
+        "id": "crit_lens",
+        "name": "增幅镜片",
+        "desc": "暴击效果+12%，攻速-3%。",
+        "stats": {
+          "critEffectPct": 12,
+          "attackSpeed": -3
+        },
+        "tier": 2,
+        "price": 26,
+        "limit": 2
+      },
+      {
+        "id": "hermes",
+        "name": "步频鞋",
+        "desc": "移速+12%，闪避+5% [解锁3D飞靴外观]",
+        "stats": {
+          "speed": 12,
+          "dodge": 5
+        },
+        "tier": 1,
+        "price": 14,
+        "limit": 4
+      },
+      {
+        "id": "regen_band",
+        "name": "缓释药囊",
+        "desc": "生命再生+4，最大生命+4",
+        "stats": {
+          "hpRegen": 4,
+          "maxHp": 4
+        },
+        "tier": 1,
+        "price": 15,
+        "limit": 4
+      },
+      {
+        "id": "shackle",
+        "name": "层叠护片",
+        "desc": "护甲+3，最大生命+3 [解锁3D护盾外观]",
+        "stats": {
+          "armor": 3,
+          "maxHp": 3
+        },
+        "tier": 1,
+        "price": 14,
+        "limit": 4
+      },
+      {
+        "id": "shark_tooth",
+        "name": "棘齿垫片",
+        "desc": "近战+3，远程+2，魔法+2",
+        "stats": {
+          "meleeDmg": 3,
+          "rangedDmg": 2,
+          "magicDmg": 2
+        },
+        "tier": 1,
+        "price": 17,
+        "limit": 4
+      },
+      {
+        "id": "horseshoe",
+        "name": "偏心骰",
+        "desc": "幸运+8，全伤害-3%；最多2件",
+        "stats": {
+          "luck": 8,
+          "dmgPct": -3
+        },
+        "tier": 1,
+        "price": 20,
+        "limit": 2
+      },
+      {
+        "id": "claws",
+        "name": "轻质握把",
+        "desc": "攻速+18%，近战+3",
+        "stats": {
+          "attackSpeed": 18,
+          "meleeDmg": 3
+        },
+        "tier": 2,
+        "price": 24,
+        "limit": 3
+      },
+      {
+        "id": "obsidian",
+        "name": "保温衬层",
+        "desc": "护甲+5，最大生命+8 [解锁3D护盾外观]",
+        "stats": {
+          "armor": 5,
+          "maxHp": 8
+        },
+        "tier": 2,
+        "price": 25,
+        "limit": 3
+      },
+      {
+        "id": "mana_flower",
+        "name": "导流线圈",
+        "desc": "魔法伤害+5，攻速+10%",
+        "stats": {
+          "magicDmg": 5,
+          "attackSpeed": 10
+        },
+        "tier": 2,
+        "price": 24,
+        "limit": 3
+      },
+      {
+        "id": "ranger_emb",
+        "name": "准星垫圈",
+        "desc": "远程伤害+4，暴击率+8%",
+        "stats": {
+          "rangedDmg": 4,
+          "critChance": 8
+        },
+        "tier": 2,
+        "price": 25,
+        "limit": 3
+      },
+      {
+        "id": "vamp_ring",
+        "name": "吸附绷带",
+        "desc": "吸血触发率+10%，全伤害+8%",
+        "stats": {
+          "lifeSteal": 10,
+          "dmgPct": 8
+        },
+        "tier": 2,
+        "price": 27,
+        "limit": 3
+      },
+      {
+        "id": "cthulhu_sh",
+        "name": "软壳关节",
+        "desc": "护甲+3，闪避+10%，移速+8% [3D护盾外观]",
+        "stats": {
+          "armor": 3,
+          "dodge": 10,
+          "speed": 8
+        },
+        "tier": 2,
+        "price": 26,
+        "limit": 3
+      },
+      {
+        "id": "frost_boots",
+        "name": "滑移轴",
+        "desc": "移速+18%，暴击率+8%，攻速+10% [3D飞靴外观]",
+        "stats": {
+          "speed": 18,
+          "critChance": 8,
+          "attackSpeed": 10
+        },
+        "tier": 3,
+        "price": 35,
+        "limit": 2
+      },
+      {
+        "id": "greedy_ring",
+        "name": "残页账本",
+        "desc": "收获+12，护甲-2；最多2件",
+        "stats": {
+          "harvesting": 12,
+          "armor": -2
+        },
+        "tier": 3,
+        "price": 45,
+        "limit": 2
+      },
+      {
+        "id": "destroyer",
+        "name": "震荡装药",
+        "desc": "全伤害+18%，暴击率+12%",
+        "stats": {
+          "dmgPct": 18,
+          "critChance": 12
+        },
+        "tier": 3,
+        "price": 40,
+        "limit": 2
+      },
+      {
+        "id": "ankh_shield",
+        "name": "应急密封",
+        "desc": "护甲+7，最大生命+15，再生+4 [3D圣盾外观]",
+        "stats": {
+          "armor": 7,
+          "maxHp": 15,
+          "hpRegen": 4
+        },
+        "tier": 3,
+        "price": 39,
+        "limit": 2
+      },
+      {
+        "id": "wings_solar",
+        "name": "风向尾片",
+        "desc": "移速+22%，闪避+15%，全伤害+12% [解锁3D振翅双翼!]",
+        "stats": {
+          "speed": 22,
+          "dodge": 15,
+          "dmgPct": 12
+        },
+        "tier": 3,
+        "price": 42,
+        "limit": 2
+      },
+      {
+        "id": "celestial",
+        "name": "溢流蓄罐",
+        "desc": "全伤害+20%，攻速+18%，再生+6，护甲+4，吸血触发率+8%；唯一 [3D神圣光翼]",
+        "stats": {
+          "dmgPct": 20,
+          "attackSpeed": 18,
+          "hpRegen": 6,
+          "armor": 4,
+          "lifeSteal": 8
+        },
+        "tier": 4,
+        "price": 75,
+        "limit": 1
+      },
+      {
+        "id": "blade_mount",
+        "name": "硬质刀座",
+        "desc": "主近战击退+20%，近战伤害-1。",
+        "stats": {
+          "meleeDmg": -1
+        },
+        "tier": 1,
+        "price": 15,
+        "limit": 2
+      },
+      {
+        "id": "narrow_ring",
+        "name": "窄口束环",
+        "desc": "范围+8%，近战仍受最终上限限制。",
+        "stats": {
+          "rangePct": 8
+        },
+        "tier": 2,
+        "price": 24,
+        "limit": 2
+      },
+      {
+        "id": "thermal_film",
+        "name": "余热护膜",
+        "desc": "受到接触伤害后生成推开波（3秒CD），护甲+1。",
+        "stats": {
+          "armor": 1
+        },
+        "tier": 2,
+        "price": 26,
+        "limit": 1
+      },
+      {
+        "id": "rest_prism",
+        "name": "静息棱片",
+        "desc": "静止2秒后回复最大生命3%，每波最多3次。",
+        "stats": {},
+        "tier": 2,
+        "price": 25,
+        "limit": 1
+      },
+      {
+        "id": "credit_voucher",
+        "name": "赊账凭证",
+        "desc": "每次进店首笔普通商品最多减免8晶币，下波结算扣回50%。",
+        "stats": {},
+        "tier": 2,
+        "price": 16,
+        "limit": 1
+      },
+      {
+        "id": "wax_clip",
+        "name": "封蜡券夹",
+        "desc": "每波首次普通商店刷新费用-2，最低1。",
+        "stats": {},
+        "tier": 2,
+        "price": 24,
+        "limit": 1
+      },
+      {
+        "id": "salvage_license",
+        "name": "旧货执照",
+        "desc": "普通武器出售比例+5%，最高50%。",
+        "stats": {},
+        "tier": 2,
+        "price": 28,
+        "limit": 1
+      },
+      {
+        "id": "throttle_valve",
+        "name": "节流阀",
+        "desc": "普通怪每波晶币发行上限+3，移速-4%。",
+        "stats": {
+          "speed": -4
+        },
+        "tier": 2,
+        "price": 30,
+        "limit": 1
+      },
+      {
+        "id": "shelf_index",
+        "name": "货架索引",
+        "desc": "每波首次刷新尽量保证1把主核心适配普通武器。",
+        "stats": {},
+        "tier": 3,
+        "price": 34,
+        "limit": 1
+      },
+      {
+        "id": "traction_joint",
+        "name": "牵引接头",
+        "desc": "返程速度+15%，去程伤害-5%。",
+        "stats": {},
+        "tier": 2,
+        "price": 24,
+        "limit": 2
+      },
+      {
+        "id": "bearing_cap",
+        "name": "轴承盖",
+        "desc": "轨道角速度+12%，轨道半径-8%。",
+        "stats": {},
+        "tier": 2,
+        "price": 24,
+        "limit": 2
+      },
+      {
+        "id": "slide_axle",
+        "name": "滑移轴",
+        "desc": "冲刺冷却缩短0.30秒。",
+        "stats": {},
+        "tier": 2,
+        "price": 26,
+        "limit": 2
+      },
+      {
+        "id": "tread_sole",
+        "name": "防滑鞋底",
+        "desc": "受到的位移/击退降低35%，移速-4%。",
+        "stats": {
+          "speed": -4
+        },
+        "tier": 1,
+        "price": 18,
+        "limit": 1
+      },
+      {
+        "id": "needle_box",
+        "name": "缝合针盒",
+        "desc": "红心回复量+20%，暴击率-3%。",
+        "stats": {
+          "critChance": -3
+        },
+        "tier": 2,
+        "price": 24,
+        "limit": 2
+      },
+      {
+        "id": "relay_pickup",
+        "name": "拾取继电器",
+        "desc": "每拾取20点晶币，获得最大生命3%护盾（最多6%）。",
+        "stats": {},
+        "tier": 3,
+        "price": 34,
+        "limit": 1
+      },
+      {
+        "id": "battery_cell",
+        "name": "折叠电池",
+        "desc": "冲刺可储存2次，冷却时间+30%。",
+        "stats": {},
+        "tier": 3,
+        "price": 38,
+        "limit": 1
+      },
+      {
+        "id": "brake_buckle",
+        "name": "急停卡扣",
+        "desc": "冲刺后0.5秒内受击伤害-15%（3秒CD）。",
+        "stats": {},
+        "tier": 3,
+        "price": 34,
+        "limit": 1
+      },
+      {
+        "id": "crit_glass",
+        "name": "临界玻片",
+        "desc": "生命<=40%时全伤+12%，护甲-2。",
+        "stats": {
+          "armor": -2
+        },
+        "tier": 3,
+        "price": 38,
+        "limit": 1
+      },
+      {
+        "id": "phase_rectifier",
+        "name": "倒相整流器",
+        "desc": "生命>=80%时全伤+10%，吸血-4%。",
+        "stats": {
+          "lifeSteal": -4
+        },
+        "tier": 3,
+        "price": 38,
+        "limit": 1
+      },
+      {
+        "id": "fuse_breaker",
+        "name": "断电保险",
+        "desc": "本局首次致命伤免疫并保留1点生命，触发后彻底损毁。",
+        "stats": {},
+        "tier": 4,
+        "price": 60,
+        "limit": 1
+      },
+      {
+        "id": "parasite_valve",
+        "name": "寄生阀",
+        "desc": "持续伤害击杀普通怪获得1护盾（上限8%）。",
+        "stats": {},
+        "tier": 3,
+        "price": 40,
+        "limit": 1
+      },
+      {
+        "id": "silent_mount",
+        "name": "静默齿座",
+        "desc": "构装攻击间隔-12%，玩家非构装直接伤害-10%。",
+        "stats": {
+          "dmgPct": -10
+        },
+        "tier": 3,
+        "price": 40,
+        "limit": 1
+      },
+      {
+        "id": "void_box",
+        "name": "空腔弹盒",
+        "desc": "合格单弹主武器额外1枚侧弹，总伤害重新分配为原来的110%。",
+        "stats": {},
+        "tier": 4,
+        "price": 54,
+        "limit": 1
+      },
+      {
+        "id": "end_counter",
+        "name": "终点计数器",
+        "desc": "Boss硬直阶段全伤害+15%，其他时间全伤害-5%。",
+        "stats": {},
+        "tier": 3,
+        "price": 42,
+        "limit": 1
+      }
+    ],
+    "economy": [
+      {
+        "wave": 1,
+        "budget": 12,
+        "grassPrice": 20,
+        "armorPrice": 19,
+        "bossHp": 1500
+      },
+      {
+        "wave": 5,
+        "budget": 68,
+        "grassPrice": 26,
+        "armorPrice": 25,
+        "bossHp": 1500
+      },
+      {
+        "wave": 10,
+        "budget": 138,
+        "grassPrice": 34,
+        "armorPrice": 32,
+        "bossHp": 6000
+      },
+      {
+        "wave": 15,
+        "budget": 208,
+        "grassPrice": 41,
+        "armorPrice": 39,
+        "bossHp": 10500
+      },
+      {
+        "wave": 20,
+        "budget": 278,
+        "grassPrice": 49,
+        "armorPrice": 46,
+        "bossHp": 15000
+      },
+      {
+        "wave": 30,
+        "budget": 418,
+        "grassPrice": 64,
+        "armorPrice": 60,
+        "bossHp": 22326
+      },
+      {
+        "wave": 50,
+        "budget": 698,
+        "grassPrice": 94,
+        "armorPrice": 88,
+        "bossHp": 49460
+      }
+    ],
+    "api": {
+      "openShop": "undefined",
+      "openShopPhase": "function"
+    },
+    "counts": {
+      "weapons": 42,
+      "items": 50,
+      "cores": 12
+    },
+    "itemRuntimeReferences": [
+      {
+        "id": "insulator",
+        "name": "绝缘栅",
+        "desc": "连锁武器跳距+15%，主目标预算-5%；不增加跳数，包含分束棱核。",
+        "stats": {},
+        "references": 1
+      },
+      {
+        "id": "long_burn",
+        "name": "长燃芯",
+        "desc": "附着总伤+10%、持续时间+15%，对应直接段伤害-5%；同源仍不叠层。",
+        "stats": {},
+        "references": 1
+      },
+      {
+        "id": "cold_sleeve",
+        "name": "寒凝套",
+        "desc": "霜雾存续+0.2秒，不新增跳数；减速+5个百分点，普通怪总减速最多50%、Boss最多15%。",
+        "stats": {},
+        "references": 1
+      },
+      {
+        "id": "blast_fuse",
+        "name": "滞爆引线",
+        "desc": "引针、陷阱与铰锤震波半径+12%，触发延迟+0.10秒；不扩大索敌距离。",
+        "stats": {},
+        "references": 7
+      },
+      {
+        "id": "target_antenna",
+        "name": "识别天线",
+        "desc": "构装优先已受伤精英/Boss，射程+10%，构装伤害-5%；包含随行砂蜂。",
+        "stats": {},
+        "references": 1
+      },
+      {
+        "id": "voltage_frame",
+        "name": "稳压框",
+        "desc": "蓄力时间-0.15秒、蓄力武器伤害-5%；装备时蓄力最低0.35秒，含铰锤震波。",
+        "stats": {},
+        "references": 1
+      },
+      {
+        "id": "crit_converter",
+        "name": "盈锋转换器",
+        "desc": "原始暴击超过100%的部分按2:1转为本武器暴击效果，保留必暴击。",
+        "stats": {},
+        "references": 2
+      },
+      {
+        "id": "range_ring",
+        "name": "回收磁环",
+        "desc": "范围+10%，全伤害-3%；近战仍受距离上限。",
+        "stats": {
+          "rangePct": 10,
+          "dmgPct": -3
+        },
+        "references": 0
+      },
+      {
+        "id": "crit_lens",
+        "name": "增幅镜片",
+        "desc": "暴击效果+12%，攻速-3%。",
+        "stats": {
+          "critEffectPct": 12,
+          "attackSpeed": -3
+        },
+        "references": 0
+      },
+      {
+        "id": "hermes",
+        "name": "步频鞋",
+        "desc": "移速+12%，闪避+5% [解锁3D飞靴外观]",
+        "stats": {
+          "speed": 12,
+          "dodge": 5
+        },
+        "references": 0
+      },
+      {
+        "id": "regen_band",
+        "name": "缓释药囊",
+        "desc": "生命再生+4，最大生命+4",
+        "stats": {
+          "hpRegen": 4,
+          "maxHp": 4
+        },
+        "references": 0
+      },
+      {
+        "id": "shackle",
+        "name": "层叠护片",
+        "desc": "护甲+3，最大生命+3 [解锁3D护盾外观]",
+        "stats": {
+          "armor": 3,
+          "maxHp": 3
+        },
+        "references": 0
+      },
+      {
+        "id": "shark_tooth",
+        "name": "棘齿垫片",
+        "desc": "近战+3，远程+2，魔法+2",
+        "stats": {
+          "meleeDmg": 3,
+          "rangedDmg": 2,
+          "magicDmg": 2
+        },
+        "references": 0
+      },
+      {
+        "id": "horseshoe",
+        "name": "偏心骰",
+        "desc": "幸运+8，全伤害-3%；最多2件",
+        "stats": {
+          "luck": 8,
+          "dmgPct": -3
+        },
+        "references": 0
+      },
+      {
+        "id": "claws",
+        "name": "轻质握把",
+        "desc": "攻速+18%，近战+3",
+        "stats": {
+          "attackSpeed": 18,
+          "meleeDmg": 3
+        },
+        "references": 0
+      },
+      {
+        "id": "obsidian",
+        "name": "保温衬层",
+        "desc": "护甲+5，最大生命+8 [解锁3D护盾外观]",
+        "stats": {
+          "armor": 5,
+          "maxHp": 8
+        },
+        "references": 0
+      },
+      {
+        "id": "mana_flower",
+        "name": "导流线圈",
+        "desc": "魔法伤害+5，攻速+10%",
+        "stats": {
+          "magicDmg": 5,
+          "attackSpeed": 10
+        },
+        "references": 0
+      },
+      {
+        "id": "ranger_emb",
+        "name": "准星垫圈",
+        "desc": "远程伤害+4，暴击率+8%",
+        "stats": {
+          "rangedDmg": 4,
+          "critChance": 8
+        },
+        "references": 0
+      },
+      {
+        "id": "vamp_ring",
+        "name": "吸附绷带",
+        "desc": "吸血触发率+10%，全伤害+8%",
+        "stats": {
+          "lifeSteal": 10,
+          "dmgPct": 8
+        },
+        "references": 0
+      },
+      {
+        "id": "cthulhu_sh",
+        "name": "软壳关节",
+        "desc": "护甲+3，闪避+10%，移速+8% [3D护盾外观]",
+        "stats": {
+          "armor": 3,
+          "dodge": 10,
+          "speed": 8
+        },
+        "references": 0
+      },
+      {
+        "id": "frost_boots",
+        "name": "滑移轴",
+        "desc": "移速+18%，暴击率+8%，攻速+10% [3D飞靴外观]",
+        "stats": {
+          "speed": 18,
+          "critChance": 8,
+          "attackSpeed": 10
+        },
+        "references": 0
+      },
+      {
+        "id": "greedy_ring",
+        "name": "残页账本",
+        "desc": "收获+12，护甲-2；最多2件",
+        "stats": {
+          "harvesting": 12,
+          "armor": -2
+        },
+        "references": 0
+      },
+      {
+        "id": "destroyer",
+        "name": "震荡装药",
+        "desc": "全伤害+18%，暴击率+12%",
+        "stats": {
+          "dmgPct": 18,
+          "critChance": 12
+        },
+        "references": 0
+      },
+      {
+        "id": "ankh_shield",
+        "name": "应急密封",
+        "desc": "护甲+7，最大生命+15，再生+4 [3D圣盾外观]",
+        "stats": {
+          "armor": 7,
+          "maxHp": 15,
+          "hpRegen": 4
+        },
+        "references": 1
+      },
+      {
+        "id": "wings_solar",
+        "name": "风向尾片",
+        "desc": "移速+22%，闪避+15%，全伤害+12% [解锁3D振翅双翼!]",
+        "stats": {
+          "speed": 22,
+          "dodge": 15,
+          "dmgPct": 12
+        },
+        "references": 0
+      },
+      {
+        "id": "celestial",
+        "name": "溢流蓄罐",
+        "desc": "全伤害+20%，攻速+18%，再生+6，护甲+4，吸血触发率+8%；唯一 [3D神圣光翼]",
+        "stats": {
+          "dmgPct": 20,
+          "attackSpeed": 18,
+          "hpRegen": 6,
+          "armor": 4,
+          "lifeSteal": 8
+        },
+        "references": 2
+      },
+      {
+        "id": "blade_mount",
+        "name": "硬质刀座",
+        "desc": "主近战击退+20%，近战伤害-1。",
+        "stats": {
+          "meleeDmg": -1
+        },
+        "references": 0
+      },
+      {
+        "id": "narrow_ring",
+        "name": "窄口束环",
+        "desc": "范围+8%，近战仍受最终上限限制。",
+        "stats": {
+          "rangePct": 8
+        },
+        "references": 0
+      },
+      {
+        "id": "thermal_film",
+        "name": "余热护膜",
+        "desc": "受到接触伤害后生成推开波（3秒CD），护甲+1。",
+        "stats": {
+          "armor": 1
+        },
+        "references": 0
+      },
+      {
+        "id": "rest_prism",
+        "name": "静息棱片",
+        "desc": "静止2秒后回复最大生命3%，每波最多3次。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "credit_voucher",
+        "name": "赊账凭证",
+        "desc": "每次进店首笔普通商品最多减免8晶币，下波结算扣回50%。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "wax_clip",
+        "name": "封蜡券夹",
+        "desc": "每波首次普通商店刷新费用-2，最低1。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "salvage_license",
+        "name": "旧货执照",
+        "desc": "普通武器出售比例+5%，最高50%。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "throttle_valve",
+        "name": "节流阀",
+        "desc": "普通怪每波晶币发行上限+3，移速-4%。",
+        "stats": {
+          "speed": -4
+        },
+        "references": 0
+      },
+      {
+        "id": "shelf_index",
+        "name": "货架索引",
+        "desc": "每波首次刷新尽量保证1把主核心适配普通武器。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "traction_joint",
+        "name": "牵引接头",
+        "desc": "返程速度+15%，去程伤害-5%。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "bearing_cap",
+        "name": "轴承盖",
+        "desc": "轨道角速度+12%，轨道半径-8%。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "slide_axle",
+        "name": "滑移轴",
+        "desc": "冲刺冷却缩短0.30秒。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "tread_sole",
+        "name": "防滑鞋底",
+        "desc": "受到的位移/击退降低35%，移速-4%。",
+        "stats": {
+          "speed": -4
+        },
+        "references": 0
+      },
+      {
+        "id": "needle_box",
+        "name": "缝合针盒",
+        "desc": "红心回复量+20%，暴击率-3%。",
+        "stats": {
+          "critChance": -3
+        },
+        "references": 0
+      },
+      {
+        "id": "relay_pickup",
+        "name": "拾取继电器",
+        "desc": "每拾取20点晶币，获得最大生命3%护盾（最多6%）。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "battery_cell",
+        "name": "折叠电池",
+        "desc": "冲刺可储存2次，冷却时间+30%。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "brake_buckle",
+        "name": "急停卡扣",
+        "desc": "冲刺后0.5秒内受击伤害-15%（3秒CD）。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "crit_glass",
+        "name": "临界玻片",
+        "desc": "生命<=40%时全伤+12%，护甲-2。",
+        "stats": {
+          "armor": -2
+        },
+        "references": 0
+      },
+      {
+        "id": "phase_rectifier",
+        "name": "倒相整流器",
+        "desc": "生命>=80%时全伤+10%，吸血-4%。",
+        "stats": {
+          "lifeSteal": -4
+        },
+        "references": 0
+      },
+      {
+        "id": "fuse_breaker",
+        "name": "断电保险",
+        "desc": "本局首次致命伤免疫并保留1点生命，触发后彻底损毁。",
+        "stats": {},
+        "references": 1
+      },
+      {
+        "id": "parasite_valve",
+        "name": "寄生阀",
+        "desc": "持续伤害击杀普通怪获得1护盾（上限8%）。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "silent_mount",
+        "name": "静默齿座",
+        "desc": "构装攻击间隔-12%，玩家非构装直接伤害-10%。",
+        "stats": {
+          "dmgPct": -10
+        },
+        "references": 0
+      },
+      {
+        "id": "void_box",
+        "name": "空腔弹盒",
+        "desc": "合格单弹主武器额外1枚侧弹，总伤害重新分配为原来的110%。",
+        "stats": {},
+        "references": 0
+      },
+      {
+        "id": "end_counter",
+        "name": "终点计数器",
+        "desc": "Boss硬直阶段全伤害+15%，其他时间全伤害-5%。",
+        "stats": {},
+        "references": 0
+      }
+    ]
+  },
+  "probes": {
+    "propLedger": 10,
+    "propWaveDamage": 0,
+    "dotLedger": {
+      "primaryDmg": 0,
+      "derivativeDmg": 8,
+      "dotDmg": 0,
+      "bossDmg": 0,
+      "hits": 1,
+      "crits": 0,
+      "totalDmg": 8
+    },
+    "ledgerAfterNextWave": {
+      "review_probe": {
+        "primaryDmg": 10,
+        "derivativeDmg": 0,
+        "dotDmg": 0,
+        "bossDmg": 0,
+        "hits": 1,
+        "crits": 0,
+        "totalDmg": 10
+      },
+      "review_dot": {
+        "primaryDmg": 0,
+        "derivativeDmg": 8,
+        "dotDmg": 0,
+        "bossDmg": 0,
+        "hits": 1,
+        "crits": 0,
+        "totalDmg": 8
+      }
+    },
+    "firstHp": 24,
+    "endlessHp": 225.59999999999997,
+    "computedEndlessScale": 1.12,
+    "weaponDispatch": [
+      {
+        "id": "ratchet_crossbow",
+        "behavior": "burst",
+        "projectiles": 1,
+        "effects": 0,
+        "boomerang": false
+      },
+      {
+        "id": "shard_blaster",
+        "behavior": "scatter",
+        "projectiles": 1,
+        "effects": 0,
+        "boomerang": false
+      },
+      {
+        "id": "orbit_loom",
+        "behavior": "orbit",
+        "projectiles": 1,
+        "effects": 0,
+        "boomerang": false
+      },
+      {
+        "id": "return_scythe",
+        "behavior": "scythe",
+        "projectiles": 1,
+        "effects": 0,
+        "boomerang": false
+      },
+      {
+        "id": "seal_needle",
+        "behavior": "mark",
+        "projectiles": 1,
+        "effects": 0,
+        "boomerang": false
+      }
+    ],
+    "dash": {
+      "bareCooldown": 3.5,
+      "itemCooldown": 3.5
+    },
+    "restoreError": "this.openShop is not a function"
+  },
+  "hitstop": [
+    {
+      "disableHitstop": false,
+      "wallSeconds": 20,
+      "simulationSeconds": 9.233333333333372,
+      "damage": 8751,
+      "wallDps": 437.55,
+      "simulationDps": 947.7617328519816
+    },
+    {
+      "disableHitstop": true,
+      "wallSeconds": 20,
+      "simulationSeconds": 20.000000000000146,
+      "damage": 19345,
+      "wallDps": 967.25,
+      "simulationDps": 967.249999999993
+    }
+  ],
+  "combat": {
+    "sourceSha256": "a6e310900e9c8683e0617c82a6b7bd326889fdf2339615798338ac0c224ebc7a",
+    "method": "真实产品战斗方法，60Hz固定步长；渲染对象替身，无场景道具与升级；固定手工属性与2/4/6把装备，不模拟经济获取。dummy为静止高血量单体靶场；boss为隔离Boss和脚本走位；wave为实际刷怪与脚本走位。无玩家无敌。仅用于版本对照，不代表真人胜率、同预算最优构筑或浏览器性能。",
+    "results": [
+      {
+        "wave": 5,
+        "build": "blade",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1532,
+        "dps": 76.6,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998468
+      },
+      {
+        "wave": 5,
+        "build": "blade",
+        "mode": "boss",
+        "seed": 11,
+        "seconds": 70,
+        "state": "WAVE",
+        "damage": 1480,
+        "dps": 21.14,
+        "damageTaken": 23,
+        "hp": 38,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 20
+      },
+      {
+        "wave": 5,
+        "build": "blade",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1532,
+        "dps": 76.6,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998468
+      },
+      {
+        "wave": 5,
+        "build": "blade",
+        "mode": "boss",
+        "seed": 29,
+        "seconds": 67.9,
+        "state": "WAVE",
+        "damage": 1500,
+        "dps": 22.09,
+        "damageTaken": 23,
+        "hp": 37,
+        "kills": 1,
+        "bossKilledAt": 67.9,
+        "bossHpRemaining": -14
+      },
+      {
+        "wave": 5,
+        "build": "blade",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1612,
+        "dps": 80.6,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998388
+      },
+      {
+        "wave": 5,
+        "build": "blade",
+        "mode": "boss",
+        "seed": 47,
+        "seconds": 70,
+        "state": "WAVE",
+        "damage": 1400,
+        "dps": 20,
+        "damageTaken": 23,
+        "hp": 38,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 100
+      },
+      {
+        "wave": 5,
+        "build": "gun",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1086,
+        "dps": 54.3,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998914
+      },
+      {
+        "wave": 5,
+        "build": "gun",
+        "mode": "boss",
+        "seed": 11,
+        "seconds": 27.5,
+        "state": "WAVE",
+        "damage": 1500,
+        "dps": 54.55,
+        "damageTaken": 13,
+        "hp": 35,
+        "kills": 1,
+        "bossKilledAt": 27.5,
+        "bossHpRemaining": -1
+      },
+      {
+        "wave": 5,
+        "build": "gun",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1086,
+        "dps": 54.3,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998914
+      },
+      {
+        "wave": 5,
+        "build": "gun",
+        "mode": "boss",
+        "seed": 29,
+        "seconds": 27.9,
+        "state": "WAVE",
+        "damage": 1500,
+        "dps": 53.76,
+        "damageTaken": 13,
+        "hp": 35,
+        "kills": 1,
+        "bossKilledAt": 27.9,
+        "bossHpRemaining": -6
+      },
+      {
+        "wave": 5,
+        "build": "gun",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1116,
+        "dps": 55.8,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998884
+      },
+      {
+        "wave": 5,
+        "build": "gun",
+        "mode": "boss",
+        "seed": 47,
+        "seconds": 27.82,
+        "state": "WAVE",
+        "damage": 1500,
+        "dps": 53.92,
+        "damageTaken": 13,
+        "hp": 35,
+        "kills": 1,
+        "bossKilledAt": 27.82,
+        "bossHpRemaining": -4
+      },
+      {
+        "wave": 5,
+        "build": "star",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1472,
+        "dps": 73.6,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998528
+      },
+      {
+        "wave": 5,
+        "build": "star",
+        "mode": "boss",
+        "seed": 11,
+        "seconds": 22.27,
+        "state": "WAVE",
+        "damage": 1500,
+        "dps": 67.37,
+        "damageTaken": 12,
+        "hp": 37,
+        "kills": 1,
+        "bossKilledAt": 22.27,
+        "bossHpRemaining": -20
+      },
+      {
+        "wave": 5,
+        "build": "star",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1496,
+        "dps": 74.8,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998504
+      },
+      {
+        "wave": 5,
+        "build": "star",
+        "mode": "boss",
+        "seed": 29,
+        "seconds": 21.47,
+        "state": "WAVE",
+        "damage": 1500,
+        "dps": 69.88,
+        "damageTaken": 12,
+        "hp": 35,
+        "kills": 1,
+        "bossKilledAt": 21.47,
+        "bossHpRemaining": -12
+      },
+      {
+        "wave": 5,
+        "build": "star",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1400,
+        "dps": 70,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998600
+      },
+      {
+        "wave": 5,
+        "build": "star",
+        "mode": "boss",
+        "seed": 47,
+        "seconds": 19.55,
+        "state": "WAVE",
+        "damage": 1500,
+        "dps": 76.73,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 1,
+        "bossKilledAt": 19.55,
+        "bossHpRemaining": -28
+      },
+      {
+        "wave": 5,
+        "build": "economy",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1402,
+        "dps": 70.1,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998598
+      },
+      {
+        "wave": 5,
+        "build": "economy",
+        "mode": "boss",
+        "seed": 11,
+        "seconds": 22.15,
+        "state": "WAVE",
+        "damage": 1500,
+        "dps": 67.72,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 1,
+        "bossKilledAt": 22.15,
+        "bossHpRemaining": -23
+      },
+      {
+        "wave": 5,
+        "build": "economy",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1422,
+        "dps": 71.1,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998578
+      },
+      {
+        "wave": 5,
+        "build": "economy",
+        "mode": "boss",
+        "seed": 29,
+        "seconds": 21.65,
+        "state": "WAVE",
+        "damage": 1500,
+        "dps": 69.28,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 1,
+        "bossKilledAt": 21.65,
+        "bossHpRemaining": -16
+      },
+      {
+        "wave": 5,
+        "build": "economy",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 1442,
+        "dps": 72.1,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9998558
+      },
+      {
+        "wave": 5,
+        "build": "economy",
+        "mode": "boss",
+        "seed": 47,
+        "seconds": 21.62,
+        "state": "WAVE",
+        "damage": 1500,
+        "dps": 69.39,
+        "damageTaken": 0,
+        "hp": 45,
+        "kills": 1,
+        "bossKilledAt": 21.62,
+        "bossHpRemaining": -16
+      },
+      {
+        "wave": 10,
+        "build": "blade",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 4437,
+        "dps": 221.85,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9995563
+      },
+      {
+        "wave": 10,
+        "build": "blade",
+        "mode": "boss",
+        "seed": 11,
+        "seconds": 70,
+        "state": "WAVE",
+        "damage": 3438,
+        "dps": 49.11,
+        "damageTaken": 8,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 2562
+      },
+      {
+        "wave": 10,
+        "build": "blade",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 4302,
+        "dps": 215.1,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9995698
+      },
+      {
+        "wave": 10,
+        "build": "blade",
+        "mode": "boss",
+        "seed": 29,
+        "seconds": 70,
+        "state": "WAVE",
+        "damage": 3519,
+        "dps": 50.27,
+        "damageTaken": 8,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 2481
+      },
+      {
+        "wave": 10,
+        "build": "blade",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 4464,
+        "dps": 223.2,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9995536
+      },
+      {
+        "wave": 10,
+        "build": "blade",
+        "mode": "boss",
+        "seed": 47,
+        "seconds": 70,
+        "state": "WAVE",
+        "damage": 3573,
+        "dps": 51.04,
+        "damageTaken": 8,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 2427
+      },
+      {
+        "wave": 10,
+        "build": "gun",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 3199,
+        "dps": 159.95,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9996801
+      },
+      {
+        "wave": 10,
+        "build": "gun",
+        "mode": "boss",
+        "seed": 11,
+        "seconds": 37.5,
+        "state": "WAVE",
+        "damage": 6000,
+        "dps": 160,
+        "damageTaken": 10,
+        "hp": 58,
+        "kills": 1,
+        "bossKilledAt": 37.5,
+        "bossHpRemaining": -9
+      },
+      {
+        "wave": 10,
+        "build": "gun",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 3207,
+        "dps": 160.35,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9996793
+      },
+      {
+        "wave": 10,
+        "build": "gun",
+        "mode": "boss",
+        "seed": 29,
+        "seconds": 37.72,
+        "state": "WAVE",
+        "damage": 6000,
+        "dps": 159.08,
+        "damageTaken": 10,
+        "hp": 59,
+        "kills": 1,
+        "bossKilledAt": 37.72,
+        "bossHpRemaining": -7
+      },
+      {
+        "wave": 10,
+        "build": "gun",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 3210,
+        "dps": 160.5,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9996790
+      },
+      {
+        "wave": 10,
+        "build": "gun",
+        "mode": "boss",
+        "seed": 47,
+        "seconds": 37.42,
+        "state": "WAVE",
+        "damage": 6000,
+        "dps": 160.36,
+        "damageTaken": 10,
+        "hp": 58,
+        "kills": 1,
+        "bossKilledAt": 37.42,
+        "bossHpRemaining": -7
+      },
+      {
+        "wave": 10,
+        "build": "star",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 5122,
+        "dps": 256.1,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9994878
+      },
+      {
+        "wave": 10,
+        "build": "star",
+        "mode": "boss",
+        "seed": 11,
+        "seconds": 27.48,
+        "state": "WAVE",
+        "damage": 6000,
+        "dps": 218.31,
+        "damageTaken": 9,
+        "hp": 65,
+        "kills": 1,
+        "bossKilledAt": 27.48,
+        "bossHpRemaining": -45
+      },
+      {
+        "wave": 10,
+        "build": "star",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 5278,
+        "dps": 263.9,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9994722
+      },
+      {
+        "wave": 10,
+        "build": "star",
+        "mode": "boss",
+        "seed": 29,
+        "seconds": 26.47,
+        "state": "WAVE",
+        "damage": 6000,
+        "dps": 226.7,
+        "damageTaken": 9,
+        "hp": 65,
+        "kills": 1,
+        "bossKilledAt": 26.47,
+        "bossHpRemaining": -6
+      },
+      {
+        "wave": 10,
+        "build": "star",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 5083,
+        "dps": 254.15,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9994917
+      },
+      {
+        "wave": 10,
+        "build": "star",
+        "mode": "boss",
+        "seed": 47,
+        "seconds": 28.32,
+        "state": "WAVE",
+        "damage": 6000,
+        "dps": 211.89,
+        "damageTaken": 9,
+        "hp": 65,
+        "kills": 1,
+        "bossKilledAt": 28.32,
+        "bossHpRemaining": -71
+      },
+      {
+        "wave": 10,
+        "build": "economy",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 3427,
+        "dps": 171.35,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9996573
+      },
+      {
+        "wave": 10,
+        "build": "economy",
+        "mode": "boss",
+        "seed": 11,
+        "seconds": 35.63,
+        "state": "WAVE",
+        "damage": 6000,
+        "dps": 168.38,
+        "damageTaken": 9,
+        "hp": 63,
+        "kills": 1,
+        "bossKilledAt": 35.63,
+        "bossHpRemaining": -10
+      },
+      {
+        "wave": 10,
+        "build": "economy",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 3358,
+        "dps": 167.9,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9996642
+      },
+      {
+        "wave": 10,
+        "build": "economy",
+        "mode": "boss",
+        "seed": 29,
+        "seconds": 37.22,
+        "state": "WAVE",
+        "damage": 6000,
+        "dps": 161.22,
+        "damageTaken": 9,
+        "hp": 64,
+        "kills": 1,
+        "bossKilledAt": 37.22,
+        "bossHpRemaining": -5
+      },
+      {
+        "wave": 10,
+        "build": "economy",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 3473,
+        "dps": 173.65,
+        "damageTaken": 0,
+        "hp": 65,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9996527
+      },
+      {
+        "wave": 10,
+        "build": "economy",
+        "mode": "boss",
+        "seed": 47,
+        "seconds": 37.67,
+        "state": "WAVE",
+        "damage": 6000,
+        "dps": 159.29,
+        "damageTaken": 9,
+        "hp": 64,
+        "kills": 1,
+        "bossKilledAt": 37.67,
+        "bossHpRemaining": -21
+      },
+      {
+        "wave": 15,
+        "build": "blade",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 15915,
+        "dps": 795.75,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9984085
+      },
+      {
+        "wave": 15,
+        "build": "blade",
+        "mode": "wave",
+        "seed": 11,
+        "seconds": 25.52,
+        "state": "GAMEOVER",
+        "damage": 23301.599999999973,
+        "dps": 913.19,
+        "damageTaken": 109,
+        "hp": 0,
+        "kills": 124,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9010
+      },
+      {
+        "wave": 15,
+        "build": "blade",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 15809,
+        "dps": 790.45,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9984191
+      },
+      {
+        "wave": 15,
+        "build": "blade",
+        "mode": "wave",
+        "seed": 29,
+        "seconds": 26.13,
+        "state": "GAMEOVER",
+        "damage": 24131.35999999999,
+        "dps": 923.39,
+        "damageTaken": 112,
+        "hp": 0,
+        "kills": 125,
+        "bossKilledAt": null,
+        "bossHpRemaining": 8158
+      },
+      {
+        "wave": 15,
+        "build": "blade",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 16021,
+        "dps": 801.05,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9983979
+      },
+      {
+        "wave": 15,
+        "build": "blade",
+        "mode": "wave",
+        "seed": 47,
+        "seconds": 26.47,
+        "state": "GAMEOVER",
+        "damage": 24042.95999999996,
+        "dps": 908.42,
+        "damageTaken": 109.25,
+        "hp": 0,
+        "kills": 131,
+        "bossKilledAt": null,
+        "bossHpRemaining": 8637
+      },
+      {
+        "wave": 15,
+        "build": "gun",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 8787,
+        "dps": 439.35,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9991213
+      },
+      {
+        "wave": 15,
+        "build": "gun",
+        "mode": "wave",
+        "seed": 11,
+        "seconds": 25.52,
+        "state": "GAMEOVER",
+        "damage": 14152.456000000004,
+        "dps": 554.64,
+        "damageTaken": 91,
+        "hp": 0,
+        "kills": 57,
+        "bossKilledAt": null,
+        "bossHpRemaining": 7905
+      },
+      {
+        "wave": 15,
+        "build": "gun",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 8701,
+        "dps": 435.05,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9991299
+      },
+      {
+        "wave": 15,
+        "build": "gun",
+        "mode": "wave",
+        "seed": 29,
+        "seconds": 32.98,
+        "state": "GAMEOVER",
+        "damage": 17969.7552,
+        "dps": 544.81,
+        "damageTaken": 92,
+        "hp": 0,
+        "kills": 77,
+        "bossKilledAt": null,
+        "bossHpRemaining": 6987
+      },
+      {
+        "wave": 15,
+        "build": "gun",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 8754,
+        "dps": 437.7,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9991246
+      },
+      {
+        "wave": 15,
+        "build": "gun",
+        "mode": "wave",
+        "seed": 47,
+        "seconds": 24.8,
+        "state": "GAMEOVER",
+        "damage": 13717.108800000007,
+        "dps": 553.11,
+        "damageTaken": 89,
+        "hp": 0,
+        "kills": 54,
+        "bossKilledAt": null,
+        "bossHpRemaining": 7120
+      },
+      {
+        "wave": 15,
+        "build": "star",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 21154,
+        "dps": 1057.7,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9978846
+      },
+      {
+        "wave": 15,
+        "build": "star",
+        "mode": "wave",
+        "seed": 11,
+        "seconds": 27.62,
+        "state": "GAMEOVER",
+        "damage": 32630.98399999995,
+        "dps": 1181.57,
+        "damageTaken": 149.25,
+        "hp": 0,
+        "kills": 136,
+        "bossKilledAt": null,
+        "bossHpRemaining": 1810
+      },
+      {
+        "wave": 15,
+        "build": "star",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 21420,
+        "dps": 1071,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9978580
+      },
+      {
+        "wave": 15,
+        "build": "star",
+        "mode": "wave",
+        "seed": 29,
+        "seconds": 29.02,
+        "state": "GAMEOVER",
+        "damage": 37207.919999999955,
+        "dps": 1282.29,
+        "damageTaken": 148.5,
+        "hp": 0,
+        "kills": 152,
+        "bossKilledAt": null,
+        "bossHpRemaining": 669
+      },
+      {
+        "wave": 15,
+        "build": "star",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 21418,
+        "dps": 1070.9,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9978582
+      },
+      {
+        "wave": 15,
+        "build": "star",
+        "mode": "wave",
+        "seed": 47,
+        "seconds": 36.05,
+        "state": "GAMEOVER",
+        "damage": 44410.0752,
+        "dps": 1231.9,
+        "damageTaken": 160.5,
+        "hp": 0,
+        "kills": 192,
+        "bossKilledAt": null,
+        "bossHpRemaining": -62
+      },
+      {
+        "wave": 15,
+        "build": "economy",
+        "mode": "dummy",
+        "seed": 11,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 9686,
+        "dps": 484.3,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9990314
+      },
+      {
+        "wave": 15,
+        "build": "economy",
+        "mode": "wave",
+        "seed": 11,
+        "seconds": 18.87,
+        "state": "GAMEOVER",
+        "damage": 11322.691200000007,
+        "dps": 600.14,
+        "damageTaken": 90,
+        "hp": 0,
+        "kills": 46,
+        "bossKilledAt": null,
+        "bossHpRemaining": 8138
+      },
+      {
+        "wave": 15,
+        "build": "economy",
+        "mode": "dummy",
+        "seed": 29,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 9552,
+        "dps": 477.6,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9990448
+      },
+      {
+        "wave": 15,
+        "build": "economy",
+        "mode": "wave",
+        "seed": 29,
+        "seconds": 21.5,
+        "state": "GAMEOVER",
+        "damage": 14242.366400000008,
+        "dps": 662.44,
+        "damageTaken": 89,
+        "hp": 0,
+        "kills": 66,
+        "bossKilledAt": null,
+        "bossHpRemaining": 7900
+      },
+      {
+        "wave": 15,
+        "build": "economy",
+        "mode": "dummy",
+        "seed": 47,
+        "seconds": 20,
+        "state": "WAVE",
+        "damage": 9152,
+        "dps": 457.6,
+        "damageTaken": 0,
+        "hp": 85,
+        "kills": 0,
+        "bossKilledAt": null,
+        "bossHpRemaining": 9990848
+      },
+      {
+        "wave": 15,
+        "build": "economy",
+        "mode": "wave",
+        "seed": 47,
+        "seconds": 21.6,
+        "state": "GAMEOVER",
+        "damage": 14100.63520000001,
+        "dps": 652.81,
+        "damageTaken": 90,
+        "hp": 0,
+        "kills": 64,
+        "bossKilledAt": null,
+        "bossHpRemaining": 7966
+      }
+    ]
+  },
+  "progression": [
+    {
+      "seed": 11,
+      "policy": "output",
+      "earned": 221,
+      "spent": 179,
+      "closingGold": 72,
+      "outcome": "defeat",
+      "rows": [
+        {
+          "wave": 1,
+          "state": "SHOP",
+          "openingGold": 30,
+          "combatGold": 35,
+          "shopOpening": 35,
+          "closingGold": 15,
+          "bank": 0,
+          "level": 1,
+          "hp": 21,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 1
+            }
+          ],
+          "items": 1,
+          "metrics": {
+            "wave": 1,
+            "seconds": 22.000000000000032,
+            "damage": 233,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 50,
+            "landedAttacks": 45,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 9,
+            "deathCause": null,
+            "coinsIssued": 5,
+            "coinIncome": 5,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 10.590909090909076,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9
+          }
+        },
+        {
+          "wave": 2,
+          "state": "SHOP",
+          "openingGold": 15,
+          "combatGold": 31,
+          "shopOpening": 31,
+          "closingGold": 8,
+          "bank": 0,
+          "level": 2,
+          "hp": 22,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 1
+            },
+            {
+              "id": "echo_disc",
+              "tier": 1
+            }
+          ],
+          "items": 1,
+          "metrics": {
+            "wave": 2,
+            "seconds": 26.01666666666647,
+            "damage": 827.3199999999998,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 118,
+            "landedAttacks": 113,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 25,
+            "deathCause": null,
+            "coinsIssued": 16,
+            "coinIncome": 16,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 31.799615631006,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9576271186440678
+          }
+        },
+        {
+          "wave": 3,
+          "state": "SHOP",
+          "openingGold": 8,
+          "combatGold": 32,
+          "shopOpening": 32,
+          "closingGold": 7,
+          "bank": 2,
+          "level": 3,
+          "hp": 14,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 1
+            },
+            {
+              "id": "echo_disc",
+              "tier": 1
+            },
+            {
+              "id": "bind_spear",
+              "tier": 1
+            }
+          ],
+          "items": 1,
+          "metrics": {
+            "wave": 3,
+            "seconds": 30.016666666666243,
+            "damage": 1544.4,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 177,
+            "landedAttacks": 170,
+            "lifeStealHealing": 0,
+            "damageTaken": 9,
+            "kills": 33,
+            "deathCause": null,
+            "coinsIssued": 26,
+            "coinIncome": 24,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 2,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 51.45141588006736,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.96045197740113
+          }
+        },
+        {
+          "wave": 4,
+          "state": "SHOP",
+          "openingGold": 7,
+          "combatGold": 63,
+          "shopOpening": 63,
+          "closingGold": 10,
+          "bank": 0,
+          "level": 4,
+          "hp": 18,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 1
+            },
+            {
+              "id": "echo_disc",
+              "tier": 1
+            },
+            {
+              "id": "bind_spear",
+              "tier": 1
+            },
+            {
+              "id": "starfury",
+              "tier": 1
+            }
+          ],
+          "items": 2,
+          "metrics": {
+            "wave": 4,
+            "seconds": 34.01666666666602,
+            "damage": 3779.639999999997,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 278,
+            "landedAttacks": 269,
+            "lifeStealHealing": 0,
+            "damageTaken": 12,
+            "kills": 61,
+            "deathCause": null,
+            "coinsIssued": 54,
+            "coinIncome": 56,
+            "harvestIncome": 0,
+            "bankSpent": 2,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 111.1114159725645,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9676258992805755
+          }
+        },
+        {
+          "wave": 5,
+          "state": "SHOP",
+          "openingGold": 10,
+          "combatGold": 72,
+          "shopOpening": 72,
+          "closingGold": 14,
+          "bank": 26,
+          "level": 5,
+          "hp": 17.4,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 1
+            },
+            {
+              "id": "echo_disc",
+              "tier": 2
+            },
+            {
+              "id": "bind_spear",
+              "tier": 1
+            },
+            {
+              "id": "starfury",
+              "tier": 1
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 3,
+          "metrics": {
+            "wave": 5,
+            "seconds": 45.133333333332054,
+            "damage": 7473.120000000004,
+            "bossDamage": 1500,
+            "bossSeconds": 45.11666666666539,
+            "bossKillSeconds": 45.11666666666539,
+            "attacks": 427,
+            "landedAttacks": 392,
+            "lifeStealHealing": 13.4,
+            "damageTaken": 36,
+            "kills": 85,
+            "deathCause": null,
+            "coinsIssued": 88,
+            "coinIncome": 62,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 26,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 165.57872968981277,
+            "bossEffectiveDps": 33.24713705208812,
+            "attackHitRate": 0.9180327868852459
+          }
+        },
+        {
+          "wave": 6,
+          "state": "GAMEOVER",
+          "openingGold": 14,
+          "combatGold": 72,
+          "shopOpening": 72,
+          "closingGold": 72,
+          "bank": 0,
+          "level": 5,
+          "hp": 0,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 1
+            },
+            {
+              "id": "echo_disc",
+              "tier": 2
+            },
+            {
+              "id": "bind_spear",
+              "tier": 1
+            },
+            {
+              "id": "starfury",
+              "tier": 1
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 3,
+          "metrics": {
+            "wave": 6,
+            "seconds": 16.766666666666996,
+            "damage": 3149.7999999999997,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 152,
+            "landedAttacks": 136,
+            "lifeStealHealing": 7.600000000000001,
+            "damageTaken": 41.599999999999994,
+            "kills": 33,
+            "deathCause": "哥布林",
+            "coinsIssued": 33,
+            "coinIncome": 58,
+            "harvestIncome": 0,
+            "bankSpent": 26,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "defeat",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 187.86083499005593,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.8947368421052632
+          }
+        }
+      ],
+      "actions": [
+        {
+          "wave": 1,
+          "kind": "weapon",
+          "id": "grass_blade",
+          "tier": 1,
+          "cost": 20
+        },
+        {
+          "wave": 2,
+          "kind": "weapon",
+          "id": "echo_disc",
+          "tier": 1,
+          "cost": 23
+        },
+        {
+          "wave": 3,
+          "kind": "weapon",
+          "id": "bind_spear",
+          "tier": 1,
+          "cost": 25
+        },
+        {
+          "wave": 4,
+          "kind": "weapon",
+          "id": "starfury",
+          "tier": 1,
+          "cost": 30
+        },
+        {
+          "wave": 4,
+          "kind": "item",
+          "id": "shackle",
+          "tier": 1,
+          "cost": 23
+        },
+        {
+          "wave": 5,
+          "kind": "weapon",
+          "id": "echo_disc",
+          "tier": 1,
+          "cost": 28
+        },
+        {
+          "wave": 5,
+          "kind": "item",
+          "id": "shark_tooth",
+          "tier": 1,
+          "cost": 30
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "policy": "output",
+      "earned": 283,
+      "spent": 151,
+      "closingGold": 162,
+      "outcome": "defeat",
+      "rows": [
+        {
+          "wave": 1,
+          "state": "SHOP",
+          "openingGold": 30,
+          "combatGold": 36,
+          "shopOpening": 36,
+          "closingGold": 16,
+          "bank": 0,
+          "level": 1,
+          "hp": 21,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 1
+            }
+          ],
+          "items": 0,
+          "metrics": {
+            "wave": 1,
+            "seconds": 22.000000000000032,
+            "damage": 240,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 49,
+            "landedAttacks": 46,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 10,
+            "deathCause": null,
+            "coinsIssued": 6,
+            "coinIncome": 6,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 10.909090909090894,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9387755102040817
+          }
+        },
+        {
+          "wave": 2,
+          "state": "SHOP",
+          "openingGold": 16,
+          "combatGold": 32,
+          "shopOpening": 32,
+          "closingGold": 7,
+          "bank": 0,
+          "level": 2,
+          "hp": 22,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            }
+          ],
+          "items": 1,
+          "metrics": {
+            "wave": 2,
+            "seconds": 26.01666666666647,
+            "damage": 767.88,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 119,
+            "landedAttacks": 113,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 25,
+            "deathCause": null,
+            "coinsIssued": 16,
+            "coinIncome": 16,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 29.514926329276328,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9495798319327731
+          }
+        },
+        {
+          "wave": 3,
+          "state": "SHOP",
+          "openingGold": 7,
+          "combatGold": 36,
+          "shopOpening": 36,
+          "closingGold": 11,
+          "bank": 0,
+          "level": 3,
+          "hp": 23,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "echo_disc",
+              "tier": 1
+            }
+          ],
+          "items": 3,
+          "metrics": {
+            "wave": 3,
+            "seconds": 30.016666666666243,
+            "damage": 1760.0799999999997,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 180,
+            "landedAttacks": 167,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 34,
+            "deathCause": null,
+            "coinsIssued": 29,
+            "coinIncome": 29,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 2,
+            "effectiveDps": 58.63675735702469,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9277777777777778
+          }
+        },
+        {
+          "wave": 4,
+          "state": "SHOP",
+          "openingGold": 11,
+          "combatGold": 65,
+          "shopOpening": 65,
+          "closingGold": 19,
+          "bank": 0,
+          "level": 4,
+          "hp": 24,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "grass_blade",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "echo_disc",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "ratchet_crossbow",
+              "tier": 1
+            }
+          ],
+          "items": 4,
+          "metrics": {
+            "wave": 4,
+            "seconds": 34.01666666666602,
+            "damage": 4202.239999999997,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 341,
+            "landedAttacks": 321,
+            "lifeStealHealing": 0,
+            "damageTaken": 6,
+            "kills": 64,
+            "deathCause": null,
+            "coinsIssued": 54,
+            "coinIncome": 54,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 123.53473787359364,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9413489736070382
+          }
+        },
+        {
+          "wave": 5,
+          "state": "SHOP",
+          "openingGold": 19,
+          "combatGold": 107,
+          "shopOpening": 115,
+          "closingGold": 80,
+          "bank": 0,
+          "level": 5,
+          "hp": 25,
+          "weapons": [
+            {
+              "id": "grass_blade",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "echo_disc",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "ratchet_crossbow",
+              "tier": 1
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 5,
+          "metrics": {
+            "wave": 5,
+            "seconds": 38.01666666666579,
+            "damage": 7162.080000000003,
+            "bossDamage": 1500,
+            "bossSeconds": 26.033333333333136,
+            "bossKillSeconds": 26.033333333333136,
+            "attacks": 462,
+            "landedAttacks": 427,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 78,
+            "deathCause": null,
+            "coinsIssued": 88,
+            "coinIncome": 88,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 188.393160894349,
+            "bossEffectiveDps": 57.61843790012848,
+            "attackHitRate": 0.9242424242424242
+          }
+        },
+        {
+          "wave": 6,
+          "state": "GAMEOVER",
+          "openingGold": 80,
+          "combatGold": 162,
+          "shopOpening": 162,
+          "closingGold": 162,
+          "bank": 0,
+          "level": 6,
+          "hp": 0,
+          "weapons": [
+            {
+              "id": "grass_blade",
+              "tier": 1
+            },
+            {
+              "id": "light_disc",
+              "tier": 1
+            },
+            {
+              "id": "echo_disc",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "ratchet_crossbow",
+              "tier": 1
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 5,
+          "metrics": {
+            "wave": 6,
+            "seconds": 31.033333333332852,
+            "damage": 7717.799999999998,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 272,
+            "landedAttacks": 252,
+            "lifeStealHealing": 0,
+            "damageTaken": 33,
+            "kills": 83,
+            "deathCause": "哥布林",
+            "coinsIssued": 82,
+            "coinIncome": 82,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "defeat",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 248.6938775510242,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9264705882352942
+          }
+        }
+      ],
+      "actions": [
+        {
+          "wave": 1,
+          "kind": "weapon",
+          "id": "grass_blade",
+          "tier": 1,
+          "cost": 20
+        },
+        {
+          "wave": 2,
+          "kind": "weapon",
+          "id": "light_disc",
+          "tier": 1,
+          "cost": 25
+        },
+        {
+          "wave": 3,
+          "kind": "weapon",
+          "id": "echo_disc",
+          "tier": 1,
+          "cost": 25
+        },
+        {
+          "wave": 4,
+          "kind": "weapon",
+          "id": "bow",
+          "tier": 1,
+          "cost": 23
+        },
+        {
+          "wave": 4,
+          "kind": "weapon",
+          "id": "ratchet_crossbow",
+          "tier": 1,
+          "cost": 23
+        },
+        {
+          "wave": 5,
+          "kind": "item",
+          "id": "horseshoe",
+          "tier": 1,
+          "cost": 35
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "policy": "output",
+      "earned": 238,
+      "spent": 186,
+      "closingGold": 82,
+      "outcome": "defeat",
+      "rows": [
+        {
+          "wave": 1,
+          "state": "SHOP",
+          "openingGold": 30,
+          "combatGold": 37,
+          "shopOpening": 37,
+          "closingGold": 14,
+          "bank": 0,
+          "level": 1,
+          "hp": 21,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "demon_scythe",
+              "tier": 1
+            }
+          ],
+          "items": 0,
+          "metrics": {
+            "wave": 1,
+            "seconds": 22.000000000000032,
+            "damage": 264,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 54,
+            "landedAttacks": 52,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 11,
+            "deathCause": null,
+            "coinsIssued": 7,
+            "coinIncome": 7,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 11.999999999999982,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9629629629629629
+          }
+        },
+        {
+          "wave": 2,
+          "state": "SHOP",
+          "openingGold": 14,
+          "combatGold": 29,
+          "shopOpening": 29,
+          "closingGold": 9,
+          "bank": 1,
+          "level": 2,
+          "hp": 22,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "demon_scythe",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            }
+          ],
+          "items": 0,
+          "metrics": {
+            "wave": 2,
+            "seconds": 26.01666666666647,
+            "damage": 848.1999999999997,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 116,
+            "landedAttacks": 107,
+            "lifeStealHealing": 0,
+            "damageTaken": 5,
+            "kills": 26,
+            "deathCause": null,
+            "coinsIssued": 16,
+            "coinIncome": 15,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 1,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 32.60217809096756,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9224137931034483
+          }
+        },
+        {
+          "wave": 3,
+          "state": "SHOP",
+          "openingGold": 9,
+          "combatGold": 39,
+          "shopOpening": 39,
+          "closingGold": 5,
+          "bank": 0,
+          "level": 3,
+          "hp": 23,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "demon_scythe",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 1
+            }
+          ],
+          "items": 0,
+          "metrics": {
+            "wave": 3,
+            "seconds": 30.016666666666243,
+            "damage": 1653.6000000000004,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 181,
+            "landedAttacks": 151,
+            "lifeStealHealing": 0,
+            "damageTaken": 0,
+            "kills": 34,
+            "deathCause": null,
+            "coinsIssued": 29,
+            "coinIncome": 30,
+            "harvestIncome": 0,
+            "bankSpent": 1,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 55.08939478067819,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.8342541436464088
+          }
+        },
+        {
+          "wave": 4,
+          "state": "SHOP",
+          "openingGold": 5,
+          "combatGold": 59,
+          "shopOpening": 59,
+          "closingGold": 10,
+          "bank": 0,
+          "level": 4,
+          "hp": 28,
+          "weapons": [
+            {
+              "id": "minishark",
+              "tier": 1
+            },
+            {
+              "id": "demon_scythe",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "bind_spear",
+              "tier": 1
+            }
+          ],
+          "items": 0,
+          "metrics": {
+            "wave": 4,
+            "seconds": 34.01666666666602,
+            "damage": 3981.1599999999967,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 306,
+            "landedAttacks": 292,
+            "lifeStealHealing": 2.35,
+            "damageTaken": 12,
+            "kills": 60,
+            "deathCause": null,
+            "coinsIssued": 54,
+            "coinIncome": 54,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 0,
+            "effectiveDps": 117.03557079863026,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.954248366013072
+          }
+        },
+        {
+          "wave": 5,
+          "state": "SHOP",
+          "openingGold": 10,
+          "combatGold": 98,
+          "shopOpening": 106,
+          "closingGold": 46,
+          "bank": 0,
+          "level": 5,
+          "hp": 21.15,
+          "weapons": [
+            {
+              "id": "demon_scythe",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "bind_spear",
+              "tier": 1
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 3,
+          "metrics": {
+            "wave": 5,
+            "seconds": 38.01666666666579,
+            "damage": 7155.280000000003,
+            "bossDamage": 1500,
+            "bossSeconds": 22.416666666666675,
+            "bossKillSeconds": 22.416666666666675,
+            "attacks": 440,
+            "landedAttacks": 401,
+            "lifeStealHealing": 14.149999999999999,
+            "damageTaken": 34,
+            "kills": 79,
+            "deathCause": null,
+            "coinsIssued": 88,
+            "coinIncome": 88,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "cleared",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 188.2142919772074,
+            "bossEffectiveDps": 66.91449814126392,
+            "attackHitRate": 0.9113636363636364
+          }
+        },
+        {
+          "wave": 6,
+          "state": "GAMEOVER",
+          "openingGold": 46,
+          "combatGold": 82,
+          "shopOpening": 82,
+          "closingGold": 82,
+          "bank": 0,
+          "level": 5,
+          "hp": 0,
+          "weapons": [
+            {
+              "id": "demon_scythe",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "pulse_chain",
+              "tier": 1
+            },
+            {
+              "id": "bow",
+              "tier": 1
+            },
+            {
+              "id": "bind_spear",
+              "tier": 1
+            },
+            {
+              "id": "boss_hammer",
+              "tier": 2
+            }
+          ],
+          "items": 3,
+          "metrics": {
+            "wave": 6,
+            "seconds": 18.35000000000024,
+            "damage": 3255.9999999999995,
+            "bossDamage": 0,
+            "bossSeconds": 0,
+            "bossKillSeconds": null,
+            "attacks": 121,
+            "landedAttacks": 110,
+            "lifeStealHealing": 1.8,
+            "damageTaken": 37.8,
+            "kills": 39,
+            "deathCause": "骷髅弓箭手·箭矢",
+            "coinsIssued": 37,
+            "coinIncome": 36,
+            "harvestIncome": 0,
+            "bankSpent": 0,
+            "bankAdded": 0,
+            "recorded": true,
+            "outcome": "defeat",
+            "difficulty": 1,
+            "core": null,
+            "randomCratesDropped": 1,
+            "effectiveDps": 177.4386920980903,
+            "bossEffectiveDps": 0,
+            "attackHitRate": 0.9090909090909091
+          }
+        }
+      ],
+      "actions": [
+        {
+          "wave": 1,
+          "kind": "weapon",
+          "id": "demon_scythe",
+          "tier": 1,
+          "cost": 23
+        },
+        {
+          "wave": 2,
+          "kind": "weapon",
+          "id": "bow",
+          "tier": 1,
+          "cost": 20
+        },
+        {
+          "wave": 3,
+          "kind": "weapon",
+          "id": "pulse_chain",
+          "tier": 1,
+          "cost": 34
+        },
+        {
+          "wave": 4,
+          "kind": "weapon",
+          "id": "bow",
+          "tier": 1,
+          "cost": 23
+        },
+        {
+          "wave": 4,
+          "kind": "weapon",
+          "id": "bind_spear",
+          "tier": 1,
+          "cost": 26
+        },
+        {
+          "wave": 5,
+          "kind": "item",
+          "id": "hermes",
+          "tier": 1,
+          "cost": 25
+        },
+        {
+          "wave": 5,
+          "kind": "item",
+          "id": "horseshoe",
+          "tier": 1,
+          "cost": 35
+        }
+      ]
+    }
+  ]
+}
